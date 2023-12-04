@@ -28,11 +28,58 @@ partial class MainForm
     /// </summary>
     private void InitializeComponent()
     {
-        this.components = new System.ComponentModel.Container();
-        this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-        this.ClientSize = new System.Drawing.Size(800, 450);
-        this.Text = "MainForm";
+        Top_Panel = new Panel();
+        Side_Panel = new Panel();
+        Bottom_Panel = new Panel();
+        SuspendLayout();
+        // 
+        // Top_Panel
+        // 
+        Top_Panel.Dock = DockStyle.Top;
+        Top_Panel.Location = new Point(206, 0);
+        Top_Panel.Name = "Top_Panel";
+        Top_Panel.Size = new Size(754, 72);
+        Top_Panel.TabIndex = 1;
+        Top_Panel.Paint += panel1_Paint;
+        // 
+        // Side_Panel
+        // 
+        Side_Panel.BackColor = Color.Gainsboro;
+        Side_Panel.Dock = DockStyle.Left;
+        Side_Panel.Location = new Point(0, 0);
+        Side_Panel.Name = "Side_Panel";
+        Side_Panel.Size = new Size(206, 604);
+        Side_Panel.TabIndex = 0;
+        // 
+        // Bottom_Panel
+        // 
+        Bottom_Panel.Dock = DockStyle.Bottom;
+        Bottom_Panel.Location = new Point(206, 554);
+        Bottom_Panel.Name = "Bottom_Panel";
+        Bottom_Panel.Size = new Size(754, 50);
+        Bottom_Panel.TabIndex = 0;
+        // 
+        // MainForm
+        // 
+        AutoScaleDimensions = new SizeF(7F, 15F);
+        AutoScaleMode = AutoScaleMode.Font;
+        ClientSize = new Size(960, 604);
+        Controls.Add(Bottom_Panel);
+        Controls.Add(Top_Panel);
+        Controls.Add(Side_Panel);
+        FormBorderStyle = FormBorderStyle.None;
+        IsMdiContainer = true;
+        MinimizeBox = false;
+        Name = "MainForm";
+        StartPosition = FormStartPosition.CenterScreen;
+        Text = "Main Form";
+        WindowState = FormWindowState.Maximized;
+        ResumeLayout(false);
     }
 
     #endregion
+
+    private Panel Top_Panel;
+    private Panel Side_Panel;
+    private Panel Bottom_Panel;
 }
