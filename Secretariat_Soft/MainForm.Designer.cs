@@ -29,6 +29,10 @@ partial class MainForm
     private void InitializeComponent()
     {
         Top_Panel = new Panel();
+        help_button = new Button();
+        tools_button = new Button();
+        report_button = new Button();
+        data_entry_button = new Button();
         min_button = new Button();
         close_button = new Button();
         Side_Panel = new Panel();
@@ -38,6 +42,10 @@ partial class MainForm
         // 
         // Top_Panel
         // 
+        Top_Panel.Controls.Add(help_button);
+        Top_Panel.Controls.Add(tools_button);
+        Top_Panel.Controls.Add(report_button);
+        Top_Panel.Controls.Add(data_entry_button);
         Top_Panel.Controls.Add(min_button);
         Top_Panel.Controls.Add(close_button);
         Top_Panel.Dock = DockStyle.Top;
@@ -47,6 +55,66 @@ partial class MainForm
         Top_Panel.Size = new Size(929, 80);
         Top_Panel.TabIndex = 1;
         Top_Panel.Paint += panel1_Paint;
+        // 
+        // help_button
+        // 
+        help_button.Cursor = Cursors.Hand;
+        help_button.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+        help_button.Image = Properties.Resources.top_help_button;
+        help_button.ImageAlign = ContentAlignment.TopCenter;
+        help_button.Location = new Point(448, 3);
+        help_button.Name = "help_button";
+        help_button.Size = new Size(144, 74);
+        help_button.TabIndex = 5;
+        help_button.Text = "Help F5";
+        help_button.TextAlign = ContentAlignment.BottomCenter;
+        help_button.TextImageRelation = TextImageRelation.ImageAboveText;
+        help_button.UseVisualStyleBackColor = true;
+        // 
+        // tools_button
+        // 
+        tools_button.Cursor = Cursors.Hand;
+        tools_button.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+        tools_button.Image = Properties.Resources.top_tools_button;
+        tools_button.ImageAlign = ContentAlignment.TopCenter;
+        tools_button.Location = new Point(301, 3);
+        tools_button.Name = "tools_button";
+        tools_button.Size = new Size(144, 74);
+        tools_button.TabIndex = 4;
+        tools_button.Text = "Tools F4";
+        tools_button.TextAlign = ContentAlignment.BottomCenter;
+        tools_button.TextImageRelation = TextImageRelation.ImageAboveText;
+        tools_button.UseVisualStyleBackColor = true;
+        // 
+        // report_button
+        // 
+        report_button.Cursor = Cursors.Hand;
+        report_button.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+        report_button.Image = Properties.Resources.top_report_button;
+        report_button.ImageAlign = ContentAlignment.TopCenter;
+        report_button.Location = new Point(154, 3);
+        report_button.Name = "report_button";
+        report_button.Size = new Size(144, 74);
+        report_button.TabIndex = 3;
+        report_button.Text = "Reports F3";
+        report_button.TextAlign = ContentAlignment.BottomCenter;
+        report_button.TextImageRelation = TextImageRelation.ImageAboveText;
+        report_button.UseVisualStyleBackColor = true;
+        // 
+        // data_entry_button
+        // 
+        data_entry_button.Cursor = Cursors.Hand;
+        data_entry_button.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+        data_entry_button.Image = Properties.Resources.top_input_button;
+        data_entry_button.ImageAlign = ContentAlignment.TopCenter;
+        data_entry_button.Location = new Point(6, 3);
+        data_entry_button.Name = "data_entry_button";
+        data_entry_button.Size = new Size(144, 74);
+        data_entry_button.TabIndex = 2;
+        data_entry_button.Text = "Data Entry F2";
+        data_entry_button.TextAlign = ContentAlignment.BottomCenter;
+        data_entry_button.TextImageRelation = TextImageRelation.ImageAboveText;
+        data_entry_button.UseVisualStyleBackColor = true;
         // 
         // min_button
         // 
@@ -120,4 +188,8 @@ partial class MainForm
     private Panel Bottom_Panel;
     private Button close_button;
     private Button min_button;
+    private Button data_entry_button;
+    private Button help_button;
+    private Button tools_button;
+    private Button report_button;
 }
