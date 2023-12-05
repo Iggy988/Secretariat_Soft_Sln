@@ -37,7 +37,10 @@ partial class MainForm
         close_button = new Button();
         Side_Panel = new Panel();
         Bottom_Panel = new Panel();
+        background_button = new Button();
+        calculator_button = new Button();
         Top_Panel.SuspendLayout();
+        Bottom_Panel.SuspendLayout();
         SuspendLayout();
         // 
         // Top_Panel
@@ -154,12 +157,39 @@ partial class MainForm
         // 
         // Bottom_Panel
         // 
+        Bottom_Panel.Controls.Add(calculator_button);
+        Bottom_Panel.Controls.Add(background_button);
         Bottom_Panel.Dock = DockStyle.Bottom;
         Bottom_Panel.Location = new Point(233, 718);
         Bottom_Panel.MinimumSize = new Size(844, 40);
         Bottom_Panel.Name = "Bottom_Panel";
         Bottom_Panel.Size = new Size(929, 50);
         Bottom_Panel.TabIndex = 0;
+        // 
+        // background_button
+        // 
+        background_button.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+        background_button.Cursor = Cursors.Hand;
+        background_button.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+        background_button.Image = Properties.Resources.background;
+        background_button.Location = new Point(777, 4);
+        background_button.Name = "background_button";
+        background_button.Size = new Size(140, 44);
+        background_button.TabIndex = 0;
+        background_button.Text = "Background";
+        background_button.UseVisualStyleBackColor = true;
+        // 
+        // calculator_button
+        // 
+        calculator_button.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+        calculator_button.BackgroundImage = Properties.Resources.calculator;
+        calculator_button.BackgroundImageLayout = ImageLayout.Zoom;
+        calculator_button.Cursor = Cursors.Hand;
+        calculator_button.Location = new Point(711, 4);
+        calculator_button.Name = "calculator_button";
+        calculator_button.Size = new Size(60, 44);
+        calculator_button.TabIndex = 1;
+        calculator_button.UseVisualStyleBackColor = true;
         // 
         // MainForm
         // 
@@ -178,6 +208,7 @@ partial class MainForm
         Text = "Main Form";
         WindowState = FormWindowState.Maximized;
         Top_Panel.ResumeLayout(false);
+        Bottom_Panel.ResumeLayout(false);
         ResumeLayout(false);
     }
 
@@ -192,4 +223,6 @@ partial class MainForm
     private Button help_button;
     private Button tools_button;
     private Button report_button;
+    private Button background_button;
+    private Button calculator_button;
 }
