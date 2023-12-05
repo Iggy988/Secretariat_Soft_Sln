@@ -20,4 +20,14 @@ public partial class MainForm : Form
     {
 
     }
+
+    private void close_button_Click(object sender, EventArgs e)
+    {
+        Close();
+    }
+
+    private void min_button_Click(object sender, EventArgs e)
+    {
+        WindowState = FormWindowState.Minimized;
+    }
 }

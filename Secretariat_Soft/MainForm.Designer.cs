@@ -51,20 +51,28 @@ partial class MainForm
         // min_button
         // 
         min_button.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+        min_button.BackgroundImage = Properties.Resources.min_button;
+        min_button.BackgroundImageLayout = ImageLayout.Center;
+        min_button.Cursor = Cursors.Hand;
         min_button.Location = new Point(860, 3);
         min_button.Name = "min_button";
         min_button.Size = new Size(30, 30);
         min_button.TabIndex = 1;
         min_button.UseVisualStyleBackColor = true;
+        min_button.Click += min_button_Click;
         // 
         // close_button
         // 
         close_button.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+        close_button.BackgroundImage = Properties.Resources.close_button;
+        close_button.BackgroundImageLayout = ImageLayout.Center;
+        close_button.Cursor = Cursors.Hand;
         close_button.Location = new Point(896, 3);
         close_button.Name = "close_button";
         close_button.Size = new Size(30, 30);
         close_button.TabIndex = 0;
         close_button.UseVisualStyleBackColor = true;
+        close_button.Click += close_button_Click;
         // 
         // Side_Panel
         // 
