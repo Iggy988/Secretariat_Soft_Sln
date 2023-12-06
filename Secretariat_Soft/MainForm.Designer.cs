@@ -36,10 +36,17 @@ partial class MainForm
         min_button = new Button();
         close_button = new Button();
         Side_Panel = new Panel();
+        panel1 = new Panel();
+        day_in_week_lbl = new Label();
+        day_month_lbl = new Label();
+        month_name_lbl = new Label();
+        year_num_lbl = new Label();
         Bottom_Panel = new Panel();
-        background_button = new Button();
         calculator_button = new Button();
+        background_button = new Button();
         Top_Panel.SuspendLayout();
+        Side_Panel.SuspendLayout();
+        panel1.SuspendLayout();
         Bottom_Panel.SuspendLayout();
         SuspendLayout();
         // 
@@ -148,12 +155,74 @@ partial class MainForm
         // Side_Panel
         // 
         Side_Panel.BackColor = Color.Gainsboro;
+        Side_Panel.Controls.Add(panel1);
         Side_Panel.Dock = DockStyle.Left;
         Side_Panel.Location = new Point(0, 0);
         Side_Panel.MinimumSize = new Size(180, 728);
         Side_Panel.Name = "Side_Panel";
         Side_Panel.Size = new Size(233, 768);
         Side_Panel.TabIndex = 0;
+        // 
+        // panel1
+        // 
+        panel1.BackgroundImage = Properties.Resources.calendar;
+        panel1.BackgroundImageLayout = ImageLayout.Zoom;
+        panel1.Controls.Add(day_in_week_lbl);
+        panel1.Controls.Add(day_month_lbl);
+        panel1.Controls.Add(month_name_lbl);
+        panel1.Controls.Add(year_num_lbl);
+        panel1.Location = new Point(3, 254);
+        panel1.Name = "panel1";
+        panel1.Size = new Size(230, 193);
+        panel1.TabIndex = 0;
+        // 
+        // day_in_week_lbl
+        // 
+        day_in_week_lbl.BackColor = Color.Transparent;
+        day_in_week_lbl.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+        day_in_week_lbl.ForeColor = Color.Black;
+        day_in_week_lbl.Location = new Point(23, 131);
+        day_in_week_lbl.Name = "day_in_week_lbl";
+        day_in_week_lbl.Size = new Size(184, 45);
+        day_in_week_lbl.TabIndex = 3;
+        day_in_week_lbl.Text = "Sunday";
+        day_in_week_lbl.TextAlign = ContentAlignment.MiddleCenter;
+        // 
+        // day_month_lbl
+        // 
+        day_month_lbl.BackColor = Color.Transparent;
+        day_month_lbl.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
+        day_month_lbl.ForeColor = Color.Black;
+        day_month_lbl.Location = new Point(23, 86);
+        day_month_lbl.Name = "day_month_lbl";
+        day_month_lbl.Size = new Size(184, 45);
+        day_month_lbl.TabIndex = 2;
+        day_month_lbl.Text = "21";
+        day_month_lbl.TextAlign = ContentAlignment.MiddleCenter;
+        // 
+        // month_name_lbl
+        // 
+        month_name_lbl.AutoSize = true;
+        month_name_lbl.BackColor = Color.Transparent;
+        month_name_lbl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+        month_name_lbl.ForeColor = Color.White;
+        month_name_lbl.Location = new Point(107, 23);
+        month_name_lbl.Name = "month_name_lbl";
+        month_name_lbl.Size = new Size(47, 21);
+        month_name_lbl.TabIndex = 1;
+        month_name_lbl.Text = "April";
+        // 
+        // year_num_lbl
+        // 
+        year_num_lbl.AutoSize = true;
+        year_num_lbl.BackColor = Color.Transparent;
+        year_num_lbl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+        year_num_lbl.ForeColor = Color.White;
+        year_num_lbl.Location = new Point(40, 23);
+        year_num_lbl.Name = "year_num_lbl";
+        year_num_lbl.Size = new Size(46, 21);
+        year_num_lbl.TabIndex = 0;
+        year_num_lbl.Text = "2023";
         // 
         // Bottom_Panel
         // 
@@ -165,6 +234,18 @@ partial class MainForm
         Bottom_Panel.Name = "Bottom_Panel";
         Bottom_Panel.Size = new Size(929, 50);
         Bottom_Panel.TabIndex = 0;
+        // 
+        // calculator_button
+        // 
+        calculator_button.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+        calculator_button.BackgroundImage = Properties.Resources.calculator;
+        calculator_button.BackgroundImageLayout = ImageLayout.Zoom;
+        calculator_button.Cursor = Cursors.Hand;
+        calculator_button.Location = new Point(711, 4);
+        calculator_button.Name = "calculator_button";
+        calculator_button.Size = new Size(60, 44);
+        calculator_button.TabIndex = 1;
+        calculator_button.UseVisualStyleBackColor = true;
         // 
         // background_button
         // 
@@ -178,18 +259,6 @@ partial class MainForm
         background_button.TabIndex = 0;
         background_button.Text = "Background";
         background_button.UseVisualStyleBackColor = true;
-        // 
-        // calculator_button
-        // 
-        calculator_button.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-        calculator_button.BackgroundImage = Properties.Resources.calculator;
-        calculator_button.BackgroundImageLayout = ImageLayout.Zoom;
-        calculator_button.Cursor = Cursors.Hand;
-        calculator_button.Location = new Point(711, 4);
-        calculator_button.Name = "calculator_button";
-        calculator_button.Size = new Size(60, 44);
-        calculator_button.TabIndex = 1;
-        calculator_button.UseVisualStyleBackColor = true;
         // 
         // MainForm
         // 
@@ -207,7 +276,11 @@ partial class MainForm
         StartPosition = FormStartPosition.CenterScreen;
         Text = "Main Form";
         WindowState = FormWindowState.Maximized;
+        Load += MainForm_Load;
         Top_Panel.ResumeLayout(false);
+        Side_Panel.ResumeLayout(false);
+        panel1.ResumeLayout(false);
+        panel1.PerformLayout();
         Bottom_Panel.ResumeLayout(false);
         ResumeLayout(false);
     }
@@ -225,4 +298,9 @@ partial class MainForm
     private Button report_button;
     private Button background_button;
     private Button calculator_button;
+    private Panel panel1;
+    private Label year_num_lbl;
+    private Label day_month_lbl;
+    private Label month_name_lbl;
+    private Label day_in_week_lbl;
 }

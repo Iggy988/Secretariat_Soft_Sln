@@ -30,4 +30,21 @@ public partial class MainForm : Form
     {
         WindowState = FormWindowState.Minimized;
     }
+
+    private void MainForm_Load(object sender, EventArgs e)
+    {
+        // -----------Load date-------------
+        GetDateCal();
+        // ---------------------------------
+    }
+
+    void GetDateCal()
+    {
+        year_num_lbl.Text = DateTime.Now.Year.ToString();
+        int mn = DateTime.Now.Month;
+        var monthName = System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(mn);
+        month_name_lbl.Text = monthName.ToString();
+        day_month_lbl.Text = DateTime.Now.Day.ToString();
+        day_in_week_lbl.Text = DateTime.Now.DayOfWeek.ToString();
+    }
 }
