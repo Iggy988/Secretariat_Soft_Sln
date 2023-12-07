@@ -47,4 +47,9 @@ public partial class MainForm : Form
         day_month_lbl.Text = DateTime.Now.Day.ToString();
         day_in_week_lbl.Text = DateTime.Now.DayOfWeek.ToString();
     }
+
+    private void timer1_Tick(object sender, EventArgs e)
+    {
+        analogClock1.Time = DateTime.Now;
+    }
 }

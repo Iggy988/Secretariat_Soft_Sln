@@ -28,6 +28,7 @@ partial class MainForm
     /// </summary>
     private void InitializeComponent()
     {
+        components = new System.ComponentModel.Container();
         Top_Panel = new Panel();
         help_button = new Button();
         tools_button = new Button();
@@ -36,6 +37,7 @@ partial class MainForm
         min_button = new Button();
         close_button = new Button();
         Side_Panel = new Panel();
+        analogClock1 = new AnalogClock.AnalogClock();
         panel1 = new Panel();
         day_in_week_lbl = new Label();
         day_month_lbl = new Label();
@@ -44,7 +46,7 @@ partial class MainForm
         Bottom_Panel = new Panel();
         calculator_button = new Button();
         background_button = new Button();
-        analogClock1 = new AnalogClock.AnalogClock();
+        timer1 = new System.Windows.Forms.Timer(components);
         Top_Panel.SuspendLayout();
         Side_Panel.SuspendLayout();
         panel1.SuspendLayout();
@@ -165,6 +167,39 @@ partial class MainForm
         Side_Panel.Size = new Size(233, 768);
         Side_Panel.TabIndex = 0;
         // 
+        // analogClock1
+        // 
+        analogClock1.DrawHourHand = true;
+        analogClock1.DrawHourHandShadow = true;
+        analogClock1.DrawMinuteHand = true;
+        analogClock1.DrawMinuteHandShadow = true;
+        analogClock1.DrawSecondHand = true;
+        analogClock1.DropShadowColor = Color.Black;
+        analogClock1.DropShadowOffset = new Point(0, 0);
+        analogClock1.FaceColorHigh = Color.RoyalBlue;
+        analogClock1.FaceColorLow = Color.SkyBlue;
+        analogClock1.FaceGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+        analogClock1.FaceImage = null;
+        analogClock1.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Bold, GraphicsUnit.Point);
+        analogClock1.HourHandColor = Color.Gainsboro;
+        analogClock1.HourHandDropShadowColor = Color.Gray;
+        analogClock1.Location = new Point(9, 12);
+        analogClock1.MinuteHandColor = Color.WhiteSmoke;
+        analogClock1.MinuteHandDropShadowColor = Color.Gray;
+        analogClock1.MinuteHandTickStyle = AnalogClock.TickStyle.Normal;
+        analogClock1.Name = "analogClock1";
+        analogClock1.NumeralColor = Color.WhiteSmoke;
+        analogClock1.RimColorHigh = Color.RoyalBlue;
+        analogClock1.RimColorLow = Color.SkyBlue;
+        analogClock1.RimGradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
+        analogClock1.SecondHandColor = Color.Tomato;
+        analogClock1.SecondHandDropShadowColor = Color.Gray;
+        analogClock1.SecondHandEndCap = System.Drawing.Drawing2D.LineCap.Round;
+        analogClock1.SecondHandTickStyle = AnalogClock.TickStyle.Normal;
+        analogClock1.Size = new Size(210, 210);
+        analogClock1.TabIndex = 1;
+        analogClock1.Time = new DateTime(0L);
+        // 
         // panel1
         // 
         panel1.BackgroundImage = Properties.Resources.calendar;
@@ -262,38 +297,10 @@ partial class MainForm
         background_button.Text = "Background";
         background_button.UseVisualStyleBackColor = true;
         // 
-        // analogClock1
+        // timer1
         // 
-        analogClock1.DrawHourHand = true;
-        analogClock1.DrawHourHandShadow = true;
-        analogClock1.DrawMinuteHand = true;
-        analogClock1.DrawMinuteHandShadow = true;
-        analogClock1.DrawSecondHand = true;
-        analogClock1.DropShadowColor = Color.Black;
-        analogClock1.DropShadowOffset = new Point(0, 0);
-        analogClock1.FaceColorHigh = Color.RoyalBlue;
-        analogClock1.FaceColorLow = Color.SkyBlue;
-        analogClock1.FaceGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-        analogClock1.FaceImage = null;
-        analogClock1.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-        analogClock1.HourHandColor = Color.Gainsboro;
-        analogClock1.HourHandDropShadowColor = Color.Gray;
-        analogClock1.Location = new Point(9, 12);
-        analogClock1.MinuteHandColor = Color.WhiteSmoke;
-        analogClock1.MinuteHandDropShadowColor = Color.Gray;
-        analogClock1.MinuteHandTickStyle = AnalogClock.TickStyle.Normal;
-        analogClock1.Name = "analogClock1";
-        analogClock1.NumeralColor = Color.WhiteSmoke;
-        analogClock1.RimColorHigh = Color.RoyalBlue;
-        analogClock1.RimColorLow = Color.SkyBlue;
-        analogClock1.RimGradientMode = System.Drawing.Drawing2D.LinearGradientMode.ForwardDiagonal;
-        analogClock1.SecondHandColor = Color.Tomato;
-        analogClock1.SecondHandDropShadowColor = Color.Gray;
-        analogClock1.SecondHandEndCap = System.Drawing.Drawing2D.LineCap.Round;
-        analogClock1.SecondHandTickStyle = AnalogClock.TickStyle.Normal;
-        analogClock1.Size = new Size(218, 218);
-        analogClock1.TabIndex = 1;
-        analogClock1.Time = new DateTime(0L);
+        timer1.Enabled = true;
+        timer1.Tick += timer1_Tick;
         // 
         // MainForm
         // 
@@ -339,4 +346,5 @@ partial class MainForm
     private Label month_name_lbl;
     private Label day_in_week_lbl;
     private AnalogClock.AnalogClock analogClock1;
+    private System.Windows.Forms.Timer timer1;
 }
