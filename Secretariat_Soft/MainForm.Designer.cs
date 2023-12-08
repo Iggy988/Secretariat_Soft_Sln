@@ -37,6 +37,8 @@ partial class MainForm
         min_button = new Button();
         close_button = new Button();
         Side_Panel = new Panel();
+        user_name_lbl = new Label();
+        user_image = new PictureBox();
         analogClock1 = new AnalogClock.AnalogClock();
         panel1 = new Panel();
         day_in_week_lbl = new Label();
@@ -49,6 +51,7 @@ partial class MainForm
         timer1 = new System.Windows.Forms.Timer(components);
         Top_Panel.SuspendLayout();
         Side_Panel.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)user_image).BeginInit();
         panel1.SuspendLayout();
         Bottom_Panel.SuspendLayout();
         SuspendLayout();
@@ -158,6 +161,8 @@ partial class MainForm
         // Side_Panel
         // 
         Side_Panel.BackColor = Color.Gainsboro;
+        Side_Panel.Controls.Add(user_name_lbl);
+        Side_Panel.Controls.Add(user_image);
         Side_Panel.Controls.Add(analogClock1);
         Side_Panel.Controls.Add(panel1);
         Side_Panel.Dock = DockStyle.Left;
@@ -166,6 +171,29 @@ partial class MainForm
         Side_Panel.Name = "Side_Panel";
         Side_Panel.Size = new Size(233, 768);
         Side_Panel.TabIndex = 0;
+        // 
+        // user_name_lbl
+        // 
+        user_name_lbl.BorderStyle = BorderStyle.FixedSingle;
+        user_name_lbl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+        user_name_lbl.Location = new Point(26, 674);
+        user_name_lbl.Name = "user_name_lbl";
+        user_name_lbl.Size = new Size(184, 30);
+        user_name_lbl.TabIndex = 3;
+        user_name_lbl.Text = "Igor";
+        user_name_lbl.TextAlign = ContentAlignment.MiddleCenter;
+        // 
+        // user_image
+        // 
+        user_image.BorderStyle = BorderStyle.FixedSingle;
+        user_image.Image = Properties.Resources.default_user;
+        user_image.InitialImage = Properties.Resources.default_user;
+        user_image.Location = new Point(26, 498);
+        user_image.Name = "user_image";
+        user_image.Size = new Size(184, 173);
+        user_image.SizeMode = PictureBoxSizeMode.CenterImage;
+        user_image.TabIndex = 2;
+        user_image.TabStop = false;
         // 
         // analogClock1
         // 
@@ -321,6 +349,7 @@ partial class MainForm
         Load += MainForm_Load;
         Top_Panel.ResumeLayout(false);
         Side_Panel.ResumeLayout(false);
+        ((System.ComponentModel.ISupportInitialize)user_image).EndInit();
         panel1.ResumeLayout(false);
         panel1.PerformLayout();
         Bottom_Panel.ResumeLayout(false);
@@ -347,4 +376,6 @@ partial class MainForm
     private Label day_in_week_lbl;
     private AnalogClock.AnalogClock analogClock1;
     private System.Windows.Forms.Timer timer1;
+    private Label user_name_lbl;
+    private PictureBox user_image;
 }
