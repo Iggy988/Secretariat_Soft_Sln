@@ -29,6 +29,10 @@ partial class MainForm
     private void InitializeComponent()
     {
         components = new System.ComponentModel.Container();
+        TreeNode treeNode1 = new TreeNode("Incoming Letters");
+        TreeNode treeNode2 = new TreeNode("Outgoing Letters");
+        TreeNode treeNode3 = new TreeNode("My Letters", new TreeNode[] { treeNode1, treeNode2 });
+        TreeNode treeNode4 = new TreeNode("All Folders", new TreeNode[] { treeNode3 });
         Top_Panel = new Panel();
         help_button = new Button();
         tools_button = new Button();
@@ -49,11 +53,15 @@ partial class MainForm
         calculator_button = new Button();
         background_button = new Button();
         timer1 = new System.Windows.Forms.Timer(components);
+        tree_panel = new Panel();
+        expand_btn = new Button();
+        treeView1 = new TreeView();
         Top_Panel.SuspendLayout();
         Side_Panel.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)user_image).BeginInit();
         panel1.SuspendLayout();
         Bottom_Panel.SuspendLayout();
+        tree_panel.SuspendLayout();
         SuspendLayout();
         // 
         // Top_Panel
@@ -131,6 +139,7 @@ partial class MainForm
         data_entry_button.TextAlign = ContentAlignment.BottomCenter;
         data_entry_button.TextImageRelation = TextImageRelation.ImageAboveText;
         data_entry_button.UseVisualStyleBackColor = true;
+        data_entry_button.Click += data_entry_button_Click;
         // 
         // min_button
         // 
@@ -330,11 +339,50 @@ partial class MainForm
         timer1.Enabled = true;
         timer1.Tick += timer1_Tick;
         // 
+        // tree_panel
+        // 
+        tree_panel.BorderStyle = BorderStyle.FixedSingle;
+        tree_panel.Controls.Add(expand_btn);
+        tree_panel.Controls.Add(treeView1);
+        tree_panel.Location = new Point(239, 86);
+        tree_panel.Name = "tree_panel";
+        tree_panel.Size = new Size(390, 436);
+        tree_panel.TabIndex = 3;
+        tree_panel.Visible = false;
+        // 
+        // expand_btn
+        // 
+        expand_btn.BackgroundImageLayout = ImageLayout.None;
+        expand_btn.Location = new Point(278, 3);
+        expand_btn.Name = "expand_btn";
+        expand_btn.Size = new Size(45, 42);
+        expand_btn.TabIndex = 1;
+        expand_btn.UseVisualStyleBackColor = true;
+        expand_btn.Click += expand_btn_Click;
+        // 
+        // treeView1
+        // 
+        treeView1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+        treeView1.Location = new Point(3, 3);
+        treeView1.Name = "treeView1";
+        treeNode1.Name = "Incoming_Letters";
+        treeNode1.Text = "Incoming Letters";
+        treeNode2.Name = "Outgoing_Letters";
+        treeNode2.Text = "Outgoing Letters";
+        treeNode3.Name = "My_Letters";
+        treeNode3.Text = "My Letters";
+        treeNode4.Name = "All_Folders";
+        treeNode4.Text = "All Folders";
+        treeView1.Nodes.AddRange(new TreeNode[] { treeNode4 });
+        treeView1.Size = new Size(382, 428);
+        treeView1.TabIndex = 0;
+        // 
         // MainForm
         // 
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
         ClientSize = new Size(1162, 768);
+        Controls.Add(tree_panel);
         Controls.Add(Bottom_Panel);
         Controls.Add(Top_Panel);
         Controls.Add(Side_Panel);
@@ -353,6 +401,7 @@ partial class MainForm
         panel1.ResumeLayout(false);
         panel1.PerformLayout();
         Bottom_Panel.ResumeLayout(false);
+        tree_panel.ResumeLayout(false);
         ResumeLayout(false);
     }
 
@@ -378,4 +427,7 @@ partial class MainForm
     private System.Windows.Forms.Timer timer1;
     private Label user_name_lbl;
     private PictureBox user_image;
+    private Panel tree_panel;
+    private TreeView treeView1;
+    private Button expand_btn;
 }

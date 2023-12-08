@@ -36,6 +36,7 @@ public partial class MainForm : Form
         // -----------Load date-------------
         GetDateCal();
         // ---------------------------------
+        tree_panel.Visible = false;
     }
 
     void GetDateCal()
@@ -51,5 +52,15 @@ public partial class MainForm : Form
     private void timer1_Tick(object sender, EventArgs e)
     {
         analogClock1.Time = DateTime.Now;
+    }
+
+    private void data_entry_button_Click(object sender, EventArgs e)
+    {
+        tree_panel.Visible = !tree_panel.Visible;
+    }
+
+    private void expand_btn_Click(object sender, EventArgs e)
+    {
+
     }
 }
