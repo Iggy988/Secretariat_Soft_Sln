@@ -32,7 +32,8 @@ partial class MainForm
         TreeNode treeNode1 = new TreeNode("Incoming Letters");
         TreeNode treeNode2 = new TreeNode("Outgoing Letters");
         TreeNode treeNode3 = new TreeNode("My Letters", new TreeNode[] { treeNode1, treeNode2 });
-        TreeNode treeNode4 = new TreeNode("All Folders", new TreeNode[] { treeNode3 });
+        TreeNode treeNode4 = new TreeNode("All Folders", 2, 2, new TreeNode[] { treeNode3 });
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
         Top_Panel = new Panel();
         help_button = new Button();
         tools_button = new Button();
@@ -54,8 +55,10 @@ partial class MainForm
         background_button = new Button();
         timer1 = new System.Windows.Forms.Timer(components);
         tree_panel = new Panel();
+        collapse_btn = new Button();
         expand_btn = new Button();
-        treeView1 = new TreeView();
+        main_treeView = new TreeView();
+        imageList1 = new ImageList(components);
         Top_Panel.SuspendLayout();
         Side_Panel.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)user_image).BeginInit();
@@ -342,40 +345,77 @@ partial class MainForm
         // tree_panel
         // 
         tree_panel.BorderStyle = BorderStyle.FixedSingle;
+        tree_panel.Controls.Add(collapse_btn);
         tree_panel.Controls.Add(expand_btn);
-        tree_panel.Controls.Add(treeView1);
+        tree_panel.Controls.Add(main_treeView);
         tree_panel.Location = new Point(239, 86);
         tree_panel.Name = "tree_panel";
         tree_panel.Size = new Size(390, 436);
         tree_panel.TabIndex = 3;
         tree_panel.Visible = false;
         // 
+        // collapse_btn
+        // 
+        collapse_btn.BackgroundImageLayout = ImageLayout.None;
+        collapse_btn.Cursor = Cursors.Hand;
+        collapse_btn.Image = Properties.Resources.collapse;
+        collapse_btn.Location = new Point(352, 5);
+        collapse_btn.Name = "collapse_btn";
+        collapse_btn.Size = new Size(31, 30);
+        collapse_btn.TabIndex = 2;
+        collapse_btn.UseVisualStyleBackColor = true;
+        collapse_btn.Click += collapse_btn_Click;
+        // 
         // expand_btn
         // 
         expand_btn.BackgroundImageLayout = ImageLayout.None;
-        expand_btn.Location = new Point(278, 3);
+        expand_btn.Cursor = Cursors.Hand;
+        expand_btn.Image = Properties.Resources.expand;
+        expand_btn.Location = new Point(320, 5);
         expand_btn.Name = "expand_btn";
-        expand_btn.Size = new Size(45, 42);
+        expand_btn.Size = new Size(30, 30);
         expand_btn.TabIndex = 1;
         expand_btn.UseVisualStyleBackColor = true;
         expand_btn.Click += expand_btn_Click;
         // 
-        // treeView1
+        // main_treeView
         // 
-        treeView1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-        treeView1.Location = new Point(3, 3);
-        treeView1.Name = "treeView1";
+        main_treeView.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+        main_treeView.ImageIndex = 0;
+        main_treeView.ImageList = imageList1;
+        main_treeView.Indent = 35;
+        main_treeView.ItemHeight = 35;
+        main_treeView.Location = new Point(3, 3);
+        main_treeView.Name = "main_treeView";
+        treeNode1.ImageKey = "review.png";
         treeNode1.Name = "Incoming_Letters";
+        treeNode1.SelectedImageIndex = 3;
         treeNode1.Text = "Incoming Letters";
+        treeNode2.ImageKey = "kToolStripButton.png";
         treeNode2.Name = "Outgoing_Letters";
+        treeNode2.SelectedImageIndex = 1;
         treeNode2.Text = "Outgoing Letters";
         treeNode3.Name = "My_Letters";
+        treeNode3.SelectedImageIndex = 0;
         treeNode3.Text = "My Letters";
+        treeNode4.ImageIndex = 2;
         treeNode4.Name = "All_Folders";
+        treeNode4.SelectedImageIndex = 2;
         treeNode4.Text = "All Folders";
-        treeView1.Nodes.AddRange(new TreeNode[] { treeNode4 });
-        treeView1.Size = new Size(382, 428);
-        treeView1.TabIndex = 0;
+        main_treeView.Nodes.AddRange(new TreeNode[] { treeNode4 });
+        main_treeView.SelectedImageIndex = 0;
+        main_treeView.Size = new Size(382, 428);
+        main_treeView.TabIndex = 0;
+        // 
+        // imageList1
+        // 
+        imageList1.ColorDepth = ColorDepth.Depth32Bit;
+        imageList1.ImageStream = (ImageListStreamer)resources.GetObject("imageList1.ImageStream");
+        imageList1.TransparentColor = Color.Transparent;
+        imageList1.Images.SetKeyName(0, "dep_1.png");
+        imageList1.Images.SetKeyName(1, "kToolStripButton.png");
+        imageList1.Images.SetKeyName(2, "radMenuItem2.png");
+        imageList1.Images.SetKeyName(3, "review.png");
         // 
         // MainForm
         // 
@@ -428,6 +468,8 @@ partial class MainForm
     private Label user_name_lbl;
     private PictureBox user_image;
     private Panel tree_panel;
-    private TreeView treeView1;
+    private TreeView main_treeView;
     private Button expand_btn;
+    private Button collapse_btn;
+    private ImageList imageList1;
 }

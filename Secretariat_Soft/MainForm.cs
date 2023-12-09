@@ -37,6 +37,8 @@ public partial class MainForm : Form
         GetDateCal();
         // ---------------------------------
         tree_panel.Visible = false;
+        main_treeView.ExpandAll();
+        //----------------------------------
     }
 
     void GetDateCal()
@@ -61,6 +63,11 @@ public partial class MainForm : Form
 
     private void expand_btn_Click(object sender, EventArgs e)
     {
+        main_treeView.ExpandAll();
+    }
 
+    private void collapse_btn_Click(object sender, EventArgs e)
+    {
+        main_treeView.CollapseAll();
     }
 }
