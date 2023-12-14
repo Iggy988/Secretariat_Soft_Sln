@@ -18,6 +18,14 @@ public partial class In_Letters_Form : Form
 
     private void In_Letters_Form_Load(object sender, EventArgs e)
     {
+        try
+        {
+            sa_In_LettersTableAdapter1.Fill(letters1.Sa_In_Letters);
+        }
+        catch (Exception ex)
+        {
 
+            MessageBox.Show("Error! " + ex.Message);
+        }
     }
 }
