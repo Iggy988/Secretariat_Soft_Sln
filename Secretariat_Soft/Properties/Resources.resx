@@ -154,6 +154,18 @@
   <data name="min_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\min_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="nav_first" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav.first.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_last" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav.last.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_next" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav.next.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nav_previous" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nav.previous.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="office_automation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\office_automation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

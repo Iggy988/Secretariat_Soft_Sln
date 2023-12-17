@@ -32,6 +32,12 @@ partial class In_Letters_Form
         DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
         Top_Toolstrip = new ToolStrip();
         Bottom_ToolStrip = new ToolStrip();
+        FirstButt = new ToolStripButton();
+        SecondButt = new ToolStripButton();
+        position_tbox = new ToolStripTextBox();
+        total_records_lbl = new ToolStripLabel();
+        ThirdButt = new ToolStripButton();
+        FourthButt = new ToolStripButton();
         dataGridView1 = new DataGridView();
         iDDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
         regDateDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
@@ -56,6 +62,7 @@ partial class In_Letters_Form
         in_letters_bindingSource1 = new BindingSource(components);
         letters1 = new DataSet.Letters();
         sa_In_LettersTableAdapter1 = new DataSet.LettersTableAdapters.Sa_In_LettersTableAdapter();
+        Bottom_ToolStrip.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
         ((System.ComponentModel.ISupportInitialize)in_letters_bindingSource1).BeginInit();
         ((System.ComponentModel.ISupportInitialize)letters1).BeginInit();
@@ -74,11 +81,68 @@ partial class In_Letters_Form
         // 
         Bottom_ToolStrip.AutoSize = false;
         Bottom_ToolStrip.Dock = DockStyle.Bottom;
-        Bottom_ToolStrip.Location = new Point(0, 550);
+        Bottom_ToolStrip.Items.AddRange(new ToolStripItem[] { FirstButt, SecondButt, position_tbox, total_records_lbl, ThirdButt, FourthButt });
+        Bottom_ToolStrip.Location = new Point(0, 577);
         Bottom_ToolStrip.Name = "Bottom_ToolStrip";
-        Bottom_ToolStrip.Size = new Size(1076, 77);
+        Bottom_ToolStrip.Size = new Size(1076, 50);
         Bottom_ToolStrip.TabIndex = 1;
         Bottom_ToolStrip.Text = "toolStrip2";
+        // 
+        // FirstButt
+        // 
+        FirstButt.AutoSize = false;
+        FirstButt.DisplayStyle = ToolStripItemDisplayStyle.Image;
+        FirstButt.Image = Properties.Resources.nav_first;
+        FirstButt.ImageTransparentColor = Color.Magenta;
+        FirstButt.Name = "FirstButt";
+        FirstButt.Size = new Size(35, 35);
+        FirstButt.Text = "toolStripButton1";
+        FirstButt.Click += FirstButt_Click;
+        // 
+        // SecondButt
+        // 
+        SecondButt.AutoSize = false;
+        SecondButt.DisplayStyle = ToolStripItemDisplayStyle.Image;
+        SecondButt.Image = Properties.Resources.nav_previous;
+        SecondButt.ImageTransparentColor = Color.Magenta;
+        SecondButt.Name = "SecondButt";
+        SecondButt.Size = new Size(35, 35);
+        SecondButt.Text = "toolStripButton1";
+        SecondButt.Click += SecondButt_Click;
+        // 
+        // position_tbox
+        // 
+        position_tbox.Name = "position_tbox";
+        position_tbox.Size = new Size(50, 50);
+        position_tbox.TextBoxTextAlign = HorizontalAlignment.Center;
+        // 
+        // total_records_lbl
+        // 
+        total_records_lbl.Name = "total_records_lbl";
+        total_records_lbl.Size = new Size(13, 47);
+        total_records_lbl.Text = "0";
+        // 
+        // ThirdButt
+        // 
+        ThirdButt.AutoSize = false;
+        ThirdButt.DisplayStyle = ToolStripItemDisplayStyle.Image;
+        ThirdButt.Image = Properties.Resources.nav_next;
+        ThirdButt.ImageTransparentColor = Color.Magenta;
+        ThirdButt.Name = "ThirdButt";
+        ThirdButt.Size = new Size(35, 35);
+        ThirdButt.Text = "toolStripButton1";
+        ThirdButt.Click += ThirdButt_Click;
+        // 
+        // FourthButt
+        // 
+        FourthButt.AutoSize = false;
+        FourthButt.DisplayStyle = ToolStripItemDisplayStyle.Image;
+        FourthButt.Image = Properties.Resources.nav_last;
+        FourthButt.ImageTransparentColor = Color.Magenta;
+        FourthButt.Name = "FourthButt";
+        FourthButt.Size = new Size(35, 35);
+        FourthButt.Text = "toolStripButton1";
+        FourthButt.Click += FourthButt_Click;
         // 
         // dataGridView1
         // 
@@ -275,6 +339,8 @@ partial class In_Letters_Form
         StartPosition = FormStartPosition.CenterScreen;
         Text = "Incoming Letters List";
         Load += In_Letters_Form_Load;
+        Bottom_ToolStrip.ResumeLayout(false);
+        Bottom_ToolStrip.PerformLayout();
         ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
         ((System.ComponentModel.ISupportInitialize)in_letters_bindingSource1).EndInit();
         ((System.ComponentModel.ISupportInitialize)letters1).EndInit();
@@ -309,4 +375,10 @@ partial class In_Letters_Form
     private DataGridViewTextBoxColumn userIdDataGridViewTextBoxColumn;
     private DataGridViewTextBoxColumn sysDateDataGridViewTextBoxColumn;
     private DataGridViewTextBoxColumn sysTimeDataGridViewTextBoxColumn;
+    private ToolStripButton FirstButt;
+    private ToolStripButton SecondButt;
+    private ToolStripButton ThirdButt;
+    private ToolStripButton FourthButt;
+    private ToolStripTextBox position_tbox;
+    private ToolStripLabel total_records_lbl;
 }
