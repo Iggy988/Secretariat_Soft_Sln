@@ -69,6 +69,8 @@ partial class In_Letters_Form
         in_letters_bindingSource1 = new BindingSource(components);
         letters1 = new DataSet.Letters();
         sa_In_LettersTableAdapter1 = new DataSet.LettersTableAdapters.Sa_In_LettersTableAdapter();
+        search_pannel2 = new Panel();
+        search_pannel1 = new Panel();
         Top_Toolstrip.SuspendLayout();
         Bottom_ToolStrip.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -146,6 +148,7 @@ partial class In_Letters_Form
         search_butt.Size = new Size(100, 67);
         search_butt.Text = "Search F3";
         search_butt.TextImageRelation = TextImageRelation.ImageAboveText;
+        search_butt.Click += search_butt_Click;
         // 
         // toolStripSeparator2
         // 
@@ -405,12 +408,34 @@ partial class In_Letters_Form
         // 
         sa_In_LettersTableAdapter1.ClearBeforeFill = true;
         // 
+        // search_pannel2
+        // 
+        search_pannel2.BackColor = Color.Gainsboro;
+        search_pannel2.Location = new Point(544, 104);
+        search_pannel2.Name = "search_pannel2";
+        search_pannel2.Size = new Size(412, 254);
+        search_pannel2.TabIndex = 3;
+        search_pannel2.Visible = false;
+        // 
+        // search_pannel1
+        // 
+        search_pannel1.BackColor = Color.Gainsboro;
+        search_pannel1.BackgroundImage = Properties.Resources.down_icon;
+        search_pannel1.BackgroundImageLayout = ImageLayout.Stretch;
+        search_pannel1.Location = new Point(877, 71);
+        search_pannel1.Name = "search_pannel1";
+        search_pannel1.Size = new Size(79, 34);
+        search_pannel1.TabIndex = 4;
+        search_pannel1.Visible = false;
+        // 
         // In_Letters_Form
         // 
         AutoScaleDimensions = new SizeF(7F, 17F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.WhiteSmoke;
         ClientSize = new Size(1076, 627);
+        Controls.Add(search_pannel1);
+        Controls.Add(search_pannel2);
         Controls.Add(dataGridView1);
         Controls.Add(Bottom_ToolStrip);
         Controls.Add(Top_Toolstrip);
@@ -473,4 +498,6 @@ partial class In_Letters_Form
     private ToolStripButton search_butt;
     private ToolStripSeparator toolStripSeparator3;
     private ToolStripSeparator toolStripSeparator4;
+    private Panel search_pannel2;
+    private Panel search_pannel1;
 }

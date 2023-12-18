@@ -46,7 +46,7 @@ public partial class In_Letters_Form : Form
     {
         in_letters_bindingSource1.MoveNext();
         recordPosition();
-        
+
     }
 
     private void FourthButt_Click(object sender, EventArgs e)
@@ -55,7 +55,7 @@ public partial class In_Letters_Form : Form
         recordPosition();
     }
 
-    
+
 
     void recordPosition()
     {
@@ -65,5 +65,11 @@ public partial class In_Letters_Form : Form
         position_tbox.Text = currentPostion.ToString();
 
         total_records_lbl.Text = " of " + in_letters_bindingSource1.Count.ToString();
+    }
+
+    private void search_butt_Click(object sender, EventArgs e)
+    {
+        search_pannel1.Visible = !search_pannel1.Visible;
+        search_pannel2.Visible = !search_pannel2.Visible;
     }
 }
