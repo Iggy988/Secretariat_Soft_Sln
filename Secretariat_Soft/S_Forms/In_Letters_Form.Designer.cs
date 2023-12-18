@@ -29,8 +29,15 @@ partial class In_Letters_Form
     private void InitializeComponent()
     {
         components = new System.ComponentModel.Container();
-        DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+        DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
         Top_Toolstrip = new ToolStrip();
+        add_butt = new ToolStripButton();
+        toolStripSeparator3 = new ToolStripSeparator();
+        print_butt = new ToolStripButton();
+        toolStripSeparator1 = new ToolStripSeparator();
+        search_butt = new ToolStripButton();
+        toolStripSeparator2 = new ToolStripSeparator();
+        toolStripSeparator4 = new ToolStripSeparator();
         Bottom_ToolStrip = new ToolStrip();
         FirstButt = new ToolStripButton();
         SecondButt = new ToolStripButton();
@@ -62,6 +69,7 @@ partial class In_Letters_Form
         in_letters_bindingSource1 = new BindingSource(components);
         letters1 = new DataSet.Letters();
         sa_In_LettersTableAdapter1 = new DataSet.LettersTableAdapters.Sa_In_LettersTableAdapter();
+        Top_Toolstrip.SuspendLayout();
         Bottom_ToolStrip.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
         ((System.ComponentModel.ISupportInitialize)in_letters_bindingSource1).BeginInit();
@@ -71,15 +79,90 @@ partial class In_Letters_Form
         // Top_Toolstrip
         // 
         Top_Toolstrip.AutoSize = false;
+        Top_Toolstrip.Items.AddRange(new ToolStripItem[] { add_butt, toolStripSeparator3, print_butt, toolStripSeparator1, search_butt, toolStripSeparator2, toolStripSeparator4 });
         Top_Toolstrip.Location = new Point(0, 0);
         Top_Toolstrip.Name = "Top_Toolstrip";
         Top_Toolstrip.Size = new Size(1076, 70);
         Top_Toolstrip.TabIndex = 0;
         Top_Toolstrip.Text = "toolStrip1";
         // 
+        // add_butt
+        // 
+        add_butt.BackColor = Color.WhiteSmoke;
+        add_butt.BackgroundImageLayout = ImageLayout.Stretch;
+        add_butt.Checked = true;
+        add_butt.CheckState = CheckState.Indeterminate;
+        add_butt.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+        add_butt.Image = Properties.Resources.butt_edit;
+        add_butt.ImageScaling = ToolStripItemImageScaling.None;
+        add_butt.ImageTransparentColor = Color.Magenta;
+        add_butt.Name = "add_butt";
+        add_butt.Size = new Size(157, 67);
+        add_butt.Text = "Add | Edit Document F2";
+        add_butt.TextImageRelation = TextImageRelation.ImageAboveText;
+        // 
+        // toolStripSeparator3
+        // 
+        toolStripSeparator3.Alignment = ToolStripItemAlignment.Right;
+        toolStripSeparator3.Name = "toolStripSeparator3";
+        toolStripSeparator3.Size = new Size(6, 70);
+        // 
+        // print_butt
+        // 
+        print_butt.Alignment = ToolStripItemAlignment.Right;
+        print_butt.AutoSize = false;
+        print_butt.BackColor = Color.WhiteSmoke;
+        print_butt.BackgroundImageLayout = ImageLayout.Stretch;
+        print_butt.Checked = true;
+        print_butt.CheckState = CheckState.Indeterminate;
+        print_butt.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+        print_butt.Image = Properties.Resources.butt_print;
+        print_butt.ImageScaling = ToolStripItemImageScaling.None;
+        print_butt.ImageTransparentColor = Color.Magenta;
+        print_butt.Name = "print_butt";
+        print_butt.Size = new Size(100, 67);
+        print_butt.Text = "Print F4";
+        print_butt.TextImageRelation = TextImageRelation.ImageAboveText;
+        // 
+        // toolStripSeparator1
+        // 
+        toolStripSeparator1.Alignment = ToolStripItemAlignment.Right;
+        toolStripSeparator1.Name = "toolStripSeparator1";
+        toolStripSeparator1.Size = new Size(6, 70);
+        // 
+        // search_butt
+        // 
+        search_butt.Alignment = ToolStripItemAlignment.Right;
+        search_butt.AutoSize = false;
+        search_butt.BackColor = Color.WhiteSmoke;
+        search_butt.BackgroundImageLayout = ImageLayout.Stretch;
+        search_butt.Checked = true;
+        search_butt.CheckState = CheckState.Indeterminate;
+        search_butt.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+        search_butt.Image = Properties.Resources.butt_search_2;
+        search_butt.ImageScaling = ToolStripItemImageScaling.None;
+        search_butt.ImageTransparentColor = Color.Magenta;
+        search_butt.Name = "search_butt";
+        search_butt.Size = new Size(100, 67);
+        search_butt.Text = "Search F3";
+        search_butt.TextImageRelation = TextImageRelation.ImageAboveText;
+        // 
+        // toolStripSeparator2
+        // 
+        toolStripSeparator2.Alignment = ToolStripItemAlignment.Right;
+        toolStripSeparator2.Name = "toolStripSeparator2";
+        toolStripSeparator2.Size = new Size(6, 70);
+        // 
+        // toolStripSeparator4
+        // 
+        toolStripSeparator4.Name = "toolStripSeparator4";
+        toolStripSeparator4.Size = new Size(6, 70);
+        // 
         // Bottom_ToolStrip
         // 
         Bottom_ToolStrip.AutoSize = false;
+        Bottom_ToolStrip.BackgroundImage = Properties.Resources.bg;
+        Bottom_ToolStrip.BackgroundImageLayout = ImageLayout.Stretch;
         Bottom_ToolStrip.Dock = DockStyle.Bottom;
         Bottom_ToolStrip.Items.AddRange(new ToolStripItem[] { FirstButt, SecondButt, position_tbox, total_records_lbl, ThirdButt, FourthButt });
         Bottom_ToolStrip.Location = new Point(0, 577);
@@ -149,8 +232,8 @@ partial class In_Letters_Form
         dataGridView1.AllowUserToAddRows = false;
         dataGridView1.AllowUserToDeleteRows = false;
         dataGridView1.AllowUserToOrderColumns = true;
-        dataGridViewCellStyle1.BackColor = Color.WhiteSmoke;
-        dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+        dataGridViewCellStyle2.BackColor = Color.WhiteSmoke;
+        dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
         dataGridView1.AutoGenerateColumns = false;
         dataGridView1.BackgroundColor = Color.WhiteSmoke;
         dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -339,6 +422,8 @@ partial class In_Letters_Form
         StartPosition = FormStartPosition.CenterScreen;
         Text = "Incoming Letters List";
         Load += In_Letters_Form_Load;
+        Top_Toolstrip.ResumeLayout(false);
+        Top_Toolstrip.PerformLayout();
         Bottom_ToolStrip.ResumeLayout(false);
         Bottom_ToolStrip.PerformLayout();
         ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -381,4 +466,11 @@ partial class In_Letters_Form
     private ToolStripButton FourthButt;
     private ToolStripTextBox position_tbox;
     private ToolStripLabel total_records_lbl;
+    private ToolStripButton print_butt;
+    private ToolStripButton add_butt;
+    private ToolStripSeparator toolStripSeparator2;
+    private ToolStripSeparator toolStripSeparator1;
+    private ToolStripButton search_butt;
+    private ToolStripSeparator toolStripSeparator3;
+    private ToolStripSeparator toolStripSeparator4;
 }
