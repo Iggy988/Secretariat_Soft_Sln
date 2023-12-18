@@ -72,4 +72,21 @@ public partial class In_Letters_Form : Form
         search_pannel1.Visible = !search_pannel1.Visible;
         search_pannel2.Visible = !search_pannel2.Visible;
     }
+
+    private void search_panel_butt_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            long id;
+            long.TryParse(search_textbox.Text, out id);
+            
+            sa_In_LettersTableAdapter1.FillBy_ID(letters1.Sa_In_Letters, id);
+            recordPosition();
+        }
+        catch (Exception ex)
+        {
+
+            MessageBox.Show("Error! " + ex.Message);
+        }
+    }
 }

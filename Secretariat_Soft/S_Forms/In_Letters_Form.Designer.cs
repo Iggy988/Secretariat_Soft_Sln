@@ -29,7 +29,7 @@ partial class In_Letters_Form
     private void InitializeComponent()
     {
         components = new System.ComponentModel.Container();
-        DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+        DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
         Top_Toolstrip = new ToolStrip();
         add_butt = new ToolStripButton();
         toolStripSeparator3 = new ToolStripSeparator();
@@ -70,12 +70,16 @@ partial class In_Letters_Form
         letters1 = new DataSet.Letters();
         sa_In_LettersTableAdapter1 = new DataSet.LettersTableAdapters.Sa_In_LettersTableAdapter();
         search_pannel2 = new Panel();
+        search_panel_butt = new Button();
+        search_textbox = new TextBox();
+        search_id_lbl = new Label();
         search_pannel1 = new Panel();
         Top_Toolstrip.SuspendLayout();
         Bottom_ToolStrip.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
         ((System.ComponentModel.ISupportInitialize)in_letters_bindingSource1).BeginInit();
         ((System.ComponentModel.ISupportInitialize)letters1).BeginInit();
+        search_pannel2.SuspendLayout();
         SuspendLayout();
         // 
         // Top_Toolstrip
@@ -235,8 +239,8 @@ partial class In_Letters_Form
         dataGridView1.AllowUserToAddRows = false;
         dataGridView1.AllowUserToDeleteRows = false;
         dataGridView1.AllowUserToOrderColumns = true;
-        dataGridViewCellStyle2.BackColor = Color.WhiteSmoke;
-        dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+        dataGridViewCellStyle1.BackColor = Color.WhiteSmoke;
+        dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
         dataGridView1.AutoGenerateColumns = false;
         dataGridView1.BackgroundColor = Color.WhiteSmoke;
         dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -411,11 +415,46 @@ partial class In_Letters_Form
         // search_pannel2
         // 
         search_pannel2.BackColor = Color.Gainsboro;
+        search_pannel2.Controls.Add(search_panel_butt);
+        search_pannel2.Controls.Add(search_textbox);
+        search_pannel2.Controls.Add(search_id_lbl);
         search_pannel2.Location = new Point(544, 104);
         search_pannel2.Name = "search_pannel2";
-        search_pannel2.Size = new Size(412, 254);
+        search_pannel2.Size = new Size(412, 221);
         search_pannel2.TabIndex = 3;
         search_pannel2.Visible = false;
+        // 
+        // search_panel_butt
+        // 
+        search_panel_butt.Cursor = Cursors.Hand;
+        search_panel_butt.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+        search_panel_butt.Image = Properties.Resources.butt_search;
+        search_panel_butt.Location = new Point(243, 6);
+        search_panel_butt.Name = "search_panel_butt";
+        search_panel_butt.Size = new Size(128, 58);
+        search_panel_butt.TabIndex = 4;
+        search_panel_butt.Text = "Search ID";
+        search_panel_butt.TextImageRelation = TextImageRelation.ImageBeforeText;
+        search_panel_butt.UseVisualStyleBackColor = true;
+        search_panel_butt.Click += search_panel_butt_Click;
+        // 
+        // search_textbox
+        // 
+        search_textbox.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+        search_textbox.Location = new Point(50, 22);
+        search_textbox.Name = "search_textbox";
+        search_textbox.Size = new Size(187, 29);
+        search_textbox.TabIndex = 1;
+        // 
+        // search_id_lbl
+        // 
+        search_id_lbl.AutoSize = true;
+        search_id_lbl.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+        search_id_lbl.Location = new Point(18, 25);
+        search_id_lbl.Name = "search_id_lbl";
+        search_id_lbl.Size = new Size(32, 24);
+        search_id_lbl.TabIndex = 0;
+        search_id_lbl.Text = "ID:";
         // 
         // search_pannel1
         // 
@@ -454,6 +493,8 @@ partial class In_Letters_Form
         ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
         ((System.ComponentModel.ISupportInitialize)in_letters_bindingSource1).EndInit();
         ((System.ComponentModel.ISupportInitialize)letters1).EndInit();
+        search_pannel2.ResumeLayout(false);
+        search_pannel2.PerformLayout();
         ResumeLayout(false);
     }
 
@@ -500,4 +541,7 @@ partial class In_Letters_Form
     private ToolStripSeparator toolStripSeparator4;
     private Panel search_pannel2;
     private Panel search_pannel1;
+    private Label search_id_lbl;
+    private TextBox search_textbox;
+    private Button search_panel_butt;
 }
