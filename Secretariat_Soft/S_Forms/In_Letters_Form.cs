@@ -16,6 +16,16 @@ public partial class In_Letters_Form : Form
         InitializeComponent();
     }
 
+    void recordPosition()
+    {
+        int currentPostion;
+        currentPostion = in_letters_bindingSource1.Position;
+        currentPostion += 1;
+        position_tbox.Text = currentPostion.ToString();
+
+        total_records_lbl.Text = " of " + in_letters_bindingSource1.Count.ToString();
+    }
+
     private void In_Letters_Form_Load(object sender, EventArgs e)
     {
         try
@@ -95,13 +105,22 @@ public partial class In_Letters_Form : Form
         }
     }
 
-    void recordPosition()
-    {
-        int currentPostion;
-        currentPostion = in_letters_bindingSource1.Position;
-        currentPostion += 1;
-        position_tbox.Text = currentPostion.ToString();
+   
 
-        total_records_lbl.Text = " of " + in_letters_bindingSource1.Count.ToString();
+    private void search_date_butt_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            string d1, d2;
+            d1 = dateTimePicker1.Value.ToString();
+            d2 = dateTimePicker2.Value.ToString();
+            sa_In_LettersTableAdapter1.FillBy_regdate(letters1.Sa_In_Letters, d1, d2);
+            recordPosition();
+        }
+        catch (Exception ex)
+        {
+
+            MessageBox.Show("Error! " + ex.Message);
+        }
     }
 }

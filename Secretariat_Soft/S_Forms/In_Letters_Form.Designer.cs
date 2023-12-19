@@ -29,7 +29,7 @@ partial class In_Letters_Form
     private void InitializeComponent()
     {
         components = new System.ComponentModel.Container();
-        DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+        DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
         Top_Toolstrip = new ToolStrip();
         add_butt = new ToolStripButton();
         toolStripSeparator3 = new ToolStripSeparator();
@@ -70,6 +70,10 @@ partial class In_Letters_Form
         letters1 = new DataSet.Letters();
         sa_In_LettersTableAdapter1 = new DataSet.LettersTableAdapters.Sa_In_LettersTableAdapter();
         search_pannel2 = new Panel();
+        label2 = new Label();
+        dateTimePicker2 = new DateTimePicker();
+        dateTimePicker1 = new DateTimePicker();
+        label1 = new Label();
         searc_subject_like_butt = new Button();
         search_subject_textbox = new TextBox();
         search_panel_butt = new Button();
@@ -77,6 +81,7 @@ partial class In_Letters_Form
         search_textbox = new TextBox();
         search_id_lbl = new Label();
         search_pannel1 = new Panel();
+        search_date_butt = new Button();
         Top_Toolstrip.SuspendLayout();
         Bottom_ToolStrip.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -242,8 +247,8 @@ partial class In_Letters_Form
         dataGridView1.AllowUserToAddRows = false;
         dataGridView1.AllowUserToDeleteRows = false;
         dataGridView1.AllowUserToOrderColumns = true;
-        dataGridViewCellStyle1.BackColor = Color.WhiteSmoke;
-        dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+        dataGridViewCellStyle2.BackColor = Color.WhiteSmoke;
+        dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
         dataGridView1.AutoGenerateColumns = false;
         dataGridView1.BackgroundColor = Color.WhiteSmoke;
         dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -418,17 +423,60 @@ partial class In_Letters_Form
         // search_pannel2
         // 
         search_pannel2.BackColor = Color.Gainsboro;
+        search_pannel2.Controls.Add(search_date_butt);
+        search_pannel2.Controls.Add(label2);
+        search_pannel2.Controls.Add(dateTimePicker2);
+        search_pannel2.Controls.Add(dateTimePicker1);
+        search_pannel2.Controls.Add(label1);
         search_pannel2.Controls.Add(searc_subject_like_butt);
         search_pannel2.Controls.Add(search_subject_textbox);
         search_pannel2.Controls.Add(search_panel_butt);
         search_pannel2.Controls.Add(subject_like_lbl);
         search_pannel2.Controls.Add(search_textbox);
         search_pannel2.Controls.Add(search_id_lbl);
-        search_pannel2.Location = new Point(477, 104);
+        search_pannel2.Location = new Point(495, 104);
         search_pannel2.Name = "search_pannel2";
-        search_pannel2.Size = new Size(479, 221);
+        search_pannel2.Size = new Size(461, 221);
         search_pannel2.TabIndex = 3;
         search_pannel2.Visible = false;
+        // 
+        // label2
+        // 
+        label2.AutoSize = true;
+        label2.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+        label2.Location = new Point(141, 174);
+        label2.Name = "label2";
+        label2.Size = new Size(30, 16);
+        label2.TabIndex = 8;
+        label2.Text = "To:";
+        // 
+        // dateTimePicker2
+        // 
+        dateTimePicker2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        dateTimePicker2.Format = DateTimePickerFormat.Short;
+        dateTimePicker2.Location = new Point(173, 170);
+        dateTimePicker2.Name = "dateTimePicker2";
+        dateTimePicker2.Size = new Size(138, 25);
+        dateTimePicker2.TabIndex = 7;
+        // 
+        // dateTimePicker1
+        // 
+        dateTimePicker1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        dateTimePicker1.Format = DateTimePickerFormat.Short;
+        dateTimePicker1.Location = new Point(173, 124);
+        dateTimePicker1.Name = "dateTimePicker1";
+        dateTimePicker1.Size = new Size(138, 25);
+        dateTimePicker1.TabIndex = 6;
+        // 
+        // label1
+        // 
+        label1.AutoSize = true;
+        label1.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+        label1.Location = new Point(55, 131);
+        label1.Name = "label1";
+        label1.Size = new Size(116, 16);
+        label1.TabIndex = 5;
+        label1.Text = "Reg Date From:";
         // 
         // searc_subject_like_butt
         // 
@@ -447,9 +495,9 @@ partial class In_Letters_Form
         // search_subject_textbox
         // 
         search_subject_textbox.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        search_subject_textbox.Location = new Point(121, 77);
+        search_subject_textbox.Location = new Point(173, 77);
         search_subject_textbox.Name = "search_subject_textbox";
-        search_subject_textbox.Size = new Size(190, 22);
+        search_subject_textbox.Size = new Size(138, 22);
         search_subject_textbox.TabIndex = 1;
         // 
         // search_panel_butt
@@ -471,7 +519,7 @@ partial class In_Letters_Form
         // 
         subject_like_lbl.AutoSize = true;
         subject_like_lbl.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-        subject_like_lbl.Location = new Point(18, 80);
+        subject_like_lbl.Location = new Point(75, 80);
         subject_like_lbl.Name = "subject_like_lbl";
         subject_like_lbl.Size = new Size(96, 16);
         subject_like_lbl.TabIndex = 0;
@@ -480,16 +528,16 @@ partial class In_Letters_Form
         // search_textbox
         // 
         search_textbox.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        search_textbox.Location = new Point(121, 22);
+        search_textbox.Location = new Point(173, 22);
         search_textbox.Name = "search_textbox";
-        search_textbox.Size = new Size(190, 22);
+        search_textbox.Size = new Size(138, 22);
         search_textbox.TabIndex = 1;
         // 
         // search_id_lbl
         // 
         search_id_lbl.AutoSize = true;
         search_id_lbl.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-        search_id_lbl.Location = new Point(94, 26);
+        search_id_lbl.Location = new Point(145, 26);
         search_id_lbl.Name = "search_id_lbl";
         search_id_lbl.Size = new Size(26, 16);
         search_id_lbl.TabIndex = 0;
@@ -505,6 +553,20 @@ partial class In_Letters_Form
         search_pannel1.Size = new Size(79, 34);
         search_pannel1.TabIndex = 4;
         search_pannel1.Visible = false;
+        // 
+        // search_date_butt
+        // 
+        search_date_butt.Cursor = Cursors.Hand;
+        search_date_butt.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+        search_date_butt.Image = Properties.Resources.butt_search;
+        search_date_butt.Location = new Point(317, 164);
+        search_date_butt.Name = "search_date_butt";
+        search_date_butt.Size = new Size(131, 31);
+        search_date_butt.TabIndex = 9;
+        search_date_butt.Text = "Search";
+        search_date_butt.TextImageRelation = TextImageRelation.ImageBeforeText;
+        search_date_butt.UseVisualStyleBackColor = true;
+        search_date_butt.Click += search_date_butt_Click;
         // 
         // In_Letters_Form
         // 
@@ -586,4 +648,9 @@ partial class In_Letters_Form
     private Button searc_subject_like_butt;
     private TextBox search_subject_textbox;
     private Label subject_like_lbl;
+    private Label label1;
+    private DateTimePicker dateTimePicker1;
+    private Label label2;
+    private DateTimePicker dateTimePicker2;
+    private Button search_date_butt;
 }
