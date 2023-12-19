@@ -56,17 +56,6 @@ public partial class In_Letters_Form : Form
     }
 
 
-
-    void recordPosition()
-    {
-        int currentPostion;
-        currentPostion = in_letters_bindingSource1.Position;
-        currentPostion += 1;
-        position_tbox.Text = currentPostion.ToString();
-
-        total_records_lbl.Text = " of " + in_letters_bindingSource1.Count.ToString();
-    }
-
     private void search_butt_Click(object sender, EventArgs e)
     {
         search_pannel1.Visible = !search_pannel1.Visible;
@@ -79,7 +68,7 @@ public partial class In_Letters_Form : Form
         {
             long id;
             long.TryParse(search_textbox.Text, out id);
-            
+
             sa_In_LettersTableAdapter1.FillBy_ID(letters1.Sa_In_Letters, id);
             recordPosition();
         }
@@ -88,5 +77,31 @@ public partial class In_Letters_Form : Form
 
             MessageBox.Show("Error! " + ex.Message);
         }
+    }
+
+
+    private void searc_subject_like_butt_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            var searchString = "%" + search_subject_textbox.Text + "%";
+            sa_In_LettersTableAdapter1.FillBy_subject_like(letters1.Sa_In_Letters, searchString);
+            recordPosition();
+        }
+        catch (Exception ex)
+        {
+
+            MessageBox.Show("Error! " + ex.Message);
+        }
+    }
+
+    void recordPosition()
+    {
+        int currentPostion;
+        currentPostion = in_letters_bindingSource1.Position;
+        currentPostion += 1;
+        position_tbox.Text = currentPostion.ToString();
+
+        total_records_lbl.Text = " of " + in_letters_bindingSource1.Count.ToString();
     }
 }

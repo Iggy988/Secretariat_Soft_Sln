@@ -70,7 +70,10 @@ partial class In_Letters_Form
         letters1 = new DataSet.Letters();
         sa_In_LettersTableAdapter1 = new DataSet.LettersTableAdapters.Sa_In_LettersTableAdapter();
         search_pannel2 = new Panel();
+        searc_subject_like_butt = new Button();
+        search_subject_textbox = new TextBox();
         search_panel_butt = new Button();
+        subject_like_lbl = new Label();
         search_textbox = new TextBox();
         search_id_lbl = new Label();
         search_pannel1 = new Panel();
@@ -246,7 +249,7 @@ partial class In_Letters_Form
         dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
         dataGridView1.Columns.AddRange(new DataGridViewColumn[] { iDDataGridViewTextBoxColumn, regDateDataGridViewTextBoxColumn, subjectDataGridViewTextBoxColumn, letterNumberDataGridViewTextBoxColumn, letterTimeDataGridViewTextBoxColumn, recivedDateDataGridViewTextBoxColumn, letterTypeDataGridViewTextBoxColumn, senderDataGridViewTextBoxColumn, recipientDataGridViewTextBoxColumn, reciveMethodDataGridViewTextBoxColumn, groupNameDataGridViewTextBoxColumn, priorityDataGridViewTextBoxColumn, pageCountDataGridViewTextBoxColumn, deadlineDataGridViewTextBoxColumn, refDocDataGridViewTextBoxColumn, docSummaryDataGridViewTextBoxColumn, userNameDataGridViewTextBoxColumn, userIdDataGridViewTextBoxColumn, sysDateDataGridViewTextBoxColumn, sysTimeDataGridViewTextBoxColumn });
         dataGridView1.DataSource = in_letters_bindingSource1;
-        dataGridView1.Location = new Point(12, 73);
+        dataGridView1.Location = new Point(12, 71);
         dataGridView1.Name = "dataGridView1";
         dataGridView1.ReadOnly = true;
         dataGridView1.RowHeadersWidth = 40;
@@ -415,44 +418,80 @@ partial class In_Letters_Form
         // search_pannel2
         // 
         search_pannel2.BackColor = Color.Gainsboro;
+        search_pannel2.Controls.Add(searc_subject_like_butt);
+        search_pannel2.Controls.Add(search_subject_textbox);
         search_pannel2.Controls.Add(search_panel_butt);
+        search_pannel2.Controls.Add(subject_like_lbl);
         search_pannel2.Controls.Add(search_textbox);
         search_pannel2.Controls.Add(search_id_lbl);
-        search_pannel2.Location = new Point(544, 104);
+        search_pannel2.Location = new Point(477, 104);
         search_pannel2.Name = "search_pannel2";
-        search_pannel2.Size = new Size(412, 221);
+        search_pannel2.Size = new Size(479, 221);
         search_pannel2.TabIndex = 3;
         search_pannel2.Visible = false;
+        // 
+        // searc_subject_like_butt
+        // 
+        searc_subject_like_butt.Cursor = Cursors.Hand;
+        searc_subject_like_butt.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+        searc_subject_like_butt.Image = Properties.Resources.butt_search;
+        searc_subject_like_butt.Location = new Point(317, 68);
+        searc_subject_like_butt.Name = "searc_subject_like_butt";
+        searc_subject_like_butt.Size = new Size(131, 31);
+        searc_subject_like_butt.TabIndex = 4;
+        searc_subject_like_butt.Text = "Search";
+        searc_subject_like_butt.TextImageRelation = TextImageRelation.ImageBeforeText;
+        searc_subject_like_butt.UseVisualStyleBackColor = true;
+        searc_subject_like_butt.Click += searc_subject_like_butt_Click;
+        // 
+        // search_subject_textbox
+        // 
+        search_subject_textbox.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        search_subject_textbox.Location = new Point(121, 77);
+        search_subject_textbox.Name = "search_subject_textbox";
+        search_subject_textbox.Size = new Size(190, 22);
+        search_subject_textbox.TabIndex = 1;
         // 
         // search_panel_butt
         // 
         search_panel_butt.Cursor = Cursors.Hand;
         search_panel_butt.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
         search_panel_butt.Image = Properties.Resources.butt_search;
-        search_panel_butt.Location = new Point(243, 6);
+        search_panel_butt.ImageAlign = ContentAlignment.MiddleRight;
+        search_panel_butt.Location = new Point(317, 15);
         search_panel_butt.Name = "search_panel_butt";
-        search_panel_butt.Size = new Size(128, 58);
+        search_panel_butt.Size = new Size(131, 29);
         search_panel_butt.TabIndex = 4;
         search_panel_butt.Text = "Search ID";
         search_panel_butt.TextImageRelation = TextImageRelation.ImageBeforeText;
         search_panel_butt.UseVisualStyleBackColor = true;
         search_panel_butt.Click += search_panel_butt_Click;
         // 
+        // subject_like_lbl
+        // 
+        subject_like_lbl.AutoSize = true;
+        subject_like_lbl.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+        subject_like_lbl.Location = new Point(18, 80);
+        subject_like_lbl.Name = "subject_like_lbl";
+        subject_like_lbl.Size = new Size(96, 16);
+        subject_like_lbl.TabIndex = 0;
+        subject_like_lbl.Text = "Subject Like:";
+        // 
         // search_textbox
         // 
-        search_textbox.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-        search_textbox.Location = new Point(50, 22);
+        search_textbox.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        search_textbox.Location = new Point(121, 22);
         search_textbox.Name = "search_textbox";
-        search_textbox.Size = new Size(187, 29);
+        search_textbox.Size = new Size(190, 22);
         search_textbox.TabIndex = 1;
         // 
         // search_id_lbl
         // 
         search_id_lbl.AutoSize = true;
-        search_id_lbl.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-        search_id_lbl.Location = new Point(18, 25);
+        search_id_lbl.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+        search_id_lbl.Location = new Point(94, 26);
         search_id_lbl.Name = "search_id_lbl";
-        search_id_lbl.Size = new Size(32, 24);
+        search_id_lbl.Size = new Size(26, 16);
         search_id_lbl.TabIndex = 0;
         search_id_lbl.Text = "ID:";
         // 
@@ -544,4 +583,7 @@ partial class In_Letters_Form
     private Label search_id_lbl;
     private TextBox search_textbox;
     private Button search_panel_butt;
+    private Button searc_subject_like_butt;
+    private TextBox search_subject_textbox;
+    private Label subject_like_lbl;
 }
