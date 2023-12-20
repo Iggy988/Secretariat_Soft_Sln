@@ -18,6 +18,50 @@ public partial class In_Letters_De : Form
 
     private void In_Letters_De_Load(object sender, EventArgs e)
     {
+        enable_add_edit_del_butt();
+    }
 
+    void enable_add_edit_del_butt()
+    {
+        // disabling groupbox from editing data
+        main_gbox.Enabled = false;
+        //----------------------------
+        de_cancel_butt.Enabled = false;
+        de_save_butt.Enabled = false;
+        //----------------------------
+        de_add_butt.Enabled = true;
+        de_edit_butt.Enabled = true;
+        de_delete_butt.Enabled = true;
+    }
+    void disable_add_edit_del_butt()
+    {
+        // disabling groupbox from editing data
+        main_gbox.Enabled = true;
+        de_cancel_butt.Enabled = true;
+        de_save_butt.Enabled = true;
+        //----------------------------
+        de_add_butt.Enabled = false;
+        de_edit_butt.Enabled = false;
+        de_delete_butt.Enabled = false;
+    }
+
+    private void de_add_butt_Click(object sender, EventArgs e)
+    {
+        disable_add_edit_del_butt();
+    }
+
+    private void de_edit_butt_Click(object sender, EventArgs e)
+    {
+        disable_add_edit_del_butt();
+    }
+
+    private void de_delete_butt_Click(object sender, EventArgs e)
+    {
+        disable_add_edit_del_butt();
+    }
+
+    private void de_cancel_butt_Click(object sender, EventArgs e)
+    {
+        enable_add_edit_del_butt();
     }
 }

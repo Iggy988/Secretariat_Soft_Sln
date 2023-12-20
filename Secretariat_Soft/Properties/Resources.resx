@@ -154,6 +154,30 @@
   <data name="dep_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dep_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="de_button_cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\de_button_cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="de_button_cancel24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\de_button_cancel24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="de_delete_butt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\de_delete_butt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="de_edit_butt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\de_edit_butt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="de_edit_butt2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\de_edit_butt2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="de_new_butt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\de_new_butt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="de_print_butt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\de_print_butt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="de_save_butt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\de_save_butt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="down_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\down_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
