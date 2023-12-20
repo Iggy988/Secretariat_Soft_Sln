@@ -11,6 +11,6 @@ internal static class Program
         // To customize application configuration such as set high DPI settings or default font,
         // see https://aka.ms/applicationconfiguration.
         ApplicationConfiguration.Initialize();
-        Application.Run(new S_Forms.In_Letters_Form());
+        Application.Run(new S_Forms.In_Letters_De());
     }
 }
