@@ -43,9 +43,18 @@ partial class In_Letters_De
         de_cancel_butt = new ToolStripButton();
         toolStripSeparator7 = new ToolStripSeparator();
         panel1 = new Panel();
+        system_time_lbl = new Label();
+        label6 = new Label();
+        system_date_lbl = new Label();
+        label4 = new Label();
+        user_id_lbl = new Label();
+        userId_lbl = new Label();
+        user_name_lbl = new Label();
+        userName_lbl = new Label();
         main_gbox = new GroupBox();
         letters1 = new DataSet.Letters();
         Top_Toolstrip.SuspendLayout();
+        panel1.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)letters1).BeginInit();
         SuspendLayout();
         // 
@@ -206,17 +215,97 @@ partial class In_Letters_De
         // panel1
         // 
         panel1.BorderStyle = BorderStyle.FixedSingle;
+        panel1.Controls.Add(system_time_lbl);
+        panel1.Controls.Add(label6);
+        panel1.Controls.Add(system_date_lbl);
+        panel1.Controls.Add(label4);
+        panel1.Controls.Add(user_id_lbl);
+        panel1.Controls.Add(userId_lbl);
+        panel1.Controls.Add(user_name_lbl);
+        panel1.Controls.Add(userName_lbl);
         panel1.Dock = DockStyle.Bottom;
-        panel1.Location = new Point(0, 624);
+        panel1.Location = new Point(0, 622);
         panel1.Name = "panel1";
-        panel1.Size = new Size(995, 50);
+        panel1.Size = new Size(995, 35);
         panel1.TabIndex = 2;
+        // 
+        // system_time_lbl
+        // 
+        system_time_lbl.ForeColor = Color.FromArgb(192, 0, 0);
+        system_time_lbl.Location = new Point(702, 8);
+        system_time_lbl.Name = "system_time_lbl";
+        system_time_lbl.Size = new Size(124, 17);
+        system_time_lbl.TabIndex = 7;
+        system_time_lbl.Text = "-";
+        // 
+        // label6
+        // 
+        label6.AutoSize = true;
+        label6.Location = new Point(613, 8);
+        label6.Name = "label6";
+        label6.Size = new Size(84, 17);
+        label6.TabIndex = 6;
+        label6.Text = "System Time:";
+        // 
+        // system_date_lbl
+        // 
+        system_date_lbl.ForeColor = Color.FromArgb(192, 0, 0);
+        system_date_lbl.Location = new Point(465, 8);
+        system_date_lbl.Name = "system_date_lbl";
+        system_date_lbl.Size = new Size(124, 17);
+        system_date_lbl.TabIndex = 5;
+        system_date_lbl.Text = "-";
+        // 
+        // label4
+        // 
+        label4.AutoSize = true;
+        label4.Location = new Point(376, 8);
+        label4.Name = "label4";
+        label4.Size = new Size(83, 17);
+        label4.TabIndex = 4;
+        label4.Text = "System Date:";
+        // 
+        // user_id_lbl
+        // 
+        user_id_lbl.ForeColor = Color.FromArgb(192, 0, 0);
+        user_id_lbl.Location = new Point(299, 8);
+        user_id_lbl.Name = "user_id_lbl";
+        user_id_lbl.Size = new Size(56, 17);
+        user_id_lbl.TabIndex = 3;
+        user_id_lbl.Text = "-";
+        // 
+        // userId_lbl
+        // 
+        userId_lbl.AutoSize = true;
+        userId_lbl.Location = new Point(240, 8);
+        userId_lbl.Name = "userId_lbl";
+        userId_lbl.Size = new Size(53, 17);
+        userId_lbl.TabIndex = 2;
+        userId_lbl.Text = "User Id:";
+        // 
+        // user_name_lbl
+        // 
+        user_name_lbl.ForeColor = Color.FromArgb(192, 0, 0);
+        user_name_lbl.Location = new Point(94, 8);
+        user_name_lbl.Name = "user_name_lbl";
+        user_name_lbl.Size = new Size(140, 17);
+        user_name_lbl.TabIndex = 1;
+        user_name_lbl.Text = "-";
+        // 
+        // userName_lbl
+        // 
+        userName_lbl.AutoSize = true;
+        userName_lbl.Location = new Point(11, 8);
+        userName_lbl.Name = "userName_lbl";
+        userName_lbl.Size = new Size(77, 17);
+        userName_lbl.TabIndex = 0;
+        userName_lbl.Text = "User Name:";
         // 
         // main_gbox
         // 
         main_gbox.Location = new Point(8, 73);
         main_gbox.Name = "main_gbox";
-        main_gbox.Size = new Size(979, 545);
+        main_gbox.Size = new Size(979, 543);
         main_gbox.TabIndex = 3;
         main_gbox.TabStop = false;
         main_gbox.Text = "Info";
@@ -232,7 +321,7 @@ partial class In_Letters_De
         AutoScaleDimensions = new SizeF(7F, 17F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.WhiteSmoke;
-        ClientSize = new Size(995, 674);
+        ClientSize = new Size(995, 657);
         Controls.Add(main_gbox);
         Controls.Add(panel1);
         Controls.Add(Top_Toolstrip);
@@ -246,6 +335,8 @@ partial class In_Letters_De
         Load += In_Letters_De_Load;
         Top_Toolstrip.ResumeLayout(false);
         Top_Toolstrip.PerformLayout();
+        panel1.ResumeLayout(false);
+        panel1.PerformLayout();
         ((System.ComponentModel.ISupportInitialize)letters1).EndInit();
         ResumeLayout(false);
     }
@@ -269,4 +360,12 @@ partial class In_Letters_De
     public ToolStripButton de_print_butt;
     private ToolStripSeparator toolStripSeparator6;
     private ToolStripSeparator toolStripSeparator7;
+    private Label system_date_lbl;
+    private Label label4;
+    private Label user_id_lbl;
+    private Label userId_lbl;
+    private Label user_name_lbl;
+    private Label userName_lbl;
+    private Label system_time_lbl;
+    private Label label6;
 }

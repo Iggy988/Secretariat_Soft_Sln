@@ -19,6 +19,8 @@ public partial class In_Letters_De : Form
     private void In_Letters_De_Load(object sender, EventArgs e)
     {
         enable_add_edit_del_butt();
+       
+        
     }
 
     void enable_add_edit_del_butt()
@@ -48,11 +50,15 @@ public partial class In_Letters_De : Form
     private void de_add_butt_Click(object sender, EventArgs e)
     {
         disable_add_edit_del_butt();
+        //-------------------------
+        sysDateTime();
     }
 
     private void de_edit_butt_Click(object sender, EventArgs e)
     {
         disable_add_edit_del_butt();
+        //-------------------------
+        sysDateTime();
     }
 
     private void de_delete_butt_Click(object sender, EventArgs e)
@@ -63,5 +69,14 @@ public partial class In_Letters_De : Form
     private void de_cancel_butt_Click(object sender, EventArgs e)
     {
         enable_add_edit_del_butt();
+    }
+
+    void sysDateTime()
+    {
+        system_time_lbl.Text = DateTime.Now.ToString("HH:mm:ss");
+        system_date_lbl.Text = DateTime.Now.ToString("dd/MM/yyyy");
+        //-------------------------------
+        user_name_lbl.Text = Secretariat_Soft.Properties.Settings.Default.User_name;
+        user_id_lbl.Text = Secretariat_Soft.Properties.Settings.Default.User_Id.ToString();
     }
 }
