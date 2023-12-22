@@ -19,8 +19,8 @@ public partial class In_Letters_De : Form
     private void In_Letters_De_Load(object sender, EventArgs e)
     {
         enable_add_edit_del_butt();
-       
-        
+
+
     }
 
     void enable_add_edit_del_butt()
@@ -79,4 +79,5 @@ public partial class In_Letters_De : Form
         user_name_lbl.Text = Secretariat_Soft.Properties.Settings.Default.User_name;
         user_id_lbl.Text = Secretariat_Soft.Properties.Settings.Default.User_Id.ToString();
     }
+
 }
