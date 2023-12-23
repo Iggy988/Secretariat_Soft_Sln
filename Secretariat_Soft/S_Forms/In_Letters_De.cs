@@ -41,6 +41,20 @@ public partial class In_Letters_De : Form
     {
         // disabling groupbox from editing data
         main_gbox.Enabled = true;
+        //----------------------------
+        de_cancel_butt.Enabled = true;
+        de_save_butt.Enabled = true;
+        //----------------------------
+        de_add_butt.Enabled = false;
+        de_edit_butt.Enabled = false;
+        de_delete_butt.Enabled = false;
+    }
+
+    void disable_del_butt()
+    {
+        // disabling groupbox from editing data
+        main_gbox.Enabled = false;
+        //----------------------------
         de_cancel_butt.Enabled = true;
         de_save_butt.Enabled = true;
         //----------------------------
@@ -67,12 +81,20 @@ public partial class In_Letters_De : Form
 
     private void de_delete_butt_Click(object sender, EventArgs e)
     {
-        disable_add_edit_del_butt();
+        disable_del_butt();
+        //--------------------------
+        bindingSource1.RemoveCurrent();
+        //--------------------------
+
     }
 
     private void de_cancel_butt_Click(object sender, EventArgs e)
     {
         enable_add_edit_del_butt();
+        //--------------------------
+        bindingSource1.CancelEdit();
+        letters1.Sa_In_Letters.RejectChanges();
+        //--------------------------
     }
 
     void sysDateTime()
