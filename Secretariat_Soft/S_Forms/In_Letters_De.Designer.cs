@@ -45,6 +45,8 @@ partial class In_Letters_De
         toolStripSeparator7 = new ToolStripSeparator();
         panel1 = new Panel();
         system_time_lbl = new Label();
+        bindingSource1 = new BindingSource(components);
+        letters1 = new DataSet.Letters();
         label6 = new Label();
         system_date_lbl = new Label();
         label4 = new Label();
@@ -85,15 +87,13 @@ partial class In_Letters_De
         label3 = new Label();
         label2 = new Label();
         label1 = new Label();
-        letters1 = new DataSet.Letters();
         sa_In_LettersTableAdapter1 = new DataSet.LettersTableAdapters.Sa_In_LettersTableAdapter();
-        bindingSource1 = new BindingSource(components);
         Top_Toolstrip.SuspendLayout();
         panel1.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)letters1).BeginInit();
         main_gbox.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)page_count_NC).BeginInit();
-        ((System.ComponentModel.ISupportInitialize)letters1).BeginInit();
-        ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
         SuspendLayout();
         // 
         // Top_Toolstrip
@@ -190,6 +190,7 @@ partial class In_Letters_De
         de_save_butt.Text = "Save F5";
         de_save_butt.TextAlign = ContentAlignment.BottomCenter;
         de_save_butt.TextImageRelation = TextImageRelation.ImageAboveText;
+        de_save_butt.Click += de_save_butt_Click;
         // 
         // toolStripSeparator5
         // 
@@ -276,6 +277,17 @@ partial class In_Letters_De
         system_time_lbl.Size = new Size(95, 17);
         system_time_lbl.TabIndex = 7;
         system_time_lbl.Text = "-";
+        // 
+        // bindingSource1
+        // 
+        bindingSource1.DataMember = "Sa_In_Letters";
+        bindingSource1.DataSource = letters1;
+        // 
+        // letters1
+        // 
+        letters1.DataSetName = "Letters";
+        letters1.Namespace = "http://tempuri.org/Letters.xsd";
+        letters1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
         // 
         // label6
         // 
@@ -665,20 +677,9 @@ partial class In_Letters_De
         label1.TabIndex = 0;
         label1.Text = "System ID:";
         // 
-        // letters1
-        // 
-        letters1.DataSetName = "Letters";
-        letters1.Namespace = "http://tempuri.org/Letters.xsd";
-        letters1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-        // 
         // sa_In_LettersTableAdapter1
         // 
         sa_In_LettersTableAdapter1.ClearBeforeFill = true;
-        // 
-        // bindingSource1
-        // 
-        bindingSource1.DataMember = "Sa_In_Letters";
-        bindingSource1.DataSource = letters1;
         // 
         // In_Letters_De
         // 
@@ -701,11 +702,11 @@ partial class In_Letters_De
         Top_Toolstrip.PerformLayout();
         panel1.ResumeLayout(false);
         panel1.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
+        ((System.ComponentModel.ISupportInitialize)letters1).EndInit();
         main_gbox.ResumeLayout(false);
         main_gbox.PerformLayout();
         ((System.ComponentModel.ISupportInitialize)page_count_NC).EndInit();
-        ((System.ComponentModel.ISupportInitialize)letters1).EndInit();
-        ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
         ResumeLayout(false);
     }
 

@@ -53,7 +53,9 @@ public partial class In_Letters_De : Form
     {
         disable_add_edit_del_butt();
         //-------------------------
+        bindingSource1.AddNew();
         sysDateTime();
+        //-------------------------
     }
 
     private void de_edit_butt_Click(object sender, EventArgs e)
@@ -82,4 +84,32 @@ public partial class In_Letters_De : Form
         user_id_lbl.Text = Secretariat_Soft.Properties.Settings.Default.User_Id.ToString();
     }
 
+    private void de_save_butt_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            //-------------------
+            bindingSource1.EndEdit();
+            //-------------------
+            int r; //Update je int
+            r = sa_In_LettersTableAdapter1.Update(letters1.Sa_In_Letters);
+            //-------------------
+            if (r > 0)
+            {
+                MessageBox.Show("Saved! Count: " + r.ToString());
+            }
+            else
+            {
+                MessageBox.Show("Not Saved! ");
+            }
+            //-------------------
+        }
+        catch (Exception ex)
+        {
+
+            MessageBox.Show("Error! " + ex.Message);
+        }
+
+        enable_add_edit_del_butt();
+    }
 }
