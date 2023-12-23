@@ -28,6 +28,7 @@ partial class In_Letters_De
     /// </summary>
     private void InitializeComponent()
     {
+        components = new System.ComponentModel.Container();
         Top_Toolstrip = new ToolStrip();
         de_add_butt = new ToolStripButton();
         toolStripSeparator4 = new ToolStripSeparator();
@@ -85,11 +86,14 @@ partial class In_Letters_De
         label2 = new Label();
         label1 = new Label();
         letters1 = new DataSet.Letters();
+        sa_In_LettersTableAdapter1 = new DataSet.LettersTableAdapters.Sa_In_LettersTableAdapter();
+        bindingSource1 = new BindingSource(components);
         Top_Toolstrip.SuspendLayout();
         panel1.SuspendLayout();
         main_gbox.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)page_count_NC).BeginInit();
         ((System.ComponentModel.ISupportInitialize)letters1).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
         SuspendLayout();
         // 
         // Top_Toolstrip
@@ -265,6 +269,7 @@ partial class In_Letters_De
         // 
         // system_time_lbl
         // 
+        system_time_lbl.DataBindings.Add(new Binding("Text", bindingSource1, "SysTime", true));
         system_time_lbl.ForeColor = Color.FromArgb(192, 0, 0);
         system_time_lbl.Location = new Point(617, 8);
         system_time_lbl.Name = "system_time_lbl";
@@ -283,6 +288,7 @@ partial class In_Letters_De
         // 
         // system_date_lbl
         // 
+        system_date_lbl.DataBindings.Add(new Binding("Text", bindingSource1, "SysDate", true));
         system_date_lbl.ForeColor = Color.FromArgb(192, 0, 0);
         system_date_lbl.Location = new Point(419, 8);
         system_date_lbl.Name = "system_date_lbl";
@@ -301,6 +307,7 @@ partial class In_Letters_De
         // 
         // user_id_lbl
         // 
+        user_id_lbl.DataBindings.Add(new Binding("Text", bindingSource1, "UserId", true));
         user_id_lbl.ForeColor = Color.FromArgb(192, 0, 0);
         user_id_lbl.Location = new Point(253, 8);
         user_id_lbl.Name = "user_id_lbl";
@@ -319,6 +326,7 @@ partial class In_Letters_De
         // 
         // user_name_lbl
         // 
+        user_name_lbl.DataBindings.Add(new Binding("Text", bindingSource1, "UserName", true));
         user_name_lbl.ForeColor = Color.FromArgb(192, 0, 0);
         user_name_lbl.Location = new Point(94, 8);
         user_name_lbl.Name = "user_name_lbl";
@@ -371,13 +379,14 @@ partial class In_Letters_De
         main_gbox.Controls.Add(label1);
         main_gbox.Location = new Point(12, 73);
         main_gbox.Name = "main_gbox";
-        main_gbox.Size = new Size(979, 572);
+        main_gbox.Size = new Size(814, 572);
         main_gbox.TabIndex = 3;
         main_gbox.TabStop = false;
         main_gbox.Text = "Info";
         // 
         // page_count_NC
         // 
+        page_count_NC.DataBindings.Add(new Binding("Value", bindingSource1, "PageCount", true));
         page_count_NC.Location = new Point(118, 401);
         page_count_NC.Maximum = new decimal(new int[] { 25000, 0, 0, 0 });
         page_count_NC.Name = "page_count_NC";
@@ -386,6 +395,7 @@ partial class In_Letters_De
         // 
         // priority_CB
         // 
+        priority_CB.DataBindings.Add(new Binding("Text", bindingSource1, "Priority", true));
         priority_CB.DropDownStyle = ComboBoxStyle.DropDownList;
         priority_CB.FormattingEnabled = true;
         priority_CB.Items.AddRange(new object[] { "Low", "Normal", "High" });
@@ -396,6 +406,7 @@ partial class In_Letters_De
         // 
         // deadline_masked_TB
         // 
+        deadline_masked_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Deadline", true));
         deadline_masked_TB.Location = new Point(118, 432);
         deadline_masked_TB.Name = "deadline_masked_TB";
         deadline_masked_TB.Size = new Size(239, 25);
@@ -403,6 +414,7 @@ partial class In_Letters_De
         // 
         // res_date_masked_TB
         // 
+        res_date_masked_TB.DataBindings.Add(new Binding("Text", bindingSource1, "RecivedDate", true));
         res_date_masked_TB.Location = new Point(118, 193);
         res_date_masked_TB.Name = "res_date_masked_TB";
         res_date_masked_TB.Size = new Size(239, 25);
@@ -410,6 +422,7 @@ partial class In_Letters_De
         // 
         // letter_date_masked_TB
         // 
+        letter_date_masked_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Letter_Time", true));
         letter_date_masked_TB.Location = new Point(118, 162);
         letter_date_masked_TB.Name = "letter_date_masked_TB";
         letter_date_masked_TB.Size = new Size(239, 25);
@@ -417,6 +430,7 @@ partial class In_Letters_De
         // 
         // reg_date_masked_TB
         // 
+        reg_date_masked_TB.DataBindings.Add(new Binding("Text", bindingSource1, "RegDate", true));
         reg_date_masked_TB.Location = new Point(118, 99);
         reg_date_masked_TB.Name = "reg_date_masked_TB";
         reg_date_masked_TB.Size = new Size(239, 25);
@@ -424,6 +438,7 @@ partial class In_Letters_De
         // 
         // summary_TB
         // 
+        summary_TB.DataBindings.Add(new Binding("Text", bindingSource1, "DocSummary", true));
         summary_TB.Location = new Point(118, 492);
         summary_TB.Multiline = true;
         summary_TB.Name = "summary_TB";
@@ -433,6 +448,7 @@ partial class In_Letters_De
         // 
         // ref_doc_TB
         // 
+        ref_doc_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Ref_Doc", true));
         ref_doc_TB.Location = new Point(118, 462);
         ref_doc_TB.Name = "ref_doc_TB";
         ref_doc_TB.Size = new Size(524, 25);
@@ -440,6 +456,7 @@ partial class In_Letters_De
         // 
         // group_TB
         // 
+        group_TB.DataBindings.Add(new Binding("Text", bindingSource1, "GroupName", true));
         group_TB.Location = new Point(118, 339);
         group_TB.Name = "group_TB";
         group_TB.Size = new Size(239, 25);
@@ -447,6 +464,7 @@ partial class In_Letters_De
         // 
         // res_Method_TB
         // 
+        res_Method_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Recive_Method", true));
         res_Method_TB.Location = new Point(118, 309);
         res_Method_TB.Name = "res_Method_TB";
         res_Method_TB.Size = new Size(239, 25);
@@ -454,6 +472,7 @@ partial class In_Letters_De
         // 
         // recipient_TB
         // 
+        recipient_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Recipient", true));
         recipient_TB.Location = new Point(118, 280);
         recipient_TB.Name = "recipient_TB";
         recipient_TB.Size = new Size(239, 25);
@@ -461,6 +480,7 @@ partial class In_Letters_De
         // 
         // sender_TB
         // 
+        sender_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Sender", true));
         sender_TB.Location = new Point(118, 251);
         sender_TB.Name = "sender_TB";
         sender_TB.Size = new Size(239, 25);
@@ -468,6 +488,7 @@ partial class In_Letters_De
         // 
         // letter_type_TB
         // 
+        letter_type_TB.DataBindings.Add(new Binding("Text", bindingSource1, "LetterType", true));
         letter_type_TB.Location = new Point(118, 221);
         letter_type_TB.Name = "letter_type_TB";
         letter_type_TB.Size = new Size(239, 25);
@@ -475,6 +496,7 @@ partial class In_Letters_De
         // 
         // letter_number_TB
         // 
+        letter_number_TB.DataBindings.Add(new Binding("Text", bindingSource1, "LetterNumber", true));
         letter_number_TB.Location = new Point(118, 129);
         letter_number_TB.Name = "letter_number_TB";
         letter_number_TB.Size = new Size(239, 25);
@@ -482,6 +504,7 @@ partial class In_Letters_De
         // 
         // subject_TB
         // 
+        subject_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Subject", true));
         subject_TB.Location = new Point(118, 66);
         subject_TB.Name = "subject_TB";
         subject_TB.Size = new Size(524, 25);
@@ -490,6 +513,7 @@ partial class In_Letters_De
         // sys_id_LBL
         // 
         sys_id_LBL.BorderStyle = BorderStyle.FixedSingle;
+        sys_id_LBL.DataBindings.Add(new Binding("Text", bindingSource1, "ID", true));
         sys_id_LBL.Location = new Point(118, 34);
         sys_id_LBL.Name = "sys_id_LBL";
         sys_id_LBL.Size = new Size(239, 25);
@@ -647,6 +671,15 @@ partial class In_Letters_De
         letters1.Namespace = "http://tempuri.org/Letters.xsd";
         letters1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
         // 
+        // sa_In_LettersTableAdapter1
+        // 
+        sa_In_LettersTableAdapter1.ClearBeforeFill = true;
+        // 
+        // bindingSource1
+        // 
+        bindingSource1.DataMember = "Sa_In_Letters";
+        bindingSource1.DataSource = letters1;
+        // 
         // In_Letters_De
         // 
         AutoScaleDimensions = new SizeF(7F, 17F);
@@ -672,6 +705,7 @@ partial class In_Letters_De
         main_gbox.PerformLayout();
         ((System.ComponentModel.ISupportInitialize)page_count_NC).EndInit();
         ((System.ComponentModel.ISupportInitialize)letters1).EndInit();
+        ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
         ResumeLayout(false);
     }
 
@@ -734,4 +768,6 @@ partial class In_Letters_De
     private NumericUpDown page_count_NC;
     private ComboBox priority_CB;
     private MaskedTextBox deadline_masked_TB;
+    private DataSet.LettersTableAdapters.Sa_In_LettersTableAdapter sa_In_LettersTableAdapter1;
+    private BindingSource bindingSource1;
 }

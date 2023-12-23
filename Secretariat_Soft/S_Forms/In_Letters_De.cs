@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Secretariat_Soft.DataSet;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,8 @@ public partial class In_Letters_De : Form
     private void In_Letters_De_Load(object sender, EventArgs e)
     {
         enable_add_edit_del_butt();
-
+        //-------------------------
+        sa_In_LettersTableAdapter1.FillBy_id_desc(letters1.Sa_In_Letters);
 
     }
 

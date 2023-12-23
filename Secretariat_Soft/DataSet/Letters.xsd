@@ -195,7 +195,17 @@ WHERE        (ID = @Search_ID)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="desktop-8r3mvus\sqlexpress01.CsApps.dbo" DbObjectName="CsApps.dbo.Sa_In_Letters" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy_regdate" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy2" GeneratorSourceName="FillBy_regdate" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="FillBy_regdate">
+              <DbSource ConnectionRef="desktop-8r3mvus\sqlexpress01.CsApps.dbo" DbObjectName="CsApps.dbo.Sa_In_Letters" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy_id_desc" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy_id_desc" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="FillBy_id_desc">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ID, Subject, RegDate, LetterNumber, Letter_Time, RecivedDate, LetterType, Sender, Recipient, Recive_Method, GroupName, Priority, PageCount, Deadline, Ref_Doc, DocSummary, UserName, UserId, SysDate, SysTime
+FROM            Sa_In_Letters
+ORDER BY ID DESC</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="desktop-8r3mvus\sqlexpress01.CsApps.dbo" DbObjectName="CsApps.dbo.Sa_In_Letters" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy_regdate" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy2" GeneratorSourceName="FillBy_regdate" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="FillBy_regdate">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        ID, Subject, RegDate, LetterNumber, Letter_Time, RecivedDate, LetterType, Sender, Recipient, Recive_Method, GroupName, Priority, PageCount, Deadline, Ref_Doc, DocSummary, UserName, UserId, SysDate, SysTime
@@ -209,7 +219,7 @@ ORDER BY RegDate</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="desktop-8r3mvus\sqlexpress01.CsApps.dbo" DbObjectName="CsApps.dbo.Sa_In_Letters" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy_subject_like" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy_subject_like" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="FillBy_subject_like">
+              <DbSource ConnectionRef="desktop-8r3mvus\sqlexpress01.CsApps.dbo" DbObjectName="CsApps.dbo.Sa_In_Letters" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy_subject_like" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy_subject_like" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="FillBy_subject_like">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        ID, Subject, RegDate, LetterNumber, Letter_Time, RecivedDate, LetterType, Sender, Recipient, Recive_Method, GroupName, Priority, PageCount, Deadline, Ref_Doc, DocSummary, UserName, UserId, SysDate, SysTime
