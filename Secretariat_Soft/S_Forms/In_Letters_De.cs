@@ -70,6 +70,13 @@ public partial class In_Letters_De : Form
         bindingSource1.AddNew();
         sysDateTime();
         //-------------------------
+        letter_time_masked_TB.Text = System.DateTime.Now.ToLongTimeString();
+        priority_CB.SelectedIndex = 1;
+        page_count_NC.Value = 2;
+        //-------------------------
+        //reg_date_masked_TB.Text = new System.DateTime(2023, 12, 24).ToShortDateString();
+        //reg_date_masked_TB.Text = new System.DateTime(2023, 12, 24, 12, 23, 12).ToShortTimeString();
+        //-------------------------
     }
 
     private void de_edit_butt_Click(object sender, EventArgs e)
@@ -133,5 +140,20 @@ public partial class In_Letters_De : Form
         }
 
         enable_add_edit_del_butt();
+    }
+
+    private void today_regDate_Btn_Click(object sender, EventArgs e)
+    {
+        reg_date_masked_TB.Text = DateTime.Now.ToShortDateString();
+    }
+
+    private void today_resDate_btn_Click(object sender, EventArgs e)
+    {
+        res_date_masked_TB.Text = DateTime.Now.ToShortDateString();
+    }
+
+    private void today_deadline_btn_Click(object sender, EventArgs e)
+    {
+        deadline_masked_TB.Text = DateTime.Now.ToShortDateString();
     }
 }

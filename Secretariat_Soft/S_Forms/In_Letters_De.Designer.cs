@@ -55,11 +55,14 @@ partial class In_Letters_De
         user_name_lbl = new Label();
         userName_lbl = new Label();
         main_gbox = new GroupBox();
+        today_deadline_btn = new Button();
+        today_resDate_btn = new Button();
+        today_regDate_Btn = new Button();
         page_count_NC = new NumericUpDown();
         priority_CB = new ComboBox();
         deadline_masked_TB = new MaskedTextBox();
         res_date_masked_TB = new MaskedTextBox();
-        letter_date_masked_TB = new MaskedTextBox();
+        letter_time_masked_TB = new MaskedTextBox();
         reg_date_masked_TB = new MaskedTextBox();
         summary_TB = new TextBox();
         ref_doc_TB = new TextBox();
@@ -357,11 +360,14 @@ partial class In_Letters_De
         // 
         // main_gbox
         // 
+        main_gbox.Controls.Add(today_deadline_btn);
+        main_gbox.Controls.Add(today_resDate_btn);
+        main_gbox.Controls.Add(today_regDate_Btn);
         main_gbox.Controls.Add(page_count_NC);
         main_gbox.Controls.Add(priority_CB);
         main_gbox.Controls.Add(deadline_masked_TB);
         main_gbox.Controls.Add(res_date_masked_TB);
-        main_gbox.Controls.Add(letter_date_masked_TB);
+        main_gbox.Controls.Add(letter_time_masked_TB);
         main_gbox.Controls.Add(reg_date_masked_TB);
         main_gbox.Controls.Add(summary_TB);
         main_gbox.Controls.Add(ref_doc_TB);
@@ -395,6 +401,36 @@ partial class In_Letters_De
         main_gbox.TabIndex = 3;
         main_gbox.TabStop = false;
         main_gbox.Text = "Info";
+        // 
+        // today_deadline_btn
+        // 
+        today_deadline_btn.Location = new Point(383, 432);
+        today_deadline_btn.Name = "today_deadline_btn";
+        today_deadline_btn.Size = new Size(75, 25);
+        today_deadline_btn.TabIndex = 8;
+        today_deadline_btn.Text = "Today";
+        today_deadline_btn.UseVisualStyleBackColor = true;
+        today_deadline_btn.Click += today_deadline_btn_Click;
+        // 
+        // today_resDate_btn
+        // 
+        today_resDate_btn.Location = new Point(383, 193);
+        today_resDate_btn.Name = "today_resDate_btn";
+        today_resDate_btn.Size = new Size(75, 25);
+        today_resDate_btn.TabIndex = 7;
+        today_resDate_btn.Text = "Today";
+        today_resDate_btn.UseVisualStyleBackColor = true;
+        today_resDate_btn.Click += today_resDate_btn_Click;
+        // 
+        // today_regDate_Btn
+        // 
+        today_regDate_Btn.Location = new Point(383, 99);
+        today_regDate_Btn.Name = "today_regDate_Btn";
+        today_regDate_Btn.Size = new Size(75, 25);
+        today_regDate_Btn.TabIndex = 6;
+        today_regDate_Btn.Text = "Today";
+        today_regDate_Btn.UseVisualStyleBackColor = true;
+        today_regDate_Btn.Click += today_regDate_Btn_Click;
         // 
         // page_count_NC
         // 
@@ -432,13 +468,13 @@ partial class In_Letters_De
         res_date_masked_TB.Size = new Size(239, 25);
         res_date_masked_TB.TabIndex = 3;
         // 
-        // letter_date_masked_TB
+        // letter_time_masked_TB
         // 
-        letter_date_masked_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Letter_Time", true));
-        letter_date_masked_TB.Location = new Point(118, 162);
-        letter_date_masked_TB.Name = "letter_date_masked_TB";
-        letter_date_masked_TB.Size = new Size(239, 25);
-        letter_date_masked_TB.TabIndex = 3;
+        letter_time_masked_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Letter_Time", true));
+        letter_time_masked_TB.Location = new Point(118, 162);
+        letter_time_masked_TB.Name = "letter_time_masked_TB";
+        letter_time_masked_TB.Size = new Size(239, 25);
+        letter_time_masked_TB.TabIndex = 3;
         // 
         // reg_date_masked_TB
         // 
@@ -764,11 +800,14 @@ partial class In_Letters_De
     private Label label13;
     private Label label18;
     private MaskedTextBox res_date_masked_TB;
-    private MaskedTextBox letter_date_masked_TB;
+    private MaskedTextBox letter_time_masked_TB;
     private MaskedTextBox reg_date_masked_TB;
     private NumericUpDown page_count_NC;
     private ComboBox priority_CB;
     private MaskedTextBox deadline_masked_TB;
     private DataSet.LettersTableAdapters.Sa_In_LettersTableAdapter sa_In_LettersTableAdapter1;
     private BindingSource bindingSource1;
+    private Button today_regDate_Btn;
+    private Button today_resDate_btn;
+    private Button today_deadline_btn;
 }
