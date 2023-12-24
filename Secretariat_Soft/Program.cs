@@ -10,6 +10,15 @@ internal static class Program
     {
         // To customize application configuration such as set high DPI settings or default font,
         // see https://aka.ms/applicationconfiguration.
+
+        System.Globalization.CultureInfo ci = new System.Globalization.CultureInfo("en-US");
+        //ci.DateTimeFormat.ShortDatePattern = "dd-MM-yyyy";
+        //ci.DateTimeFormat.ShortDatePattern = "HH:mm:ss";
+        //ci.NumberFormat.CurrencySymbol = "€";
+        //----------------------------------------------
+        System.Threading.Thread.CurrentThread.CurrentCulture = ci;
+        System.Threading.Thread.CurrentThread.CurrentUICulture = ci;
+
         ApplicationConfiguration.Initialize();
         Application.Run(new S_Forms.In_Letters_De());
     }
