@@ -74,7 +74,7 @@ public partial class In_Letters_De : Form
         priority_CB.SelectedIndex = 1;
         page_count_NC.Value = 2;
         //-------------------------
-        //reg_date_masked_TB.Text = new System.DateTime(2023, 12, 24).ToShortDateString();
+        //reg_date_masked_TB.Text = System.DateTime.Now.ToShortDateString();
         //reg_date_masked_TB.Text = new System.DateTime(2023, 12, 24, 12, 23, 12).ToShortTimeString();
         //-------------------------
     }
