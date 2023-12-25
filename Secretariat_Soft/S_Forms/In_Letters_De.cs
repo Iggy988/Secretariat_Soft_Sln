@@ -19,6 +19,8 @@ public partial class In_Letters_De : Form
 
     private void In_Letters_De_Load(object sender, EventArgs e)
     {
+
+        //-------------------------
         enable_add_edit_del_butt();
         //-------------------------
         sa_In_LettersTableAdapter1.FillBy_id_desc(letters1.Sa_In_Letters);
@@ -117,6 +119,38 @@ public partial class In_Letters_De : Form
     {
         try
         {
+            //-------Validator---------
+            DateTime rr;
+            bool b;
+            b = DateTime.TryParse(reg_date_masked_TB.Text, out rr);
+            if (b == false)
+            {
+                MessageBox.Show("Reg date is not valid!");
+                return;
+            }
+            //==========================
+            if (res_date_masked_TB.Text != "__-__-____")
+            {
+                b = DateTime.TryParse(res_date_masked_TB.Text, out rr);
+                if (b == false)
+                {
+                    MessageBox.Show("Res date is not valid!");
+                    return;
+                }
+            }
+
+            //==========================
+            if (deadline_masked_TB.Text != "__-__-____")
+            {
+                b = DateTime.TryParse(deadline_masked_TB.Text, out rr);
+                if (b == false)
+                {
+                    MessageBox.Show("Deadline date is not valid!");
+                    return;
+                }
+            }
+                
+            
             //-------------------
             bindingSource1.EndEdit();
             //-------------------
@@ -156,4 +190,6 @@ public partial class In_Letters_De : Form
     {
         deadline_masked_TB.Text = DateTime.Now.ToShortDateString();
     }
+
+    
 }
