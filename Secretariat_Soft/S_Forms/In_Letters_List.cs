@@ -9,10 +9,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Secretariat_Soft.S_Forms;
-public partial class In_Letters_Form : Form
+public partial class In_Letters_List : Form
 {
-    public In_Letters_Form()
+    public In_Letters_List()
     {
+
         InitializeComponent();
     }
 
@@ -122,5 +123,11 @@ public partial class In_Letters_Form : Form
 
             MessageBox.Show("Error! " + ex.Message);
         }
+    }
+    private void add_butt_Click(object sender, EventArgs e)
+    {
+        Secretariat_Soft.S_Forms.In_Letters_De frm = new In_Letters_De();
+        frm.id_label2.Text = id_label.Text;
+        frm.ShowDialog();
     }
 }

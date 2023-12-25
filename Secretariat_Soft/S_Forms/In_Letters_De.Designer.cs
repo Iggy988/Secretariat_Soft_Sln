@@ -91,6 +91,7 @@ partial class In_Letters_De
         label2 = new Label();
         label1 = new Label();
         sa_In_LettersTableAdapter1 = new DataSet.LettersTableAdapters.Sa_In_LettersTableAdapter();
+        id_label2 = new Label();
         Top_Toolstrip.SuspendLayout();
         panel1.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
@@ -397,7 +398,7 @@ partial class In_Letters_De
         main_gbox.Controls.Add(label1);
         main_gbox.Location = new Point(12, 73);
         main_gbox.Name = "main_gbox";
-        main_gbox.Size = new Size(814, 572);
+        main_gbox.Size = new Size(701, 572);
         main_gbox.TabIndex = 3;
         main_gbox.TabStop = false;
         main_gbox.Text = "Info";
@@ -727,12 +728,22 @@ partial class In_Letters_De
         // 
         sa_In_LettersTableAdapter1.ClearBeforeFill = true;
         // 
+        // id_label2
+        // 
+        id_label2.AutoSize = true;
+        id_label2.Location = new Point(733, 175);
+        id_label2.Name = "id_label2";
+        id_label2.Size = new Size(43, 17);
+        id_label2.TabIndex = 6;
+        id_label2.Text = "label3";
+        // 
         // In_Letters_De
         // 
         AutoScaleDimensions = new SizeF(7F, 17F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.WhiteSmoke;
         ClientSize = new Size(838, 686);
+        Controls.Add(id_label2);
         Controls.Add(main_gbox);
         Controls.Add(panel1);
         Controls.Add(Top_Toolstrip);
@@ -754,6 +765,7 @@ partial class In_Letters_De
         main_gbox.PerformLayout();
         ((System.ComponentModel.ISupportInitialize)page_count_NC).EndInit();
         ResumeLayout(false);
+        PerformLayout();
     }
 
     #endregion
@@ -820,4 +832,5 @@ partial class In_Letters_De
     private Button today_regDate_Btn;
     private Button today_resDate_btn;
     private Button today_deadline_btn;
+    public Label id_label2;
 }

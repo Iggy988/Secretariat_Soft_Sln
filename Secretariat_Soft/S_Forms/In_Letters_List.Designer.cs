@@ -1,6 +1,6 @@
 ﻿namespace Secretariat_Soft.S_Forms;
 
-partial class In_Letters_Form
+partial class In_Letters_List
 {
     /// <summary>
     /// Required designer variable.
@@ -29,7 +29,7 @@ partial class In_Letters_Form
     private void InitializeComponent()
     {
         components = new System.ComponentModel.Container();
-        DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+        DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
         Top_Toolstrip = new ToolStrip();
         add_butt = new ToolStripButton();
         toolStripSeparator3 = new ToolStripSeparator();
@@ -70,6 +70,7 @@ partial class In_Letters_Form
         letters1 = new DataSet.Letters();
         sa_In_LettersTableAdapter1 = new DataSet.LettersTableAdapters.Sa_In_LettersTableAdapter();
         search_pannel2 = new Panel();
+        search_date_butt = new Button();
         label2 = new Label();
         dateTimePicker2 = new DateTimePicker();
         dateTimePicker1 = new DateTimePicker();
@@ -81,7 +82,7 @@ partial class In_Letters_Form
         search_textbox = new TextBox();
         search_id_lbl = new Label();
         search_pannel1 = new Panel();
-        search_date_butt = new Button();
+        id_label = new Label();
         Top_Toolstrip.SuspendLayout();
         Bottom_ToolStrip.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -114,6 +115,7 @@ partial class In_Letters_Form
         add_butt.Size = new Size(157, 67);
         add_butt.Text = "Add | Edit Document F2";
         add_butt.TextImageRelation = TextImageRelation.ImageAboveText;
+        add_butt.Click += add_butt_Click;
         // 
         // toolStripSeparator3
         // 
@@ -247,8 +249,8 @@ partial class In_Letters_Form
         dataGridView1.AllowUserToAddRows = false;
         dataGridView1.AllowUserToDeleteRows = false;
         dataGridView1.AllowUserToOrderColumns = true;
-        dataGridViewCellStyle2.BackColor = Color.WhiteSmoke;
-        dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+        dataGridViewCellStyle1.BackColor = Color.WhiteSmoke;
+        dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
         dataGridView1.AutoGenerateColumns = false;
         dataGridView1.BackgroundColor = Color.WhiteSmoke;
         dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -259,7 +261,7 @@ partial class In_Letters_Form
         dataGridView1.ReadOnly = true;
         dataGridView1.RowHeadersWidth = 40;
         dataGridView1.RowTemplate.Height = 25;
-        dataGridView1.Size = new Size(1052, 461);
+        dataGridView1.Size = new Size(944, 482);
         dataGridView1.TabIndex = 2;
         // 
         // iDDataGridViewTextBoxColumn
@@ -440,6 +442,20 @@ partial class In_Letters_Form
         search_pannel2.TabIndex = 3;
         search_pannel2.Visible = false;
         // 
+        // search_date_butt
+        // 
+        search_date_butt.Cursor = Cursors.Hand;
+        search_date_butt.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+        search_date_butt.Image = Properties.Resources.butt_search;
+        search_date_butt.Location = new Point(317, 164);
+        search_date_butt.Name = "search_date_butt";
+        search_date_butt.Size = new Size(131, 31);
+        search_date_butt.TabIndex = 9;
+        search_date_butt.Text = "Search";
+        search_date_butt.TextImageRelation = TextImageRelation.ImageBeforeText;
+        search_date_butt.UseVisualStyleBackColor = true;
+        search_date_butt.Click += search_date_butt_Click;
+        // 
         // label2
         // 
         label2.AutoSize = true;
@@ -554,26 +570,23 @@ partial class In_Letters_Form
         search_pannel1.TabIndex = 4;
         search_pannel1.Visible = false;
         // 
-        // search_date_butt
+        // id_label
         // 
-        search_date_butt.Cursor = Cursors.Hand;
-        search_date_butt.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-        search_date_butt.Image = Properties.Resources.butt_search;
-        search_date_butt.Location = new Point(317, 164);
-        search_date_butt.Name = "search_date_butt";
-        search_date_butt.Size = new Size(131, 31);
-        search_date_butt.TabIndex = 9;
-        search_date_butt.Text = "Search";
-        search_date_butt.TextImageRelation = TextImageRelation.ImageBeforeText;
-        search_date_butt.UseVisualStyleBackColor = true;
-        search_date_butt.Click += search_date_butt_Click;
+        id_label.AutoSize = true;
+        id_label.DataBindings.Add(new Binding("Text", in_letters_bindingSource1, "ID", true));
+        id_label.Location = new Point(989, 125);
+        id_label.Name = "id_label";
+        id_label.Size = new Size(43, 17);
+        id_label.TabIndex = 5;
+        id_label.Text = "label3";
         // 
-        // In_Letters_Form
+        // In_Letters_List
         // 
         AutoScaleDimensions = new SizeF(7F, 17F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.WhiteSmoke;
         ClientSize = new Size(1076, 627);
+        Controls.Add(id_label);
         Controls.Add(search_pannel1);
         Controls.Add(search_pannel2);
         Controls.Add(dataGridView1);
@@ -582,7 +595,7 @@ partial class In_Letters_Form
         Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
         FormBorderStyle = FormBorderStyle.FixedSingle;
         MaximizeBox = false;
-        Name = "In_Letters_Form";
+        Name = "In_Letters_List";
         ShowIcon = false;
         StartPosition = FormStartPosition.CenterScreen;
         Text = "Incoming Letters List";
@@ -597,6 +610,7 @@ partial class In_Letters_Form
         search_pannel2.ResumeLayout(false);
         search_pannel2.PerformLayout();
         ResumeLayout(false);
+        PerformLayout();
     }
 
     #endregion
@@ -653,4 +667,5 @@ partial class In_Letters_Form
     private Label label2;
     private DateTimePicker dateTimePicker2;
     private Button search_date_butt;
+    private Label id_label;
 }
