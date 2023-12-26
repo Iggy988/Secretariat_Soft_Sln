@@ -126,8 +126,20 @@ public partial class In_Letters_List : Form
     }
     private void add_butt_Click(object sender, EventArgs e)
     {
-        Secretariat_Soft.S_Forms.In_Letters_De frm = new In_Letters_De();
-        frm.id_label2.Text = id_label.Text;
-        frm.ShowDialog();
+        
+        try
+        {
+            Secretariat_Soft.S_Forms.In_Letters_De frm = new In_Letters_De();
+            frm.id_label2.Text = id_label.Text;
+            frm.ShowDialog();
+            //---------------------------------
+            sa_In_LettersTableAdapter1.Fill(letters1.Sa_In_Letters);
+            //recordPosition();
+        }
+        catch (Exception ex)
+        {
+
+            MessageBox.Show("Error! " + ex.Message);
+        }
     }
 }

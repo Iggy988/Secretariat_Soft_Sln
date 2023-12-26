@@ -12,6 +12,7 @@ using System.Windows.Forms;
 namespace Secretariat_Soft.S_Forms;
 public partial class In_Letters_De : Form
 {
+    bool is_del_clicked = false;
     public In_Letters_De()
     {
         InitializeComponent();
@@ -19,11 +20,25 @@ public partial class In_Letters_De : Form
 
     private void In_Letters_De_Load(object sender, EventArgs e)
     {
-
+        is_del_clicked = false;
         //-------------------------
         enable_add_edit_del_butt();
         //-------------------------
-        sa_In_LettersTableAdapter1.FillBy_id_desc(letters1.Sa_In_Letters);
+        //sa_In_LettersTableAdapter1.FillBy_id_desc(letters1.Sa_In_Letters);
+        //-------------------------
+        try
+        {
+            long id;
+            long.TryParse(id_label2.Text, out id);
+
+            sa_In_LettersTableAdapter1.FillBy_ID(letters1.Sa_In_Letters, id);
+          
+        }
+        catch (Exception ex)
+        {
+
+            MessageBox.Show("Error! " + ex.Message);
+        }
 
     }
 
@@ -79,6 +94,7 @@ public partial class In_Letters_De : Form
         //reg_date_masked_TB.Text = System.DateTime.Now.ToShortDateString();
         //reg_date_masked_TB.Text = new System.DateTime(2023, 12, 24, 12, 23, 12).ToShortTimeString();
         //-------------------------
+        is_del_clicked = false;
     }
 
     private void de_edit_butt_Click(object sender, EventArgs e)
@@ -86,14 +102,18 @@ public partial class In_Letters_De : Form
         disable_add_edit_del_butt();
         //-------------------------
         sysDateTime();
+        //-------------------------
+        is_del_clicked = false;
     }
 
+    
     private void de_delete_butt_Click(object sender, EventArgs e)
     {
         disable_del_butt();
         //--------------------------
         bindingSource1.RemoveCurrent();
         //--------------------------
+        is_del_clicked = true;
 
     }
 
@@ -119,38 +139,43 @@ public partial class In_Letters_De : Form
     {
         try
         {
-            //-------Validator---------
-            DateTime rr;
-            bool b;
-            b = DateTime.TryParse(reg_date_masked_TB.Text, out rr);
-            if (b == false)
+            if (is_del_clicked == false)
             {
-                MessageBox.Show("Reg date is not valid!");
-                return;
-            }
-            //==========================
-            if (res_date_masked_TB.Text != "__-__-____")
-            {
-                b = DateTime.TryParse(res_date_masked_TB.Text, out rr);
+                //==================================================
+                //-------Validator---------
+                DateTime rr;
+                bool b;
+                b = DateTime.TryParse(reg_date_masked_TB.Text, out rr);
                 if (b == false)
                 {
-                    MessageBox.Show("Res date is not valid!");
+                    MessageBox.Show("Reg date is not valid!");
                     return;
                 }
-            }
+                //==========================
+                if (res_date_masked_TB.Text != "__-__-____")
+                {
+                    b = DateTime.TryParse(res_date_masked_TB.Text, out rr);
+                    if (b == false)
+                    {
+                        MessageBox.Show("Res date is not valid!");
+                        return;
+                    }
+                }
 
-            //==========================
-            if (deadline_masked_TB.Text != "__-__-____")
-            {
-                b = DateTime.TryParse(deadline_masked_TB.Text, out rr);
-                if (b == false)
+                //==========================
+                if (deadline_masked_TB.Text != "__-__-____")
                 {
-                    MessageBox.Show("Deadline date is not valid!");
-                    return;
+                    b = DateTime.TryParse(deadline_masked_TB.Text, out rr);
+                    if (b == false)
+                    {
+                        MessageBox.Show("Deadline date is not valid!");
+                        return;
+                    }
                 }
+                //==================================================
             }
-                
             
+            //-------------------
             //-------------------
             bindingSource1.EndEdit();
             //-------------------
@@ -160,6 +185,10 @@ public partial class In_Letters_De : Form
             if (r > 0)
             {
                 MessageBox.Show("Saved! Count: " + r.ToString());
+                if (is_del_clicked == true)
+                {
+                    DialogResult = DialogResult.OK;
+                }
             }
             else
             {
