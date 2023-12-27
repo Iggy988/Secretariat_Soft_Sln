@@ -70,4 +70,25 @@ public partial class MainForm : Form
     {
         main_treeView.CollapseAll();
     }
+
+    private void main_treeView_MouseDoubleClick(object sender, MouseEventArgs e)
+    {
+        if (main_treeView.SelectedNode is not null)
+        {
+            string node_name;
+            node_name = main_treeView.SelectedNode.Name;
+            //--------------------
+            if (node_name == "Incoming_Letters")
+            {
+                Secretariat_Soft.S_Forms.In_Letters_List frm = new S_Forms.In_Letters_List();
+                //MdiParent form je MainForm za In_Letters_List
+                frm.MdiParent = this; //this == MainForm
+                //-------------------------------
+                frm.Show();
+                //-------------------------------
+                tree_panel.Visible = false;
+            }
+        }
+        
+    }
 }

@@ -385,7 +385,7 @@ partial class MainForm
         main_treeView.ImageList = imageList1;
         main_treeView.Indent = 35;
         main_treeView.ItemHeight = 35;
-        main_treeView.Location = new Point(3, 3);
+        main_treeView.Location = new Point(3, 5);
         main_treeView.Name = "main_treeView";
         treeNode1.ImageKey = "review.png";
         treeNode1.Name = "Incoming_Letters";
@@ -404,8 +404,9 @@ partial class MainForm
         treeNode4.Text = "All Folders";
         main_treeView.Nodes.AddRange(new TreeNode[] { treeNode4 });
         main_treeView.SelectedImageIndex = 0;
-        main_treeView.Size = new Size(382, 428);
+        main_treeView.Size = new Size(382, 426);
         main_treeView.TabIndex = 0;
+        main_treeView.MouseDoubleClick += main_treeView_MouseDoubleClick;
         // 
         // imageList1
         // 

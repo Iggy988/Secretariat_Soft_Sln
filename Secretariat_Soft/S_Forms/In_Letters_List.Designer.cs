@@ -97,7 +97,7 @@ partial class In_Letters_List
         Top_Toolstrip.Items.AddRange(new ToolStripItem[] { add_butt, toolStripSeparator3, print_butt, toolStripSeparator1, search_butt, toolStripSeparator2, toolStripSeparator4 });
         Top_Toolstrip.Location = new Point(0, 0);
         Top_Toolstrip.Name = "Top_Toolstrip";
-        Top_Toolstrip.Size = new Size(971, 70);
+        Top_Toolstrip.Size = new Size(1170, 70);
         Top_Toolstrip.TabIndex = 0;
         Top_Toolstrip.Text = "toolStrip1";
         // 
@@ -184,7 +184,7 @@ partial class In_Letters_List
         Bottom_ToolStrip.Items.AddRange(new ToolStripItem[] { FirstButt, SecondButt, position_tbox, total_records_lbl, ThirdButt, FourthButt });
         Bottom_ToolStrip.Location = new Point(0, 577);
         Bottom_ToolStrip.Name = "Bottom_ToolStrip";
-        Bottom_ToolStrip.Size = new Size(971, 50);
+        Bottom_ToolStrip.Size = new Size(1170, 50);
         Bottom_ToolStrip.TabIndex = 1;
         Bottom_ToolStrip.Text = "toolStrip2";
         // 
@@ -261,7 +261,7 @@ partial class In_Letters_List
         dataGridView1.ReadOnly = true;
         dataGridView1.RowHeadersWidth = 40;
         dataGridView1.RowTemplate.Height = 25;
-        dataGridView1.Size = new Size(944, 482);
+        dataGridView1.Size = new Size(1153, 482);
         dataGridView1.TabIndex = 2;
         // 
         // iDDataGridViewTextBoxColumn
@@ -436,7 +436,7 @@ partial class In_Letters_List
         search_pannel2.Controls.Add(subject_like_lbl);
         search_pannel2.Controls.Add(search_textbox);
         search_pannel2.Controls.Add(search_id_lbl);
-        search_pannel2.Location = new Point(495, 104);
+        search_pannel2.Location = new Point(595, 107);
         search_pannel2.Name = "search_pannel2";
         search_pannel2.Size = new Size(461, 221);
         search_pannel2.TabIndex = 3;
@@ -564,7 +564,7 @@ partial class In_Letters_List
         search_pannel1.BackColor = Color.Gainsboro;
         search_pannel1.BackgroundImage = Properties.Resources.down_icon;
         search_pannel1.BackgroundImageLayout = ImageLayout.Stretch;
-        search_pannel1.Location = new Point(877, 71);
+        search_pannel1.Location = new Point(977, 73);
         search_pannel1.Name = "search_pannel1";
         search_pannel1.Size = new Size(79, 34);
         search_pannel1.TabIndex = 4;
@@ -574,7 +574,7 @@ partial class In_Letters_List
         // 
         id_label.AutoSize = true;
         id_label.DataBindings.Add(new Binding("Text", in_letters_bindingSource1, "ID", true));
-        id_label.Location = new Point(1003, 88);
+        id_label.Location = new Point(1254, 175);
         id_label.Name = "id_label";
         id_label.Size = new Size(43, 17);
         id_label.TabIndex = 5;
@@ -585,7 +585,7 @@ partial class In_Letters_List
         AutoScaleDimensions = new SizeF(7F, 17F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.WhiteSmoke;
-        ClientSize = new Size(971, 627);
+        ClientSize = new Size(1170, 627);
         Controls.Add(id_label);
         Controls.Add(search_pannel1);
         Controls.Add(search_pannel2);
