@@ -12,7 +12,7 @@ internal static class Program
         // see https://aka.ms/applicationconfiguration.
 
         System.Globalization.CultureInfo ci = new System.Globalization.CultureInfo("en-US");
-        //ci.DateTimeFormat.ShortDatePattern = "dd-MM-yyyy";
+        ci.DateTimeFormat.ShortDatePattern = "dd-MM-yyyy";
         //ci.DateTimeFormat.ShortDatePattern = "HH:mm:ss";
         //ci.NumberFormat.CurrencySymbol = "€";
         //----------------------------------------------

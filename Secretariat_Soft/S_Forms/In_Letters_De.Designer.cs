@@ -456,18 +456,21 @@ partial class In_Letters_De
         // deadline_masked_TB
         // 
         deadline_masked_TB.CausesValidation = false;
-        deadline_masked_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Deadline", true));
+        deadline_masked_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Deadline", true, DataSourceUpdateMode.OnValidation, "__-__-____"));
         deadline_masked_TB.Location = new Point(118, 432);
+        deadline_masked_TB.Mask = "00/00/0000";
         deadline_masked_TB.Name = "deadline_masked_TB";
         deadline_masked_TB.Size = new Size(239, 25);
         deadline_masked_TB.TabIndex = 3;
+        deadline_masked_TB.TextMaskFormat = MaskFormat.IncludePromptAndLiterals;
         deadline_masked_TB.ValidatingType = typeof(DateTime);
         // 
         // res_date_masked_TB
         // 
         res_date_masked_TB.CausesValidation = false;
-        res_date_masked_TB.DataBindings.Add(new Binding("Text", bindingSource1, "RecivedDate", true));
+        res_date_masked_TB.DataBindings.Add(new Binding("Text", bindingSource1, "RecivedDate", true, DataSourceUpdateMode.OnValidation, "__-__-____"));
         res_date_masked_TB.Location = new Point(118, 193);
+        res_date_masked_TB.Mask = "00/00/0000";
         res_date_masked_TB.Name = "res_date_masked_TB";
         res_date_masked_TB.Size = new Size(239, 25);
         res_date_masked_TB.TabIndex = 3;
@@ -485,11 +488,14 @@ partial class In_Letters_De
         // reg_date_masked_TB
         // 
         reg_date_masked_TB.CausesValidation = false;
-        reg_date_masked_TB.DataBindings.Add(new Binding("Text", bindingSource1, "RegDate", true));
+        reg_date_masked_TB.DataBindings.Add(new Binding("Text", bindingSource1, "RegDate", true, DataSourceUpdateMode.OnValidation, "__-__-____"));
         reg_date_masked_TB.Location = new Point(118, 99);
+        reg_date_masked_TB.Mask = "00/00/0000";
         reg_date_masked_TB.Name = "reg_date_masked_TB";
         reg_date_masked_TB.Size = new Size(239, 25);
         reg_date_masked_TB.TabIndex = 3;
+        reg_date_masked_TB.TextMaskFormat = MaskFormat.IncludePromptAndLiterals;
+        reg_date_masked_TB.ValidatingType = typeof(DateTime);
         // 
         // summary_TB
         // 
