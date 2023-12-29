@@ -29,7 +29,7 @@ partial class Out_Letters_List
     private void InitializeComponent()
     {
         components = new System.ComponentModel.Container();
-        DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+        DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
         Bottom_ToolStrip = new ToolStrip();
         FirstButt = new ToolStripButton();
         SecondButt = new ToolStripButton();
@@ -81,6 +81,7 @@ partial class Out_Letters_List
         userIdDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
         sysDateDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
         sysTimeDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+        sa_Out_LettersTableAdapter1 = new DataSet.LettersTableAdapters.Sa_Out_LettersTableAdapter();
         Bottom_ToolStrip.SuspendLayout();
         Top_Toolstrip.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)out_letters_bindingSource1).BeginInit();
@@ -111,6 +112,7 @@ partial class Out_Letters_List
         FirstButt.Name = "FirstButt";
         FirstButt.Size = new Size(35, 35);
         FirstButt.Text = "toolStripButton1";
+        FirstButt.Click += FirstButt_Click;
         // 
         // SecondButt
         // 
@@ -121,6 +123,7 @@ partial class Out_Letters_List
         SecondButt.Name = "SecondButt";
         SecondButt.Size = new Size(35, 35);
         SecondButt.Text = "toolStripButton1";
+        SecondButt.Click += SecondButt_Click;
         // 
         // position_tbox
         // 
@@ -143,6 +146,7 @@ partial class Out_Letters_List
         ThirdButt.Name = "ThirdButt";
         ThirdButt.Size = new Size(35, 35);
         ThirdButt.Text = "toolStripButton1";
+        ThirdButt.Click += ThirdButt_Click;
         // 
         // FourthButt
         // 
@@ -153,6 +157,7 @@ partial class Out_Letters_List
         FourthButt.Name = "FourthButt";
         FourthButt.Size = new Size(35, 35);
         FourthButt.Text = "toolStripButton1";
+        FourthButt.Click += FourthButt_Click;
         // 
         // Top_Toolstrip
         // 
@@ -224,6 +229,7 @@ partial class Out_Letters_List
         search_butt.Size = new Size(100, 67);
         search_butt.Text = "Search F3";
         search_butt.TextImageRelation = TextImageRelation.ImageAboveText;
+        search_butt.Click += search_butt_Click;
         // 
         // toolStripSeparator2
         // 
@@ -300,6 +306,7 @@ partial class Out_Letters_List
         search_date_butt.Text = "Search";
         search_date_butt.TextImageRelation = TextImageRelation.ImageBeforeText;
         search_date_butt.UseVisualStyleBackColor = true;
+        search_date_butt.Click += search_date_butt_Click;
         // 
         // label2
         // 
@@ -351,6 +358,7 @@ partial class Out_Letters_List
         searc_subject_like_butt.Text = "Search";
         searc_subject_like_butt.TextImageRelation = TextImageRelation.ImageBeforeText;
         searc_subject_like_butt.UseVisualStyleBackColor = true;
+        searc_subject_like_butt.Click += searc_subject_like_butt_Click;
         // 
         // search_subject_textbox
         // 
@@ -373,6 +381,7 @@ partial class Out_Letters_List
         search_panel_butt.Text = "Search ID";
         search_panel_butt.TextImageRelation = TextImageRelation.ImageBeforeText;
         search_panel_butt.UseVisualStyleBackColor = true;
+        search_panel_butt.Click += search_panel_butt_Click;
         // 
         // subject_like_lbl
         // 
@@ -407,8 +416,8 @@ partial class Out_Letters_List
         dataGridView1.AllowUserToAddRows = false;
         dataGridView1.AllowUserToDeleteRows = false;
         dataGridView1.AllowUserToOrderColumns = true;
-        dataGridViewCellStyle2.BackColor = Color.WhiteSmoke;
-        dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+        dataGridViewCellStyle1.BackColor = Color.WhiteSmoke;
+        dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
         dataGridView1.AutoGenerateColumns = false;
         dataGridView1.BackgroundColor = Color.WhiteSmoke;
         dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -557,6 +566,10 @@ partial class Out_Letters_List
         sysTimeDataGridViewTextBoxColumn.Name = "sysTimeDataGridViewTextBoxColumn";
         sysTimeDataGridViewTextBoxColumn.ReadOnly = true;
         // 
+        // sa_Out_LettersTableAdapter1
+        // 
+        sa_Out_LettersTableAdapter1.ClearBeforeFill = true;
+        // 
         // Out_Letters_List
         // 
         AutoScaleDimensions = new SizeF(7F, 15F);
@@ -574,6 +587,7 @@ partial class Out_Letters_List
         Name = "Out_Letters_List";
         ShowIcon = false;
         Text = "Outgoing Letters List";
+        Load += Out_Letters_List_Load;
         Bottom_ToolStrip.ResumeLayout(false);
         Bottom_ToolStrip.PerformLayout();
         Top_Toolstrip.ResumeLayout(false);
@@ -644,4 +658,5 @@ partial class Out_Letters_List
     private DataGridViewTextBoxColumn userIdDataGridViewTextBoxColumn;
     private DataGridViewTextBoxColumn sysDateDataGridViewTextBoxColumn;
     private DataGridViewTextBoxColumn sysTimeDataGridViewTextBoxColumn;
+    private DataSet.LettersTableAdapters.Sa_Out_LettersTableAdapter sa_Out_LettersTableAdapter1;
 }

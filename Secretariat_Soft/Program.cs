@@ -20,6 +20,7 @@ internal static class Program
         System.Threading.Thread.CurrentThread.CurrentUICulture = ci;
 
         ApplicationConfiguration.Initialize();
-        Application.Run(new Secretariat_Soft.MainForm());
+        Application.Run(new Secretariat_Soft.S_Forms.Out_Letters_List());
+        //Application.Run(new MainForm());
     }
 }
