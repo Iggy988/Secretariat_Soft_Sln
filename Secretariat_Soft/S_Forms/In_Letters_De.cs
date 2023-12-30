@@ -41,6 +41,14 @@ public partial class In_Letters_De : Form
         }
 
     }
+    void sysDateTime()
+    {
+        system_time_lbl.Text = DateTime.Now.ToString("HH:mm:ss");
+        system_date_lbl.Text = DateTime.Now.ToString("dd/MM/yyyy");
+        //-------------------------------
+        user_name_lbl.Text = Secretariat_Soft.Properties.Settings.Default.User_name;
+        user_id_lbl.Text = Secretariat_Soft.Properties.Settings.Default.User_Id.ToString();
+    }
 
     void enable_add_edit_del_butt()
     {
@@ -84,7 +92,7 @@ public partial class In_Letters_De : Form
     {
         disable_add_edit_del_butt();
         //-------------------------
-        bindingSource1.AddNew();
+        in_letters_bindingSource1.AddNew();
         sysDateTime();
         //-------------------------
         letter_time_masked_TB.Text = System.DateTime.Now.ToLongTimeString();
@@ -111,7 +119,7 @@ public partial class In_Letters_De : Form
     {
         disable_del_butt();
         //--------------------------
-        bindingSource1.RemoveCurrent();
+        in_letters_bindingSource1.RemoveCurrent();
         //--------------------------
         is_del_clicked = true;
 
@@ -121,19 +129,12 @@ public partial class In_Letters_De : Form
     {
         enable_add_edit_del_butt();
         //--------------------------
-        bindingSource1.CancelEdit();
+        in_letters_bindingSource1.CancelEdit();
         letters1.Sa_In_Letters.RejectChanges();
         //--------------------------
     }
 
-    void sysDateTime()
-    {
-        system_time_lbl.Text = DateTime.Now.ToString("HH:mm:ss");
-        system_date_lbl.Text = DateTime.Now.ToString("dd/MM/yyyy");
-        //-------------------------------
-        user_name_lbl.Text = Secretariat_Soft.Properties.Settings.Default.User_name;
-        user_id_lbl.Text = Secretariat_Soft.Properties.Settings.Default.User_Id.ToString();
-    }
+    
 
     private void de_save_butt_Click(object sender, EventArgs e)
     {
@@ -177,7 +178,7 @@ public partial class In_Letters_De : Form
             
             //-------------------
             //-------------------
-            bindingSource1.EndEdit();
+            in_letters_bindingSource1.EndEdit();
             //-------------------
             int r; //Update je int
             r = sa_In_LettersTableAdapter1.Update(letters1.Sa_In_Letters);

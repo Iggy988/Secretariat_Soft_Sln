@@ -575,7 +575,7 @@ partial class Out_Letters_List
         // 
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
-        BackColor = Color.FromArgb(192, 255, 255);
+        BackColor = SystemColors.MenuBar;
         ClientSize = new Size(1164, 621);
         Controls.Add(Bottom_ToolStrip);
         Controls.Add(Top_Toolstrip);

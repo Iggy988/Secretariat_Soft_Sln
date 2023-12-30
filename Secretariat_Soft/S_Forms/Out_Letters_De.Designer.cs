@@ -31,19 +31,19 @@ partial class Out_Letters_De
         components = new System.ComponentModel.Container();
         main_gbox = new GroupBox();
         letter_type_comboBox1 = new ComboBox();
-        bindingSource1 = new BindingSource(components);
+        out_letters_bindingSource1 = new BindingSource(components);
         letters1 = new DataSet.Letters();
         today_resDate_btn = new Button();
         today_regDate_Btn = new Button();
         page_count_NC = new NumericUpDown();
         priority_CB = new ComboBox();
-        res_date_masked_TB = new MaskedTextBox();
-        letter_time_masked_TB = new MaskedTextBox();
+        sent_date_masked_TB = new MaskedTextBox();
+        sent_time_masked_TB = new MaskedTextBox();
         reg_date_masked_TB = new MaskedTextBox();
         summary_TB = new TextBox();
         ref_doc_TB = new TextBox();
         group_TB = new TextBox();
-        res_Method_TB = new TextBox();
+        sending_Method_TB = new TextBox();
         recipient_TB = new TextBox();
         sender_TB = new TextBox();
         letter_number_TB = new TextBox();
@@ -90,7 +90,7 @@ partial class Out_Letters_De
         id_label7 = new Label();
         sa_Out_LettersTableAdapter1 = new DataSet.LettersTableAdapters.Sa_Out_LettersTableAdapter();
         main_gbox.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)out_letters_bindingSource1).BeginInit();
         ((System.ComponentModel.ISupportInitialize)letters1).BeginInit();
         ((System.ComponentModel.ISupportInitialize)page_count_NC).BeginInit();
         Top_Toolstrip.SuspendLayout();
@@ -99,18 +99,19 @@ partial class Out_Letters_De
         // 
         // main_gbox
         // 
+        main_gbox.BackColor = SystemColors.MenuBar;
         main_gbox.Controls.Add(letter_type_comboBox1);
         main_gbox.Controls.Add(today_resDate_btn);
         main_gbox.Controls.Add(today_regDate_Btn);
         main_gbox.Controls.Add(page_count_NC);
         main_gbox.Controls.Add(priority_CB);
-        main_gbox.Controls.Add(res_date_masked_TB);
-        main_gbox.Controls.Add(letter_time_masked_TB);
+        main_gbox.Controls.Add(sent_date_masked_TB);
+        main_gbox.Controls.Add(sent_time_masked_TB);
         main_gbox.Controls.Add(reg_date_masked_TB);
         main_gbox.Controls.Add(summary_TB);
         main_gbox.Controls.Add(ref_doc_TB);
         main_gbox.Controls.Add(group_TB);
-        main_gbox.Controls.Add(res_Method_TB);
+        main_gbox.Controls.Add(sending_Method_TB);
         main_gbox.Controls.Add(recipient_TB);
         main_gbox.Controls.Add(sender_TB);
         main_gbox.Controls.Add(letter_number_TB);
@@ -140,19 +141,19 @@ partial class Out_Letters_De
         // 
         // letter_type_comboBox1
         // 
-        letter_type_comboBox1.DataBindings.Add(new Binding("Text", bindingSource1, "LetterType", true));
+        letter_type_comboBox1.DataBindings.Add(new Binding("Text", out_letters_bindingSource1, "LetterType", true));
         letter_type_comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
         letter_type_comboBox1.FormattingEnabled = true;
-        letter_type_comboBox1.Items.AddRange(new object[] { "Low", "Normal", "High" });
+        letter_type_comboBox1.Items.AddRange(new object[] { "Internal", "External", "Informative", "Other" });
         letter_type_comboBox1.Location = new Point(134, 222);
         letter_type_comboBox1.Name = "letter_type_comboBox1";
         letter_type_comboBox1.Size = new Size(239, 25);
         letter_type_comboBox1.TabIndex = 9;
         // 
-        // bindingSource1
+        // out_letters_bindingSource1
         // 
-        bindingSource1.DataMember = "Sa_Out_Letters";
-        bindingSource1.DataSource = letters1;
+        out_letters_bindingSource1.DataMember = "Sa_Out_Letters";
+        out_letters_bindingSource1.DataSource = letters1;
         // 
         // letters1
         // 
@@ -168,6 +169,7 @@ partial class Out_Letters_De
         today_resDate_btn.TabIndex = 7;
         today_resDate_btn.Text = "Today";
         today_resDate_btn.UseVisualStyleBackColor = true;
+        today_resDate_btn.Click += today_resDate_btn_Click;
         // 
         // today_regDate_Btn
         // 
@@ -177,10 +179,11 @@ partial class Out_Letters_De
         today_regDate_Btn.TabIndex = 6;
         today_regDate_Btn.Text = "Today";
         today_regDate_Btn.UseVisualStyleBackColor = true;
+        today_regDate_Btn.Click += today_regDate_Btn_Click;
         // 
         // page_count_NC
         // 
-        page_count_NC.DataBindings.Add(new Binding("Value", bindingSource1, "PageCount", true));
+        page_count_NC.DataBindings.Add(new Binding("Value", out_letters_bindingSource1, "PageCount", true));
         page_count_NC.Location = new Point(134, 401);
         page_count_NC.Maximum = new decimal(new int[] { 25000, 0, 0, 0 });
         page_count_NC.Name = "page_count_NC";
@@ -189,7 +192,7 @@ partial class Out_Letters_De
         // 
         // priority_CB
         // 
-        priority_CB.DataBindings.Add(new Binding("Text", bindingSource1, "Priority", true));
+        priority_CB.DataBindings.Add(new Binding("Text", out_letters_bindingSource1, "Priority", true));
         priority_CB.DropDownStyle = ComboBoxStyle.DropDownList;
         priority_CB.FormattingEnabled = true;
         priority_CB.Items.AddRange(new object[] { "Low", "Normal", "High" });
@@ -198,30 +201,30 @@ partial class Out_Letters_De
         priority_CB.Size = new Size(239, 25);
         priority_CB.TabIndex = 4;
         // 
-        // res_date_masked_TB
+        // sent_date_masked_TB
         // 
-        res_date_masked_TB.CausesValidation = false;
-        res_date_masked_TB.DataBindings.Add(new Binding("Text", bindingSource1, "SentDate", true));
-        res_date_masked_TB.Location = new Point(134, 193);
-        res_date_masked_TB.Mask = "00/00/0000";
-        res_date_masked_TB.Name = "res_date_masked_TB";
-        res_date_masked_TB.Size = new Size(239, 25);
-        res_date_masked_TB.TabIndex = 3;
-        res_date_masked_TB.TextMaskFormat = MaskFormat.IncludePromptAndLiterals;
-        res_date_masked_TB.ValidatingType = typeof(DateTime);
+        sent_date_masked_TB.CausesValidation = false;
+        sent_date_masked_TB.DataBindings.Add(new Binding("Text", out_letters_bindingSource1, "SentDate", true));
+        sent_date_masked_TB.Location = new Point(134, 193);
+        sent_date_masked_TB.Mask = "00/00/0000";
+        sent_date_masked_TB.Name = "sent_date_masked_TB";
+        sent_date_masked_TB.Size = new Size(239, 25);
+        sent_date_masked_TB.TabIndex = 3;
+        sent_date_masked_TB.TextMaskFormat = MaskFormat.IncludePromptAndLiterals;
+        sent_date_masked_TB.ValidatingType = typeof(DateTime);
         // 
-        // letter_time_masked_TB
+        // sent_time_masked_TB
         // 
-        letter_time_masked_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Sent_Time", true));
-        letter_time_masked_TB.Location = new Point(134, 162);
-        letter_time_masked_TB.Name = "letter_time_masked_TB";
-        letter_time_masked_TB.Size = new Size(239, 25);
-        letter_time_masked_TB.TabIndex = 3;
+        sent_time_masked_TB.DataBindings.Add(new Binding("Text", out_letters_bindingSource1, "Sent_Time", true));
+        sent_time_masked_TB.Location = new Point(134, 162);
+        sent_time_masked_TB.Name = "sent_time_masked_TB";
+        sent_time_masked_TB.Size = new Size(239, 25);
+        sent_time_masked_TB.TabIndex = 3;
         // 
         // reg_date_masked_TB
         // 
         reg_date_masked_TB.CausesValidation = false;
-        reg_date_masked_TB.DataBindings.Add(new Binding("Text", bindingSource1, "RegDate", true, DataSourceUpdateMode.OnValidation, "__-__-____"));
+        reg_date_masked_TB.DataBindings.Add(new Binding("Text", out_letters_bindingSource1, "RegDate", true, DataSourceUpdateMode.OnValidation, "__-__-____"));
         reg_date_masked_TB.Location = new Point(134, 99);
         reg_date_masked_TB.Mask = "00/00/0000";
         reg_date_masked_TB.Name = "reg_date_masked_TB";
@@ -232,7 +235,7 @@ partial class Out_Letters_De
         // 
         // summary_TB
         // 
-        summary_TB.DataBindings.Add(new Binding("Text", bindingSource1, "DocSummary", true));
+        summary_TB.DataBindings.Add(new Binding("Text", out_letters_bindingSource1, "DocSummary", true));
         summary_TB.Location = new Point(134, 465);
         summary_TB.Multiline = true;
         summary_TB.Name = "summary_TB";
@@ -242,7 +245,7 @@ partial class Out_Letters_De
         // 
         // ref_doc_TB
         // 
-        ref_doc_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Ref_Doc", true));
+        ref_doc_TB.DataBindings.Add(new Binding("Text", out_letters_bindingSource1, "Ref_Doc", true));
         ref_doc_TB.Location = new Point(134, 435);
         ref_doc_TB.Name = "ref_doc_TB";
         ref_doc_TB.Size = new Size(524, 25);
@@ -250,23 +253,23 @@ partial class Out_Letters_De
         // 
         // group_TB
         // 
-        group_TB.DataBindings.Add(new Binding("Text", bindingSource1, "GroupName", true));
+        group_TB.DataBindings.Add(new Binding("Text", out_letters_bindingSource1, "GroupName", true));
         group_TB.Location = new Point(134, 339);
         group_TB.Name = "group_TB";
         group_TB.Size = new Size(239, 25);
         group_TB.TabIndex = 2;
         // 
-        // res_Method_TB
+        // sending_Method_TB
         // 
-        res_Method_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Sending_Method", true));
-        res_Method_TB.Location = new Point(134, 309);
-        res_Method_TB.Name = "res_Method_TB";
-        res_Method_TB.Size = new Size(239, 25);
-        res_Method_TB.TabIndex = 2;
+        sending_Method_TB.DataBindings.Add(new Binding("Text", out_letters_bindingSource1, "Sending_Method", true));
+        sending_Method_TB.Location = new Point(134, 309);
+        sending_Method_TB.Name = "sending_Method_TB";
+        sending_Method_TB.Size = new Size(239, 25);
+        sending_Method_TB.TabIndex = 2;
         // 
         // recipient_TB
         // 
-        recipient_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Recipient", true));
+        recipient_TB.DataBindings.Add(new Binding("Text", out_letters_bindingSource1, "Recipient", true));
         recipient_TB.Location = new Point(134, 280);
         recipient_TB.Name = "recipient_TB";
         recipient_TB.Size = new Size(239, 25);
@@ -274,7 +277,7 @@ partial class Out_Letters_De
         // 
         // sender_TB
         // 
-        sender_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Sender", true));
+        sender_TB.DataBindings.Add(new Binding("Text", out_letters_bindingSource1, "Sender", true));
         sender_TB.Location = new Point(134, 251);
         sender_TB.Name = "sender_TB";
         sender_TB.Size = new Size(239, 25);
@@ -282,7 +285,7 @@ partial class Out_Letters_De
         // 
         // letter_number_TB
         // 
-        letter_number_TB.DataBindings.Add(new Binding("Text", bindingSource1, "LetterNumber", true));
+        letter_number_TB.DataBindings.Add(new Binding("Text", out_letters_bindingSource1, "LetterNumber", true));
         letter_number_TB.Location = new Point(134, 129);
         letter_number_TB.Name = "letter_number_TB";
         letter_number_TB.Size = new Size(239, 25);
@@ -290,7 +293,7 @@ partial class Out_Letters_De
         // 
         // subject_TB
         // 
-        subject_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Subject", true));
+        subject_TB.DataBindings.Add(new Binding("Text", out_letters_bindingSource1, "Subject", true));
         subject_TB.Location = new Point(134, 66);
         subject_TB.Name = "subject_TB";
         subject_TB.Size = new Size(524, 25);
@@ -299,7 +302,7 @@ partial class Out_Letters_De
         // sys_id_LBL
         // 
         sys_id_LBL.BorderStyle = BorderStyle.FixedSingle;
-        sys_id_LBL.DataBindings.Add(new Binding("Text", bindingSource1, "ID", true));
+        sys_id_LBL.DataBindings.Add(new Binding("Text", out_letters_bindingSource1, "ID", true));
         sys_id_LBL.Location = new Point(134, 34);
         sys_id_LBL.Name = "sys_id_LBL";
         sys_id_LBL.Size = new Size(239, 25);
@@ -445,7 +448,7 @@ partial class Out_Letters_De
         // Top_Toolstrip
         // 
         Top_Toolstrip.AutoSize = false;
-        Top_Toolstrip.BackColor = Color.FromArgb(192, 255, 255);
+        Top_Toolstrip.BackColor = SystemColors.MenuBar;
         Top_Toolstrip.Items.AddRange(new ToolStripItem[] { de_add_butt, toolStripSeparator4, de_edit_butt, toolStripSeparator1, de_delete_butt, toolStripSeparator2, de_save_butt, toolStripSeparator5, toolStripSeparator3, de_print_butt, toolStripSeparator6, de_cancel_butt, toolStripSeparator7 });
         Top_Toolstrip.Location = new Point(0, 0);
         Top_Toolstrip.Name = "Top_Toolstrip";
@@ -468,6 +471,7 @@ partial class Out_Letters_De
         de_add_butt.Text = "Add New F2";
         de_add_butt.TextAlign = ContentAlignment.BottomCenter;
         de_add_butt.TextImageRelation = TextImageRelation.ImageAboveText;
+        de_add_butt.Click += de_add_butt_Click;
         // 
         // toolStripSeparator4
         // 
@@ -490,6 +494,7 @@ partial class Out_Letters_De
         de_edit_butt.Text = "Edit F3";
         de_edit_butt.TextAlign = ContentAlignment.BottomCenter;
         de_edit_butt.TextImageRelation = TextImageRelation.ImageAboveText;
+        de_edit_butt.Click += de_edit_butt_Click;
         // 
         // toolStripSeparator1
         // 
@@ -512,6 +517,7 @@ partial class Out_Letters_De
         de_delete_butt.Text = "Delete F4";
         de_delete_butt.TextAlign = ContentAlignment.BottomCenter;
         de_delete_butt.TextImageRelation = TextImageRelation.ImageAboveText;
+        de_delete_butt.Click += de_delete_butt_Click;
         // 
         // toolStripSeparator2
         // 
@@ -534,6 +540,7 @@ partial class Out_Letters_De
         de_save_butt.Text = "Save F5";
         de_save_butt.TextAlign = ContentAlignment.BottomCenter;
         de_save_butt.TextImageRelation = TextImageRelation.ImageAboveText;
+        de_save_butt.Click += de_save_butt_Click;
         // 
         // toolStripSeparator5
         // 
@@ -587,6 +594,7 @@ partial class Out_Letters_De
         de_cancel_butt.Text = "Cancel F6";
         de_cancel_butt.TextAlign = ContentAlignment.BottomCenter;
         de_cancel_butt.TextImageRelation = TextImageRelation.ImageAboveText;
+        de_cancel_butt.Click += de_cancel_butt_Click;
         // 
         // toolStripSeparator7
         // 
@@ -595,7 +603,7 @@ partial class Out_Letters_De
         // 
         // system_time_lbl
         // 
-        system_time_lbl.DataBindings.Add(new Binding("Text", bindingSource1, "SysTime", true));
+        system_time_lbl.DataBindings.Add(new Binding("Text", out_letters_bindingSource1, "SysTime", true));
         system_time_lbl.ForeColor = Color.FromArgb(192, 0, 0);
         system_time_lbl.Location = new Point(617, 8);
         system_time_lbl.Name = "system_time_lbl";
@@ -631,7 +639,7 @@ partial class Out_Letters_De
         // 
         // system_date_lbl
         // 
-        system_date_lbl.DataBindings.Add(new Binding("Text", bindingSource1, "SysDate", true));
+        system_date_lbl.DataBindings.Add(new Binding("Text", out_letters_bindingSource1, "SysDate", true));
         system_date_lbl.ForeColor = Color.FromArgb(192, 0, 0);
         system_date_lbl.Location = new Point(419, 8);
         system_date_lbl.Name = "system_date_lbl";
@@ -650,7 +658,7 @@ partial class Out_Letters_De
         // 
         // user_id_lbl
         // 
-        user_id_lbl.DataBindings.Add(new Binding("Text", bindingSource1, "UserId", true));
+        user_id_lbl.DataBindings.Add(new Binding("Text", out_letters_bindingSource1, "UserId", true));
         user_id_lbl.ForeColor = Color.FromArgb(192, 0, 0);
         user_id_lbl.Location = new Point(253, 8);
         user_id_lbl.Name = "user_id_lbl";
@@ -669,7 +677,7 @@ partial class Out_Letters_De
         // 
         // user_name_lbl
         // 
-        user_name_lbl.DataBindings.Add(new Binding("Text", bindingSource1, "UserName", true));
+        user_name_lbl.DataBindings.Add(new Binding("Text", out_letters_bindingSource1, "UserName", true));
         user_name_lbl.ForeColor = Color.FromArgb(192, 0, 0);
         user_name_lbl.Location = new Point(94, 8);
         user_name_lbl.Name = "user_name_lbl";
@@ -703,7 +711,7 @@ partial class Out_Letters_De
         // 
         AutoScaleDimensions = new SizeF(7F, 17F);
         AutoScaleMode = AutoScaleMode.Font;
-        BackColor = Color.FromArgb(192, 255, 255);
+        BackColor = SystemColors.MenuBar;
         ClientSize = new Size(722, 675);
         Controls.Add(id_label7);
         Controls.Add(main_gbox);
@@ -716,9 +724,10 @@ partial class Out_Letters_De
         Name = "Out_Letters_De";
         ShowIcon = false;
         Text = "Outgoing Letters Data Entry";
+        Load += Out_Letters_De_Load;
         main_gbox.ResumeLayout(false);
         main_gbox.PerformLayout();
-        ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
+        ((System.ComponentModel.ISupportInitialize)out_letters_bindingSource1).EndInit();
         ((System.ComponentModel.ISupportInitialize)letters1).EndInit();
         ((System.ComponentModel.ISupportInitialize)page_count_NC).EndInit();
         Top_Toolstrip.ResumeLayout(false);
@@ -735,16 +744,16 @@ partial class Out_Letters_De
     private Button today_resDate_btn;
     private Button today_regDate_Btn;
     private NumericUpDown page_count_NC;
-    private BindingSource bindingSource1;
+    private BindingSource out_letters_bindingSource1;
     private DataSet.Letters letters1;
     private ComboBox priority_CB;
-    private MaskedTextBox res_date_masked_TB;
-    private MaskedTextBox letter_time_masked_TB;
+    private MaskedTextBox sent_date_masked_TB;
+    private MaskedTextBox sent_time_masked_TB;
     private MaskedTextBox reg_date_masked_TB;
     private TextBox summary_TB;
     private TextBox ref_doc_TB;
     private TextBox group_TB;
-    private TextBox res_Method_TB;
+    private TextBox sending_Method_TB;
     private TextBox recipient_TB;
     private TextBox sender_TB;
     private TextBox letter_number_TB;

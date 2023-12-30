@@ -45,7 +45,7 @@ partial class In_Letters_De
         toolStripSeparator7 = new ToolStripSeparator();
         panel1 = new Panel();
         system_time_lbl = new Label();
-        bindingSource1 = new BindingSource(components);
+        in_letters_bindingSource1 = new BindingSource(components);
         letters1 = new DataSet.Letters();
         label6 = new Label();
         system_date_lbl = new Label();
@@ -94,7 +94,7 @@ partial class In_Letters_De
         id_label2 = new Label();
         Top_Toolstrip.SuspendLayout();
         panel1.SuspendLayout();
-        ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)in_letters_bindingSource1).BeginInit();
         ((System.ComponentModel.ISupportInitialize)letters1).BeginInit();
         main_gbox.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)page_count_NC).BeginInit();
@@ -274,7 +274,7 @@ partial class In_Letters_De
         // 
         // system_time_lbl
         // 
-        system_time_lbl.DataBindings.Add(new Binding("Text", bindingSource1, "SysTime", true));
+        system_time_lbl.DataBindings.Add(new Binding("Text", in_letters_bindingSource1, "SysTime", true));
         system_time_lbl.ForeColor = Color.FromArgb(192, 0, 0);
         system_time_lbl.Location = new Point(617, 8);
         system_time_lbl.Name = "system_time_lbl";
@@ -282,10 +282,10 @@ partial class In_Letters_De
         system_time_lbl.TabIndex = 7;
         system_time_lbl.Text = "-";
         // 
-        // bindingSource1
+        // in_letters_bindingSource1
         // 
-        bindingSource1.DataMember = "Sa_In_Letters";
-        bindingSource1.DataSource = letters1;
+        in_letters_bindingSource1.DataMember = "Sa_In_Letters";
+        in_letters_bindingSource1.DataSource = letters1;
         // 
         // letters1
         // 
@@ -304,7 +304,7 @@ partial class In_Letters_De
         // 
         // system_date_lbl
         // 
-        system_date_lbl.DataBindings.Add(new Binding("Text", bindingSource1, "SysDate", true));
+        system_date_lbl.DataBindings.Add(new Binding("Text", in_letters_bindingSource1, "SysDate", true));
         system_date_lbl.ForeColor = Color.FromArgb(192, 0, 0);
         system_date_lbl.Location = new Point(419, 8);
         system_date_lbl.Name = "system_date_lbl";
@@ -323,7 +323,7 @@ partial class In_Letters_De
         // 
         // user_id_lbl
         // 
-        user_id_lbl.DataBindings.Add(new Binding("Text", bindingSource1, "UserId", true));
+        user_id_lbl.DataBindings.Add(new Binding("Text", in_letters_bindingSource1, "UserId", true));
         user_id_lbl.ForeColor = Color.FromArgb(192, 0, 0);
         user_id_lbl.Location = new Point(253, 8);
         user_id_lbl.Name = "user_id_lbl";
@@ -342,7 +342,7 @@ partial class In_Letters_De
         // 
         // user_name_lbl
         // 
-        user_name_lbl.DataBindings.Add(new Binding("Text", bindingSource1, "UserName", true));
+        user_name_lbl.DataBindings.Add(new Binding("Text", in_letters_bindingSource1, "UserName", true));
         user_name_lbl.ForeColor = Color.FromArgb(192, 0, 0);
         user_name_lbl.Location = new Point(94, 8);
         user_name_lbl.Name = "user_name_lbl";
@@ -435,7 +435,7 @@ partial class In_Letters_De
         // 
         // page_count_NC
         // 
-        page_count_NC.DataBindings.Add(new Binding("Value", bindingSource1, "PageCount", true));
+        page_count_NC.DataBindings.Add(new Binding("Value", in_letters_bindingSource1, "PageCount", true));
         page_count_NC.Location = new Point(118, 401);
         page_count_NC.Maximum = new decimal(new int[] { 25000, 0, 0, 0 });
         page_count_NC.Name = "page_count_NC";
@@ -444,7 +444,7 @@ partial class In_Letters_De
         // 
         // priority_CB
         // 
-        priority_CB.DataBindings.Add(new Binding("Text", bindingSource1, "Priority", true));
+        priority_CB.DataBindings.Add(new Binding("Text", in_letters_bindingSource1, "Priority", true));
         priority_CB.DropDownStyle = ComboBoxStyle.DropDownList;
         priority_CB.FormattingEnabled = true;
         priority_CB.Items.AddRange(new object[] { "Low", "Normal", "High" });
@@ -456,7 +456,7 @@ partial class In_Letters_De
         // deadline_masked_TB
         // 
         deadline_masked_TB.CausesValidation = false;
-        deadline_masked_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Deadline", true, DataSourceUpdateMode.OnValidation, "__-__-____"));
+        deadline_masked_TB.DataBindings.Add(new Binding("Text", in_letters_bindingSource1, "Deadline", true, DataSourceUpdateMode.OnValidation, "__-__-____"));
         deadline_masked_TB.Location = new Point(118, 432);
         deadline_masked_TB.Mask = "00/00/0000";
         deadline_masked_TB.Name = "deadline_masked_TB";
@@ -468,7 +468,7 @@ partial class In_Letters_De
         // res_date_masked_TB
         // 
         res_date_masked_TB.CausesValidation = false;
-        res_date_masked_TB.DataBindings.Add(new Binding("Text", bindingSource1, "RecivedDate", true, DataSourceUpdateMode.OnValidation, "__-__-____"));
+        res_date_masked_TB.DataBindings.Add(new Binding("Text", in_letters_bindingSource1, "RecivedDate", true, DataSourceUpdateMode.OnValidation, "__-__-____"));
         res_date_masked_TB.Location = new Point(118, 193);
         res_date_masked_TB.Mask = "00/00/0000";
         res_date_masked_TB.Name = "res_date_masked_TB";
@@ -479,7 +479,7 @@ partial class In_Letters_De
         // 
         // letter_time_masked_TB
         // 
-        letter_time_masked_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Letter_Time", true));
+        letter_time_masked_TB.DataBindings.Add(new Binding("Text", in_letters_bindingSource1, "Letter_Time", true));
         letter_time_masked_TB.Location = new Point(118, 162);
         letter_time_masked_TB.Name = "letter_time_masked_TB";
         letter_time_masked_TB.Size = new Size(239, 25);
@@ -488,7 +488,7 @@ partial class In_Letters_De
         // reg_date_masked_TB
         // 
         reg_date_masked_TB.CausesValidation = false;
-        reg_date_masked_TB.DataBindings.Add(new Binding("Text", bindingSource1, "RegDate", true, DataSourceUpdateMode.OnValidation, "__-__-____"));
+        reg_date_masked_TB.DataBindings.Add(new Binding("Text", in_letters_bindingSource1, "RegDate", true, DataSourceUpdateMode.OnValidation, "__-__-____"));
         reg_date_masked_TB.Location = new Point(118, 99);
         reg_date_masked_TB.Mask = "00/00/0000";
         reg_date_masked_TB.Name = "reg_date_masked_TB";
@@ -499,7 +499,7 @@ partial class In_Letters_De
         // 
         // summary_TB
         // 
-        summary_TB.DataBindings.Add(new Binding("Text", bindingSource1, "DocSummary", true));
+        summary_TB.DataBindings.Add(new Binding("Text", in_letters_bindingSource1, "DocSummary", true));
         summary_TB.Location = new Point(118, 492);
         summary_TB.Multiline = true;
         summary_TB.Name = "summary_TB";
@@ -509,7 +509,7 @@ partial class In_Letters_De
         // 
         // ref_doc_TB
         // 
-        ref_doc_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Ref_Doc", true));
+        ref_doc_TB.DataBindings.Add(new Binding("Text", in_letters_bindingSource1, "Ref_Doc", true));
         ref_doc_TB.Location = new Point(118, 462);
         ref_doc_TB.Name = "ref_doc_TB";
         ref_doc_TB.Size = new Size(524, 25);
@@ -517,7 +517,7 @@ partial class In_Letters_De
         // 
         // group_TB
         // 
-        group_TB.DataBindings.Add(new Binding("Text", bindingSource1, "GroupName", true));
+        group_TB.DataBindings.Add(new Binding("Text", in_letters_bindingSource1, "GroupName", true));
         group_TB.Location = new Point(118, 339);
         group_TB.Name = "group_TB";
         group_TB.Size = new Size(239, 25);
@@ -525,7 +525,7 @@ partial class In_Letters_De
         // 
         // res_Method_TB
         // 
-        res_Method_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Recive_Method", true));
+        res_Method_TB.DataBindings.Add(new Binding("Text", in_letters_bindingSource1, "Recive_Method", true));
         res_Method_TB.Location = new Point(118, 309);
         res_Method_TB.Name = "res_Method_TB";
         res_Method_TB.Size = new Size(239, 25);
@@ -533,7 +533,7 @@ partial class In_Letters_De
         // 
         // recipient_TB
         // 
-        recipient_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Recipient", true));
+        recipient_TB.DataBindings.Add(new Binding("Text", in_letters_bindingSource1, "Recipient", true));
         recipient_TB.Location = new Point(118, 280);
         recipient_TB.Name = "recipient_TB";
         recipient_TB.Size = new Size(239, 25);
@@ -541,7 +541,7 @@ partial class In_Letters_De
         // 
         // sender_TB
         // 
-        sender_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Sender", true));
+        sender_TB.DataBindings.Add(new Binding("Text", in_letters_bindingSource1, "Sender", true));
         sender_TB.Location = new Point(118, 251);
         sender_TB.Name = "sender_TB";
         sender_TB.Size = new Size(239, 25);
@@ -549,7 +549,7 @@ partial class In_Letters_De
         // 
         // letter_type_TB
         // 
-        letter_type_TB.DataBindings.Add(new Binding("Text", bindingSource1, "LetterType", true));
+        letter_type_TB.DataBindings.Add(new Binding("Text", in_letters_bindingSource1, "LetterType", true));
         letter_type_TB.Location = new Point(118, 221);
         letter_type_TB.Name = "letter_type_TB";
         letter_type_TB.Size = new Size(239, 25);
@@ -557,7 +557,7 @@ partial class In_Letters_De
         // 
         // letter_number_TB
         // 
-        letter_number_TB.DataBindings.Add(new Binding("Text", bindingSource1, "LetterNumber", true));
+        letter_number_TB.DataBindings.Add(new Binding("Text", in_letters_bindingSource1, "LetterNumber", true));
         letter_number_TB.Location = new Point(118, 129);
         letter_number_TB.Name = "letter_number_TB";
         letter_number_TB.Size = new Size(239, 25);
@@ -565,7 +565,7 @@ partial class In_Letters_De
         // 
         // subject_TB
         // 
-        subject_TB.DataBindings.Add(new Binding("Text", bindingSource1, "Subject", true));
+        subject_TB.DataBindings.Add(new Binding("Text", in_letters_bindingSource1, "Subject", true));
         subject_TB.Location = new Point(118, 66);
         subject_TB.Name = "subject_TB";
         subject_TB.Size = new Size(524, 25);
@@ -574,7 +574,7 @@ partial class In_Letters_De
         // sys_id_LBL
         // 
         sys_id_LBL.BorderStyle = BorderStyle.FixedSingle;
-        sys_id_LBL.DataBindings.Add(new Binding("Text", bindingSource1, "ID", true));
+        sys_id_LBL.DataBindings.Add(new Binding("Text", in_letters_bindingSource1, "ID", true));
         sys_id_LBL.Location = new Point(118, 34);
         sys_id_LBL.Name = "sys_id_LBL";
         sys_id_LBL.Size = new Size(239, 25);
@@ -761,7 +761,7 @@ partial class In_Letters_De
         Top_Toolstrip.PerformLayout();
         panel1.ResumeLayout(false);
         panel1.PerformLayout();
-        ((System.ComponentModel.ISupportInitialize)bindingSource1).EndInit();
+        ((System.ComponentModel.ISupportInitialize)in_letters_bindingSource1).EndInit();
         ((System.ComponentModel.ISupportInitialize)letters1).EndInit();
         main_gbox.ResumeLayout(false);
         main_gbox.PerformLayout();
@@ -830,7 +830,7 @@ partial class In_Letters_De
     private ComboBox priority_CB;
     private MaskedTextBox deadline_masked_TB;
     private DataSet.LettersTableAdapters.Sa_In_LettersTableAdapter sa_In_LettersTableAdapter1;
-    private BindingSource bindingSource1;
+    private BindingSource in_letters_bindingSource1;
     private Button today_regDate_Btn;
     private Button today_resDate_btn;
     private Button today_deadline_btn;
