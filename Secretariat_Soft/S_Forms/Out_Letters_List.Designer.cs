@@ -45,7 +45,7 @@ partial class Out_Letters_List
         search_butt = new ToolStripButton();
         toolStripSeparator2 = new ToolStripSeparator();
         toolStripSeparator4 = new ToolStripSeparator();
-        id_label = new Label();
+        id_label6 = new Label();
         out_letters_bindingSource1 = new BindingSource(components);
         letters1 = new DataSet.Letters();
         search_pannel1 = new Panel();
@@ -99,7 +99,7 @@ partial class Out_Letters_List
         Bottom_ToolStrip.Items.AddRange(new ToolStripItem[] { FirstButt, SecondButt, position_tbox, total_records_lbl, ThirdButt, FourthButt });
         Bottom_ToolStrip.Location = new Point(0, 571);
         Bottom_ToolStrip.Name = "Bottom_ToolStrip";
-        Bottom_ToolStrip.Size = new Size(1170, 50);
+        Bottom_ToolStrip.Size = new Size(1164, 50);
         Bottom_ToolStrip.TabIndex = 7;
         Bottom_ToolStrip.Text = "toolStrip2";
         // 
@@ -165,7 +165,7 @@ partial class Out_Letters_List
         Top_Toolstrip.Items.AddRange(new ToolStripItem[] { add_butt, toolStripSeparator3, print_butt, toolStripSeparator1, search_butt, toolStripSeparator2, toolStripSeparator4 });
         Top_Toolstrip.Location = new Point(0, 0);
         Top_Toolstrip.Name = "Top_Toolstrip";
-        Top_Toolstrip.Size = new Size(1170, 70);
+        Top_Toolstrip.Size = new Size(1164, 70);
         Top_Toolstrip.TabIndex = 6;
         Top_Toolstrip.Text = "toolStrip1";
         // 
@@ -183,6 +183,7 @@ partial class Out_Letters_List
         add_butt.Size = new Size(157, 67);
         add_butt.Text = "Add | Edit Document F2";
         add_butt.TextImageRelation = TextImageRelation.ImageAboveText;
+        add_butt.Click += add_butt_Click;
         // 
         // toolStripSeparator3
         // 
@@ -242,15 +243,15 @@ partial class Out_Letters_List
         toolStripSeparator4.Name = "toolStripSeparator4";
         toolStripSeparator4.Size = new Size(6, 70);
         // 
-        // id_label
+        // id_label6
         // 
-        id_label.AutoSize = true;
-        id_label.DataBindings.Add(new Binding("Text", out_letters_bindingSource1, "ID", true));
-        id_label.Location = new Point(1247, 177);
-        id_label.Name = "id_label";
-        id_label.Size = new Size(38, 15);
-        id_label.TabIndex = 11;
-        id_label.Text = "label3";
+        id_label6.AutoSize = true;
+        id_label6.DataBindings.Add(new Binding("Text", out_letters_bindingSource1, "ID", true));
+        id_label6.Location = new Point(1247, 177);
+        id_label6.Name = "id_label6";
+        id_label6.Size = new Size(38, 15);
+        id_label6.TabIndex = 11;
+        id_label6.Text = "label3";
         // 
         // out_letters_bindingSource1
         // 
@@ -575,10 +576,10 @@ partial class Out_Letters_List
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.FromArgb(192, 255, 255);
-        ClientSize = new Size(1170, 621);
+        ClientSize = new Size(1164, 621);
         Controls.Add(Bottom_ToolStrip);
         Controls.Add(Top_Toolstrip);
-        Controls.Add(id_label);
+        Controls.Add(id_label6);
         Controls.Add(search_pannel1);
         Controls.Add(search_pannel2);
         Controls.Add(dataGridView1);
@@ -618,7 +619,7 @@ partial class Out_Letters_List
     private ToolStripButton search_butt;
     private ToolStripSeparator toolStripSeparator2;
     private ToolStripSeparator toolStripSeparator4;
-    private Label id_label;
+    private Label id_label6;
     private BindingSource out_letters_bindingSource1;
     private DataSet.Letters letters1;
     private Panel search_pannel1;

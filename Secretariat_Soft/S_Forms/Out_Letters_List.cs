@@ -118,4 +118,22 @@ public partial class Out_Letters_List : Form
             MessageBox.Show("Error! " + ex.Message);
         }
     }
+
+    private void add_butt_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            Secretariat_Soft.S_Forms.Out_Letters_De frm = new Out_Letters_De();
+            frm.id_label7.Text = id_label6.Text;
+            frm.ShowDialog();
+            //---------------------------------
+            sa_Out_LettersTableAdapter1.Fill(letters1.Sa_Out_Letters);
+            //recordPosition();
+        }
+        catch (Exception ex)
+        {
+
+            MessageBox.Show("Error! " + ex.Message);
+        }
+    }
 }
