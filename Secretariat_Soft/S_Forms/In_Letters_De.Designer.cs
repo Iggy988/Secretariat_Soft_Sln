@@ -755,6 +755,7 @@ partial class In_Letters_De
         MinimizeBox = false;
         Name = "In_Letters_De";
         ShowIcon = false;
+        StartPosition = FormStartPosition.CenterScreen;
         Text = "Data Entry: Incoming Letters";
         Load += In_Letters_De_Load;
         Top_Toolstrip.ResumeLayout(false);

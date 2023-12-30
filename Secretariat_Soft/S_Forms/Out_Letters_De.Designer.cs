@@ -723,6 +723,7 @@ partial class Out_Letters_De
         MinimizeBox = false;
         Name = "Out_Letters_De";
         ShowIcon = false;
+        StartPosition = FormStartPosition.CenterScreen;
         Text = "Outgoing Letters Data Entry";
         Load += Out_Letters_De_Load;
         main_gbox.ResumeLayout(false);

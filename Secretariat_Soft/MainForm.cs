@@ -88,6 +88,17 @@ public partial class MainForm : Form
                 //-------------------------------
                 tree_panel.Visible = false;
             }
+            //-------------------------
+            if (node_name == "Outgoing_Letters")
+            {
+                Secretariat_Soft.S_Forms.Out_Letters_List frm = new ();
+                //MdiParent form je MainForm za In_Letters_List
+                frm.MdiParent = this; //this == MainForm
+                //-------------------------------
+                frm.Show();
+                //-------------------------------
+                tree_panel.Visible = false;
+            }
         }
         
     }

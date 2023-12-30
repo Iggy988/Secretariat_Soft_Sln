@@ -587,6 +587,7 @@ partial class Out_Letters_List
         MaximizeBox = false;
         Name = "Out_Letters_List";
         ShowIcon = false;
+        StartPosition = FormStartPosition.CenterScreen;
         Text = "Outgoing Letters List";
         Load += Out_Letters_List_Load;
         Bottom_ToolStrip.ResumeLayout(false);
