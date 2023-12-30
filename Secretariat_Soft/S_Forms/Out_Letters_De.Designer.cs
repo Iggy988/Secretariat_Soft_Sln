@@ -204,7 +204,8 @@ partial class Out_Letters_De
         // sent_date_masked_TB
         // 
         sent_date_masked_TB.CausesValidation = false;
-        sent_date_masked_TB.DataBindings.Add(new Binding("Text", out_letters_bindingSource1, "SentDate", true));
+        sent_date_masked_TB.CutCopyMaskFormat = MaskFormat.IncludePromptAndLiterals;
+        sent_date_masked_TB.DataBindings.Add(new Binding("Text", out_letters_bindingSource1, "SentDate", true, DataSourceUpdateMode.OnValidation, "__-__-____"));
         sent_date_masked_TB.Location = new Point(134, 193);
         sent_date_masked_TB.Mask = "00/00/0000";
         sent_date_masked_TB.Name = "sent_date_masked_TB";
@@ -224,6 +225,7 @@ partial class Out_Letters_De
         // reg_date_masked_TB
         // 
         reg_date_masked_TB.CausesValidation = false;
+        reg_date_masked_TB.CutCopyMaskFormat = MaskFormat.IncludePromptAndLiterals;
         reg_date_masked_TB.DataBindings.Add(new Binding("Text", out_letters_bindingSource1, "RegDate", true, DataSourceUpdateMode.OnValidation, "__-__-____"));
         reg_date_masked_TB.Location = new Point(134, 99);
         reg_date_masked_TB.Mask = "00/00/0000";
