@@ -78,7 +78,7 @@ partial class Users_De
         Top_Toolstrip.Items.AddRange(new ToolStripItem[] { de_add_butt, toolStripSeparator4, de_edit_butt, toolStripSeparator1, de_delete_butt, toolStripSeparator2, de_save_butt, toolStripSeparator5, toolStripSeparator3, de_cancel_butt, toolStripSeparator7 });
         Top_Toolstrip.Location = new Point(0, 0);
         Top_Toolstrip.Name = "Top_Toolstrip";
-        Top_Toolstrip.Size = new Size(825, 70);
+        Top_Toolstrip.Size = new Size(799, 70);
         Top_Toolstrip.TabIndex = 2;
         Top_Toolstrip.Text = "toolStrip1";
         // 
@@ -97,6 +97,7 @@ partial class Users_De
         de_add_butt.Text = "Add New F2";
         de_add_butt.TextAlign = ContentAlignment.BottomCenter;
         de_add_butt.TextImageRelation = TextImageRelation.ImageAboveText;
+        de_add_butt.Click += de_add_butt_Click;
         // 
         // toolStripSeparator4
         // 
@@ -119,6 +120,7 @@ partial class Users_De
         de_edit_butt.Text = "Edit F3";
         de_edit_butt.TextAlign = ContentAlignment.BottomCenter;
         de_edit_butt.TextImageRelation = TextImageRelation.ImageAboveText;
+        de_edit_butt.Click += de_edit_butt_Click;
         // 
         // toolStripSeparator1
         // 
@@ -141,6 +143,7 @@ partial class Users_De
         de_delete_butt.Text = "Delete F4";
         de_delete_butt.TextAlign = ContentAlignment.BottomCenter;
         de_delete_butt.TextImageRelation = TextImageRelation.ImageAboveText;
+        de_delete_butt.Click += de_delete_butt_Click;
         // 
         // toolStripSeparator2
         // 
@@ -163,6 +166,7 @@ partial class Users_De
         de_save_butt.Text = "Save F5";
         de_save_butt.TextAlign = ContentAlignment.BottomCenter;
         de_save_butt.TextImageRelation = TextImageRelation.ImageAboveText;
+        de_save_butt.Click += de_save_butt_Click;
         // 
         // toolStripSeparator5
         // 
@@ -191,6 +195,7 @@ partial class Users_De
         de_cancel_butt.Text = "Cancel F6";
         de_cancel_butt.TextAlign = ContentAlignment.BottomCenter;
         de_cancel_butt.TextImageRelation = TextImageRelation.ImageAboveText;
+        de_cancel_butt.Click += de_cancel_butt_Click;
         // 
         // toolStripSeparator7
         // 
@@ -211,7 +216,7 @@ partial class Users_De
         panel1.Dock = DockStyle.Bottom;
         panel1.Location = new Point(0, 492);
         panel1.Name = "panel1";
-        panel1.Size = new Size(825, 35);
+        panel1.Size = new Size(799, 35);
         panel1.TabIndex = 3;
         // 
         // system_time_lbl
@@ -315,7 +320,7 @@ partial class Users_De
         main_gbox.Controls.Add(label1);
         main_gbox.Location = new Point(12, 83);
         main_gbox.Name = "main_gbox";
-        main_gbox.Size = new Size(804, 393);
+        main_gbox.Size = new Size(778, 393);
         main_gbox.TabIndex = 4;
         main_gbox.TabStop = false;
         main_gbox.Text = "info";
@@ -324,7 +329,7 @@ partial class Users_De
         // 
         comment_TB.DataBindings.Add(new Binding("Text", appusers_bindingSource1, "Comment", true));
         comment_TB.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        comment_TB.Location = new Point(183, 164);
+        comment_TB.Location = new Point(162, 164);
         comment_TB.Name = "comment_TB";
         comment_TB.Size = new Size(570, 25);
         comment_TB.TabIndex = 18;
@@ -333,7 +338,7 @@ partial class Users_De
         // 
         label7.AutoSize = true;
         label7.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        label7.Location = new Point(72, 168);
+        label7.Location = new Point(51, 168);
         label7.Name = "label7";
         label7.Size = new Size(67, 17);
         label7.TabIndex = 17;
@@ -342,7 +347,7 @@ partial class Users_De
         // password_repeat_TB
         // 
         password_repeat_TB.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        password_repeat_TB.Location = new Point(183, 133);
+        password_repeat_TB.Location = new Point(162, 133);
         password_repeat_TB.Name = "password_repeat_TB";
         password_repeat_TB.Size = new Size(240, 25);
         password_repeat_TB.TabIndex = 16;
@@ -351,7 +356,7 @@ partial class Users_De
         // 
         label3.AutoSize = true;
         label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        label3.Location = new Point(72, 137);
+        label3.Location = new Point(51, 137);
         label3.Name = "label3";
         label3.Size = new Size(112, 17);
         label3.TabIndex = 15;
@@ -361,7 +366,7 @@ partial class Users_De
         // 
         password_TB.DataBindings.Add(new Binding("Text", appusers_bindingSource1, "Password", true));
         password_TB.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        password_TB.Location = new Point(183, 100);
+        password_TB.Location = new Point(162, 100);
         password_TB.Name = "password_TB";
         password_TB.Size = new Size(240, 25);
         password_TB.TabIndex = 13;
@@ -370,7 +375,7 @@ partial class Users_De
         // 
         user_name_TB.DataBindings.Add(new Binding("Text", appusers_bindingSource1, "User_Name", true));
         user_name_TB.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        user_name_TB.Location = new Point(183, 67);
+        user_name_TB.Location = new Point(162, 67);
         user_name_TB.Name = "user_name_TB";
         user_name_TB.Size = new Size(240, 25);
         user_name_TB.TabIndex = 14;
@@ -380,7 +385,7 @@ partial class Users_De
         sys_id_LBL.BorderStyle = BorderStyle.FixedSingle;
         sys_id_LBL.DataBindings.Add(new Binding("Text", appusers_bindingSource1, "id", true));
         sys_id_LBL.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        sys_id_LBL.Location = new Point(183, 35);
+        sys_id_LBL.Location = new Point(162, 35);
         sys_id_LBL.Name = "sys_id_LBL";
         sys_id_LBL.Size = new Size(240, 25);
         sys_id_LBL.TabIndex = 12;
@@ -391,7 +396,7 @@ partial class Users_De
         // 
         label5.AutoSize = true;
         label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        label5.Location = new Point(72, 104);
+        label5.Location = new Point(51, 104);
         label5.Name = "label5";
         label5.Size = new Size(67, 17);
         label5.TabIndex = 8;
@@ -401,7 +406,7 @@ partial class Users_De
         // 
         label2.AutoSize = true;
         label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        label2.Location = new Point(72, 72);
+        label2.Location = new Point(51, 72);
         label2.Name = "label2";
         label2.Size = new Size(77, 17);
         label2.TabIndex = 10;
@@ -411,7 +416,7 @@ partial class Users_De
         // 
         label1.AutoSize = true;
         label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        label1.Location = new Point(72, 40);
+        label1.Location = new Point(51, 40);
         label1.Name = "label1";
         label1.Size = new Size(54, 17);
         label1.TabIndex = 11;
@@ -436,7 +441,7 @@ partial class Users_De
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.Lavender;
-        ClientSize = new Size(825, 527);
+        ClientSize = new Size(799, 527);
         Controls.Add(id_label2);
         Controls.Add(main_gbox);
         Controls.Add(panel1);

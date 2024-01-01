@@ -22,8 +22,7 @@ public partial class Users_De : Form
         is_del_clicked = false;
         //-------------------------
         enable_add_edit_del_butt();
-        //-------------------------
-        //sa_In_LettersTableAdapter1.FillBy_id_desc(letters1.Sa_In_Letters);
+  
         //-------------------------
         try
         {
@@ -39,9 +38,6 @@ public partial class Users_De : Form
             MessageBox.Show("Error! " + ex.Message);
         }
     }
-
-
-
 
     void sysDateTime()
     {
@@ -86,5 +82,87 @@ public partial class Users_De : Form
         de_add_butt.Enabled = false;
         de_edit_butt.Enabled = false;
         de_delete_butt.Enabled = false;
+    }
+
+    private void de_add_butt_Click(object sender, EventArgs e)
+    {
+        disable_add_edit_del_butt();
+        //-------------------------
+        appusers_bindingSource1.AddNew();
+        sysDateTime();
+        //-------------------------
+        is_del_clicked = false;
+    }
+
+    private void de_edit_butt_Click(object sender, EventArgs e)
+    {
+        disable_add_edit_del_butt();
+        //-------------------------
+        sysDateTime();
+        //-------------------------
+        is_del_clicked = false;
+    }
+
+    private void de_delete_butt_Click(object sender, EventArgs e)
+    {
+        disable_del_butt();
+        //--------------------------
+        appusers_bindingSource1.RemoveCurrent();
+        //--------------------------
+        is_del_clicked = true;
+    }
+
+    private void de_save_butt_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            if (is_del_clicked == false)
+            {
+                //==================================================
+                //-------Validator---------
+              
+
+                
+              
+                //==================================================
+            }
+
+            //-------------------
+            //-------------------
+            appusers_bindingSource1.EndEdit();
+            //-------------------
+            int r; //Update je int
+            r = appUsersTableAdapter1.Update(letters1.AppUsers);
+            //-------------------
+            if (r > 0)
+            {
+                MessageBox.Show("Saved! Count: " + r.ToString());
+                if (is_del_clicked == true)
+                {
+                    DialogResult = DialogResult.OK;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Not Saved! ");
+            }
+            //-------------------
+        }
+        catch (Exception ex)
+        {
+
+            MessageBox.Show("Error! " + ex.Message);
+        }
+
+        enable_add_edit_del_butt();
+    }
+
+    private void de_cancel_butt_Click(object sender, EventArgs e)
+    {
+        enable_add_edit_del_butt();
+        //--------------------------
+        appusers_bindingSource1.CancelEdit();
+        letters1.AppUsers.RejectChanges();
+        //--------------------------
     }
 }
