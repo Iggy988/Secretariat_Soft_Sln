@@ -46,6 +46,7 @@ partial class UserList
         appusers_bindingSource1 = new BindingSource(components);
         letters1 = new DataSet.Letters();
         appUsersTableAdapter1 = new DataSet.LettersTableAdapters.AppUsersTableAdapter();
+        id_label = new Label();
         Top_Toolstrip.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
         ((System.ComponentModel.ISupportInitialize)appusers_bindingSource1).BeginInit();
@@ -58,7 +59,7 @@ partial class UserList
         Top_Toolstrip.Items.AddRange(new ToolStripItem[] { add_butt, toolStripSeparator3, toolStripSeparator4 });
         Top_Toolstrip.Location = new Point(0, 0);
         Top_Toolstrip.Name = "Top_Toolstrip";
-        Top_Toolstrip.Size = new Size(784, 70);
+        Top_Toolstrip.Size = new Size(783, 70);
         Top_Toolstrip.TabIndex = 1;
         Top_Toolstrip.Text = "toolStrip1";
         // 
@@ -76,6 +77,7 @@ partial class UserList
         add_butt.Size = new Size(127, 67);
         add_butt.Text = "Add | Edit Users F2";
         add_butt.TextImageRelation = TextImageRelation.ImageAboveText;
+        add_butt.Click += add_butt_Click;
         // 
         // toolStripSeparator3
         // 
@@ -180,12 +182,23 @@ partial class UserList
         // 
         appUsersTableAdapter1.ClearBeforeFill = true;
         // 
+        // id_label
+        // 
+        id_label.AutoSize = true;
+        id_label.DataBindings.Add(new Binding("Text", appusers_bindingSource1, "id", true));
+        id_label.Location = new Point(825, 189);
+        id_label.Name = "id_label";
+        id_label.Size = new Size(38, 15);
+        id_label.TabIndex = 6;
+        id_label.Text = "label3";
+        // 
         // UserList
         // 
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = SystemColors.Info;
-        ClientSize = new Size(784, 565);
+        ClientSize = new Size(783, 565);
+        Controls.Add(id_label);
         Controls.Add(dataGridView1);
         Controls.Add(Top_Toolstrip);
         FormBorderStyle = FormBorderStyle.FixedSingle;
@@ -201,6 +214,7 @@ partial class UserList
         ((System.ComponentModel.ISupportInitialize)appusers_bindingSource1).EndInit();
         ((System.ComponentModel.ISupportInitialize)letters1).EndInit();
         ResumeLayout(false);
+        PerformLayout();
     }
 
     #endregion
@@ -221,4 +235,5 @@ partial class UserList
     private DataGridViewTextBoxColumn sysDateDataGridViewTextBoxColumn;
     private DataGridViewTextBoxColumn sysTimeDataGridViewTextBoxColumn;
     private DataSet.LettersTableAdapters.AppUsersTableAdapter appUsersTableAdapter1;
+    private Label id_label;
 }

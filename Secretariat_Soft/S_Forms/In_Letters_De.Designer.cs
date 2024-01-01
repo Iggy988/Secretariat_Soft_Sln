@@ -106,7 +106,7 @@ partial class In_Letters_De
         Top_Toolstrip.Items.AddRange(new ToolStripItem[] { de_add_butt, toolStripSeparator4, de_edit_butt, toolStripSeparator1, de_delete_butt, toolStripSeparator2, de_save_butt, toolStripSeparator5, toolStripSeparator3, de_print_butt, toolStripSeparator6, de_cancel_butt, toolStripSeparator7 });
         Top_Toolstrip.Location = new Point(0, 0);
         Top_Toolstrip.Name = "Top_Toolstrip";
-        Top_Toolstrip.Size = new Size(720, 70);
+        Top_Toolstrip.Size = new Size(723, 70);
         Top_Toolstrip.TabIndex = 1;
         Top_Toolstrip.Text = "toolStrip1";
         // 
@@ -269,7 +269,7 @@ partial class In_Letters_De
         panel1.Dock = DockStyle.Bottom;
         panel1.Location = new Point(0, 651);
         panel1.Name = "panel1";
-        panel1.Size = new Size(720, 35);
+        panel1.Size = new Size(723, 35);
         panel1.TabIndex = 2;
         // 
         // system_time_lbl
@@ -744,7 +744,7 @@ partial class In_Letters_De
         AutoScaleDimensions = new SizeF(7F, 17F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.WhiteSmoke;
-        ClientSize = new Size(720, 686);
+        ClientSize = new Size(723, 686);
         Controls.Add(id_label2);
         Controls.Add(main_gbox);
         Controls.Add(panel1);

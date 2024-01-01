@@ -1,4 +1,5 @@
 ﻿using Secretariat_Soft.DataSet.LettersTableAdapters;
+using Secretariat_Soft.S_Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,6 +22,24 @@ public partial class UserList : Form
     {
         try
         {
+            appUsersTableAdapter1.Fill(letters1.AppUsers);
+        }
+        catch (Exception ex)
+        {
+
+            MessageBox.Show("Error! " + ex.Message);
+        }
+    }
+
+    private void add_butt_Click(object sender, EventArgs e)
+    {
+
+        try
+        {
+            Secretariat_Soft.CommForms.Users_De frm = new ();
+            frm.id_label2.Text = id_label.Text;
+            frm.ShowDialog();
+            //---------------------------------
             appUsersTableAdapter1.Fill(letters1.AppUsers);
         }
         catch (Exception ex)

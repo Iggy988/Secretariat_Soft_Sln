@@ -5836,12 +5836,18 @@ SELECT id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysDate, S
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT        id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysD" +
                 "ate, SysTime\r\nFROM            AppUsers\r\nORDER BY id";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT        id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysD" +
+                "ate, SysTime\r\nFROM            AppUsers\r\nWHERE        (id = @Search_ID)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Search_ID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5850,6 +5856,20 @@ SELECT id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysDate, S
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
         public virtual int Fill(Letters.AppUsersDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy_id(Letters.AppUsersDataTable dataTable, long Search_ID) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((long)(Search_ID));
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }

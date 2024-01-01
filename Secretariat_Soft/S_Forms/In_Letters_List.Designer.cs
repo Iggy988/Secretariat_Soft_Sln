@@ -29,7 +29,7 @@ partial class In_Letters_List
     private void InitializeComponent()
     {
         components = new System.ComponentModel.Container();
-        DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
+        DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
         Top_Toolstrip = new ToolStrip();
         add_butt = new ToolStripButton();
         toolStripSeparator3 = new ToolStripSeparator();
@@ -97,10 +97,9 @@ partial class In_Letters_List
         Top_Toolstrip.Items.AddRange(new ToolStripItem[] { add_butt, toolStripSeparator3, print_butt, toolStripSeparator1, search_butt, toolStripSeparator2, toolStripSeparator4 });
         Top_Toolstrip.Location = new Point(0, 0);
         Top_Toolstrip.Name = "Top_Toolstrip";
-        Top_Toolstrip.Size = new Size(1170, 70);
+        Top_Toolstrip.Size = new Size(1175, 70);
         Top_Toolstrip.TabIndex = 0;
         Top_Toolstrip.Text = "toolStrip1";
-        //Top_Toolstrip.ItemClicked += this.Top_Toolstrip_ItemClicked;
         // 
         // add_butt
         // 
@@ -185,10 +184,9 @@ partial class In_Letters_List
         Bottom_ToolStrip.Items.AddRange(new ToolStripItem[] { FirstButt, SecondButt, position_tbox, total_records_lbl, ThirdButt, FourthButt });
         Bottom_ToolStrip.Location = new Point(0, 577);
         Bottom_ToolStrip.Name = "Bottom_ToolStrip";
-        Bottom_ToolStrip.Size = new Size(1170, 50);
+        Bottom_ToolStrip.Size = new Size(1175, 50);
         Bottom_ToolStrip.TabIndex = 1;
         Bottom_ToolStrip.Text = "toolStrip2";
-        //Bottom_ToolStrip.ItemClicked += this.Bottom_ToolStrip_ItemClicked;
         // 
         // FirstButt
         // 
@@ -251,8 +249,8 @@ partial class In_Letters_List
         dataGridView1.AllowUserToAddRows = false;
         dataGridView1.AllowUserToDeleteRows = false;
         dataGridView1.AllowUserToOrderColumns = true;
-        dataGridViewCellStyle5.BackColor = Color.WhiteSmoke;
-        dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+        dataGridViewCellStyle1.BackColor = Color.WhiteSmoke;
+        dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
         dataGridView1.AutoGenerateColumns = false;
         dataGridView1.BackgroundColor = Color.WhiteSmoke;
         dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -413,7 +411,6 @@ partial class In_Letters_List
         // 
         in_letters_bindingSource1.DataMember = "Sa_In_Letters";
         in_letters_bindingSource1.DataSource = letters1;
-        //in_letters_bindingSource1.CurrentChanged += this.in_letters_bindingSource1_CurrentChanged;
         // 
         // letters1
         // 
@@ -444,7 +441,6 @@ partial class In_Letters_List
         search_pannel2.Size = new Size(461, 221);
         search_pannel2.TabIndex = 3;
         search_pannel2.Visible = false;
-        //search_pannel2.Paint += this.search_pannel2_Paint;
         // 
         // search_date_butt
         // 
@@ -573,7 +569,6 @@ partial class In_Letters_List
         search_pannel1.Size = new Size(79, 34);
         search_pannel1.TabIndex = 4;
         search_pannel1.Visible = false;
-        //search_pannel1.Paint += search_pannel1_Paint;
         // 
         // id_label
         // 
@@ -590,7 +585,7 @@ partial class In_Letters_List
         AutoScaleDimensions = new SizeF(7F, 17F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.WhiteSmoke;
-        ClientSize = new Size(1170, 627);
+        ClientSize = new Size(1175, 627);
         Controls.Add(id_label);
         Controls.Add(search_pannel1);
         Controls.Add(search_pannel2);
