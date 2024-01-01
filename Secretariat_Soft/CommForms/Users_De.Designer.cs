@@ -53,6 +53,8 @@ partial class Users_De
         user_name_lbl = new Label();
         userName_lbl = new Label();
         main_gbox = new GroupBox();
+        browse_button1 = new Button();
+        user_pictureBox1 = new PictureBox();
         comment_TB = new TextBox();
         label7 = new Label();
         password_repeat_TB = new TextBox();
@@ -70,6 +72,7 @@ partial class Users_De
         ((System.ComponentModel.ISupportInitialize)appusers_bindingSource1).BeginInit();
         ((System.ComponentModel.ISupportInitialize)letters1).BeginInit();
         main_gbox.SuspendLayout();
+        ((System.ComponentModel.ISupportInitialize)user_pictureBox1).BeginInit();
         SuspendLayout();
         // 
         // Top_Toolstrip
@@ -308,6 +311,8 @@ partial class Users_De
         // 
         // main_gbox
         // 
+        main_gbox.Controls.Add(browse_button1);
+        main_gbox.Controls.Add(user_pictureBox1);
         main_gbox.Controls.Add(comment_TB);
         main_gbox.Controls.Add(label7);
         main_gbox.Controls.Add(password_repeat_TB);
@@ -325,11 +330,33 @@ partial class Users_De
         main_gbox.TabStop = false;
         main_gbox.Text = "info";
         // 
+        // browse_button1
+        // 
+        browse_button1.Cursor = Cursors.Hand;
+        browse_button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        browse_button1.Location = new Point(487, 177);
+        browse_button1.Name = "browse_button1";
+        browse_button1.Size = new Size(107, 32);
+        browse_button1.TabIndex = 20;
+        browse_button1.Text = "Browse";
+        browse_button1.UseVisualStyleBackColor = true;
+        browse_button1.Click += browse_button1_Click;
+        // 
+        // user_pictureBox1
+        // 
+        user_pictureBox1.DataBindings.Add(new Binding("Image", appusers_bindingSource1, "Photo", true));
+        user_pictureBox1.Location = new Point(487, 35);
+        user_pictureBox1.Name = "user_pictureBox1";
+        user_pictureBox1.Size = new Size(107, 132);
+        user_pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+        user_pictureBox1.TabIndex = 19;
+        user_pictureBox1.TabStop = false;
+        // 
         // comment_TB
         // 
         comment_TB.DataBindings.Add(new Binding("Text", appusers_bindingSource1, "Comment", true));
         comment_TB.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        comment_TB.Location = new Point(162, 164);
+        comment_TB.Location = new Point(162, 231);
         comment_TB.Name = "comment_TB";
         comment_TB.Size = new Size(570, 25);
         comment_TB.TabIndex = 18;
@@ -338,7 +365,7 @@ partial class Users_De
         // 
         label7.AutoSize = true;
         label7.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        label7.Location = new Point(51, 168);
+        label7.Location = new Point(51, 235);
         label7.Name = "label7";
         label7.Size = new Size(67, 17);
         label7.TabIndex = 17;
@@ -347,7 +374,7 @@ partial class Users_De
         // password_repeat_TB
         // 
         password_repeat_TB.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        password_repeat_TB.Location = new Point(162, 133);
+        password_repeat_TB.Location = new Point(162, 184);
         password_repeat_TB.Name = "password_repeat_TB";
         password_repeat_TB.Size = new Size(240, 25);
         password_repeat_TB.TabIndex = 16;
@@ -356,7 +383,7 @@ partial class Users_De
         // 
         label3.AutoSize = true;
         label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        label3.Location = new Point(51, 137);
+        label3.Location = new Point(51, 188);
         label3.Name = "label3";
         label3.Size = new Size(112, 17);
         label3.TabIndex = 15;
@@ -366,7 +393,7 @@ partial class Users_De
         // 
         password_TB.DataBindings.Add(new Binding("Text", appusers_bindingSource1, "Password", true));
         password_TB.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        password_TB.Location = new Point(162, 100);
+        password_TB.Location = new Point(162, 133);
         password_TB.Name = "password_TB";
         password_TB.Size = new Size(240, 25);
         password_TB.TabIndex = 13;
@@ -375,7 +402,7 @@ partial class Users_De
         // 
         user_name_TB.DataBindings.Add(new Binding("Text", appusers_bindingSource1, "User_Name", true));
         user_name_TB.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        user_name_TB.Location = new Point(162, 67);
+        user_name_TB.Location = new Point(162, 85);
         user_name_TB.Name = "user_name_TB";
         user_name_TB.Size = new Size(240, 25);
         user_name_TB.TabIndex = 14;
@@ -396,7 +423,7 @@ partial class Users_De
         // 
         label5.AutoSize = true;
         label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        label5.Location = new Point(51, 104);
+        label5.Location = new Point(51, 137);
         label5.Name = "label5";
         label5.Size = new Size(67, 17);
         label5.TabIndex = 8;
@@ -406,7 +433,7 @@ partial class Users_De
         // 
         label2.AutoSize = true;
         label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        label2.Location = new Point(51, 72);
+        label2.Location = new Point(51, 90);
         label2.Name = "label2";
         label2.Size = new Size(77, 17);
         label2.TabIndex = 10;
@@ -461,6 +488,7 @@ partial class Users_De
         ((System.ComponentModel.ISupportInitialize)letters1).EndInit();
         main_gbox.ResumeLayout(false);
         main_gbox.PerformLayout();
+        ((System.ComponentModel.ISupportInitialize)user_pictureBox1).EndInit();
         ResumeLayout(false);
         PerformLayout();
     }
@@ -503,4 +531,6 @@ partial class Users_De
     private DataSet.Letters letters1;
     private DataSet.LettersTableAdapters.AppUsersTableAdapter appUsersTableAdapter1;
     public Label id_label2;
+    private Button browse_button1;
+    private PictureBox user_pictureBox1;
 }

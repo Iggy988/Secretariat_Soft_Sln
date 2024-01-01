@@ -22,7 +22,7 @@ public partial class Users_De : Form
         is_del_clicked = false;
         //-------------------------
         enable_add_edit_del_butt();
-  
+
         //-------------------------
         try
         {
@@ -120,10 +120,10 @@ public partial class Users_De : Form
             {
                 //==================================================
                 //-------Validator---------
-              
 
-                
-              
+
+
+
                 //==================================================
             }
 
@@ -164,5 +164,24 @@ public partial class Users_De : Form
         appusers_bindingSource1.CancelEdit();
         letters1.AppUsers.RejectChanges();
         //--------------------------
+    }
+
+    private void browse_button1_Click(object sender, EventArgs e)
+    {
+        OpenFileDialog dlg = new OpenFileDialog();
+        //-----------------------
+        DialogResult dr;
+        //---filter--------------
+        dlg.Filter = "Jpg Files|*.jpg|Png Files|*.png";
+        //-----------------------
+        dr = dlg.ShowDialog();
+        //-----------------------
+        if (dr == DialogResult.OK)
+        {
+            string fn = dlg.FileName;
+            //-----------------
+            user_pictureBox1.LoadAsync(fn);
+            
+        }
     }
 }

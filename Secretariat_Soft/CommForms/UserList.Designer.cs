@@ -105,7 +105,7 @@ partial class UserList
         dataGridView1.Name = "dataGridView1";
         dataGridView1.ReadOnly = true;
         dataGridView1.RowHeadersWidth = 20;
-        dataGridView1.RowTemplate.Height = 25;
+        dataGridView1.RowTemplate.Height = 80;
         dataGridView1.Size = new Size(760, 474);
         dataGridView1.TabIndex = 2;
         // 
@@ -136,6 +136,7 @@ partial class UserList
         // 
         photoDataGridViewImageColumn.DataPropertyName = "Photo";
         photoDataGridViewImageColumn.HeaderText = "Photo";
+        photoDataGridViewImageColumn.ImageLayout = DataGridViewImageCellLayout.Zoom;
         photoDataGridViewImageColumn.Name = "photoDataGridViewImageColumn";
         photoDataGridViewImageColumn.ReadOnly = true;
         // 
@@ -226,6 +227,8 @@ partial class UserList
     private DataGridView dataGridView1;
     private BindingSource appusers_bindingSource1;
     private DataSet.Letters letters1;
+    private DataSet.LettersTableAdapters.AppUsersTableAdapter appUsersTableAdapter1;
+    private Label id_label;
     private DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
     private DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn;
     private DataGridViewTextBoxColumn commentDataGridViewTextBoxColumn;
@@ -234,6 +237,4 @@ partial class UserList
     private DataGridViewTextBoxColumn sysUserIdDataGridViewTextBoxColumn;
     private DataGridViewTextBoxColumn sysDateDataGridViewTextBoxColumn;
     private DataGridViewTextBoxColumn sysTimeDataGridViewTextBoxColumn;
-    private DataSet.LettersTableAdapters.AppUsersTableAdapter appUsersTableAdapter1;
-    private Label id_label;
 }
