@@ -81,7 +81,6 @@ partial class MainForm
         Top_Panel.Name = "Top_Panel";
         Top_Panel.Size = new Size(929, 80);
         Top_Panel.TabIndex = 1;
- 
         // 
         // help_button
         // 
@@ -192,7 +191,7 @@ partial class MainForm
         user_name_lbl.Name = "user_name_lbl";
         user_name_lbl.Size = new Size(184, 30);
         user_name_lbl.TabIndex = 3;
-        user_name_lbl.Text = "Igor";
+        user_name_lbl.Text = "User Name";
         user_name_lbl.TextAlign = ContentAlignment.MiddleCenter;
         // 
         // user_image
@@ -203,7 +202,7 @@ partial class MainForm
         user_image.Location = new Point(26, 498);
         user_image.Name = "user_image";
         user_image.Size = new Size(184, 173);
-        user_image.SizeMode = PictureBoxSizeMode.CenterImage;
+        user_image.SizeMode = PictureBoxSizeMode.Zoom;
         user_image.TabIndex = 2;
         user_image.TabStop = false;
         // 

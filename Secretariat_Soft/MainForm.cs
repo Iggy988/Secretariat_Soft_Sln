@@ -31,7 +31,25 @@ public partial class MainForm : Form
     private void MainForm_Load(object sender, EventArgs e)
     {
         Secretariat_Soft.CommForms.LoginFrm frm = new();
-        frm.ShowDialog();
+        DialogResult dr = frm.ShowDialog();
+        if (dr == DialogResult.OK)
+        {
+            user_image.Image = frm.user_pictureBox1.Image;
+            user_name_lbl.Text = frm.username_CB.Text;
+            //--------------------------
+            Secretariat_Soft.Properties.Settings.Default.User_name = frm.username_CB.Text;
+            //--------------------------
+            long id;
+            long.TryParse(frm.sys_id_LBL.Text, out id);
+            Secretariat_Soft.Properties.Settings.Default.User_Id = id;
+            //--------------------------
+            Properties.Settings.Default.Save();
+            //--------------------------
+        }
+        else
+        {
+            //---wrong password
+        }
         // -----------Load date-------------
         GetDateCal();
         // ----------Tree View _------------

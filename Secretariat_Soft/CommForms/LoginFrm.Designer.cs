@@ -197,7 +197,7 @@ partial class LoginFrm
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = SystemColors.MenuBar;
-        ClientSize = new Size(593, 398);
+        ClientSize = new Size(585, 390);
         ControlBox = false;
         Controls.Add(correct_pass_textBox1);
         Controls.Add(label3);
@@ -230,8 +230,6 @@ partial class LoginFrm
 
     private Button ok_button1;
     private Button cancel_button2;
-    private PictureBox user_pictureBox1;
-    private ComboBox username_CB;
     private TextBox password_TB;
     private Label label5;
     private Label label1;
@@ -239,8 +237,10 @@ partial class LoginFrm
     private BindingSource appusers_bindingSource1;
     private DataSet.Letters letters1;
     private DataSet.LettersTableAdapters.AppUsersTableAdapter appUsersTableAdapter1;
-    private Label sys_id_LBL;
     private Label label2;
     private TextBox correct_pass_textBox1;
     private Label label3;
+    public PictureBox user_pictureBox1;
+    public ComboBox username_CB;
+    public Label sys_id_LBL;
 }
