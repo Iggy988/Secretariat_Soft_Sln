@@ -82,7 +82,7 @@ partial class Users_De
         Top_Toolstrip.Items.AddRange(new ToolStripItem[] { de_add_butt, toolStripSeparator4, de_edit_butt, toolStripSeparator1, de_delete_butt, toolStripSeparator2, de_save_butt, toolStripSeparator5, toolStripSeparator3, de_cancel_butt, toolStripSeparator7 });
         Top_Toolstrip.Location = new Point(0, 0);
         Top_Toolstrip.Name = "Top_Toolstrip";
-        Top_Toolstrip.Size = new Size(799, 70);
+        Top_Toolstrip.Size = new Size(802, 70);
         Top_Toolstrip.TabIndex = 2;
         Top_Toolstrip.Text = "toolStrip1";
         // 
@@ -220,7 +220,7 @@ partial class Users_De
         panel1.Dock = DockStyle.Bottom;
         panel1.Location = new Point(0, 492);
         panel1.Name = "panel1";
-        panel1.Size = new Size(799, 35);
+        panel1.Size = new Size(802, 35);
         panel1.TabIndex = 3;
         // 
         // system_time_lbl
@@ -376,7 +376,9 @@ partial class Users_De
         // 
         password_repeat_TB.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
         password_repeat_TB.Location = new Point(162, 184);
+        password_repeat_TB.MaxLength = 10;
         password_repeat_TB.Name = "password_repeat_TB";
+        password_repeat_TB.PasswordChar = '*';
         password_repeat_TB.Size = new Size(240, 25);
         password_repeat_TB.TabIndex = 16;
         // 
@@ -395,7 +397,9 @@ partial class Users_De
         password_TB.DataBindings.Add(new Binding("Text", appusers_bindingSource1, "Password", true));
         password_TB.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
         password_TB.Location = new Point(162, 133);
+        password_TB.MaxLength = 10;
         password_TB.Name = "password_TB";
+        password_TB.PasswordChar = '*';
         password_TB.Size = new Size(240, 25);
         password_TB.TabIndex = 13;
         // 
@@ -457,7 +461,6 @@ partial class Users_De
         // id_label2
         // 
         id_label2.AutoSize = true;
-        id_label2.DataBindings.Add(new Binding("Text", appusers_bindingSource1, "id", true));
         id_label2.Location = new Point(879, 216);
         id_label2.Name = "id_label2";
         id_label2.Size = new Size(38, 15);
@@ -474,7 +477,7 @@ partial class Users_De
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.Lavender;
-        ClientSize = new Size(799, 527);
+        ClientSize = new Size(802, 527);
         Controls.Add(id_label2);
         Controls.Add(main_gbox);
         Controls.Add(panel1);

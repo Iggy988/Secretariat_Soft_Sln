@@ -25,7 +25,7 @@ namespace Secretariat_Soft.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Igor")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Admin")]
         public string User_name {
             get {
                 return ((string)(this["User_name"]));
@@ -44,6 +44,18 @@ namespace Secretariat_Soft.Properties {
             }
             set {
                 this["User_Id"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public long admin_user_id {
+            get {
+                return ((long)(this["admin_user_id"]));
+            }
+            set {
+                this["admin_user_id"] = value;
             }
         }
     }

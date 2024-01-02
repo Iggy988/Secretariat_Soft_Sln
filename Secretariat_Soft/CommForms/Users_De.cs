@@ -92,6 +92,7 @@ public partial class Users_De : Form
         sysDateTime();
         //-------------------------
         is_del_clicked = false;
+        password_repeat_TB.Text = "";
     }
 
     private void de_edit_butt_Click(object sender, EventArgs e)
@@ -105,6 +106,13 @@ public partial class Users_De : Form
 
     private void de_delete_butt_Click(object sender, EventArgs e)
     {
+        //--------------------------
+        if (sys_id_LBL.Text == Properties.Settings.Default.admin_user_id.ToString())// is admin user 
+        {
+            MessageBox.Show("Can't delete admin user!");
+            return;
+        }
+        //--------------------------
         disable_del_butt();
         //--------------------------
         appusers_bindingSource1.RemoveCurrent();
@@ -120,9 +128,18 @@ public partial class Users_De : Form
             {
                 //==================================================
                 //-------Validator---------
-
-
-
+                if (password_TB.Text == "")
+                {
+                    MessageBox.Show("The Password can not be empty!");
+                    return;
+                }
+                //--------------------------
+                if (password_TB.Text != password_repeat_TB.Text)
+                {
+                    MessageBox.Show("The Password and Repeat Password should be similar!");
+                    return;
+                }
+                //==================================================
 
                 //==================================================
             }
