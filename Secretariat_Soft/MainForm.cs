@@ -45,17 +45,22 @@ public partial class MainForm : Form
             //--------------------------
             Properties.Settings.Default.Save();
             //--------------------------
+            //==================================
+            // -----------Load date-------------
+            GetDateCal();
+            // ----------Tree View _------------
+            tree_panel.Visible = false;
+            main_treeView.ExpandAll();
+            //----------------------------------
+            //==================================
         }
         else
         {
             //---wrong password
+            MessageBox.Show("Exiting Application!");
+            Application.Exit();
         }
-        // -----------Load date-------------
-        GetDateCal();
-        // ----------Tree View _------------
-        tree_panel.Visible = false;
-        main_treeView.ExpandAll();
-        //----------------------------------
+        
     }
 
     void GetDateCal()

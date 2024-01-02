@@ -53,7 +53,7 @@ partial class LoginFrm
         // 
         ok_button1.Cursor = Cursors.Hand;
         ok_button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        ok_button1.Location = new Point(59, 358);
+        ok_button1.Location = new Point(57, 344);
         ok_button1.Name = "ok_button1";
         ok_button1.Size = new Size(92, 30);
         ok_button1.TabIndex = 0;
@@ -65,7 +65,7 @@ partial class LoginFrm
         // 
         cancel_button2.Cursor = Cursors.Hand;
         cancel_button2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        cancel_button2.Location = new Point(216, 358);
+        cancel_button2.Location = new Point(214, 344);
         cancel_button2.Name = "cancel_button2";
         cancel_button2.Size = new Size(89, 30);
         cancel_button2.TabIndex = 1;
@@ -197,7 +197,7 @@ partial class LoginFrm
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = SystemColors.MenuBar;
-        ClientSize = new Size(585, 390);
+        ClientSize = new Size(365, 386);
         ControlBox = false;
         Controls.Add(correct_pass_textBox1);
         Controls.Add(label3);
