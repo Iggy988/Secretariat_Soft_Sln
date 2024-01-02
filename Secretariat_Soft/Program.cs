@@ -21,7 +21,7 @@ internal static class Program
 
         ApplicationConfiguration.Initialize();
         //Application.Run(new Secretariat_Soft.S_Forms.Out_Letters_List());
-        Application.Run(new Secretariat_Soft.CommForms.UserList());
+        Application.Run(new Secretariat_Soft.CommForms.LoginFrm());
         //Application.Run(new MainForm());
     }
 }

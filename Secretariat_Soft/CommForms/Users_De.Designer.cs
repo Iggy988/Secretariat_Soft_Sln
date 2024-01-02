@@ -67,6 +67,7 @@ partial class Users_De
         label1 = new Label();
         appUsersTableAdapter1 = new DataSet.LettersTableAdapters.AppUsersTableAdapter();
         id_label2 = new Label();
+        contextMenuStrip1 = new ContextMenuStrip(components);
         Top_Toolstrip.SuspendLayout();
         panel1.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)appusers_bindingSource1).BeginInit();
@@ -463,6 +464,11 @@ partial class Users_De
         id_label2.TabIndex = 7;
         id_label2.Text = "label3";
         // 
+        // contextMenuStrip1
+        // 
+        contextMenuStrip1.Name = "contextMenuStrip1";
+        contextMenuStrip1.Size = new Size(61, 4);
+        // 
         // Users_De
         // 
         AutoScaleDimensions = new SizeF(7F, 15F);
@@ -533,4 +539,5 @@ partial class Users_De
     public Label id_label2;
     private Button browse_button1;
     private PictureBox user_pictureBox1;
+    private ContextMenuStrip contextMenuStrip1;
 }

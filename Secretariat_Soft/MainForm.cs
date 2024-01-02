@@ -16,10 +16,7 @@ public partial class MainForm : Form
         InitializeComponent();
     }
 
-    private void panel1_Paint(object sender, PaintEventArgs e)
-    {
-
-    }
+    
 
     private void close_button_Click(object sender, EventArgs e)
     {
@@ -33,9 +30,11 @@ public partial class MainForm : Form
 
     private void MainForm_Load(object sender, EventArgs e)
     {
+        Secretariat_Soft.CommForms.LoginFrm frm = new();
+        frm.ShowDialog();
         // -----------Load date-------------
         GetDateCal();
-        // ---------------------------------
+        // ----------Tree View _------------
         tree_panel.Visible = false;
         main_treeView.ExpandAll();
         //----------------------------------

@@ -81,7 +81,7 @@ partial class MainForm
         Top_Panel.Name = "Top_Panel";
         Top_Panel.Size = new Size(929, 80);
         Top_Panel.TabIndex = 1;
-        Top_Panel.Paint += panel1_Paint;
+ 
         // 
         // help_button
         // 

@@ -1,0 +1,54 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Secretariat_Soft.CommForms;
+public partial class LoginFrm : Form
+{
+    public LoginFrm()
+    {
+        InitializeComponent();
+    }
+
+    private void LoginFrm_Load(object sender, EventArgs e)
+    {
+        try
+        {
+            appUsersTableAdapter1.Fill(letters1.AppUsers);
+        }
+        catch (Exception ex)
+        {
+
+            MessageBox.Show("Error! " + ex.Message);
+        }
+    }
+
+    private void ok_button1_Click(object sender, EventArgs e)
+    {
+        //-----------------------------
+        if (username_CB.SelectedIndex == -1)
+        {
+            MessageBox.Show("Please select the user first!");
+            return;
+        }
+        //-----------------------------
+        if (password_TB.Text != correct_pass_textBox1.Text)
+        {
+            MessageBox.Show("Please enter the correct password!");
+            return;
+        }
+        //-----------------------------
+        DialogResult = DialogResult.OK;
+    }
+
+    private void cancel_button2_Click(object sender, EventArgs e)
+    {
+        DialogResult = DialogResult.Cancel;
+    }
+}
