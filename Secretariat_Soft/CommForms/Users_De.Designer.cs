@@ -82,7 +82,7 @@ partial class Users_De
         Top_Toolstrip.Items.AddRange(new ToolStripItem[] { de_add_butt, toolStripSeparator4, de_edit_butt, toolStripSeparator1, de_delete_butt, toolStripSeparator2, de_save_butt, toolStripSeparator5, toolStripSeparator3, de_cancel_butt, toolStripSeparator7 });
         Top_Toolstrip.Location = new Point(0, 0);
         Top_Toolstrip.Name = "Top_Toolstrip";
-        Top_Toolstrip.Size = new Size(802, 70);
+        Top_Toolstrip.Size = new Size(658, 70);
         Top_Toolstrip.TabIndex = 2;
         Top_Toolstrip.Text = "toolStrip1";
         // 
@@ -220,16 +220,16 @@ partial class Users_De
         panel1.Dock = DockStyle.Bottom;
         panel1.Location = new Point(0, 492);
         panel1.Name = "panel1";
-        panel1.Size = new Size(802, 35);
+        panel1.Size = new Size(658, 35);
         panel1.TabIndex = 3;
         // 
         // system_time_lbl
         // 
         system_time_lbl.DataBindings.Add(new Binding("Text", appusers_bindingSource1, "SysTime", true));
         system_time_lbl.ForeColor = Color.FromArgb(192, 0, 0);
-        system_time_lbl.Location = new Point(617, 8);
+        system_time_lbl.Location = new Point(563, 8);
         system_time_lbl.Name = "system_time_lbl";
-        system_time_lbl.Size = new Size(95, 17);
+        system_time_lbl.Size = new Size(81, 17);
         system_time_lbl.TabIndex = 7;
         system_time_lbl.Text = "-";
         // 
@@ -247,7 +247,7 @@ partial class Users_De
         // label6
         // 
         label6.AutoSize = true;
-        label6.Location = new Point(528, 8);
+        label6.Location = new Point(474, 8);
         label6.Name = "label6";
         label6.Size = new Size(77, 15);
         label6.TabIndex = 6;
@@ -257,16 +257,16 @@ partial class Users_De
         // 
         system_date_lbl.DataBindings.Add(new Binding("Text", appusers_bindingSource1, "SysDate", true));
         system_date_lbl.ForeColor = Color.FromArgb(192, 0, 0);
-        system_date_lbl.Location = new Point(419, 8);
+        system_date_lbl.Location = new Point(378, 8);
         system_date_lbl.Name = "system_date_lbl";
-        system_date_lbl.Size = new Size(103, 17);
+        system_date_lbl.Size = new Size(89, 17);
         system_date_lbl.TabIndex = 5;
         system_date_lbl.Text = "-";
         // 
         // label4
         // 
         label4.AutoSize = true;
-        label4.Location = new Point(330, 8);
+        label4.Location = new Point(289, 8);
         label4.Name = "label4";
         label4.Size = new Size(75, 15);
         label4.TabIndex = 4;
@@ -276,7 +276,7 @@ partial class Users_De
         // 
         user_id_lbl.DataBindings.Add(new Binding("Text", appusers_bindingSource1, "Sys_UserId", true));
         user_id_lbl.ForeColor = Color.FromArgb(192, 0, 0);
-        user_id_lbl.Location = new Point(253, 8);
+        user_id_lbl.Location = new Point(212, 8);
         user_id_lbl.Name = "user_id_lbl";
         user_id_lbl.Size = new Size(56, 17);
         user_id_lbl.TabIndex = 3;
@@ -285,7 +285,7 @@ partial class Users_De
         // userId_lbl
         // 
         userId_lbl.AutoSize = true;
-        userId_lbl.Location = new Point(194, 8);
+        userId_lbl.Location = new Point(153, 8);
         userId_lbl.Name = "userId_lbl";
         userId_lbl.Size = new Size(46, 15);
         userId_lbl.TabIndex = 2;
@@ -295,9 +295,9 @@ partial class Users_De
         // 
         user_name_lbl.DataBindings.Add(new Binding("Text", appusers_bindingSource1, "Sys_User", true));
         user_name_lbl.ForeColor = Color.FromArgb(192, 0, 0);
-        user_name_lbl.Location = new Point(94, 8);
+        user_name_lbl.Location = new Point(80, 8);
         user_name_lbl.Name = "user_name_lbl";
-        user_name_lbl.Size = new Size(93, 17);
+        user_name_lbl.Size = new Size(67, 17);
         user_name_lbl.TabIndex = 1;
         user_name_lbl.Text = "-";
         // 
@@ -326,7 +326,7 @@ partial class Users_De
         main_gbox.Controls.Add(label1);
         main_gbox.Location = new Point(12, 83);
         main_gbox.Name = "main_gbox";
-        main_gbox.Size = new Size(778, 393);
+        main_gbox.Size = new Size(634, 393);
         main_gbox.TabIndex = 4;
         main_gbox.TabStop = false;
         main_gbox.Text = "info";
@@ -335,7 +335,7 @@ partial class Users_De
         // 
         browse_button1.Cursor = Cursors.Hand;
         browse_button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        browse_button1.Location = new Point(487, 177);
+        browse_button1.Location = new Point(438, 177);
         browse_button1.Name = "browse_button1";
         browse_button1.Size = new Size(107, 32);
         browse_button1.TabIndex = 20;
@@ -346,7 +346,7 @@ partial class Users_De
         // user_pictureBox1
         // 
         user_pictureBox1.DataBindings.Add(new Binding("Image", appusers_bindingSource1, "Photo", true));
-        user_pictureBox1.Location = new Point(487, 35);
+        user_pictureBox1.Location = new Point(438, 35);
         user_pictureBox1.Name = "user_pictureBox1";
         user_pictureBox1.Size = new Size(107, 132);
         user_pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -359,7 +359,7 @@ partial class Users_De
         comment_TB.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
         comment_TB.Location = new Point(162, 231);
         comment_TB.Name = "comment_TB";
-        comment_TB.Size = new Size(570, 25);
+        comment_TB.Size = new Size(383, 25);
         comment_TB.TabIndex = 18;
         // 
         // label7
@@ -477,7 +477,7 @@ partial class Users_De
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.Lavender;
-        ClientSize = new Size(802, 527);
+        ClientSize = new Size(658, 527);
         Controls.Add(id_label2);
         Controls.Add(main_gbox);
         Controls.Add(panel1);

@@ -34,14 +34,14 @@ partial class MainForm
         TreeNode treeNode3 = new TreeNode("My Letters", new TreeNode[] { treeNode1, treeNode2 });
         TreeNode treeNode4 = new TreeNode("All Folders", 2, 2, new TreeNode[] { treeNode3 });
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-        Top_Panel = new Panel();
+        top_panel = new Panel();
         help_button = new Button();
         tools_button = new Button();
         report_button = new Button();
         data_entry_button = new Button();
         min_button = new Button();
         close_button = new Button();
-        Side_Panel = new Panel();
+        side_panel = new Panel();
         user_name_lbl = new Label();
         user_image = new PictureBox();
         analogClock1 = new AnalogClock.AnalogClock();
@@ -50,7 +50,7 @@ partial class MainForm
         day_month_lbl = new Label();
         month_name_lbl = new Label();
         year_num_lbl = new Label();
-        Bottom_Panel = new Panel();
+        bottom_panel = new Panel();
         calculator_button = new Button();
         background_button = new Button();
         timer1 = new System.Windows.Forms.Timer(components);
@@ -59,28 +59,33 @@ partial class MainForm
         expand_btn = new Button();
         main_treeView = new TreeView();
         imageList1 = new ImageList(components);
-        Top_Panel.SuspendLayout();
-        Side_Panel.SuspendLayout();
+        toold_cm = new ContextMenuStrip(components);
+        usersToolStripMenuItem = new ToolStripMenuItem();
+        backupDataToolStripMenuItem = new ToolStripMenuItem();
+        restoreDataToolStripMenuItem = new ToolStripMenuItem();
+        top_panel.SuspendLayout();
+        side_panel.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)user_image).BeginInit();
         panel1.SuspendLayout();
-        Bottom_Panel.SuspendLayout();
+        bottom_panel.SuspendLayout();
         tree_panel.SuspendLayout();
+        toold_cm.SuspendLayout();
         SuspendLayout();
         // 
-        // Top_Panel
+        // top_panel
         // 
-        Top_Panel.Controls.Add(help_button);
-        Top_Panel.Controls.Add(tools_button);
-        Top_Panel.Controls.Add(report_button);
-        Top_Panel.Controls.Add(data_entry_button);
-        Top_Panel.Controls.Add(min_button);
-        Top_Panel.Controls.Add(close_button);
-        Top_Panel.Dock = DockStyle.Top;
-        Top_Panel.Location = new Point(233, 0);
-        Top_Panel.MinimumSize = new Size(791, 75);
-        Top_Panel.Name = "Top_Panel";
-        Top_Panel.Size = new Size(929, 80);
-        Top_Panel.TabIndex = 1;
+        top_panel.Controls.Add(help_button);
+        top_panel.Controls.Add(tools_button);
+        top_panel.Controls.Add(report_button);
+        top_panel.Controls.Add(data_entry_button);
+        top_panel.Controls.Add(min_button);
+        top_panel.Controls.Add(close_button);
+        top_panel.Dock = DockStyle.Top;
+        top_panel.Location = new Point(233, 0);
+        top_panel.MinimumSize = new Size(791, 85);
+        top_panel.Name = "top_panel";
+        top_panel.Size = new Size(929, 91);
+        top_panel.TabIndex = 1;
         // 
         // help_button
         // 
@@ -90,7 +95,7 @@ partial class MainForm
         help_button.ImageAlign = ContentAlignment.TopCenter;
         help_button.Location = new Point(448, 3);
         help_button.Name = "help_button";
-        help_button.Size = new Size(144, 74);
+        help_button.Size = new Size(144, 84);
         help_button.TabIndex = 5;
         help_button.Text = "Help F5";
         help_button.TextAlign = ContentAlignment.BottomCenter;
@@ -105,12 +110,13 @@ partial class MainForm
         tools_button.ImageAlign = ContentAlignment.TopCenter;
         tools_button.Location = new Point(301, 3);
         tools_button.Name = "tools_button";
-        tools_button.Size = new Size(144, 74);
+        tools_button.Size = new Size(144, 84);
         tools_button.TabIndex = 4;
         tools_button.Text = "Tools F4";
         tools_button.TextAlign = ContentAlignment.BottomCenter;
         tools_button.TextImageRelation = TextImageRelation.ImageAboveText;
         tools_button.UseVisualStyleBackColor = true;
+        tools_button.Click += tools_button_Click;
         // 
         // report_button
         // 
@@ -120,7 +126,7 @@ partial class MainForm
         report_button.ImageAlign = ContentAlignment.TopCenter;
         report_button.Location = new Point(154, 3);
         report_button.Name = "report_button";
-        report_button.Size = new Size(144, 74);
+        report_button.Size = new Size(144, 84);
         report_button.TabIndex = 3;
         report_button.Text = "Reports F3";
         report_button.TextAlign = ContentAlignment.BottomCenter;
@@ -135,7 +141,7 @@ partial class MainForm
         data_entry_button.ImageAlign = ContentAlignment.TopCenter;
         data_entry_button.Location = new Point(6, 3);
         data_entry_button.Name = "data_entry_button";
-        data_entry_button.Size = new Size(144, 74);
+        data_entry_button.Size = new Size(144, 84);
         data_entry_button.TabIndex = 2;
         data_entry_button.Text = "Data Entry F2";
         data_entry_button.TextAlign = ContentAlignment.BottomCenter;
@@ -151,7 +157,7 @@ partial class MainForm
         min_button.Cursor = Cursors.Hand;
         min_button.Location = new Point(860, 3);
         min_button.Name = "min_button";
-        min_button.Size = new Size(30, 30);
+        min_button.Size = new Size(30, 34);
         min_button.TabIndex = 1;
         min_button.UseVisualStyleBackColor = true;
         min_button.Click += min_button_Click;
@@ -164,32 +170,32 @@ partial class MainForm
         close_button.Cursor = Cursors.Hand;
         close_button.Location = new Point(896, 3);
         close_button.Name = "close_button";
-        close_button.Size = new Size(30, 30);
+        close_button.Size = new Size(30, 34);
         close_button.TabIndex = 0;
         close_button.UseVisualStyleBackColor = true;
         close_button.Click += close_button_Click;
         // 
-        // Side_Panel
+        // side_panel
         // 
-        Side_Panel.BackColor = Color.Gainsboro;
-        Side_Panel.Controls.Add(user_name_lbl);
-        Side_Panel.Controls.Add(user_image);
-        Side_Panel.Controls.Add(analogClock1);
-        Side_Panel.Controls.Add(panel1);
-        Side_Panel.Dock = DockStyle.Left;
-        Side_Panel.Location = new Point(0, 0);
-        Side_Panel.MinimumSize = new Size(180, 728);
-        Side_Panel.Name = "Side_Panel";
-        Side_Panel.Size = new Size(233, 768);
-        Side_Panel.TabIndex = 0;
+        side_panel.BackColor = Color.Gainsboro;
+        side_panel.Controls.Add(user_name_lbl);
+        side_panel.Controls.Add(user_image);
+        side_panel.Controls.Add(analogClock1);
+        side_panel.Controls.Add(panel1);
+        side_panel.Dock = DockStyle.Left;
+        side_panel.Location = new Point(0, 0);
+        side_panel.MinimumSize = new Size(180, 825);
+        side_panel.Name = "side_panel";
+        side_panel.Size = new Size(233, 870);
+        side_panel.TabIndex = 0;
         // 
         // user_name_lbl
         // 
         user_name_lbl.BorderStyle = BorderStyle.FixedSingle;
         user_name_lbl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-        user_name_lbl.Location = new Point(26, 674);
+        user_name_lbl.Location = new Point(26, 764);
         user_name_lbl.Name = "user_name_lbl";
-        user_name_lbl.Size = new Size(184, 30);
+        user_name_lbl.Size = new Size(184, 34);
         user_name_lbl.TabIndex = 3;
         user_name_lbl.Text = "User Name";
         user_name_lbl.TextAlign = ContentAlignment.MiddleCenter;
@@ -199,9 +205,9 @@ partial class MainForm
         user_image.BorderStyle = BorderStyle.FixedSingle;
         user_image.Image = Properties.Resources.default_user;
         user_image.InitialImage = Properties.Resources.default_user;
-        user_image.Location = new Point(26, 498);
+        user_image.Location = new Point(26, 564);
         user_image.Name = "user_image";
-        user_image.Size = new Size(184, 173);
+        user_image.Size = new Size(184, 196);
         user_image.SizeMode = PictureBoxSizeMode.Zoom;
         user_image.TabIndex = 2;
         user_image.TabStop = false;
@@ -247,9 +253,9 @@ partial class MainForm
         panel1.Controls.Add(day_month_lbl);
         panel1.Controls.Add(month_name_lbl);
         panel1.Controls.Add(year_num_lbl);
-        panel1.Location = new Point(3, 254);
+        panel1.Location = new Point(3, 288);
         panel1.Name = "panel1";
-        panel1.Size = new Size(230, 193);
+        panel1.Size = new Size(230, 219);
         panel1.TabIndex = 0;
         // 
         // day_in_week_lbl
@@ -257,9 +263,9 @@ partial class MainForm
         day_in_week_lbl.BackColor = Color.Transparent;
         day_in_week_lbl.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
         day_in_week_lbl.ForeColor = Color.Black;
-        day_in_week_lbl.Location = new Point(23, 131);
+        day_in_week_lbl.Location = new Point(23, 148);
         day_in_week_lbl.Name = "day_in_week_lbl";
-        day_in_week_lbl.Size = new Size(184, 45);
+        day_in_week_lbl.Size = new Size(184, 51);
         day_in_week_lbl.TabIndex = 3;
         day_in_week_lbl.Text = "Sunday";
         day_in_week_lbl.TextAlign = ContentAlignment.MiddleCenter;
@@ -269,9 +275,9 @@ partial class MainForm
         day_month_lbl.BackColor = Color.Transparent;
         day_month_lbl.Font = new Font("Segoe UI", 24F, FontStyle.Bold, GraphicsUnit.Point);
         day_month_lbl.ForeColor = Color.Black;
-        day_month_lbl.Location = new Point(23, 86);
+        day_month_lbl.Location = new Point(23, 97);
         day_month_lbl.Name = "day_month_lbl";
-        day_month_lbl.Size = new Size(184, 45);
+        day_month_lbl.Size = new Size(184, 51);
         day_month_lbl.TabIndex = 2;
         day_month_lbl.Text = "21";
         day_month_lbl.TextAlign = ContentAlignment.MiddleCenter;
@@ -282,7 +288,7 @@ partial class MainForm
         month_name_lbl.BackColor = Color.Transparent;
         month_name_lbl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
         month_name_lbl.ForeColor = Color.White;
-        month_name_lbl.Location = new Point(107, 23);
+        month_name_lbl.Location = new Point(107, 26);
         month_name_lbl.Name = "month_name_lbl";
         month_name_lbl.Size = new Size(47, 21);
         month_name_lbl.TabIndex = 1;
@@ -294,22 +300,22 @@ partial class MainForm
         year_num_lbl.BackColor = Color.Transparent;
         year_num_lbl.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
         year_num_lbl.ForeColor = Color.White;
-        year_num_lbl.Location = new Point(40, 23);
+        year_num_lbl.Location = new Point(40, 26);
         year_num_lbl.Name = "year_num_lbl";
         year_num_lbl.Size = new Size(46, 21);
         year_num_lbl.TabIndex = 0;
         year_num_lbl.Text = "2023";
         // 
-        // Bottom_Panel
+        // bottom_panel
         // 
-        Bottom_Panel.Controls.Add(calculator_button);
-        Bottom_Panel.Controls.Add(background_button);
-        Bottom_Panel.Dock = DockStyle.Bottom;
-        Bottom_Panel.Location = new Point(233, 718);
-        Bottom_Panel.MinimumSize = new Size(844, 40);
-        Bottom_Panel.Name = "Bottom_Panel";
-        Bottom_Panel.Size = new Size(929, 50);
-        Bottom_Panel.TabIndex = 0;
+        bottom_panel.Controls.Add(calculator_button);
+        bottom_panel.Controls.Add(background_button);
+        bottom_panel.Dock = DockStyle.Bottom;
+        bottom_panel.Location = new Point(233, 813);
+        bottom_panel.MinimumSize = new Size(844, 45);
+        bottom_panel.Name = "bottom_panel";
+        bottom_panel.Size = new Size(929, 57);
+        bottom_panel.TabIndex = 0;
         // 
         // calculator_button
         // 
@@ -317,9 +323,9 @@ partial class MainForm
         calculator_button.BackgroundImage = Properties.Resources.calculator;
         calculator_button.BackgroundImageLayout = ImageLayout.Zoom;
         calculator_button.Cursor = Cursors.Hand;
-        calculator_button.Location = new Point(711, 4);
+        calculator_button.Location = new Point(711, 5);
         calculator_button.Name = "calculator_button";
-        calculator_button.Size = new Size(60, 44);
+        calculator_button.Size = new Size(60, 50);
         calculator_button.TabIndex = 1;
         calculator_button.UseVisualStyleBackColor = true;
         // 
@@ -329,9 +335,9 @@ partial class MainForm
         background_button.Cursor = Cursors.Hand;
         background_button.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
         background_button.Image = Properties.Resources.background;
-        background_button.Location = new Point(777, 4);
+        background_button.Location = new Point(777, 5);
         background_button.Name = "background_button";
-        background_button.Size = new Size(140, 44);
+        background_button.Size = new Size(140, 50);
         background_button.TabIndex = 0;
         background_button.Text = "Background";
         background_button.UseVisualStyleBackColor = true;
@@ -347,9 +353,9 @@ partial class MainForm
         tree_panel.Controls.Add(collapse_btn);
         tree_panel.Controls.Add(expand_btn);
         tree_panel.Controls.Add(main_treeView);
-        tree_panel.Location = new Point(239, 86);
+        tree_panel.Location = new Point(239, 97);
         tree_panel.Name = "tree_panel";
-        tree_panel.Size = new Size(390, 436);
+        tree_panel.Size = new Size(390, 494);
         tree_panel.TabIndex = 3;
         tree_panel.Visible = false;
         // 
@@ -358,9 +364,9 @@ partial class MainForm
         collapse_btn.BackgroundImageLayout = ImageLayout.None;
         collapse_btn.Cursor = Cursors.Hand;
         collapse_btn.Image = Properties.Resources.collapse;
-        collapse_btn.Location = new Point(352, 5);
+        collapse_btn.Location = new Point(352, 6);
         collapse_btn.Name = "collapse_btn";
-        collapse_btn.Size = new Size(31, 30);
+        collapse_btn.Size = new Size(31, 34);
         collapse_btn.TabIndex = 2;
         collapse_btn.UseVisualStyleBackColor = true;
         collapse_btn.Click += collapse_btn_Click;
@@ -370,9 +376,9 @@ partial class MainForm
         expand_btn.BackgroundImageLayout = ImageLayout.None;
         expand_btn.Cursor = Cursors.Hand;
         expand_btn.Image = Properties.Resources.expand;
-        expand_btn.Location = new Point(320, 5);
+        expand_btn.Location = new Point(320, 6);
         expand_btn.Name = "expand_btn";
-        expand_btn.Size = new Size(30, 30);
+        expand_btn.Size = new Size(30, 34);
         expand_btn.TabIndex = 1;
         expand_btn.UseVisualStyleBackColor = true;
         expand_btn.Click += expand_btn_Click;
@@ -384,7 +390,7 @@ partial class MainForm
         main_treeView.ImageList = imageList1;
         main_treeView.Indent = 35;
         main_treeView.ItemHeight = 35;
-        main_treeView.Location = new Point(3, 5);
+        main_treeView.Location = new Point(3, 6);
         main_treeView.Name = "main_treeView";
         treeNode1.ImageKey = "review.png";
         treeNode1.Name = "Incoming_Letters";
@@ -403,7 +409,7 @@ partial class MainForm
         treeNode4.Text = "All Folders";
         main_treeView.Nodes.AddRange(new TreeNode[] { treeNode4 });
         main_treeView.SelectedImageIndex = 0;
-        main_treeView.Size = new Size(382, 426);
+        main_treeView.Size = new Size(382, 482);
         main_treeView.TabIndex = 0;
         main_treeView.MouseDoubleClick += main_treeView_MouseDoubleClick;
         // 
@@ -417,39 +423,73 @@ partial class MainForm
         imageList1.Images.SetKeyName(2, "radMenuItem2.png");
         imageList1.Images.SetKeyName(3, "review.png");
         // 
+        // toold_cm
+        // 
+        toold_cm.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        toold_cm.Items.AddRange(new ToolStripItem[] { usersToolStripMenuItem, backupDataToolStripMenuItem, restoreDataToolStripMenuItem });
+        toold_cm.Name = "toold_cm";
+        toold_cm.Size = new Size(189, 116);
+        // 
+        // usersToolStripMenuItem
+        // 
+        usersToolStripMenuItem.Image = Properties.Resources.user_cms;
+        usersToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
+        usersToolStripMenuItem.Name = "usersToolStripMenuItem";
+        usersToolStripMenuItem.Size = new Size(188, 30);
+        usersToolStripMenuItem.Text = "Users";
+        usersToolStripMenuItem.Click += usersToolStripMenuItem_Click;
+        // 
+        // backupDataToolStripMenuItem
+        // 
+        backupDataToolStripMenuItem.Image = Properties.Resources.backup_cms;
+        backupDataToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
+        backupDataToolStripMenuItem.Name = "backupDataToolStripMenuItem";
+        backupDataToolStripMenuItem.Size = new Size(188, 30);
+        backupDataToolStripMenuItem.Text = "Backup Data";
+        // 
+        // restoreDataToolStripMenuItem
+        // 
+        restoreDataToolStripMenuItem.Image = Properties.Resources.restore_cms;
+        restoreDataToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
+        restoreDataToolStripMenuItem.Name = "restoreDataToolStripMenuItem";
+        restoreDataToolStripMenuItem.Size = new Size(188, 30);
+        restoreDataToolStripMenuItem.Text = "Restore Data";
+        // 
         // MainForm
         // 
-        AutoScaleDimensions = new SizeF(7F, 15F);
+        AutoScaleDimensions = new SizeF(7F, 17F);
         AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(1162, 768);
+        ClientSize = new Size(1162, 870);
         Controls.Add(tree_panel);
-        Controls.Add(Bottom_Panel);
-        Controls.Add(Top_Panel);
-        Controls.Add(Side_Panel);
+        Controls.Add(bottom_panel);
+        Controls.Add(top_panel);
+        Controls.Add(side_panel);
+        Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
         FormBorderStyle = FormBorderStyle.None;
         IsMdiContainer = true;
         MinimizeBox = false;
-        MinimumSize = new Size(1024, 768);
+        MinimumSize = new Size(1024, 870);
         Name = "MainForm";
         StartPosition = FormStartPosition.CenterScreen;
         Text = "Main Form";
         WindowState = FormWindowState.Maximized;
         Load += MainForm_Load;
-        Top_Panel.ResumeLayout(false);
-        Side_Panel.ResumeLayout(false);
+        top_panel.ResumeLayout(false);
+        side_panel.ResumeLayout(false);
         ((System.ComponentModel.ISupportInitialize)user_image).EndInit();
         panel1.ResumeLayout(false);
         panel1.PerformLayout();
-        Bottom_Panel.ResumeLayout(false);
+        bottom_panel.ResumeLayout(false);
         tree_panel.ResumeLayout(false);
+        toold_cm.ResumeLayout(false);
         ResumeLayout(false);
     }
 
     #endregion
 
-    private Panel Top_Panel;
-    private Panel Side_Panel;
-    private Panel Bottom_Panel;
+    private Panel top_panel;
+    private Panel side_panel;
+    private Panel bottom_panel;
     private Button close_button;
     private Button min_button;
     private Button data_entry_button;
@@ -472,4 +512,8 @@ partial class MainForm
     private Button expand_btn;
     private Button collapse_btn;
     private ImageList imageList1;
+    private ContextMenuStrip toold_cm;
+    private ToolStripMenuItem usersToolStripMenuItem;
+    private ToolStripMenuItem backupDataToolStripMenuItem;
+    private ToolStripMenuItem restoreDataToolStripMenuItem;
 }

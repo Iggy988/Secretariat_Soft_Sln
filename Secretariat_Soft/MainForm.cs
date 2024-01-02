@@ -16,7 +16,7 @@ public partial class MainForm : Form
         InitializeComponent();
     }
 
-    
+
 
     private void close_button_Click(object sender, EventArgs e)
     {
@@ -60,7 +60,7 @@ public partial class MainForm : Form
             MessageBox.Show("Exiting Application!");
             Application.Exit();
         }
-        
+
     }
 
     void GetDateCal()
@@ -113,7 +113,7 @@ public partial class MainForm : Form
             //-------------------------
             if (node_name == "Outgoing_Letters")
             {
-                Secretariat_Soft.S_Forms.Out_Letters_List frm = new ();
+                Secretariat_Soft.S_Forms.Out_Letters_List frm = new();
                 //MdiParent form je MainForm za In_Letters_List
                 frm.MdiParent = this; //this == MainForm
                 //-------------------------------
@@ -122,6 +122,22 @@ public partial class MainForm : Form
                 tree_panel.Visible = false;
             }
         }
-        
+
+    }
+
+    private void tools_button_Click(object sender, EventArgs e)
+    {
+        int x, y;
+        x = side_panel.Width + tools_button.Location.X; // X in screen
+        y = tools_button.Location.Y + tools_button.Height; // Y in screen
+        //-------------------------
+        toold_cm.Show(new Point(x, y));
+    }
+
+    private void usersToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Secretariat_Soft.CommForms.UserList frm = new();
+        frm.MdiParent = this;
+        frm.Show();
     }
 }
