@@ -1468,6 +1468,76 @@ namespace Secretariat_Soft.DataSet {
             
             private global::System.Data.DataColumn columnSysTime;
             
+            private global::System.Data.DataColumn columnmain_butt1;
+            
+            private global::System.Data.DataColumn columnmain_butt2;
+            
+            private global::System.Data.DataColumn columnmain_butt2_m1;
+            
+            private global::System.Data.DataColumn columnmain_butt2_m2;
+            
+            private global::System.Data.DataColumn columnmain_butt2_m3;
+            
+            private global::System.Data.DataColumn columnmain_butt2_m4;
+            
+            private global::System.Data.DataColumn columnmain_butt2_m5;
+            
+            private global::System.Data.DataColumn columnmain_butt3;
+            
+            private global::System.Data.DataColumn columnmain_butt3_m1;
+            
+            private global::System.Data.DataColumn columnmain_butt3_m2;
+            
+            private global::System.Data.DataColumn columnmain_butt3_m3;
+            
+            private global::System.Data.DataColumn columnmain_butt3_m4;
+            
+            private global::System.Data.DataColumn columnmain_butt3_m5;
+            
+            private global::System.Data.DataColumn columnmain_butt4;
+            
+            private global::System.Data.DataColumn columnmain_butt4_m1;
+            
+            private global::System.Data.DataColumn columnmain_butt4_m2;
+            
+            private global::System.Data.DataColumn columnmain_butt4_m3;
+            
+            private global::System.Data.DataColumn columnIn_List_b1;
+            
+            private global::System.Data.DataColumn columnIn_List_b2;
+            
+            private global::System.Data.DataColumn columnIn_List_b3;
+            
+            private global::System.Data.DataColumn columnIn_De_b1;
+            
+            private global::System.Data.DataColumn columnIn_De_b2;
+            
+            private global::System.Data.DataColumn columnIn_De_b3;
+            
+            private global::System.Data.DataColumn columnIn_De_b4;
+            
+            private global::System.Data.DataColumn columnOut_List_b1;
+            
+            private global::System.Data.DataColumn columnOut_List_b2;
+            
+            private global::System.Data.DataColumn columnOut_List_b3;
+            
+            private global::System.Data.DataColumn columnOut_De_b1;
+            
+            private global::System.Data.DataColumn columnOut_De_b2;
+            
+            private global::System.Data.DataColumn columnOut_De_b3;
+            
+            private global::System.Data.DataColumn columnOut_De_b4;
+            
+            private global::System.Data.DataColumn columnUser_List_b1;
+            
+            private global::System.Data.DataColumn columnUser_De_b1;
+            
+            private global::System.Data.DataColumn columnUser_De_b2;
+            
+            private global::System.Data.DataColumn columnUser_De_b3;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public AppUsersDataTable() {
@@ -1575,6 +1645,286 @@ namespace Secretariat_Soft.DataSet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn main_butt1Column {
+                get {
+                    return this.columnmain_butt1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn main_butt2Column {
+                get {
+                    return this.columnmain_butt2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn main_butt2_m1Column {
+                get {
+                    return this.columnmain_butt2_m1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn main_butt2_m2Column {
+                get {
+                    return this.columnmain_butt2_m2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn main_butt2_m3Column {
+                get {
+                    return this.columnmain_butt2_m3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn main_butt2_m4Column {
+                get {
+                    return this.columnmain_butt2_m4;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn main_butt2_m5Column {
+                get {
+                    return this.columnmain_butt2_m5;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn main_butt3Column {
+                get {
+                    return this.columnmain_butt3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn main_butt3_m1Column {
+                get {
+                    return this.columnmain_butt3_m1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn main_butt3_m2Column {
+                get {
+                    return this.columnmain_butt3_m2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn main_butt3_m3Column {
+                get {
+                    return this.columnmain_butt3_m3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn main_butt3_m4Column {
+                get {
+                    return this.columnmain_butt3_m4;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn main_butt3_m5Column {
+                get {
+                    return this.columnmain_butt3_m5;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn main_butt4Column {
+                get {
+                    return this.columnmain_butt4;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn main_butt4_m1Column {
+                get {
+                    return this.columnmain_butt4_m1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn main_butt4_m2Column {
+                get {
+                    return this.columnmain_butt4_m2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn main_butt4_m3Column {
+                get {
+                    return this.columnmain_butt4_m3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn In_List_b1Column {
+                get {
+                    return this.columnIn_List_b1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn In_List_b2Column {
+                get {
+                    return this.columnIn_List_b2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn In_List_b3Column {
+                get {
+                    return this.columnIn_List_b3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn In_De_b1Column {
+                get {
+                    return this.columnIn_De_b1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn In_De_b2Column {
+                get {
+                    return this.columnIn_De_b2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn In_De_b3Column {
+                get {
+                    return this.columnIn_De_b3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn In_De_b4Column {
+                get {
+                    return this.columnIn_De_b4;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Out_List_b1Column {
+                get {
+                    return this.columnOut_List_b1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Out_List_b2Column {
+                get {
+                    return this.columnOut_List_b2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Out_List_b3Column {
+                get {
+                    return this.columnOut_List_b3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Out_De_b1Column {
+                get {
+                    return this.columnOut_De_b1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Out_De_b2Column {
+                get {
+                    return this.columnOut_De_b2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Out_De_b3Column {
+                get {
+                    return this.columnOut_De_b3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn Out_De_b4Column {
+                get {
+                    return this.columnOut_De_b4;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn User_List_b1Column {
+                get {
+                    return this.columnUser_List_b1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn User_De_b1Column {
+                get {
+                    return this.columnUser_De_b1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn User_De_b2Column {
+                get {
+                    return this.columnUser_De_b2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn User_De_b3Column {
+                get {
+                    return this.columnUser_De_b3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1610,7 +1960,50 @@ namespace Secretariat_Soft.DataSet {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public AppUsersRow AddAppUsersRow(string User_Name, string Password, string Comment, byte[] Photo, string Sys_User, long Sys_UserId, System.DateTime SysDate, System.TimeSpan SysTime) {
+            public AppUsersRow AddAppUsersRow(
+                        string User_Name, 
+                        string Password, 
+                        string Comment, 
+                        byte[] Photo, 
+                        string Sys_User, 
+                        long Sys_UserId, 
+                        System.DateTime SysDate, 
+                        System.TimeSpan SysTime, 
+                        bool main_butt1, 
+                        bool main_butt2, 
+                        bool main_butt2_m1, 
+                        bool main_butt2_m2, 
+                        bool main_butt2_m3, 
+                        bool main_butt2_m4, 
+                        bool main_butt2_m5, 
+                        bool main_butt3, 
+                        bool main_butt3_m1, 
+                        bool main_butt3_m2, 
+                        bool main_butt3_m3, 
+                        bool main_butt3_m4, 
+                        bool main_butt3_m5, 
+                        bool main_butt4, 
+                        bool main_butt4_m1, 
+                        bool main_butt4_m2, 
+                        bool main_butt4_m3, 
+                        bool In_List_b1, 
+                        bool In_List_b2, 
+                        bool In_List_b3, 
+                        bool In_De_b1, 
+                        bool In_De_b2, 
+                        bool In_De_b3, 
+                        bool In_De_b4, 
+                        bool Out_List_b1, 
+                        bool Out_List_b2, 
+                        bool Out_List_b3, 
+                        bool Out_De_b1, 
+                        bool Out_De_b2, 
+                        bool Out_De_b3, 
+                        bool Out_De_b4, 
+                        bool User_List_b1, 
+                        bool User_De_b1, 
+                        bool User_De_b2, 
+                        bool User_De_b3) {
                 AppUsersRow rowAppUsersRow = ((AppUsersRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -1621,7 +2014,42 @@ namespace Secretariat_Soft.DataSet {
                         Sys_User,
                         Sys_UserId,
                         SysDate,
-                        SysTime};
+                        SysTime,
+                        main_butt1,
+                        main_butt2,
+                        main_butt2_m1,
+                        main_butt2_m2,
+                        main_butt2_m3,
+                        main_butt2_m4,
+                        main_butt2_m5,
+                        main_butt3,
+                        main_butt3_m1,
+                        main_butt3_m2,
+                        main_butt3_m3,
+                        main_butt3_m4,
+                        main_butt3_m5,
+                        main_butt4,
+                        main_butt4_m1,
+                        main_butt4_m2,
+                        main_butt4_m3,
+                        In_List_b1,
+                        In_List_b2,
+                        In_List_b3,
+                        In_De_b1,
+                        In_De_b2,
+                        In_De_b3,
+                        In_De_b4,
+                        Out_List_b1,
+                        Out_List_b2,
+                        Out_List_b3,
+                        Out_De_b1,
+                        Out_De_b2,
+                        Out_De_b3,
+                        Out_De_b4,
+                        User_List_b1,
+                        User_De_b1,
+                        User_De_b2,
+                        User_De_b3};
                 rowAppUsersRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowAppUsersRow);
                 return rowAppUsersRow;
@@ -1660,6 +2088,41 @@ namespace Secretariat_Soft.DataSet {
                 this.columnSys_UserId = base.Columns["Sys_UserId"];
                 this.columnSysDate = base.Columns["SysDate"];
                 this.columnSysTime = base.Columns["SysTime"];
+                this.columnmain_butt1 = base.Columns["main_butt1"];
+                this.columnmain_butt2 = base.Columns["main_butt2"];
+                this.columnmain_butt2_m1 = base.Columns["main_butt2_m1"];
+                this.columnmain_butt2_m2 = base.Columns["main_butt2_m2"];
+                this.columnmain_butt2_m3 = base.Columns["main_butt2_m3"];
+                this.columnmain_butt2_m4 = base.Columns["main_butt2_m4"];
+                this.columnmain_butt2_m5 = base.Columns["main_butt2_m5"];
+                this.columnmain_butt3 = base.Columns["main_butt3"];
+                this.columnmain_butt3_m1 = base.Columns["main_butt3_m1"];
+                this.columnmain_butt3_m2 = base.Columns["main_butt3_m2"];
+                this.columnmain_butt3_m3 = base.Columns["main_butt3_m3"];
+                this.columnmain_butt3_m4 = base.Columns["main_butt3_m4"];
+                this.columnmain_butt3_m5 = base.Columns["main_butt3_m5"];
+                this.columnmain_butt4 = base.Columns["main_butt4"];
+                this.columnmain_butt4_m1 = base.Columns["main_butt4_m1"];
+                this.columnmain_butt4_m2 = base.Columns["main_butt4_m2"];
+                this.columnmain_butt4_m3 = base.Columns["main_butt4_m3"];
+                this.columnIn_List_b1 = base.Columns["In_List_b1"];
+                this.columnIn_List_b2 = base.Columns["In_List_b2"];
+                this.columnIn_List_b3 = base.Columns["In_List_b3"];
+                this.columnIn_De_b1 = base.Columns["In_De_b1"];
+                this.columnIn_De_b2 = base.Columns["In_De_b2"];
+                this.columnIn_De_b3 = base.Columns["In_De_b3"];
+                this.columnIn_De_b4 = base.Columns["In_De_b4"];
+                this.columnOut_List_b1 = base.Columns["Out_List_b1"];
+                this.columnOut_List_b2 = base.Columns["Out_List_b2"];
+                this.columnOut_List_b3 = base.Columns["Out_List_b3"];
+                this.columnOut_De_b1 = base.Columns["Out_De_b1"];
+                this.columnOut_De_b2 = base.Columns["Out_De_b2"];
+                this.columnOut_De_b3 = base.Columns["Out_De_b3"];
+                this.columnOut_De_b4 = base.Columns["Out_De_b4"];
+                this.columnUser_List_b1 = base.Columns["User_List_b1"];
+                this.columnUser_De_b1 = base.Columns["User_De_b1"];
+                this.columnUser_De_b2 = base.Columns["User_De_b2"];
+                this.columnUser_De_b3 = base.Columns["User_De_b3"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1683,6 +2146,76 @@ namespace Secretariat_Soft.DataSet {
                 base.Columns.Add(this.columnSysDate);
                 this.columnSysTime = new global::System.Data.DataColumn("SysTime", typeof(global::System.TimeSpan), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSysTime);
+                this.columnmain_butt1 = new global::System.Data.DataColumn("main_butt1", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmain_butt1);
+                this.columnmain_butt2 = new global::System.Data.DataColumn("main_butt2", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmain_butt2);
+                this.columnmain_butt2_m1 = new global::System.Data.DataColumn("main_butt2_m1", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmain_butt2_m1);
+                this.columnmain_butt2_m2 = new global::System.Data.DataColumn("main_butt2_m2", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmain_butt2_m2);
+                this.columnmain_butt2_m3 = new global::System.Data.DataColumn("main_butt2_m3", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmain_butt2_m3);
+                this.columnmain_butt2_m4 = new global::System.Data.DataColumn("main_butt2_m4", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmain_butt2_m4);
+                this.columnmain_butt2_m5 = new global::System.Data.DataColumn("main_butt2_m5", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmain_butt2_m5);
+                this.columnmain_butt3 = new global::System.Data.DataColumn("main_butt3", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmain_butt3);
+                this.columnmain_butt3_m1 = new global::System.Data.DataColumn("main_butt3_m1", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmain_butt3_m1);
+                this.columnmain_butt3_m2 = new global::System.Data.DataColumn("main_butt3_m2", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmain_butt3_m2);
+                this.columnmain_butt3_m3 = new global::System.Data.DataColumn("main_butt3_m3", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmain_butt3_m3);
+                this.columnmain_butt3_m4 = new global::System.Data.DataColumn("main_butt3_m4", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmain_butt3_m4);
+                this.columnmain_butt3_m5 = new global::System.Data.DataColumn("main_butt3_m5", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmain_butt3_m5);
+                this.columnmain_butt4 = new global::System.Data.DataColumn("main_butt4", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmain_butt4);
+                this.columnmain_butt4_m1 = new global::System.Data.DataColumn("main_butt4_m1", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmain_butt4_m1);
+                this.columnmain_butt4_m2 = new global::System.Data.DataColumn("main_butt4_m2", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmain_butt4_m2);
+                this.columnmain_butt4_m3 = new global::System.Data.DataColumn("main_butt4_m3", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmain_butt4_m3);
+                this.columnIn_List_b1 = new global::System.Data.DataColumn("In_List_b1", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIn_List_b1);
+                this.columnIn_List_b2 = new global::System.Data.DataColumn("In_List_b2", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIn_List_b2);
+                this.columnIn_List_b3 = new global::System.Data.DataColumn("In_List_b3", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIn_List_b3);
+                this.columnIn_De_b1 = new global::System.Data.DataColumn("In_De_b1", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIn_De_b1);
+                this.columnIn_De_b2 = new global::System.Data.DataColumn("In_De_b2", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIn_De_b2);
+                this.columnIn_De_b3 = new global::System.Data.DataColumn("In_De_b3", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIn_De_b3);
+                this.columnIn_De_b4 = new global::System.Data.DataColumn("In_De_b4", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIn_De_b4);
+                this.columnOut_List_b1 = new global::System.Data.DataColumn("Out_List_b1", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOut_List_b1);
+                this.columnOut_List_b2 = new global::System.Data.DataColumn("Out_List_b2", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOut_List_b2);
+                this.columnOut_List_b3 = new global::System.Data.DataColumn("Out_List_b3", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOut_List_b3);
+                this.columnOut_De_b1 = new global::System.Data.DataColumn("Out_De_b1", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOut_De_b1);
+                this.columnOut_De_b2 = new global::System.Data.DataColumn("Out_De_b2", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOut_De_b2);
+                this.columnOut_De_b3 = new global::System.Data.DataColumn("Out_De_b3", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOut_De_b3);
+                this.columnOut_De_b4 = new global::System.Data.DataColumn("Out_De_b4", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOut_De_b4);
+                this.columnUser_List_b1 = new global::System.Data.DataColumn("User_List_b1", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUser_List_b1);
+                this.columnUser_De_b1 = new global::System.Data.DataColumn("User_De_b1", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUser_De_b1);
+                this.columnUser_De_b2 = new global::System.Data.DataColumn("User_De_b2", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUser_De_b2);
+                this.columnUser_De_b3 = new global::System.Data.DataColumn("User_De_b3", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUser_De_b3);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid}, true));
                 this.columnid.AutoIncrement = true;
@@ -1695,6 +2228,41 @@ namespace Secretariat_Soft.DataSet {
                 this.columnPassword.MaxLength = 50;
                 this.columnComment.MaxLength = 250;
                 this.columnSys_User.MaxLength = 100;
+                this.columnmain_butt1.AllowDBNull = false;
+                this.columnmain_butt2.AllowDBNull = false;
+                this.columnmain_butt2_m1.AllowDBNull = false;
+                this.columnmain_butt2_m2.AllowDBNull = false;
+                this.columnmain_butt2_m3.AllowDBNull = false;
+                this.columnmain_butt2_m4.AllowDBNull = false;
+                this.columnmain_butt2_m5.AllowDBNull = false;
+                this.columnmain_butt3.AllowDBNull = false;
+                this.columnmain_butt3_m1.AllowDBNull = false;
+                this.columnmain_butt3_m2.AllowDBNull = false;
+                this.columnmain_butt3_m3.AllowDBNull = false;
+                this.columnmain_butt3_m4.AllowDBNull = false;
+                this.columnmain_butt3_m5.AllowDBNull = false;
+                this.columnmain_butt4.AllowDBNull = false;
+                this.columnmain_butt4_m1.AllowDBNull = false;
+                this.columnmain_butt4_m2.AllowDBNull = false;
+                this.columnmain_butt4_m3.AllowDBNull = false;
+                this.columnIn_List_b1.AllowDBNull = false;
+                this.columnIn_List_b2.AllowDBNull = false;
+                this.columnIn_List_b3.AllowDBNull = false;
+                this.columnIn_De_b1.AllowDBNull = false;
+                this.columnIn_De_b2.AllowDBNull = false;
+                this.columnIn_De_b3.AllowDBNull = false;
+                this.columnIn_De_b4.AllowDBNull = false;
+                this.columnOut_List_b1.AllowDBNull = false;
+                this.columnOut_List_b2.AllowDBNull = false;
+                this.columnOut_List_b3.AllowDBNull = false;
+                this.columnOut_De_b1.AllowDBNull = false;
+                this.columnOut_De_b2.AllowDBNull = false;
+                this.columnOut_De_b3.AllowDBNull = false;
+                this.columnOut_De_b4.AllowDBNull = false;
+                this.columnUser_List_b1.AllowDBNull = false;
+                this.columnUser_De_b1.AllowDBNull = false;
+                this.columnUser_De_b2.AllowDBNull = false;
+                this.columnUser_De_b3.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3059,6 +3627,391 @@ namespace Secretariat_Soft.DataSet {
                 }
                 set {
                     this[this.tableAppUsers.SysTimeColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool main_butt1 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.main_butt1Column]));
+                }
+                set {
+                    this[this.tableAppUsers.main_butt1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool main_butt2 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.main_butt2Column]));
+                }
+                set {
+                    this[this.tableAppUsers.main_butt2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool main_butt2_m1 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.main_butt2_m1Column]));
+                }
+                set {
+                    this[this.tableAppUsers.main_butt2_m1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool main_butt2_m2 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.main_butt2_m2Column]));
+                }
+                set {
+                    this[this.tableAppUsers.main_butt2_m2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool main_butt2_m3 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.main_butt2_m3Column]));
+                }
+                set {
+                    this[this.tableAppUsers.main_butt2_m3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool main_butt2_m4 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.main_butt2_m4Column]));
+                }
+                set {
+                    this[this.tableAppUsers.main_butt2_m4Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool main_butt2_m5 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.main_butt2_m5Column]));
+                }
+                set {
+                    this[this.tableAppUsers.main_butt2_m5Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool main_butt3 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.main_butt3Column]));
+                }
+                set {
+                    this[this.tableAppUsers.main_butt3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool main_butt3_m1 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.main_butt3_m1Column]));
+                }
+                set {
+                    this[this.tableAppUsers.main_butt3_m1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool main_butt3_m2 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.main_butt3_m2Column]));
+                }
+                set {
+                    this[this.tableAppUsers.main_butt3_m2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool main_butt3_m3 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.main_butt3_m3Column]));
+                }
+                set {
+                    this[this.tableAppUsers.main_butt3_m3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool main_butt3_m4 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.main_butt3_m4Column]));
+                }
+                set {
+                    this[this.tableAppUsers.main_butt3_m4Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool main_butt3_m5 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.main_butt3_m5Column]));
+                }
+                set {
+                    this[this.tableAppUsers.main_butt3_m5Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool main_butt4 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.main_butt4Column]));
+                }
+                set {
+                    this[this.tableAppUsers.main_butt4Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool main_butt4_m1 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.main_butt4_m1Column]));
+                }
+                set {
+                    this[this.tableAppUsers.main_butt4_m1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool main_butt4_m2 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.main_butt4_m2Column]));
+                }
+                set {
+                    this[this.tableAppUsers.main_butt4_m2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool main_butt4_m3 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.main_butt4_m3Column]));
+                }
+                set {
+                    this[this.tableAppUsers.main_butt4_m3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool In_List_b1 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.In_List_b1Column]));
+                }
+                set {
+                    this[this.tableAppUsers.In_List_b1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool In_List_b2 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.In_List_b2Column]));
+                }
+                set {
+                    this[this.tableAppUsers.In_List_b2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool In_List_b3 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.In_List_b3Column]));
+                }
+                set {
+                    this[this.tableAppUsers.In_List_b3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool In_De_b1 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.In_De_b1Column]));
+                }
+                set {
+                    this[this.tableAppUsers.In_De_b1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool In_De_b2 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.In_De_b2Column]));
+                }
+                set {
+                    this[this.tableAppUsers.In_De_b2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool In_De_b3 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.In_De_b3Column]));
+                }
+                set {
+                    this[this.tableAppUsers.In_De_b3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool In_De_b4 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.In_De_b4Column]));
+                }
+                set {
+                    this[this.tableAppUsers.In_De_b4Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Out_List_b1 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.Out_List_b1Column]));
+                }
+                set {
+                    this[this.tableAppUsers.Out_List_b1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Out_List_b2 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.Out_List_b2Column]));
+                }
+                set {
+                    this[this.tableAppUsers.Out_List_b2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Out_List_b3 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.Out_List_b3Column]));
+                }
+                set {
+                    this[this.tableAppUsers.Out_List_b3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Out_De_b1 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.Out_De_b1Column]));
+                }
+                set {
+                    this[this.tableAppUsers.Out_De_b1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Out_De_b2 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.Out_De_b2Column]));
+                }
+                set {
+                    this[this.tableAppUsers.Out_De_b2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Out_De_b3 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.Out_De_b3Column]));
+                }
+                set {
+                    this[this.tableAppUsers.Out_De_b3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool Out_De_b4 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.Out_De_b4Column]));
+                }
+                set {
+                    this[this.tableAppUsers.Out_De_b4Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool User_List_b1 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.User_List_b1Column]));
+                }
+                set {
+                    this[this.tableAppUsers.User_List_b1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool User_De_b1 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.User_De_b1Column]));
+                }
+                set {
+                    this[this.tableAppUsers.User_De_b1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool User_De_b2 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.User_De_b2Column]));
+                }
+                set {
+                    this[this.tableAppUsers.User_De_b2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool User_De_b3 {
+                get {
+                    return ((bool)(this[this.tableAppUsers.User_De_b3Column]));
+                }
+                set {
+                    this[this.tableAppUsers.User_De_b3Column] = value;
                 }
             }
             
@@ -5761,10 +6714,72 @@ WHERE        (Subject LIKE @Subject)";
             tableMapping.ColumnMappings.Add("Sys_UserId", "Sys_UserId");
             tableMapping.ColumnMappings.Add("SysDate", "SysDate");
             tableMapping.ColumnMappings.Add("SysTime", "SysTime");
+            tableMapping.ColumnMappings.Add("main_butt1", "main_butt1");
+            tableMapping.ColumnMappings.Add("main_butt2", "main_butt2");
+            tableMapping.ColumnMappings.Add("main_butt2_m1", "main_butt2_m1");
+            tableMapping.ColumnMappings.Add("main_butt2_m2", "main_butt2_m2");
+            tableMapping.ColumnMappings.Add("main_butt2_m3", "main_butt2_m3");
+            tableMapping.ColumnMappings.Add("main_butt2_m4", "main_butt2_m4");
+            tableMapping.ColumnMappings.Add("main_butt2_m5", "main_butt2_m5");
+            tableMapping.ColumnMappings.Add("main_butt3", "main_butt3");
+            tableMapping.ColumnMappings.Add("main_butt3_m1", "main_butt3_m1");
+            tableMapping.ColumnMappings.Add("main_butt3_m2", "main_butt3_m2");
+            tableMapping.ColumnMappings.Add("main_butt3_m3", "main_butt3_m3");
+            tableMapping.ColumnMappings.Add("main_butt3_m4", "main_butt3_m4");
+            tableMapping.ColumnMappings.Add("main_butt3_m5", "main_butt3_m5");
+            tableMapping.ColumnMappings.Add("main_butt4", "main_butt4");
+            tableMapping.ColumnMappings.Add("main_butt4_m1", "main_butt4_m1");
+            tableMapping.ColumnMappings.Add("main_butt4_m2", "main_butt4_m2");
+            tableMapping.ColumnMappings.Add("main_butt4_m3", "main_butt4_m3");
+            tableMapping.ColumnMappings.Add("In_List_b1", "In_List_b1");
+            tableMapping.ColumnMappings.Add("In_List_b2", "In_List_b2");
+            tableMapping.ColumnMappings.Add("In_List_b3", "In_List_b3");
+            tableMapping.ColumnMappings.Add("In_De_b1", "In_De_b1");
+            tableMapping.ColumnMappings.Add("In_De_b2", "In_De_b2");
+            tableMapping.ColumnMappings.Add("In_De_b3", "In_De_b3");
+            tableMapping.ColumnMappings.Add("In_De_b4", "In_De_b4");
+            tableMapping.ColumnMappings.Add("Out_List_b1", "Out_List_b1");
+            tableMapping.ColumnMappings.Add("Out_List_b2", "Out_List_b2");
+            tableMapping.ColumnMappings.Add("Out_List_b3", "Out_List_b3");
+            tableMapping.ColumnMappings.Add("Out_De_b1", "Out_De_b1");
+            tableMapping.ColumnMappings.Add("Out_De_b2", "Out_De_b2");
+            tableMapping.ColumnMappings.Add("Out_De_b3", "Out_De_b3");
+            tableMapping.ColumnMappings.Add("Out_De_b4", "Out_De_b4");
+            tableMapping.ColumnMappings.Add("User_List_b1", "User_List_b1");
+            tableMapping.ColumnMappings.Add("User_De_b1", "User_De_b1");
+            tableMapping.ColumnMappings.Add("User_De_b2", "User_De_b2");
+            tableMapping.ColumnMappings.Add("User_De_b3", "User_De_b3");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [AppUsers] WHERE (([id] = @Original_id) AND ((@IsNull_User_Name = 1 AND [User_Name] IS NULL) OR ([User_Name] = @Original_User_Name)) AND ((@IsNull_Password = 1 AND [Password] IS NULL) OR ([Password] = @Original_Password)) AND ((@IsNull_Comment = 1 AND [Comment] IS NULL) OR ([Comment] = @Original_Comment)) AND ((@IsNull_Sys_User = 1 AND [Sys_User] IS NULL) OR ([Sys_User] = @Original_Sys_User)) AND ((@IsNull_Sys_UserId = 1 AND [Sys_UserId] IS NULL) OR ([Sys_UserId] = @Original_Sys_UserId)) AND ((@IsNull_SysDate = 1 AND [SysDate] IS NULL) OR ([SysDate] = @Original_SysDate)) AND ((@IsNull_SysTime = 1 AND [SysTime] IS NULL) OR ([SysTime] = @Original_SysTime)))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [AppUsers] WHERE (([id] = @Original_id) AND ((@IsNull_User_Name = 1 A" +
+                "ND [User_Name] IS NULL) OR ([User_Name] = @Original_User_Name)) AND ((@IsNull_Pa" +
+                "ssword = 1 AND [Password] IS NULL) OR ([Password] = @Original_Password)) AND ((@" +
+                "IsNull_Comment = 1 AND [Comment] IS NULL) OR ([Comment] = @Original_Comment)) AN" +
+                "D ((@IsNull_Sys_User = 1 AND [Sys_User] IS NULL) OR ([Sys_User] = @Original_Sys_" +
+                "User)) AND ((@IsNull_Sys_UserId = 1 AND [Sys_UserId] IS NULL) OR ([Sys_UserId] =" +
+                " @Original_Sys_UserId)) AND ((@IsNull_SysDate = 1 AND [SysDate] IS NULL) OR ([Sy" +
+                "sDate] = @Original_SysDate)) AND ((@IsNull_SysTime = 1 AND [SysTime] IS NULL) OR" +
+                " ([SysTime] = @Original_SysTime)) AND ([main_butt1] = @Original_main_butt1) AND " +
+                "([main_butt2] = @Original_main_butt2) AND ([main_butt2_m1] = @Original_main_butt" +
+                "2_m1) AND ([main_butt2_m2] = @Original_main_butt2_m2) AND ([main_butt2_m3] = @Or" +
+                "iginal_main_butt2_m3) AND ([main_butt2_m4] = @Original_main_butt2_m4) AND ([main" +
+                "_butt2_m5] = @Original_main_butt2_m5) AND ([main_butt3] = @Original_main_butt3) " +
+                "AND ([main_butt3_m1] = @Original_main_butt3_m1) AND ([main_butt3_m2] = @Original" +
+                "_main_butt3_m2) AND ([main_butt3_m3] = @Original_main_butt3_m3) AND ([main_butt3" +
+                "_m4] = @Original_main_butt3_m4) AND ([main_butt3_m5] = @Original_main_butt3_m5) " +
+                "AND ([main_butt4] = @Original_main_butt4) AND ([main_butt4_m1] = @Original_main_" +
+                "butt4_m1) AND ([main_butt4_m2] = @Original_main_butt4_m2) AND ([main_butt4_m3] =" +
+                " @Original_main_butt4_m3) AND ([In_List_b1] = @Original_In_List_b1) AND ([In_Lis" +
+                "t_b2] = @Original_In_List_b2) AND ([In_List_b3] = @Original_In_List_b3) AND ([In" +
+                "_De_b1] = @Original_In_De_b1) AND ([In_De_b2] = @Original_In_De_b2) AND ([In_De_" +
+                "b3] = @Original_In_De_b3) AND ([In_De_b4] = @Original_In_De_b4) AND ([Out_List_b" +
+                "1] = @Original_Out_List_b1) AND ([Out_List_b2] = @Original_Out_List_b2) AND ([Ou" +
+                "t_List_b3] = @Original_Out_List_b3) AND ([Out_De_b1] = @Original_Out_De_b1) AND " +
+                "([Out_De_b2] = @Original_Out_De_b2) AND ([Out_De_b3] = @Original_Out_De_b3) AND " +
+                "([Out_De_b4] = @Original_Out_De_b4) AND ([User_List_b1] = @Original_User_List_b1" +
+                ") AND ([User_De_b1] = @Original_User_De_b1) AND ([User_De_b2] = @Original_User_D" +
+                "e_b2) AND ([User_De_b3] = @Original_User_De_b3))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_User_Name", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_Name", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -5781,10 +6796,66 @@ WHERE        (Subject LIKE @Subject)";
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SysDate", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SysDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_SysTime", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SysTime", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SysTime", global::System.Data.SqlDbType.Time, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SysTime", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt2_m1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2_m1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt2_m2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2_m2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt2_m3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2_m3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt2_m4", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2_m4", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt2_m5", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2_m5", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt3_m1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3_m1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt3_m2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3_m2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt3_m3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3_m3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt3_m4", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3_m4", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt3_m5", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3_m5", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt4", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt4", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt4_m1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt4_m1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt4_m2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt4_m2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt4_m3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt4_m3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_In_List_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_List_b1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_In_List_b2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_List_b2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_In_List_b3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_List_b3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_In_De_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_De_b1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_In_De_b2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_De_b2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_In_De_b3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_De_b3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_In_De_b4", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_De_b4", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Out_List_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_List_b1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Out_List_b2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_List_b2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Out_List_b3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_List_b3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Out_De_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_De_b1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Out_De_b2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_De_b2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Out_De_b3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_De_b3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Out_De_b4", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_De_b4", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_User_List_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_List_b1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_User_De_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_De_b1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_User_De_b2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_De_b2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_User_De_b3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_De_b3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [AppUsers] ([User_Name], [Password], [Comment], [Photo], [Sys_User], [Sys_UserId], [SysDate], [SysTime]) VALUES (@User_Name, @Password, @Comment, @Photo, @Sys_User, @Sys_UserId, @SysDate, @SysTime);
-SELECT id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysDate, SysTime FROM AppUsers WHERE (id = SCOPE_IDENTITY()) ORDER BY id";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [AppUsers] ([User_Name], [Password], [Comment], [Photo], [Sys_User], " +
+                "[Sys_UserId], [SysDate], [SysTime], [main_butt1], [main_butt2], [main_butt2_m1]," +
+                " [main_butt2_m2], [main_butt2_m3], [main_butt2_m4], [main_butt2_m5], [main_butt3" +
+                "], [main_butt3_m1], [main_butt3_m2], [main_butt3_m3], [main_butt3_m4], [main_but" +
+                "t3_m5], [main_butt4], [main_butt4_m1], [main_butt4_m2], [main_butt4_m3], [In_Lis" +
+                "t_b1], [In_List_b2], [In_List_b3], [In_De_b1], [In_De_b2], [In_De_b3], [In_De_b4" +
+                "], [Out_List_b1], [Out_List_b2], [Out_List_b3], [Out_De_b1], [Out_De_b2], [Out_D" +
+                "e_b3], [Out_De_b4], [User_List_b1], [User_De_b1], [User_De_b2], [User_De_b3]) VA" +
+                "LUES (@User_Name, @Password, @Comment, @Photo, @Sys_User, @Sys_UserId, @SysDate," +
+                " @SysTime, @main_butt1, @main_butt2, @main_butt2_m1, @main_butt2_m2, @main_butt2" +
+                "_m3, @main_butt2_m4, @main_butt2_m5, @main_butt3, @main_butt3_m1, @main_butt3_m2" +
+                ", @main_butt3_m3, @main_butt3_m4, @main_butt3_m5, @main_butt4, @main_butt4_m1, @" +
+                "main_butt4_m2, @main_butt4_m3, @In_List_b1, @In_List_b2, @In_List_b3, @In_De_b1," +
+                " @In_De_b2, @In_De_b3, @In_De_b4, @Out_List_b1, @Out_List_b2, @Out_List_b3, @Out" +
+                "_De_b1, @Out_De_b2, @Out_De_b3, @Out_De_b4, @User_List_b1, @User_De_b1, @User_De" +
+                "_b2, @User_De_b3);\r\nSELECT id, User_Name, Password, Comment, Photo, Sys_User, Sy" +
+                "s_UserId, SysDate, SysTime, main_butt1, main_butt2, main_butt2_m1, main_butt2_m2" +
+                ", main_butt2_m3, main_butt2_m4, main_butt2_m5, main_butt3, main_butt3_m1, main_b" +
+                "utt3_m2, main_butt3_m3, main_butt3_m4, main_butt3_m5, main_butt4, main_butt4_m1," +
+                " main_butt4_m2, main_butt4_m3, In_List_b1, In_List_b2, In_List_b3, In_De_b1, In_" +
+                "De_b2, In_De_b3, In_De_b4, Out_List_b1, Out_List_b2, Out_List_b3, Out_De_b1, Out" +
+                "_De_b2, Out_De_b3, Out_De_b4, User_List_b1, User_De_b1, User_De_b2, User_De_b3 F" +
+                "ROM AppUsers WHERE (id = SCOPE_IDENTITY()) ORDER BY id";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@User_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Password", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -5794,10 +6865,94 @@ SELECT id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysDate, S
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Sys_UserId", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Sys_UserId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SysDate", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SysDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SysTime", global::System.Data.SqlDbType.Time, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SysTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt2_m1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2_m1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt2_m2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2_m2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt2_m3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2_m3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt2_m4", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2_m4", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt2_m5", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2_m5", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt3_m1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3_m1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt3_m2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3_m2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt3_m3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3_m3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt3_m4", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3_m4", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt3_m5", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3_m5", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt4", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt4", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt4_m1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt4_m1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt4_m2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt4_m2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt4_m3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt4_m3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@In_List_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_List_b1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@In_List_b2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_List_b2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@In_List_b3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_List_b3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@In_De_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_De_b1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@In_De_b2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_De_b2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@In_De_b3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_De_b3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@In_De_b4", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_De_b4", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Out_List_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_List_b1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Out_List_b2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_List_b2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Out_List_b3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_List_b3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Out_De_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_De_b1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Out_De_b2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_De_b2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Out_De_b3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_De_b3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Out_De_b4", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_De_b4", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@User_List_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_List_b1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@User_De_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_De_b1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@User_De_b2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_De_b2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@User_De_b3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_De_b3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [AppUsers] SET [User_Name] = @User_Name, [Password] = @Password, [Comment] = @Comment, [Photo] = @Photo, [Sys_User] = @Sys_User, [Sys_UserId] = @Sys_UserId, [SysDate] = @SysDate, [SysTime] = @SysTime WHERE (([id] = @Original_id) AND ((@IsNull_User_Name = 1 AND [User_Name] IS NULL) OR ([User_Name] = @Original_User_Name)) AND ((@IsNull_Password = 1 AND [Password] IS NULL) OR ([Password] = @Original_Password)) AND ((@IsNull_Comment = 1 AND [Comment] IS NULL) OR ([Comment] = @Original_Comment)) AND ((@IsNull_Sys_User = 1 AND [Sys_User] IS NULL) OR ([Sys_User] = @Original_Sys_User)) AND ((@IsNull_Sys_UserId = 1 AND [Sys_UserId] IS NULL) OR ([Sys_UserId] = @Original_Sys_UserId)) AND ((@IsNull_SysDate = 1 AND [SysDate] IS NULL) OR ([SysDate] = @Original_SysDate)) AND ((@IsNull_SysTime = 1 AND [SysTime] IS NULL) OR ([SysTime] = @Original_SysTime)));
-SELECT id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysDate, SysTime FROM AppUsers WHERE (id = @id) ORDER BY id";
+            this._adapter.UpdateCommand.CommandText = "UPDATE [AppUsers] SET [User_Name] = @User_Name, [Password] = @Password, [Comment]" +
+                " = @Comment, [Photo] = @Photo, [Sys_User] = @Sys_User, [Sys_UserId] = @Sys_UserI" +
+                "d, [SysDate] = @SysDate, [SysTime] = @SysTime, [main_butt1] = @main_butt1, [main" +
+                "_butt2] = @main_butt2, [main_butt2_m1] = @main_butt2_m1, [main_butt2_m2] = @main" +
+                "_butt2_m2, [main_butt2_m3] = @main_butt2_m3, [main_butt2_m4] = @main_butt2_m4, [" +
+                "main_butt2_m5] = @main_butt2_m5, [main_butt3] = @main_butt3, [main_butt3_m1] = @" +
+                "main_butt3_m1, [main_butt3_m2] = @main_butt3_m2, [main_butt3_m3] = @main_butt3_m" +
+                "3, [main_butt3_m4] = @main_butt3_m4, [main_butt3_m5] = @main_butt3_m5, [main_but" +
+                "t4] = @main_butt4, [main_butt4_m1] = @main_butt4_m1, [main_butt4_m2] = @main_but" +
+                "t4_m2, [main_butt4_m3] = @main_butt4_m3, [In_List_b1] = @In_List_b1, [In_List_b2" +
+                "] = @In_List_b2, [In_List_b3] = @In_List_b3, [In_De_b1] = @In_De_b1, [In_De_b2] " +
+                "= @In_De_b2, [In_De_b3] = @In_De_b3, [In_De_b4] = @In_De_b4, [Out_List_b1] = @Ou" +
+                "t_List_b1, [Out_List_b2] = @Out_List_b2, [Out_List_b3] = @Out_List_b3, [Out_De_b" +
+                "1] = @Out_De_b1, [Out_De_b2] = @Out_De_b2, [Out_De_b3] = @Out_De_b3, [Out_De_b4]" +
+                " = @Out_De_b4, [User_List_b1] = @User_List_b1, [User_De_b1] = @User_De_b1, [User" +
+                "_De_b2] = @User_De_b2, [User_De_b3] = @User_De_b3 WHERE (([id] = @Original_id) A" +
+                "ND ((@IsNull_User_Name = 1 AND [User_Name] IS NULL) OR ([User_Name] = @Original_" +
+                "User_Name)) AND ((@IsNull_Password = 1 AND [Password] IS NULL) OR ([Password] = " +
+                "@Original_Password)) AND ((@IsNull_Comment = 1 AND [Comment] IS NULL) OR ([Comme" +
+                "nt] = @Original_Comment)) AND ((@IsNull_Sys_User = 1 AND [Sys_User] IS NULL) OR " +
+                "([Sys_User] = @Original_Sys_User)) AND ((@IsNull_Sys_UserId = 1 AND [Sys_UserId]" +
+                " IS NULL) OR ([Sys_UserId] = @Original_Sys_UserId)) AND ((@IsNull_SysDate = 1 AN" +
+                "D [SysDate] IS NULL) OR ([SysDate] = @Original_SysDate)) AND ((@IsNull_SysTime =" +
+                " 1 AND [SysTime] IS NULL) OR ([SysTime] = @Original_SysTime)) AND ([main_butt1] " +
+                "= @Original_main_butt1) AND ([main_butt2] = @Original_main_butt2) AND ([main_but" +
+                "t2_m1] = @Original_main_butt2_m1) AND ([main_butt2_m2] = @Original_main_butt2_m2" +
+                ") AND ([main_butt2_m3] = @Original_main_butt2_m3) AND ([main_butt2_m4] = @Origin" +
+                "al_main_butt2_m4) AND ([main_butt2_m5] = @Original_main_butt2_m5) AND ([main_but" +
+                "t3] = @Original_main_butt3) AND ([main_butt3_m1] = @Original_main_butt3_m1) AND " +
+                "([main_butt3_m2] = @Original_main_butt3_m2) AND ([main_butt3_m3] = @Original_mai" +
+                "n_butt3_m3) AND ([main_butt3_m4] = @Original_main_butt3_m4) AND ([main_butt3_m5]" +
+                " = @Original_main_butt3_m5) AND ([main_butt4] = @Original_main_butt4) AND ([main" +
+                "_butt4_m1] = @Original_main_butt4_m1) AND ([main_butt4_m2] = @Original_main_butt" +
+                "4_m2) AND ([main_butt4_m3] = @Original_main_butt4_m3) AND ([In_List_b1] = @Origi" +
+                "nal_In_List_b1) AND ([In_List_b2] = @Original_In_List_b2) AND ([In_List_b3] = @O" +
+                "riginal_In_List_b3) AND ([In_De_b1] = @Original_In_De_b1) AND ([In_De_b2] = @Ori" +
+                "ginal_In_De_b2) AND ([In_De_b3] = @Original_In_De_b3) AND ([In_De_b4] = @Origina" +
+                "l_In_De_b4) AND ([Out_List_b1] = @Original_Out_List_b1) AND ([Out_List_b2] = @Or" +
+                "iginal_Out_List_b2) AND ([Out_List_b3] = @Original_Out_List_b3) AND ([Out_De_b1]" +
+                " = @Original_Out_De_b1) AND ([Out_De_b2] = @Original_Out_De_b2) AND ([Out_De_b3]" +
+                " = @Original_Out_De_b3) AND ([Out_De_b4] = @Original_Out_De_b4) AND ([User_List_" +
+                "b1] = @Original_User_List_b1) AND ([User_De_b1] = @Original_User_De_b1) AND ([Us" +
+                "er_De_b2] = @Original_User_De_b2) AND ([User_De_b3] = @Original_User_De_b3));\r\nS" +
+                "ELECT id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysDate, Sy" +
+                "sTime, main_butt1, main_butt2, main_butt2_m1, main_butt2_m2, main_butt2_m3, main" +
+                "_butt2_m4, main_butt2_m5, main_butt3, main_butt3_m1, main_butt3_m2, main_butt3_m" +
+                "3, main_butt3_m4, main_butt3_m5, main_butt4, main_butt4_m1, main_butt4_m2, main_" +
+                "butt4_m3, In_List_b1, In_List_b2, In_List_b3, In_De_b1, In_De_b2, In_De_b3, In_D" +
+                "e_b4, Out_List_b1, Out_List_b2, Out_List_b3, Out_De_b1, Out_De_b2, Out_De_b3, Ou" +
+                "t_De_b4, User_List_b1, User_De_b1, User_De_b2, User_De_b3 FROM AppUsers WHERE (i" +
+                "d = @id) ORDER BY id";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@User_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Password", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Password", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -5807,6 +6962,41 @@ SELECT id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysDate, S
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Sys_UserId", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Sys_UserId", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SysDate", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SysDate", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SysTime", global::System.Data.SqlDbType.Time, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SysTime", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt2_m1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2_m1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt2_m2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2_m2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt2_m3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2_m3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt2_m4", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2_m4", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt2_m5", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2_m5", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt3_m1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3_m1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt3_m2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3_m2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt3_m3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3_m3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt3_m4", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3_m4", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt3_m5", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3_m5", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt4", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt4", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt4_m1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt4_m1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt4_m2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt4_m2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@main_butt4_m3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt4_m3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@In_List_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_List_b1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@In_List_b2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_List_b2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@In_List_b3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_List_b3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@In_De_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_De_b1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@In_De_b2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_De_b2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@In_De_b3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_De_b3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@In_De_b4", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_De_b4", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Out_List_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_List_b1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Out_List_b2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_List_b2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Out_List_b3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_List_b3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Out_De_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_De_b1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Out_De_b2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_De_b2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Out_De_b3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_De_b3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Out_De_b4", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_De_b4", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@User_List_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_List_b1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@User_De_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_De_b1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@User_De_b2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_De_b2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@User_De_b3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_De_b3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id", global::System.Data.SqlDbType.BigInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_User_Name", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_Name", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_User_Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_Name", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -5822,6 +7012,41 @@ SELECT id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysDate, S
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SysDate", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SysDate", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_SysTime", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SysTime", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SysTime", global::System.Data.SqlDbType.Time, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SysTime", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt2_m1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2_m1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt2_m2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2_m2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt2_m3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2_m3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt2_m4", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2_m4", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt2_m5", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt2_m5", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt3_m1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3_m1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt3_m2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3_m2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt3_m3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3_m3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt3_m4", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3_m4", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt3_m5", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt3_m5", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt4", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt4", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt4_m1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt4_m1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt4_m2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt4_m2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_main_butt4_m3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "main_butt4_m3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_In_List_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_List_b1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_In_List_b2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_List_b2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_In_List_b3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_List_b3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_In_De_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_De_b1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_In_De_b2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_De_b2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_In_De_b3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_De_b3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_In_De_b4", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "In_De_b4", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Out_List_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_List_b1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Out_List_b2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_List_b2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Out_List_b3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_List_b3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Out_De_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_De_b1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Out_De_b2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_De_b2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Out_De_b3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_De_b3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Out_De_b4", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Out_De_b4", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_User_List_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_List_b1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_User_De_b1", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_De_b1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_User_De_b2", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_De_b2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_User_De_b3", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "User_De_b3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -5839,13 +7064,15 @@ SELECT id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysDate, S
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT        id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysD" +
-                "ate, SysTime\r\nFROM            AppUsers\r\nORDER BY id";
+            this._commandCollection[0].CommandText = @"SELECT        id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysDate, SysTime, main_butt1, main_butt2, main_butt2_m1, main_butt2_m2, main_butt2_m3, main_butt2_m4, main_butt2_m5, main_butt3, main_butt3_m1, 
+                         main_butt3_m2, main_butt3_m3, main_butt3_m4, main_butt3_m5, main_butt4, main_butt4_m1, main_butt4_m2, main_butt4_m3, In_List_b1, In_List_b2, In_List_b3, In_De_b1, In_De_b2, In_De_b3, In_De_b4, Out_List_b1, 
+                         Out_List_b2, Out_List_b3, Out_De_b1, Out_De_b2, Out_De_b3, Out_De_b4, User_List_b1, User_De_b1, User_De_b2, User_De_b3
+FROM            AppUsers
+ORDER BY id";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT        id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysD" +
-                "ate, SysTime\r\nFROM            AppUsers\r\nWHERE        (id = @Search_ID)";
+            this._commandCollection[1].CommandText = @"SELECT Comment, In_De_b1, In_De_b2, In_De_b3, In_De_b4, In_List_b1, In_List_b2, In_List_b3, Out_De_b1, Out_De_b2, Out_De_b3, Out_De_b4, Out_List_b1, Out_List_b2, Out_List_b3, Password, Photo, SysDate, SysTime, Sys_User, Sys_UserId, User_De_b1, User_De_b2, User_De_b3, User_List_b1, User_Name, id, main_butt1, main_butt2, main_butt2_m1, main_butt2_m2, main_butt2_m3, main_butt2_m4, main_butt2_m5, main_butt3, main_butt3_m1, main_butt3_m2, main_butt3_m3, main_butt3_m4, main_butt3_m5, main_butt4, main_butt4_m1, main_butt4_m2, main_butt4_m3 FROM AppUsers WHERE (id = @Search_ID)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Search_ID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
@@ -5910,7 +7137,50 @@ SELECT id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysDate, S
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(long Original_id, string Original_User_Name, string Original_Password, string Original_Comment, string Original_Sys_User, global::System.Nullable<long> Original_Sys_UserId, global::System.Nullable<global::System.DateTime> Original_SysDate, global::System.Nullable<global::System.TimeSpan> Original_SysTime) {
+        public virtual int Delete(
+                    long Original_id, 
+                    string Original_User_Name, 
+                    string Original_Password, 
+                    string Original_Comment, 
+                    string Original_Sys_User, 
+                    global::System.Nullable<long> Original_Sys_UserId, 
+                    global::System.Nullable<global::System.DateTime> Original_SysDate, 
+                    global::System.Nullable<global::System.TimeSpan> Original_SysTime, 
+                    bool Original_main_butt1, 
+                    bool Original_main_butt2, 
+                    bool Original_main_butt2_m1, 
+                    bool Original_main_butt2_m2, 
+                    bool Original_main_butt2_m3, 
+                    bool Original_main_butt2_m4, 
+                    bool Original_main_butt2_m5, 
+                    bool Original_main_butt3, 
+                    bool Original_main_butt3_m1, 
+                    bool Original_main_butt3_m2, 
+                    bool Original_main_butt3_m3, 
+                    bool Original_main_butt3_m4, 
+                    bool Original_main_butt3_m5, 
+                    bool Original_main_butt4, 
+                    bool Original_main_butt4_m1, 
+                    bool Original_main_butt4_m2, 
+                    bool Original_main_butt4_m3, 
+                    bool Original_In_List_b1, 
+                    bool Original_In_List_b2, 
+                    bool Original_In_List_b3, 
+                    bool Original_In_De_b1, 
+                    bool Original_In_De_b2, 
+                    bool Original_In_De_b3, 
+                    bool Original_In_De_b4, 
+                    bool Original_Out_List_b1, 
+                    bool Original_Out_List_b2, 
+                    bool Original_Out_List_b3, 
+                    bool Original_Out_De_b1, 
+                    bool Original_Out_De_b2, 
+                    bool Original_Out_De_b3, 
+                    bool Original_Out_De_b4, 
+                    bool Original_User_List_b1, 
+                    bool Original_User_De_b1, 
+                    bool Original_User_De_b2, 
+                    bool Original_User_De_b3) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((long)(Original_id));
             if ((Original_User_Name == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
@@ -5968,6 +7238,41 @@ SELECT id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysDate, S
                 this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
+            this.Adapter.DeleteCommand.Parameters[15].Value = ((bool)(Original_main_butt1));
+            this.Adapter.DeleteCommand.Parameters[16].Value = ((bool)(Original_main_butt2));
+            this.Adapter.DeleteCommand.Parameters[17].Value = ((bool)(Original_main_butt2_m1));
+            this.Adapter.DeleteCommand.Parameters[18].Value = ((bool)(Original_main_butt2_m2));
+            this.Adapter.DeleteCommand.Parameters[19].Value = ((bool)(Original_main_butt2_m3));
+            this.Adapter.DeleteCommand.Parameters[20].Value = ((bool)(Original_main_butt2_m4));
+            this.Adapter.DeleteCommand.Parameters[21].Value = ((bool)(Original_main_butt2_m5));
+            this.Adapter.DeleteCommand.Parameters[22].Value = ((bool)(Original_main_butt3));
+            this.Adapter.DeleteCommand.Parameters[23].Value = ((bool)(Original_main_butt3_m1));
+            this.Adapter.DeleteCommand.Parameters[24].Value = ((bool)(Original_main_butt3_m2));
+            this.Adapter.DeleteCommand.Parameters[25].Value = ((bool)(Original_main_butt3_m3));
+            this.Adapter.DeleteCommand.Parameters[26].Value = ((bool)(Original_main_butt3_m4));
+            this.Adapter.DeleteCommand.Parameters[27].Value = ((bool)(Original_main_butt3_m5));
+            this.Adapter.DeleteCommand.Parameters[28].Value = ((bool)(Original_main_butt4));
+            this.Adapter.DeleteCommand.Parameters[29].Value = ((bool)(Original_main_butt4_m1));
+            this.Adapter.DeleteCommand.Parameters[30].Value = ((bool)(Original_main_butt4_m2));
+            this.Adapter.DeleteCommand.Parameters[31].Value = ((bool)(Original_main_butt4_m3));
+            this.Adapter.DeleteCommand.Parameters[32].Value = ((bool)(Original_In_List_b1));
+            this.Adapter.DeleteCommand.Parameters[33].Value = ((bool)(Original_In_List_b2));
+            this.Adapter.DeleteCommand.Parameters[34].Value = ((bool)(Original_In_List_b3));
+            this.Adapter.DeleteCommand.Parameters[35].Value = ((bool)(Original_In_De_b1));
+            this.Adapter.DeleteCommand.Parameters[36].Value = ((bool)(Original_In_De_b2));
+            this.Adapter.DeleteCommand.Parameters[37].Value = ((bool)(Original_In_De_b3));
+            this.Adapter.DeleteCommand.Parameters[38].Value = ((bool)(Original_In_De_b4));
+            this.Adapter.DeleteCommand.Parameters[39].Value = ((bool)(Original_Out_List_b1));
+            this.Adapter.DeleteCommand.Parameters[40].Value = ((bool)(Original_Out_List_b2));
+            this.Adapter.DeleteCommand.Parameters[41].Value = ((bool)(Original_Out_List_b3));
+            this.Adapter.DeleteCommand.Parameters[42].Value = ((bool)(Original_Out_De_b1));
+            this.Adapter.DeleteCommand.Parameters[43].Value = ((bool)(Original_Out_De_b2));
+            this.Adapter.DeleteCommand.Parameters[44].Value = ((bool)(Original_Out_De_b3));
+            this.Adapter.DeleteCommand.Parameters[45].Value = ((bool)(Original_Out_De_b4));
+            this.Adapter.DeleteCommand.Parameters[46].Value = ((bool)(Original_User_List_b1));
+            this.Adapter.DeleteCommand.Parameters[47].Value = ((bool)(Original_User_De_b1));
+            this.Adapter.DeleteCommand.Parameters[48].Value = ((bool)(Original_User_De_b2));
+            this.Adapter.DeleteCommand.Parameters[49].Value = ((bool)(Original_User_De_b3));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -5988,7 +7293,50 @@ SELECT id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysDate, S
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string User_Name, string Password, string Comment, byte[] Photo, string Sys_User, global::System.Nullable<long> Sys_UserId, global::System.Nullable<global::System.DateTime> SysDate, global::System.Nullable<global::System.TimeSpan> SysTime) {
+        public virtual int Insert(
+                    string User_Name, 
+                    string Password, 
+                    string Comment, 
+                    byte[] Photo, 
+                    string Sys_User, 
+                    global::System.Nullable<long> Sys_UserId, 
+                    global::System.Nullable<global::System.DateTime> SysDate, 
+                    global::System.Nullable<global::System.TimeSpan> SysTime, 
+                    bool main_butt1, 
+                    bool main_butt2, 
+                    bool main_butt2_m1, 
+                    bool main_butt2_m2, 
+                    bool main_butt2_m3, 
+                    bool main_butt2_m4, 
+                    bool main_butt2_m5, 
+                    bool main_butt3, 
+                    bool main_butt3_m1, 
+                    bool main_butt3_m2, 
+                    bool main_butt3_m3, 
+                    bool main_butt3_m4, 
+                    bool main_butt3_m5, 
+                    bool main_butt4, 
+                    bool main_butt4_m1, 
+                    bool main_butt4_m2, 
+                    bool main_butt4_m3, 
+                    bool In_List_b1, 
+                    bool In_List_b2, 
+                    bool In_List_b3, 
+                    bool In_De_b1, 
+                    bool In_De_b2, 
+                    bool In_De_b3, 
+                    bool In_De_b4, 
+                    bool Out_List_b1, 
+                    bool Out_List_b2, 
+                    bool Out_List_b3, 
+                    bool Out_De_b1, 
+                    bool Out_De_b2, 
+                    bool Out_De_b3, 
+                    bool Out_De_b4, 
+                    bool User_List_b1, 
+                    bool User_De_b1, 
+                    bool User_De_b2, 
+                    bool User_De_b3) {
             if ((User_Name == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -6037,6 +7385,41 @@ SELECT id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysDate, S
             else {
                 this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
+            this.Adapter.InsertCommand.Parameters[8].Value = ((bool)(main_butt1));
+            this.Adapter.InsertCommand.Parameters[9].Value = ((bool)(main_butt2));
+            this.Adapter.InsertCommand.Parameters[10].Value = ((bool)(main_butt2_m1));
+            this.Adapter.InsertCommand.Parameters[11].Value = ((bool)(main_butt2_m2));
+            this.Adapter.InsertCommand.Parameters[12].Value = ((bool)(main_butt2_m3));
+            this.Adapter.InsertCommand.Parameters[13].Value = ((bool)(main_butt2_m4));
+            this.Adapter.InsertCommand.Parameters[14].Value = ((bool)(main_butt2_m5));
+            this.Adapter.InsertCommand.Parameters[15].Value = ((bool)(main_butt3));
+            this.Adapter.InsertCommand.Parameters[16].Value = ((bool)(main_butt3_m1));
+            this.Adapter.InsertCommand.Parameters[17].Value = ((bool)(main_butt3_m2));
+            this.Adapter.InsertCommand.Parameters[18].Value = ((bool)(main_butt3_m3));
+            this.Adapter.InsertCommand.Parameters[19].Value = ((bool)(main_butt3_m4));
+            this.Adapter.InsertCommand.Parameters[20].Value = ((bool)(main_butt3_m5));
+            this.Adapter.InsertCommand.Parameters[21].Value = ((bool)(main_butt4));
+            this.Adapter.InsertCommand.Parameters[22].Value = ((bool)(main_butt4_m1));
+            this.Adapter.InsertCommand.Parameters[23].Value = ((bool)(main_butt4_m2));
+            this.Adapter.InsertCommand.Parameters[24].Value = ((bool)(main_butt4_m3));
+            this.Adapter.InsertCommand.Parameters[25].Value = ((bool)(In_List_b1));
+            this.Adapter.InsertCommand.Parameters[26].Value = ((bool)(In_List_b2));
+            this.Adapter.InsertCommand.Parameters[27].Value = ((bool)(In_List_b3));
+            this.Adapter.InsertCommand.Parameters[28].Value = ((bool)(In_De_b1));
+            this.Adapter.InsertCommand.Parameters[29].Value = ((bool)(In_De_b2));
+            this.Adapter.InsertCommand.Parameters[30].Value = ((bool)(In_De_b3));
+            this.Adapter.InsertCommand.Parameters[31].Value = ((bool)(In_De_b4));
+            this.Adapter.InsertCommand.Parameters[32].Value = ((bool)(Out_List_b1));
+            this.Adapter.InsertCommand.Parameters[33].Value = ((bool)(Out_List_b2));
+            this.Adapter.InsertCommand.Parameters[34].Value = ((bool)(Out_List_b3));
+            this.Adapter.InsertCommand.Parameters[35].Value = ((bool)(Out_De_b1));
+            this.Adapter.InsertCommand.Parameters[36].Value = ((bool)(Out_De_b2));
+            this.Adapter.InsertCommand.Parameters[37].Value = ((bool)(Out_De_b3));
+            this.Adapter.InsertCommand.Parameters[38].Value = ((bool)(Out_De_b4));
+            this.Adapter.InsertCommand.Parameters[39].Value = ((bool)(User_List_b1));
+            this.Adapter.InsertCommand.Parameters[40].Value = ((bool)(User_De_b1));
+            this.Adapter.InsertCommand.Parameters[41].Value = ((bool)(User_De_b2));
+            this.Adapter.InsertCommand.Parameters[42].Value = ((bool)(User_De_b3));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -6066,6 +7449,41 @@ SELECT id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysDate, S
                     global::System.Nullable<long> Sys_UserId, 
                     global::System.Nullable<global::System.DateTime> SysDate, 
                     global::System.Nullable<global::System.TimeSpan> SysTime, 
+                    bool main_butt1, 
+                    bool main_butt2, 
+                    bool main_butt2_m1, 
+                    bool main_butt2_m2, 
+                    bool main_butt2_m3, 
+                    bool main_butt2_m4, 
+                    bool main_butt2_m5, 
+                    bool main_butt3, 
+                    bool main_butt3_m1, 
+                    bool main_butt3_m2, 
+                    bool main_butt3_m3, 
+                    bool main_butt3_m4, 
+                    bool main_butt3_m5, 
+                    bool main_butt4, 
+                    bool main_butt4_m1, 
+                    bool main_butt4_m2, 
+                    bool main_butt4_m3, 
+                    bool In_List_b1, 
+                    bool In_List_b2, 
+                    bool In_List_b3, 
+                    bool In_De_b1, 
+                    bool In_De_b2, 
+                    bool In_De_b3, 
+                    bool In_De_b4, 
+                    bool Out_List_b1, 
+                    bool Out_List_b2, 
+                    bool Out_List_b3, 
+                    bool Out_De_b1, 
+                    bool Out_De_b2, 
+                    bool Out_De_b3, 
+                    bool Out_De_b4, 
+                    bool User_List_b1, 
+                    bool User_De_b1, 
+                    bool User_De_b2, 
+                    bool User_De_b3, 
                     long Original_id, 
                     string Original_User_Name, 
                     string Original_Password, 
@@ -6074,6 +7492,41 @@ SELECT id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysDate, S
                     global::System.Nullable<long> Original_Sys_UserId, 
                     global::System.Nullable<global::System.DateTime> Original_SysDate, 
                     global::System.Nullable<global::System.TimeSpan> Original_SysTime, 
+                    bool Original_main_butt1, 
+                    bool Original_main_butt2, 
+                    bool Original_main_butt2_m1, 
+                    bool Original_main_butt2_m2, 
+                    bool Original_main_butt2_m3, 
+                    bool Original_main_butt2_m4, 
+                    bool Original_main_butt2_m5, 
+                    bool Original_main_butt3, 
+                    bool Original_main_butt3_m1, 
+                    bool Original_main_butt3_m2, 
+                    bool Original_main_butt3_m3, 
+                    bool Original_main_butt3_m4, 
+                    bool Original_main_butt3_m5, 
+                    bool Original_main_butt4, 
+                    bool Original_main_butt4_m1, 
+                    bool Original_main_butt4_m2, 
+                    bool Original_main_butt4_m3, 
+                    bool Original_In_List_b1, 
+                    bool Original_In_List_b2, 
+                    bool Original_In_List_b3, 
+                    bool Original_In_De_b1, 
+                    bool Original_In_De_b2, 
+                    bool Original_In_De_b3, 
+                    bool Original_In_De_b4, 
+                    bool Original_Out_List_b1, 
+                    bool Original_Out_List_b2, 
+                    bool Original_Out_List_b3, 
+                    bool Original_Out_De_b1, 
+                    bool Original_Out_De_b2, 
+                    bool Original_Out_De_b3, 
+                    bool Original_Out_De_b4, 
+                    bool Original_User_List_b1, 
+                    bool Original_User_De_b1, 
+                    bool Original_User_De_b2, 
+                    bool Original_User_De_b3, 
                     long id) {
             if ((User_Name == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
@@ -6123,64 +7576,134 @@ SELECT id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysDate, S
             else {
                 this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[8].Value = ((long)(Original_id));
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((bool)(main_butt1));
+            this.Adapter.UpdateCommand.Parameters[9].Value = ((bool)(main_butt2));
+            this.Adapter.UpdateCommand.Parameters[10].Value = ((bool)(main_butt2_m1));
+            this.Adapter.UpdateCommand.Parameters[11].Value = ((bool)(main_butt2_m2));
+            this.Adapter.UpdateCommand.Parameters[12].Value = ((bool)(main_butt2_m3));
+            this.Adapter.UpdateCommand.Parameters[13].Value = ((bool)(main_butt2_m4));
+            this.Adapter.UpdateCommand.Parameters[14].Value = ((bool)(main_butt2_m5));
+            this.Adapter.UpdateCommand.Parameters[15].Value = ((bool)(main_butt3));
+            this.Adapter.UpdateCommand.Parameters[16].Value = ((bool)(main_butt3_m1));
+            this.Adapter.UpdateCommand.Parameters[17].Value = ((bool)(main_butt3_m2));
+            this.Adapter.UpdateCommand.Parameters[18].Value = ((bool)(main_butt3_m3));
+            this.Adapter.UpdateCommand.Parameters[19].Value = ((bool)(main_butt3_m4));
+            this.Adapter.UpdateCommand.Parameters[20].Value = ((bool)(main_butt3_m5));
+            this.Adapter.UpdateCommand.Parameters[21].Value = ((bool)(main_butt4));
+            this.Adapter.UpdateCommand.Parameters[22].Value = ((bool)(main_butt4_m1));
+            this.Adapter.UpdateCommand.Parameters[23].Value = ((bool)(main_butt4_m2));
+            this.Adapter.UpdateCommand.Parameters[24].Value = ((bool)(main_butt4_m3));
+            this.Adapter.UpdateCommand.Parameters[25].Value = ((bool)(In_List_b1));
+            this.Adapter.UpdateCommand.Parameters[26].Value = ((bool)(In_List_b2));
+            this.Adapter.UpdateCommand.Parameters[27].Value = ((bool)(In_List_b3));
+            this.Adapter.UpdateCommand.Parameters[28].Value = ((bool)(In_De_b1));
+            this.Adapter.UpdateCommand.Parameters[29].Value = ((bool)(In_De_b2));
+            this.Adapter.UpdateCommand.Parameters[30].Value = ((bool)(In_De_b3));
+            this.Adapter.UpdateCommand.Parameters[31].Value = ((bool)(In_De_b4));
+            this.Adapter.UpdateCommand.Parameters[32].Value = ((bool)(Out_List_b1));
+            this.Adapter.UpdateCommand.Parameters[33].Value = ((bool)(Out_List_b2));
+            this.Adapter.UpdateCommand.Parameters[34].Value = ((bool)(Out_List_b3));
+            this.Adapter.UpdateCommand.Parameters[35].Value = ((bool)(Out_De_b1));
+            this.Adapter.UpdateCommand.Parameters[36].Value = ((bool)(Out_De_b2));
+            this.Adapter.UpdateCommand.Parameters[37].Value = ((bool)(Out_De_b3));
+            this.Adapter.UpdateCommand.Parameters[38].Value = ((bool)(Out_De_b4));
+            this.Adapter.UpdateCommand.Parameters[39].Value = ((bool)(User_List_b1));
+            this.Adapter.UpdateCommand.Parameters[40].Value = ((bool)(User_De_b1));
+            this.Adapter.UpdateCommand.Parameters[41].Value = ((bool)(User_De_b2));
+            this.Adapter.UpdateCommand.Parameters[42].Value = ((bool)(User_De_b3));
+            this.Adapter.UpdateCommand.Parameters[43].Value = ((long)(Original_id));
             if ((Original_User_Name == null)) {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[44].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[45].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_User_Name));
+                this.Adapter.UpdateCommand.Parameters[44].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[45].Value = ((string)(Original_User_Name));
             }
             if ((Original_Password == null)) {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[46].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[47].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_Password));
+                this.Adapter.UpdateCommand.Parameters[46].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[47].Value = ((string)(Original_Password));
             }
             if ((Original_Comment == null)) {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[48].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[49].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_Comment));
+                this.Adapter.UpdateCommand.Parameters[48].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[49].Value = ((string)(Original_Comment));
             }
             if ((Original_Sys_User == null)) {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[50].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[51].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[16].Value = ((string)(Original_Sys_User));
+                this.Adapter.UpdateCommand.Parameters[50].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[51].Value = ((string)(Original_Sys_User));
             }
             if ((Original_Sys_UserId.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((long)(Original_Sys_UserId.Value));
+                this.Adapter.UpdateCommand.Parameters[52].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[53].Value = ((long)(Original_Sys_UserId.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[52].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[53].Value = global::System.DBNull.Value;
             }
             if ((Original_SysDate.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((System.DateTime)(Original_SysDate.Value));
+                this.Adapter.UpdateCommand.Parameters[54].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[55].Value = ((System.DateTime)(Original_SysDate.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[20].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[54].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[55].Value = global::System.DBNull.Value;
             }
             if ((Original_SysTime.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[22].Value = ((System.TimeSpan)(Original_SysTime.Value));
+                this.Adapter.UpdateCommand.Parameters[56].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[57].Value = ((System.TimeSpan)(Original_SysTime.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[22].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[56].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[57].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[23].Value = ((long)(id));
+            this.Adapter.UpdateCommand.Parameters[58].Value = ((bool)(Original_main_butt1));
+            this.Adapter.UpdateCommand.Parameters[59].Value = ((bool)(Original_main_butt2));
+            this.Adapter.UpdateCommand.Parameters[60].Value = ((bool)(Original_main_butt2_m1));
+            this.Adapter.UpdateCommand.Parameters[61].Value = ((bool)(Original_main_butt2_m2));
+            this.Adapter.UpdateCommand.Parameters[62].Value = ((bool)(Original_main_butt2_m3));
+            this.Adapter.UpdateCommand.Parameters[63].Value = ((bool)(Original_main_butt2_m4));
+            this.Adapter.UpdateCommand.Parameters[64].Value = ((bool)(Original_main_butt2_m5));
+            this.Adapter.UpdateCommand.Parameters[65].Value = ((bool)(Original_main_butt3));
+            this.Adapter.UpdateCommand.Parameters[66].Value = ((bool)(Original_main_butt3_m1));
+            this.Adapter.UpdateCommand.Parameters[67].Value = ((bool)(Original_main_butt3_m2));
+            this.Adapter.UpdateCommand.Parameters[68].Value = ((bool)(Original_main_butt3_m3));
+            this.Adapter.UpdateCommand.Parameters[69].Value = ((bool)(Original_main_butt3_m4));
+            this.Adapter.UpdateCommand.Parameters[70].Value = ((bool)(Original_main_butt3_m5));
+            this.Adapter.UpdateCommand.Parameters[71].Value = ((bool)(Original_main_butt4));
+            this.Adapter.UpdateCommand.Parameters[72].Value = ((bool)(Original_main_butt4_m1));
+            this.Adapter.UpdateCommand.Parameters[73].Value = ((bool)(Original_main_butt4_m2));
+            this.Adapter.UpdateCommand.Parameters[74].Value = ((bool)(Original_main_butt4_m3));
+            this.Adapter.UpdateCommand.Parameters[75].Value = ((bool)(Original_In_List_b1));
+            this.Adapter.UpdateCommand.Parameters[76].Value = ((bool)(Original_In_List_b2));
+            this.Adapter.UpdateCommand.Parameters[77].Value = ((bool)(Original_In_List_b3));
+            this.Adapter.UpdateCommand.Parameters[78].Value = ((bool)(Original_In_De_b1));
+            this.Adapter.UpdateCommand.Parameters[79].Value = ((bool)(Original_In_De_b2));
+            this.Adapter.UpdateCommand.Parameters[80].Value = ((bool)(Original_In_De_b3));
+            this.Adapter.UpdateCommand.Parameters[81].Value = ((bool)(Original_In_De_b4));
+            this.Adapter.UpdateCommand.Parameters[82].Value = ((bool)(Original_Out_List_b1));
+            this.Adapter.UpdateCommand.Parameters[83].Value = ((bool)(Original_Out_List_b2));
+            this.Adapter.UpdateCommand.Parameters[84].Value = ((bool)(Original_Out_List_b3));
+            this.Adapter.UpdateCommand.Parameters[85].Value = ((bool)(Original_Out_De_b1));
+            this.Adapter.UpdateCommand.Parameters[86].Value = ((bool)(Original_Out_De_b2));
+            this.Adapter.UpdateCommand.Parameters[87].Value = ((bool)(Original_Out_De_b3));
+            this.Adapter.UpdateCommand.Parameters[88].Value = ((bool)(Original_Out_De_b4));
+            this.Adapter.UpdateCommand.Parameters[89].Value = ((bool)(Original_User_List_b1));
+            this.Adapter.UpdateCommand.Parameters[90].Value = ((bool)(Original_User_De_b1));
+            this.Adapter.UpdateCommand.Parameters[91].Value = ((bool)(Original_User_De_b2));
+            this.Adapter.UpdateCommand.Parameters[92].Value = ((bool)(Original_User_De_b3));
+            this.Adapter.UpdateCommand.Parameters[93].Value = ((long)(id));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -6210,6 +7733,41 @@ SELECT id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysDate, S
                     global::System.Nullable<long> Sys_UserId, 
                     global::System.Nullable<global::System.DateTime> SysDate, 
                     global::System.Nullable<global::System.TimeSpan> SysTime, 
+                    bool main_butt1, 
+                    bool main_butt2, 
+                    bool main_butt2_m1, 
+                    bool main_butt2_m2, 
+                    bool main_butt2_m3, 
+                    bool main_butt2_m4, 
+                    bool main_butt2_m5, 
+                    bool main_butt3, 
+                    bool main_butt3_m1, 
+                    bool main_butt3_m2, 
+                    bool main_butt3_m3, 
+                    bool main_butt3_m4, 
+                    bool main_butt3_m5, 
+                    bool main_butt4, 
+                    bool main_butt4_m1, 
+                    bool main_butt4_m2, 
+                    bool main_butt4_m3, 
+                    bool In_List_b1, 
+                    bool In_List_b2, 
+                    bool In_List_b3, 
+                    bool In_De_b1, 
+                    bool In_De_b2, 
+                    bool In_De_b3, 
+                    bool In_De_b4, 
+                    bool Out_List_b1, 
+                    bool Out_List_b2, 
+                    bool Out_List_b3, 
+                    bool Out_De_b1, 
+                    bool Out_De_b2, 
+                    bool Out_De_b3, 
+                    bool Out_De_b4, 
+                    bool User_List_b1, 
+                    bool User_De_b1, 
+                    bool User_De_b2, 
+                    bool User_De_b3, 
                     long Original_id, 
                     string Original_User_Name, 
                     string Original_Password, 
@@ -6217,8 +7775,43 @@ SELECT id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysDate, S
                     string Original_Sys_User, 
                     global::System.Nullable<long> Original_Sys_UserId, 
                     global::System.Nullable<global::System.DateTime> Original_SysDate, 
-                    global::System.Nullable<global::System.TimeSpan> Original_SysTime) {
-            return this.Update(User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysDate, SysTime, Original_id, Original_User_Name, Original_Password, Original_Comment, Original_Sys_User, Original_Sys_UserId, Original_SysDate, Original_SysTime, Original_id);
+                    global::System.Nullable<global::System.TimeSpan> Original_SysTime, 
+                    bool Original_main_butt1, 
+                    bool Original_main_butt2, 
+                    bool Original_main_butt2_m1, 
+                    bool Original_main_butt2_m2, 
+                    bool Original_main_butt2_m3, 
+                    bool Original_main_butt2_m4, 
+                    bool Original_main_butt2_m5, 
+                    bool Original_main_butt3, 
+                    bool Original_main_butt3_m1, 
+                    bool Original_main_butt3_m2, 
+                    bool Original_main_butt3_m3, 
+                    bool Original_main_butt3_m4, 
+                    bool Original_main_butt3_m5, 
+                    bool Original_main_butt4, 
+                    bool Original_main_butt4_m1, 
+                    bool Original_main_butt4_m2, 
+                    bool Original_main_butt4_m3, 
+                    bool Original_In_List_b1, 
+                    bool Original_In_List_b2, 
+                    bool Original_In_List_b3, 
+                    bool Original_In_De_b1, 
+                    bool Original_In_De_b2, 
+                    bool Original_In_De_b3, 
+                    bool Original_In_De_b4, 
+                    bool Original_Out_List_b1, 
+                    bool Original_Out_List_b2, 
+                    bool Original_Out_List_b3, 
+                    bool Original_Out_De_b1, 
+                    bool Original_Out_De_b2, 
+                    bool Original_Out_De_b3, 
+                    bool Original_Out_De_b4, 
+                    bool Original_User_List_b1, 
+                    bool Original_User_De_b1, 
+                    bool Original_User_De_b2, 
+                    bool Original_User_De_b3) {
+            return this.Update(User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysDate, SysTime, main_butt1, main_butt2, main_butt2_m1, main_butt2_m2, main_butt2_m3, main_butt2_m4, main_butt2_m5, main_butt3, main_butt3_m1, main_butt3_m2, main_butt3_m3, main_butt3_m4, main_butt3_m5, main_butt4, main_butt4_m1, main_butt4_m2, main_butt4_m3, In_List_b1, In_List_b2, In_List_b3, In_De_b1, In_De_b2, In_De_b3, In_De_b4, Out_List_b1, Out_List_b2, Out_List_b3, Out_De_b1, Out_De_b2, Out_De_b3, Out_De_b4, User_List_b1, User_De_b1, User_De_b2, User_De_b3, Original_id, Original_User_Name, Original_Password, Original_Comment, Original_Sys_User, Original_Sys_UserId, Original_SysDate, Original_SysTime, Original_main_butt1, Original_main_butt2, Original_main_butt2_m1, Original_main_butt2_m2, Original_main_butt2_m3, Original_main_butt2_m4, Original_main_butt2_m5, Original_main_butt3, Original_main_butt3_m1, Original_main_butt3_m2, Original_main_butt3_m3, Original_main_butt3_m4, Original_main_butt3_m5, Original_main_butt4, Original_main_butt4_m1, Original_main_butt4_m2, Original_main_butt4_m3, Original_In_List_b1, Original_In_List_b2, Original_In_List_b3, Original_In_De_b1, Original_In_De_b2, Original_In_De_b3, Original_In_De_b4, Original_Out_List_b1, Original_Out_List_b2, Original_Out_List_b3, Original_Out_De_b1, Original_Out_De_b2, Original_Out_De_b3, Original_Out_De_b4, Original_User_List_b1, Original_User_De_b1, Original_User_De_b2, Original_User_De_b3, Original_id);
         }
     }
     
