@@ -853,6 +853,7 @@ partial class Users_De
         // 
         // user_pictureBox1
         // 
+        user_pictureBox1.BorderStyle = BorderStyle.FixedSingle;
         user_pictureBox1.DataBindings.Add(new Binding("Image", appusers_bindingSource1, "Photo", true));
         user_pictureBox1.Location = new Point(438, 35);
         user_pictureBox1.Name = "user_pictureBox1";
