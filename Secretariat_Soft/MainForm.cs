@@ -140,4 +140,22 @@ public partial class MainForm : Form
         frm.MdiParent = this;
         frm.Show();
     }
+
+    private void report_button_Click(object sender, EventArgs e)
+    {
+        int x, y;
+        x = side_panel.Width + report_button.Location.X; // X in screen
+        y = report_button.Location.Y + report_button.Height; // Y in screen
+        //-------------------------
+        reports_cm.Show(new Point(x, y));
+    }
+
+    private void help_button_Click(object sender, EventArgs e)
+    {
+        int x, y;
+        x = side_panel.Width + help_button.Location.X; // X in screen
+        y = help_button.Location.Y + help_button.Height; // Y in screen
+        //-------------------------
+        help_cm.Show(new Point(x, y));
+    }
 }

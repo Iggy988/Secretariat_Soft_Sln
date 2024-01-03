@@ -53,6 +53,43 @@ partial class Users_De
         user_name_lbl = new Label();
         userName_lbl = new Label();
         main_gbox = new GroupBox();
+        permissions_groupBox1 = new GroupBox();
+        groupBox6 = new GroupBox();
+        checkBox31 = new CheckBox();
+        checkBox32 = new CheckBox();
+        checkBox33 = new CheckBox();
+        groupBox5 = new GroupBox();
+        checkBox29 = new CheckBox();
+        groupBox3 = new GroupBox();
+        checkBox16 = new CheckBox();
+        checkBox17 = new CheckBox();
+        checkBox18 = new CheckBox();
+        checkBox19 = new CheckBox();
+        groupBox4 = new GroupBox();
+        checkBox23 = new CheckBox();
+        checkBox24 = new CheckBox();
+        checkBox25 = new CheckBox();
+        groupBox2 = new GroupBox();
+        checkBox15 = new CheckBox();
+        checkBox12 = new CheckBox();
+        checkBox13 = new CheckBox();
+        checkBox14 = new CheckBox();
+        groupBox1 = new GroupBox();
+        checkBox20 = new CheckBox();
+        checkBox21 = new CheckBox();
+        checkBox22 = new CheckBox();
+        main_form_groupBox1 = new GroupBox();
+        checkBox10 = new CheckBox();
+        checkBox11 = new CheckBox();
+        checkBox9 = new CheckBox();
+        checkBox7 = new CheckBox();
+        checkBox8 = new CheckBox();
+        checkBox6 = new CheckBox();
+        checkBox5 = new CheckBox();
+        checkBox4 = new CheckBox();
+        checkBox3 = new CheckBox();
+        checkBox2 = new CheckBox();
+        checkBox1 = new CheckBox();
         browse_button1 = new Button();
         user_pictureBox1 = new PictureBox();
         comment_TB = new TextBox();
@@ -67,12 +104,19 @@ partial class Users_De
         label1 = new Label();
         appUsersTableAdapter1 = new DataSet.LettersTableAdapters.AppUsersTableAdapter();
         id_label2 = new Label();
-        contextMenuStrip1 = new ContextMenuStrip(components);
         Top_Toolstrip.SuspendLayout();
         panel1.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)appusers_bindingSource1).BeginInit();
         ((System.ComponentModel.ISupportInitialize)letters1).BeginInit();
         main_gbox.SuspendLayout();
+        permissions_groupBox1.SuspendLayout();
+        groupBox6.SuspendLayout();
+        groupBox5.SuspendLayout();
+        groupBox3.SuspendLayout();
+        groupBox4.SuspendLayout();
+        groupBox2.SuspendLayout();
+        groupBox1.SuspendLayout();
+        main_form_groupBox1.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)user_pictureBox1).BeginInit();
         SuspendLayout();
         // 
@@ -82,7 +126,7 @@ partial class Users_De
         Top_Toolstrip.Items.AddRange(new ToolStripItem[] { de_add_butt, toolStripSeparator4, de_edit_butt, toolStripSeparator1, de_delete_butt, toolStripSeparator2, de_save_butt, toolStripSeparator5, toolStripSeparator3, de_cancel_butt, toolStripSeparator7 });
         Top_Toolstrip.Location = new Point(0, 0);
         Top_Toolstrip.Name = "Top_Toolstrip";
-        Top_Toolstrip.Size = new Size(658, 70);
+        Top_Toolstrip.Size = new Size(656, 70);
         Top_Toolstrip.TabIndex = 2;
         Top_Toolstrip.Text = "toolStrip1";
         // 
@@ -218,9 +262,9 @@ partial class Users_De
         panel1.Controls.Add(user_name_lbl);
         panel1.Controls.Add(userName_lbl);
         panel1.Dock = DockStyle.Bottom;
-        panel1.Location = new Point(0, 492);
+        panel1.Location = new Point(0, 666);
         panel1.Name = "panel1";
-        panel1.Size = new Size(658, 35);
+        panel1.Size = new Size(656, 35);
         panel1.TabIndex = 3;
         // 
         // system_time_lbl
@@ -312,6 +356,7 @@ partial class Users_De
         // 
         // main_gbox
         // 
+        main_gbox.Controls.Add(permissions_groupBox1);
         main_gbox.Controls.Add(browse_button1);
         main_gbox.Controls.Add(user_pictureBox1);
         main_gbox.Controls.Add(comment_TB);
@@ -326,10 +371,473 @@ partial class Users_De
         main_gbox.Controls.Add(label1);
         main_gbox.Location = new Point(12, 83);
         main_gbox.Name = "main_gbox";
-        main_gbox.Size = new Size(634, 393);
+        main_gbox.Size = new Size(634, 581);
         main_gbox.TabIndex = 4;
         main_gbox.TabStop = false;
         main_gbox.Text = "info";
+        // 
+        // permissions_groupBox1
+        // 
+        permissions_groupBox1.Controls.Add(groupBox6);
+        permissions_groupBox1.Controls.Add(groupBox5);
+        permissions_groupBox1.Controls.Add(groupBox3);
+        permissions_groupBox1.Controls.Add(groupBox4);
+        permissions_groupBox1.Controls.Add(groupBox2);
+        permissions_groupBox1.Controls.Add(groupBox1);
+        permissions_groupBox1.Controls.Add(main_form_groupBox1);
+        permissions_groupBox1.Location = new Point(6, 262);
+        permissions_groupBox1.Name = "permissions_groupBox1";
+        permissions_groupBox1.Size = new Size(622, 317);
+        permissions_groupBox1.TabIndex = 21;
+        permissions_groupBox1.TabStop = false;
+        permissions_groupBox1.Text = "Permissions";
+        // 
+        // groupBox6
+        // 
+        groupBox6.Controls.Add(checkBox31);
+        groupBox6.Controls.Add(checkBox32);
+        groupBox6.Controls.Add(checkBox33);
+        groupBox6.Location = new Point(473, 168);
+        groupBox6.Name = "groupBox6";
+        groupBox6.Size = new Size(143, 141);
+        groupBox6.TabIndex = 14;
+        groupBox6.TabStop = false;
+        groupBox6.Text = "Users Data Entry";
+        // 
+        // checkBox31
+        // 
+        checkBox31.AutoSize = true;
+        checkBox31.Cursor = Cursors.Hand;
+        checkBox31.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox31.Location = new Point(21, 68);
+        checkBox31.Name = "checkBox31";
+        checkBox31.Size = new Size(64, 21);
+        checkBox31.TabIndex = 2;
+        checkBox31.Text = "Delete";
+        checkBox31.UseVisualStyleBackColor = true;
+        // 
+        // checkBox32
+        // 
+        checkBox32.AutoSize = true;
+        checkBox32.Cursor = Cursors.Hand;
+        checkBox32.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox32.Location = new Point(21, 45);
+        checkBox32.Name = "checkBox32";
+        checkBox32.Size = new Size(49, 21);
+        checkBox32.TabIndex = 1;
+        checkBox32.Text = "Edit";
+        checkBox32.UseVisualStyleBackColor = true;
+        // 
+        // checkBox33
+        // 
+        checkBox33.AutoSize = true;
+        checkBox33.Cursor = Cursors.Hand;
+        checkBox33.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox33.Location = new Point(21, 23);
+        checkBox33.Name = "checkBox33";
+        checkBox33.Size = new Size(53, 21);
+        checkBox33.TabIndex = 0;
+        checkBox33.Text = "New";
+        checkBox33.UseVisualStyleBackColor = true;
+        // 
+        // groupBox5
+        // 
+        groupBox5.Controls.Add(checkBox29);
+        groupBox5.Location = new Point(473, 24);
+        groupBox5.Name = "groupBox5";
+        groupBox5.Size = new Size(143, 132);
+        groupBox5.TabIndex = 13;
+        groupBox5.TabStop = false;
+        groupBox5.Text = "Users List";
+        // 
+        // checkBox29
+        // 
+        checkBox29.AutoSize = true;
+        checkBox29.Cursor = Cursors.Hand;
+        checkBox29.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox29.Location = new Point(21, 23);
+        checkBox29.Name = "checkBox29";
+        checkBox29.Size = new Size(121, 21);
+        checkBox29.TabIndex = 0;
+        checkBox29.Text = "Add | Edit Users";
+        checkBox29.UseVisualStyleBackColor = true;
+        // 
+        // groupBox3
+        // 
+        groupBox3.Controls.Add(checkBox16);
+        groupBox3.Controls.Add(checkBox17);
+        groupBox3.Controls.Add(checkBox18);
+        groupBox3.Controls.Add(checkBox19);
+        groupBox3.Location = new Point(324, 168);
+        groupBox3.Name = "groupBox3";
+        groupBox3.Size = new Size(143, 141);
+        groupBox3.TabIndex = 14;
+        groupBox3.TabStop = false;
+        groupBox3.Text = "Out Letters Data Entry";
+        // 
+        // checkBox16
+        // 
+        checkBox16.AutoSize = true;
+        checkBox16.Cursor = Cursors.Hand;
+        checkBox16.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox16.Location = new Point(21, 91);
+        checkBox16.Name = "checkBox16";
+        checkBox16.Size = new Size(53, 21);
+        checkBox16.TabIndex = 3;
+        checkBox16.Text = "Print";
+        checkBox16.UseVisualStyleBackColor = true;
+        // 
+        // checkBox17
+        // 
+        checkBox17.AutoSize = true;
+        checkBox17.Cursor = Cursors.Hand;
+        checkBox17.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox17.Location = new Point(21, 68);
+        checkBox17.Name = "checkBox17";
+        checkBox17.Size = new Size(64, 21);
+        checkBox17.TabIndex = 2;
+        checkBox17.Text = "Delete";
+        checkBox17.UseVisualStyleBackColor = true;
+        // 
+        // checkBox18
+        // 
+        checkBox18.AutoSize = true;
+        checkBox18.Cursor = Cursors.Hand;
+        checkBox18.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox18.Location = new Point(21, 45);
+        checkBox18.Name = "checkBox18";
+        checkBox18.Size = new Size(49, 21);
+        checkBox18.TabIndex = 1;
+        checkBox18.Text = "Edit";
+        checkBox18.UseVisualStyleBackColor = true;
+        // 
+        // checkBox19
+        // 
+        checkBox19.AutoSize = true;
+        checkBox19.Cursor = Cursors.Hand;
+        checkBox19.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox19.Location = new Point(21, 23);
+        checkBox19.Name = "checkBox19";
+        checkBox19.Size = new Size(53, 21);
+        checkBox19.TabIndex = 0;
+        checkBox19.Text = "New";
+        checkBox19.UseVisualStyleBackColor = true;
+        // 
+        // groupBox4
+        // 
+        groupBox4.Controls.Add(checkBox23);
+        groupBox4.Controls.Add(checkBox24);
+        groupBox4.Controls.Add(checkBox25);
+        groupBox4.Location = new Point(324, 24);
+        groupBox4.Name = "groupBox4";
+        groupBox4.Size = new Size(143, 132);
+        groupBox4.TabIndex = 13;
+        groupBox4.TabStop = false;
+        groupBox4.Text = "Out Letters List";
+        // 
+        // checkBox23
+        // 
+        checkBox23.AutoSize = true;
+        checkBox23.Cursor = Cursors.Hand;
+        checkBox23.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox23.Location = new Point(21, 68);
+        checkBox23.Name = "checkBox23";
+        checkBox23.Size = new Size(53, 21);
+        checkBox23.TabIndex = 2;
+        checkBox23.Text = "Print";
+        checkBox23.UseVisualStyleBackColor = true;
+        // 
+        // checkBox24
+        // 
+        checkBox24.AutoSize = true;
+        checkBox24.Cursor = Cursors.Hand;
+        checkBox24.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox24.Location = new Point(21, 45);
+        checkBox24.Name = "checkBox24";
+        checkBox24.Size = new Size(66, 21);
+        checkBox24.TabIndex = 1;
+        checkBox24.Text = "Search";
+        checkBox24.UseVisualStyleBackColor = true;
+        // 
+        // checkBox25
+        // 
+        checkBox25.AutoSize = true;
+        checkBox25.Cursor = Cursors.Hand;
+        checkBox25.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox25.Location = new Point(21, 23);
+        checkBox25.Name = "checkBox25";
+        checkBox25.Size = new Size(111, 21);
+        checkBox25.TabIndex = 0;
+        checkBox25.Text = "Add | Edit Doc";
+        checkBox25.UseVisualStyleBackColor = true;
+        // 
+        // groupBox2
+        // 
+        groupBox2.Controls.Add(checkBox15);
+        groupBox2.Controls.Add(checkBox12);
+        groupBox2.Controls.Add(checkBox13);
+        groupBox2.Controls.Add(checkBox14);
+        groupBox2.Location = new Point(185, 168);
+        groupBox2.Name = "groupBox2";
+        groupBox2.Size = new Size(133, 141);
+        groupBox2.TabIndex = 12;
+        groupBox2.TabStop = false;
+        groupBox2.Text = "In Letters Data Entry";
+        // 
+        // checkBox15
+        // 
+        checkBox15.AutoSize = true;
+        checkBox15.Cursor = Cursors.Hand;
+        checkBox15.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox15.Location = new Point(21, 91);
+        checkBox15.Name = "checkBox15";
+        checkBox15.Size = new Size(53, 21);
+        checkBox15.TabIndex = 3;
+        checkBox15.Text = "Print";
+        checkBox15.UseVisualStyleBackColor = true;
+        // 
+        // checkBox12
+        // 
+        checkBox12.AutoSize = true;
+        checkBox12.Cursor = Cursors.Hand;
+        checkBox12.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox12.Location = new Point(21, 68);
+        checkBox12.Name = "checkBox12";
+        checkBox12.Size = new Size(64, 21);
+        checkBox12.TabIndex = 2;
+        checkBox12.Text = "Delete";
+        checkBox12.UseVisualStyleBackColor = true;
+        // 
+        // checkBox13
+        // 
+        checkBox13.AutoSize = true;
+        checkBox13.Cursor = Cursors.Hand;
+        checkBox13.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox13.Location = new Point(21, 45);
+        checkBox13.Name = "checkBox13";
+        checkBox13.Size = new Size(49, 21);
+        checkBox13.TabIndex = 1;
+        checkBox13.Text = "Edit";
+        checkBox13.UseVisualStyleBackColor = true;
+        // 
+        // checkBox14
+        // 
+        checkBox14.AutoSize = true;
+        checkBox14.Cursor = Cursors.Hand;
+        checkBox14.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox14.Location = new Point(21, 23);
+        checkBox14.Name = "checkBox14";
+        checkBox14.Size = new Size(53, 21);
+        checkBox14.TabIndex = 0;
+        checkBox14.Text = "New";
+        checkBox14.UseVisualStyleBackColor = true;
+        // 
+        // groupBox1
+        // 
+        groupBox1.Controls.Add(checkBox20);
+        groupBox1.Controls.Add(checkBox21);
+        groupBox1.Controls.Add(checkBox22);
+        groupBox1.Location = new Point(185, 24);
+        groupBox1.Name = "groupBox1";
+        groupBox1.Size = new Size(133, 132);
+        groupBox1.TabIndex = 11;
+        groupBox1.TabStop = false;
+        groupBox1.Text = "In Letters List";
+        // 
+        // checkBox20
+        // 
+        checkBox20.AutoSize = true;
+        checkBox20.Cursor = Cursors.Hand;
+        checkBox20.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox20.Location = new Point(21, 68);
+        checkBox20.Name = "checkBox20";
+        checkBox20.Size = new Size(53, 21);
+        checkBox20.TabIndex = 2;
+        checkBox20.Text = "Print";
+        checkBox20.UseVisualStyleBackColor = true;
+        // 
+        // checkBox21
+        // 
+        checkBox21.AutoSize = true;
+        checkBox21.Cursor = Cursors.Hand;
+        checkBox21.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox21.Location = new Point(21, 45);
+        checkBox21.Name = "checkBox21";
+        checkBox21.Size = new Size(66, 21);
+        checkBox21.TabIndex = 1;
+        checkBox21.Text = "Search";
+        checkBox21.UseVisualStyleBackColor = true;
+        // 
+        // checkBox22
+        // 
+        checkBox22.AutoSize = true;
+        checkBox22.Cursor = Cursors.Hand;
+        checkBox22.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox22.Location = new Point(21, 23);
+        checkBox22.Name = "checkBox22";
+        checkBox22.Size = new Size(111, 21);
+        checkBox22.TabIndex = 0;
+        checkBox22.Text = "Add | Edit Doc";
+        checkBox22.UseVisualStyleBackColor = true;
+        // 
+        // main_form_groupBox1
+        // 
+        main_form_groupBox1.Controls.Add(checkBox10);
+        main_form_groupBox1.Controls.Add(checkBox11);
+        main_form_groupBox1.Controls.Add(checkBox9);
+        main_form_groupBox1.Controls.Add(checkBox7);
+        main_form_groupBox1.Controls.Add(checkBox8);
+        main_form_groupBox1.Controls.Add(checkBox6);
+        main_form_groupBox1.Controls.Add(checkBox5);
+        main_form_groupBox1.Controls.Add(checkBox4);
+        main_form_groupBox1.Controls.Add(checkBox3);
+        main_form_groupBox1.Controls.Add(checkBox2);
+        main_form_groupBox1.Controls.Add(checkBox1);
+        main_form_groupBox1.Location = new Point(10, 24);
+        main_form_groupBox1.Name = "main_form_groupBox1";
+        main_form_groupBox1.Size = new Size(168, 285);
+        main_form_groupBox1.TabIndex = 0;
+        main_form_groupBox1.TabStop = false;
+        main_form_groupBox1.Text = "Main Form";
+        // 
+        // checkBox10
+        // 
+        checkBox10.AutoSize = true;
+        checkBox10.Cursor = Cursors.Hand;
+        checkBox10.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox10.ForeColor = Color.Maroon;
+        checkBox10.Location = new Point(42, 259);
+        checkBox10.Name = "checkBox10";
+        checkBox10.Size = new Size(62, 21);
+        checkBox10.TabIndex = 10;
+        checkBox10.Text = "About";
+        checkBox10.UseVisualStyleBackColor = true;
+        // 
+        // checkBox11
+        // 
+        checkBox11.AutoSize = true;
+        checkBox11.Cursor = Cursors.Hand;
+        checkBox11.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox11.ForeColor = Color.Maroon;
+        checkBox11.Location = new Point(42, 236);
+        checkBox11.Name = "checkBox11";
+        checkBox11.Size = new Size(54, 21);
+        checkBox11.TabIndex = 9;
+        checkBox11.Text = "Help";
+        checkBox11.UseVisualStyleBackColor = true;
+        // 
+        // checkBox9
+        // 
+        checkBox9.AutoSize = true;
+        checkBox9.Cursor = Cursors.Hand;
+        checkBox9.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox9.ForeColor = Color.Maroon;
+        checkBox9.Location = new Point(42, 186);
+        checkBox9.Name = "checkBox9";
+        checkBox9.Size = new Size(103, 21);
+        checkBox9.TabIndex = 8;
+        checkBox9.Text = "Restore Data";
+        checkBox9.UseVisualStyleBackColor = true;
+        // 
+        // checkBox7
+        // 
+        checkBox7.AutoSize = true;
+        checkBox7.Cursor = Cursors.Hand;
+        checkBox7.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox7.ForeColor = Color.Maroon;
+        checkBox7.Location = new Point(42, 163);
+        checkBox7.Name = "checkBox7";
+        checkBox7.Size = new Size(99, 21);
+        checkBox7.TabIndex = 7;
+        checkBox7.Text = "Backup Data";
+        checkBox7.UseVisualStyleBackColor = true;
+        // 
+        // checkBox8
+        // 
+        checkBox8.AutoSize = true;
+        checkBox8.Cursor = Cursors.Hand;
+        checkBox8.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox8.ForeColor = Color.Maroon;
+        checkBox8.Location = new Point(42, 140);
+        checkBox8.Name = "checkBox8";
+        checkBox8.Size = new Size(60, 21);
+        checkBox8.TabIndex = 6;
+        checkBox8.Text = "Users";
+        checkBox8.UseVisualStyleBackColor = true;
+        // 
+        // checkBox6
+        // 
+        checkBox6.AutoSize = true;
+        checkBox6.Cursor = Cursors.Hand;
+        checkBox6.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox6.ForeColor = Color.Maroon;
+        checkBox6.Location = new Point(42, 94);
+        checkBox6.Name = "checkBox6";
+        checkBox6.Size = new Size(121, 21);
+        checkBox6.TabIndex = 5;
+        checkBox6.Text = "OutgoingLetters";
+        checkBox6.UseVisualStyleBackColor = true;
+        // 
+        // checkBox5
+        // 
+        checkBox5.AutoSize = true;
+        checkBox5.Cursor = Cursors.Hand;
+        checkBox5.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox5.ForeColor = Color.Maroon;
+        checkBox5.Location = new Point(42, 69);
+        checkBox5.Name = "checkBox5";
+        checkBox5.Size = new Size(123, 21);
+        checkBox5.TabIndex = 4;
+        checkBox5.Text = "Incoming Letters";
+        checkBox5.UseVisualStyleBackColor = true;
+        // 
+        // checkBox4
+        // 
+        checkBox4.AutoSize = true;
+        checkBox4.Cursor = Cursors.Hand;
+        checkBox4.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox4.Location = new Point(21, 209);
+        checkBox4.Name = "checkBox4";
+        checkBox4.Size = new Size(54, 21);
+        checkBox4.TabIndex = 3;
+        checkBox4.Text = "Help";
+        checkBox4.UseVisualStyleBackColor = true;
+        // 
+        // checkBox3
+        // 
+        checkBox3.AutoSize = true;
+        checkBox3.Cursor = Cursors.Hand;
+        checkBox3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox3.Location = new Point(21, 114);
+        checkBox3.Name = "checkBox3";
+        checkBox3.Size = new Size(58, 21);
+        checkBox3.TabIndex = 2;
+        checkBox3.Text = "Tools";
+        checkBox3.UseVisualStyleBackColor = true;
+        // 
+        // checkBox2
+        // 
+        checkBox2.AutoSize = true;
+        checkBox2.Cursor = Cursors.Hand;
+        checkBox2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox2.Location = new Point(21, 45);
+        checkBox2.Name = "checkBox2";
+        checkBox2.Size = new Size(73, 21);
+        checkBox2.TabIndex = 1;
+        checkBox2.Text = "Reports";
+        checkBox2.UseVisualStyleBackColor = true;
+        // 
+        // checkBox1
+        // 
+        checkBox1.AutoSize = true;
+        checkBox1.Cursor = Cursors.Hand;
+        checkBox1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        checkBox1.Location = new Point(21, 23);
+        checkBox1.Name = "checkBox1";
+        checkBox1.Size = new Size(87, 21);
+        checkBox1.TabIndex = 0;
+        checkBox1.Text = "Data Entry";
+        checkBox1.UseVisualStyleBackColor = true;
         // 
         // browse_button1
         // 
@@ -467,17 +975,12 @@ partial class Users_De
         id_label2.TabIndex = 7;
         id_label2.Text = "label3";
         // 
-        // contextMenuStrip1
-        // 
-        contextMenuStrip1.Name = "contextMenuStrip1";
-        contextMenuStrip1.Size = new Size(61, 4);
-        // 
         // Users_De
         // 
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.Lavender;
-        ClientSize = new Size(658, 527);
+        ClientSize = new Size(656, 701);
         Controls.Add(id_label2);
         Controls.Add(main_gbox);
         Controls.Add(panel1);
@@ -497,6 +1000,21 @@ partial class Users_De
         ((System.ComponentModel.ISupportInitialize)letters1).EndInit();
         main_gbox.ResumeLayout(false);
         main_gbox.PerformLayout();
+        permissions_groupBox1.ResumeLayout(false);
+        groupBox6.ResumeLayout(false);
+        groupBox6.PerformLayout();
+        groupBox5.ResumeLayout(false);
+        groupBox5.PerformLayout();
+        groupBox3.ResumeLayout(false);
+        groupBox3.PerformLayout();
+        groupBox4.ResumeLayout(false);
+        groupBox4.PerformLayout();
+        groupBox2.ResumeLayout(false);
+        groupBox2.PerformLayout();
+        groupBox1.ResumeLayout(false);
+        groupBox1.PerformLayout();
+        main_form_groupBox1.ResumeLayout(false);
+        main_form_groupBox1.PerformLayout();
         ((System.ComponentModel.ISupportInitialize)user_pictureBox1).EndInit();
         ResumeLayout(false);
         PerformLayout();
@@ -542,5 +1060,41 @@ partial class Users_De
     public Label id_label2;
     private Button browse_button1;
     private PictureBox user_pictureBox1;
-    private ContextMenuStrip contextMenuStrip1;
+    private GroupBox permissions_groupBox1;
+    private GroupBox main_form_groupBox1;
+    private CheckBox checkBox1;
+    private CheckBox checkBox2;
+    private CheckBox checkBox4;
+    private CheckBox checkBox3;
+    private CheckBox checkBox7;
+    private CheckBox checkBox8;
+    private CheckBox checkBox6;
+    private CheckBox checkBox5;
+    private CheckBox checkBox9;
+    private CheckBox checkBox10;
+    private CheckBox checkBox11;
+    private GroupBox groupBox2;
+    private CheckBox checkBox12;
+    private CheckBox checkBox13;
+    private CheckBox checkBox14;
+    private GroupBox groupBox1;
+    private CheckBox checkBox20;
+    private CheckBox checkBox21;
+    private CheckBox checkBox22;
+    private GroupBox groupBox3;
+    private CheckBox checkBox16;
+    private CheckBox checkBox17;
+    private CheckBox checkBox18;
+    private CheckBox checkBox19;
+    private GroupBox groupBox4;
+    private CheckBox checkBox23;
+    private CheckBox checkBox24;
+    private CheckBox checkBox25;
+    private CheckBox checkBox15;
+    private GroupBox groupBox6;
+    private CheckBox checkBox31;
+    private CheckBox checkBox32;
+    private CheckBox checkBox33;
+    private GroupBox groupBox5;
+    private CheckBox checkBox29;
 }

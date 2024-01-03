@@ -63,6 +63,12 @@ partial class MainForm
         usersToolStripMenuItem = new ToolStripMenuItem();
         backupDataToolStripMenuItem = new ToolStripMenuItem();
         restoreDataToolStripMenuItem = new ToolStripMenuItem();
+        reports_cm = new ContextMenuStrip(components);
+        in_toolStripMenuItem2 = new ToolStripMenuItem();
+        out_toolStripMenuItem3 = new ToolStripMenuItem();
+        help_cm = new ContextMenuStrip(components);
+        toolStripMenuItem1 = new ToolStripMenuItem();
+        toolStripMenuItem2 = new ToolStripMenuItem();
         top_panel.SuspendLayout();
         side_panel.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)user_image).BeginInit();
@@ -70,6 +76,8 @@ partial class MainForm
         bottom_panel.SuspendLayout();
         tree_panel.SuspendLayout();
         toold_cm.SuspendLayout();
+        reports_cm.SuspendLayout();
+        help_cm.SuspendLayout();
         SuspendLayout();
         // 
         // top_panel
@@ -101,6 +109,7 @@ partial class MainForm
         help_button.TextAlign = ContentAlignment.BottomCenter;
         help_button.TextImageRelation = TextImageRelation.ImageAboveText;
         help_button.UseVisualStyleBackColor = true;
+        help_button.Click += help_button_Click;
         // 
         // tools_button
         // 
@@ -132,6 +141,7 @@ partial class MainForm
         report_button.TextAlign = ContentAlignment.BottomCenter;
         report_button.TextImageRelation = TextImageRelation.ImageAboveText;
         report_button.UseVisualStyleBackColor = true;
+        report_button.Click += report_button_Click;
         // 
         // data_entry_button
         // 
@@ -428,14 +438,14 @@ partial class MainForm
         toold_cm.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
         toold_cm.Items.AddRange(new ToolStripItem[] { usersToolStripMenuItem, backupDataToolStripMenuItem, restoreDataToolStripMenuItem });
         toold_cm.Name = "toold_cm";
-        toold_cm.Size = new Size(189, 116);
+        toold_cm.Size = new Size(161, 94);
         // 
         // usersToolStripMenuItem
         // 
         usersToolStripMenuItem.Image = Properties.Resources.user_cms;
         usersToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
         usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-        usersToolStripMenuItem.Size = new Size(188, 30);
+        usersToolStripMenuItem.Size = new Size(160, 30);
         usersToolStripMenuItem.Text = "Users";
         usersToolStripMenuItem.Click += usersToolStripMenuItem_Click;
         // 
@@ -444,7 +454,7 @@ partial class MainForm
         backupDataToolStripMenuItem.Image = Properties.Resources.backup_cms;
         backupDataToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
         backupDataToolStripMenuItem.Name = "backupDataToolStripMenuItem";
-        backupDataToolStripMenuItem.Size = new Size(188, 30);
+        backupDataToolStripMenuItem.Size = new Size(160, 30);
         backupDataToolStripMenuItem.Text = "Backup Data";
         // 
         // restoreDataToolStripMenuItem
@@ -452,8 +462,54 @@ partial class MainForm
         restoreDataToolStripMenuItem.Image = Properties.Resources.restore_cms;
         restoreDataToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
         restoreDataToolStripMenuItem.Name = "restoreDataToolStripMenuItem";
-        restoreDataToolStripMenuItem.Size = new Size(188, 30);
+        restoreDataToolStripMenuItem.Size = new Size(160, 30);
         restoreDataToolStripMenuItem.Text = "Restore Data";
+        // 
+        // reports_cm
+        // 
+        reports_cm.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        reports_cm.Items.AddRange(new ToolStripItem[] { in_toolStripMenuItem2, out_toolStripMenuItem3 });
+        reports_cm.Name = "toold_cm";
+        reports_cm.Size = new Size(183, 64);
+        // 
+        // in_toolStripMenuItem2
+        // 
+        in_toolStripMenuItem2.Image = Properties.Resources.dep_1;
+        in_toolStripMenuItem2.ImageScaling = ToolStripItemImageScaling.None;
+        in_toolStripMenuItem2.Name = "in_toolStripMenuItem2";
+        in_toolStripMenuItem2.Size = new Size(182, 30);
+        in_toolStripMenuItem2.Text = "Incoming Letters";
+        // 
+        // out_toolStripMenuItem3
+        // 
+        out_toolStripMenuItem3.Image = Properties.Resources.kToolStripButton;
+        out_toolStripMenuItem3.ImageScaling = ToolStripItemImageScaling.None;
+        out_toolStripMenuItem3.Name = "out_toolStripMenuItem3";
+        out_toolStripMenuItem3.Size = new Size(182, 30);
+        out_toolStripMenuItem3.Text = "Outgoing Letters";
+        // 
+        // help_cm
+        // 
+        help_cm.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        help_cm.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1, toolStripMenuItem2 });
+        help_cm.Name = "toold_cm";
+        help_cm.Size = new Size(120, 64);
+        // 
+        // toolStripMenuItem1
+        // 
+        toolStripMenuItem1.Image = Properties.Resources.review;
+        toolStripMenuItem1.ImageScaling = ToolStripItemImageScaling.None;
+        toolStripMenuItem1.Name = "toolStripMenuItem1";
+        toolStripMenuItem1.Size = new Size(119, 30);
+        toolStripMenuItem1.Text = "Help";
+        // 
+        // toolStripMenuItem2
+        // 
+        toolStripMenuItem2.Image = Properties.Resources.radMenuItem2;
+        toolStripMenuItem2.ImageScaling = ToolStripItemImageScaling.None;
+        toolStripMenuItem2.Name = "toolStripMenuItem2";
+        toolStripMenuItem2.Size = new Size(119, 30);
+        toolStripMenuItem2.Text = "About";
         // 
         // MainForm
         // 
@@ -482,6 +538,8 @@ partial class MainForm
         bottom_panel.ResumeLayout(false);
         tree_panel.ResumeLayout(false);
         toold_cm.ResumeLayout(false);
+        reports_cm.ResumeLayout(false);
+        help_cm.ResumeLayout(false);
         ResumeLayout(false);
     }
 
@@ -516,4 +574,10 @@ partial class MainForm
     private ToolStripMenuItem usersToolStripMenuItem;
     private ToolStripMenuItem backupDataToolStripMenuItem;
     private ToolStripMenuItem restoreDataToolStripMenuItem;
+    private ContextMenuStrip reports_cm;
+    private ToolStripMenuItem in_toolStripMenuItem2;
+    private ToolStripMenuItem out_toolStripMenuItem3;
+    private ContextMenuStrip help_cm;
+    private ToolStripMenuItem toolStripMenuItem1;
+    private ToolStripMenuItem toolStripMenuItem2;
 }
