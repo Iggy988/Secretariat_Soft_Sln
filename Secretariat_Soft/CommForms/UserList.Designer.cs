@@ -59,7 +59,7 @@ partial class UserList
         Top_Toolstrip.Items.AddRange(new ToolStripItem[] { add_butt, toolStripSeparator3, toolStripSeparator4 });
         Top_Toolstrip.Location = new Point(0, 0);
         Top_Toolstrip.Name = "Top_Toolstrip";
-        Top_Toolstrip.Size = new Size(783, 70);
+        Top_Toolstrip.Size = new Size(914, 70);
         Top_Toolstrip.TabIndex = 1;
         Top_Toolstrip.Text = "toolStrip1";
         // 
@@ -106,7 +106,7 @@ partial class UserList
         dataGridView1.ReadOnly = true;
         dataGridView1.RowHeadersWidth = 20;
         dataGridView1.RowTemplate.Height = 80;
-        dataGridView1.Size = new Size(760, 474);
+        dataGridView1.Size = new Size(890, 474);
         dataGridView1.TabIndex = 2;
         // 
         // idDataGridViewTextBoxColumn
@@ -187,7 +187,7 @@ partial class UserList
         // 
         id_label.AutoSize = true;
         id_label.DataBindings.Add(new Binding("Text", appusers_bindingSource1, "id", true));
-        id_label.Location = new Point(825, 189);
+        id_label.Location = new Point(911, 186);
         id_label.Name = "id_label";
         id_label.Size = new Size(38, 15);
         id_label.TabIndex = 6;
@@ -198,7 +198,7 @@ partial class UserList
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = SystemColors.Info;
-        ClientSize = new Size(783, 565);
+        ClientSize = new Size(914, 565);
         Controls.Add(id_label);
         Controls.Add(dataGridView1);
         Controls.Add(Top_Toolstrip);
