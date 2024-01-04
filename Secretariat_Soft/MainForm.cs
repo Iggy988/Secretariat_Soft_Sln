@@ -52,6 +52,11 @@ public partial class MainForm : Form
             tree_panel.Visible = false;
             main_treeView.ExpandAll();
             //----------------------------------
+            //========load permission data======
+            Secretariat_Soft.MyClasses.ComClass MyClass = new();
+            MyClass.user_perm_loader_from_db();
+
+            //==assign permission to controls===
             //==================================
         }
         else

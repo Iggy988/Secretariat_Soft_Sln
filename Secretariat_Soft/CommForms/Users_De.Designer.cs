@@ -126,7 +126,7 @@ partial class Users_De
         Top_Toolstrip.Items.AddRange(new ToolStripItem[] { de_add_butt, toolStripSeparator4, de_edit_butt, toolStripSeparator1, de_delete_butt, toolStripSeparator2, de_save_butt, toolStripSeparator5, toolStripSeparator3, de_cancel_butt, toolStripSeparator7 });
         Top_Toolstrip.Location = new Point(0, 0);
         Top_Toolstrip.Name = "Top_Toolstrip";
-        Top_Toolstrip.Size = new Size(656, 70);
+        Top_Toolstrip.Size = new Size(703, 70);
         Top_Toolstrip.TabIndex = 2;
         Top_Toolstrip.Text = "toolStrip1";
         // 
@@ -262,9 +262,9 @@ partial class Users_De
         panel1.Controls.Add(user_name_lbl);
         panel1.Controls.Add(userName_lbl);
         panel1.Dock = DockStyle.Bottom;
-        panel1.Location = new Point(0, 666);
+        panel1.Location = new Point(0, 692);
         panel1.Name = "panel1";
-        panel1.Size = new Size(656, 35);
+        panel1.Size = new Size(703, 35);
         panel1.TabIndex = 3;
         // 
         // system_time_lbl
@@ -371,7 +371,7 @@ partial class Users_De
         main_gbox.Controls.Add(label1);
         main_gbox.Location = new Point(12, 83);
         main_gbox.Name = "main_gbox";
-        main_gbox.Size = new Size(634, 581);
+        main_gbox.Size = new Size(679, 603);
         main_gbox.TabIndex = 4;
         main_gbox.TabStop = false;
         main_gbox.Text = "info";
@@ -385,9 +385,10 @@ partial class Users_De
         permissions_groupBox1.Controls.Add(groupBox2);
         permissions_groupBox1.Controls.Add(groupBox1);
         permissions_groupBox1.Controls.Add(main_form_groupBox1);
-        permissions_groupBox1.Location = new Point(6, 262);
+        permissions_groupBox1.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+        permissions_groupBox1.Location = new Point(6, 269);
         permissions_groupBox1.Name = "permissions_groupBox1";
-        permissions_groupBox1.Size = new Size(622, 317);
+        permissions_groupBox1.Size = new Size(667, 323);
         permissions_groupBox1.TabIndex = 21;
         permissions_groupBox1.TabStop = false;
         permissions_groupBox1.Text = "Permissions";
@@ -397,7 +398,7 @@ partial class Users_De
         groupBox6.Controls.Add(checkBox31);
         groupBox6.Controls.Add(checkBox32);
         groupBox6.Controls.Add(checkBox33);
-        groupBox6.Location = new Point(473, 168);
+        groupBox6.Location = new Point(515, 168);
         groupBox6.Name = "groupBox6";
         groupBox6.Size = new Size(143, 141);
         groupBox6.TabIndex = 14;
@@ -410,7 +411,7 @@ partial class Users_De
         checkBox31.Cursor = Cursors.Hand;
         checkBox31.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "User_De_b3", true));
         checkBox31.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        checkBox31.Location = new Point(21, 68);
+        checkBox31.Location = new Point(13, 68);
         checkBox31.Name = "checkBox31";
         checkBox31.Size = new Size(64, 21);
         checkBox31.TabIndex = 2;
@@ -423,7 +424,7 @@ partial class Users_De
         checkBox32.Cursor = Cursors.Hand;
         checkBox32.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "User_De_b2", true));
         checkBox32.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        checkBox32.Location = new Point(21, 45);
+        checkBox32.Location = new Point(13, 45);
         checkBox32.Name = "checkBox32";
         checkBox32.Size = new Size(49, 21);
         checkBox32.TabIndex = 1;
@@ -436,7 +437,7 @@ partial class Users_De
         checkBox33.Cursor = Cursors.Hand;
         checkBox33.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "User_De_b1", true));
         checkBox33.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        checkBox33.Location = new Point(21, 23);
+        checkBox33.Location = new Point(13, 23);
         checkBox33.Name = "checkBox33";
         checkBox33.Size = new Size(53, 21);
         checkBox33.TabIndex = 0;
@@ -446,7 +447,7 @@ partial class Users_De
         // groupBox5
         // 
         groupBox5.Controls.Add(checkBox29);
-        groupBox5.Location = new Point(473, 24);
+        groupBox5.Location = new Point(515, 24);
         groupBox5.Name = "groupBox5";
         groupBox5.Size = new Size(143, 132);
         groupBox5.TabIndex = 13;
@@ -459,7 +460,7 @@ partial class Users_De
         checkBox29.Cursor = Cursors.Hand;
         checkBox29.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "User_List_b1", true));
         checkBox29.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        checkBox29.Location = new Point(21, 23);
+        checkBox29.Location = new Point(13, 23);
         checkBox29.Name = "checkBox29";
         checkBox29.Size = new Size(121, 21);
         checkBox29.TabIndex = 0;
@@ -472,9 +473,9 @@ partial class Users_De
         groupBox3.Controls.Add(checkBox17);
         groupBox3.Controls.Add(checkBox18);
         groupBox3.Controls.Add(checkBox19);
-        groupBox3.Location = new Point(324, 168);
+        groupBox3.Location = new Point(344, 168);
         groupBox3.Name = "groupBox3";
-        groupBox3.Size = new Size(143, 141);
+        groupBox3.Size = new Size(165, 141);
         groupBox3.TabIndex = 14;
         groupBox3.TabStop = false;
         groupBox3.Text = "Out Letters Data Entry";
@@ -485,7 +486,7 @@ partial class Users_De
         checkBox16.Cursor = Cursors.Hand;
         checkBox16.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "Out_De_b4", true));
         checkBox16.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        checkBox16.Location = new Point(21, 91);
+        checkBox16.Location = new Point(12, 91);
         checkBox16.Name = "checkBox16";
         checkBox16.Size = new Size(53, 21);
         checkBox16.TabIndex = 3;
@@ -498,7 +499,7 @@ partial class Users_De
         checkBox17.Cursor = Cursors.Hand;
         checkBox17.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "Out_De_b3", true));
         checkBox17.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        checkBox17.Location = new Point(21, 68);
+        checkBox17.Location = new Point(12, 68);
         checkBox17.Name = "checkBox17";
         checkBox17.Size = new Size(64, 21);
         checkBox17.TabIndex = 2;
@@ -511,7 +512,7 @@ partial class Users_De
         checkBox18.Cursor = Cursors.Hand;
         checkBox18.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "Out_De_b2", true));
         checkBox18.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        checkBox18.Location = new Point(21, 45);
+        checkBox18.Location = new Point(12, 45);
         checkBox18.Name = "checkBox18";
         checkBox18.Size = new Size(49, 21);
         checkBox18.TabIndex = 1;
@@ -524,7 +525,7 @@ partial class Users_De
         checkBox19.Cursor = Cursors.Hand;
         checkBox19.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "Out_De_b1", true));
         checkBox19.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        checkBox19.Location = new Point(21, 23);
+        checkBox19.Location = new Point(12, 23);
         checkBox19.Name = "checkBox19";
         checkBox19.Size = new Size(53, 21);
         checkBox19.TabIndex = 0;
@@ -536,9 +537,9 @@ partial class Users_De
         groupBox4.Controls.Add(checkBox23);
         groupBox4.Controls.Add(checkBox24);
         groupBox4.Controls.Add(checkBox25);
-        groupBox4.Location = new Point(324, 24);
+        groupBox4.Location = new Point(344, 24);
         groupBox4.Name = "groupBox4";
-        groupBox4.Size = new Size(143, 132);
+        groupBox4.Size = new Size(165, 132);
         groupBox4.TabIndex = 13;
         groupBox4.TabStop = false;
         groupBox4.Text = "Out Letters List";
@@ -549,7 +550,7 @@ partial class Users_De
         checkBox23.Cursor = Cursors.Hand;
         checkBox23.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "Out_List_b3", true));
         checkBox23.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        checkBox23.Location = new Point(21, 68);
+        checkBox23.Location = new Point(12, 68);
         checkBox23.Name = "checkBox23";
         checkBox23.Size = new Size(53, 21);
         checkBox23.TabIndex = 2;
@@ -562,7 +563,7 @@ partial class Users_De
         checkBox24.Cursor = Cursors.Hand;
         checkBox24.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "Out_List_b2", true));
         checkBox24.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        checkBox24.Location = new Point(21, 45);
+        checkBox24.Location = new Point(12, 45);
         checkBox24.Name = "checkBox24";
         checkBox24.Size = new Size(66, 21);
         checkBox24.TabIndex = 1;
@@ -575,7 +576,7 @@ partial class Users_De
         checkBox25.Cursor = Cursors.Hand;
         checkBox25.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "Out_List_b1", true));
         checkBox25.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        checkBox25.Location = new Point(21, 23);
+        checkBox25.Location = new Point(12, 23);
         checkBox25.Name = "checkBox25";
         checkBox25.Size = new Size(111, 21);
         checkBox25.TabIndex = 0;
@@ -588,9 +589,9 @@ partial class Users_De
         groupBox2.Controls.Add(checkBox12);
         groupBox2.Controls.Add(checkBox13);
         groupBox2.Controls.Add(checkBox14);
-        groupBox2.Location = new Point(185, 168);
+        groupBox2.Location = new Point(183, 168);
         groupBox2.Name = "groupBox2";
-        groupBox2.Size = new Size(133, 141);
+        groupBox2.Size = new Size(155, 141);
         groupBox2.TabIndex = 12;
         groupBox2.TabStop = false;
         groupBox2.Text = "In Letters Data Entry";
@@ -601,7 +602,7 @@ partial class Users_De
         checkBox15.Cursor = Cursors.Hand;
         checkBox15.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "In_De_b4", true));
         checkBox15.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        checkBox15.Location = new Point(21, 91);
+        checkBox15.Location = new Point(14, 91);
         checkBox15.Name = "checkBox15";
         checkBox15.Size = new Size(53, 21);
         checkBox15.TabIndex = 3;
@@ -614,7 +615,7 @@ partial class Users_De
         checkBox12.Cursor = Cursors.Hand;
         checkBox12.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "In_De_b3", true));
         checkBox12.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        checkBox12.Location = new Point(21, 68);
+        checkBox12.Location = new Point(14, 68);
         checkBox12.Name = "checkBox12";
         checkBox12.Size = new Size(64, 21);
         checkBox12.TabIndex = 2;
@@ -627,7 +628,7 @@ partial class Users_De
         checkBox13.Cursor = Cursors.Hand;
         checkBox13.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "In_De_b2", true));
         checkBox13.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        checkBox13.Location = new Point(21, 45);
+        checkBox13.Location = new Point(14, 45);
         checkBox13.Name = "checkBox13";
         checkBox13.Size = new Size(49, 21);
         checkBox13.TabIndex = 1;
@@ -640,7 +641,7 @@ partial class Users_De
         checkBox14.Cursor = Cursors.Hand;
         checkBox14.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "In_De_b1", true));
         checkBox14.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        checkBox14.Location = new Point(21, 23);
+        checkBox14.Location = new Point(14, 23);
         checkBox14.Name = "checkBox14";
         checkBox14.Size = new Size(53, 21);
         checkBox14.TabIndex = 0;
@@ -652,9 +653,9 @@ partial class Users_De
         groupBox1.Controls.Add(checkBox20);
         groupBox1.Controls.Add(checkBox21);
         groupBox1.Controls.Add(checkBox22);
-        groupBox1.Location = new Point(185, 24);
+        groupBox1.Location = new Point(183, 24);
         groupBox1.Name = "groupBox1";
-        groupBox1.Size = new Size(133, 132);
+        groupBox1.Size = new Size(155, 132);
         groupBox1.TabIndex = 11;
         groupBox1.TabStop = false;
         groupBox1.Text = "In Letters List";
@@ -665,7 +666,7 @@ partial class Users_De
         checkBox20.Cursor = Cursors.Hand;
         checkBox20.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "In_List_b3", true));
         checkBox20.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        checkBox20.Location = new Point(21, 68);
+        checkBox20.Location = new Point(12, 68);
         checkBox20.Name = "checkBox20";
         checkBox20.Size = new Size(53, 21);
         checkBox20.TabIndex = 2;
@@ -678,7 +679,7 @@ partial class Users_De
         checkBox21.Cursor = Cursors.Hand;
         checkBox21.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "In_List_b2", true));
         checkBox21.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        checkBox21.Location = new Point(21, 45);
+        checkBox21.Location = new Point(12, 45);
         checkBox21.Name = "checkBox21";
         checkBox21.Size = new Size(66, 21);
         checkBox21.TabIndex = 1;
@@ -691,7 +692,7 @@ partial class Users_De
         checkBox22.Cursor = Cursors.Hand;
         checkBox22.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "In_List_b1", true));
         checkBox22.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        checkBox22.Location = new Point(21, 23);
+        checkBox22.Location = new Point(12, 23);
         checkBox22.Name = "checkBox22";
         checkBox22.Size = new Size(111, 21);
         checkBox22.TabIndex = 0;
@@ -713,7 +714,7 @@ partial class Users_De
         main_form_groupBox1.Controls.Add(checkBox1);
         main_form_groupBox1.Location = new Point(10, 24);
         main_form_groupBox1.Name = "main_form_groupBox1";
-        main_form_groupBox1.Size = new Size(168, 285);
+        main_form_groupBox1.Size = new Size(167, 285);
         main_form_groupBox1.TabIndex = 0;
         main_form_groupBox1.TabStop = false;
         main_form_groupBox1.Text = "Main Form";
@@ -725,7 +726,7 @@ partial class Users_De
         checkBox10.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "main_butt4_m2", true));
         checkBox10.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
         checkBox10.ForeColor = Color.Maroon;
-        checkBox10.Location = new Point(42, 259);
+        checkBox10.Location = new Point(33, 259);
         checkBox10.Name = "checkBox10";
         checkBox10.Size = new Size(62, 21);
         checkBox10.TabIndex = 10;
@@ -739,7 +740,7 @@ partial class Users_De
         checkBox11.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "main_butt4_m1", true));
         checkBox11.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
         checkBox11.ForeColor = Color.Maroon;
-        checkBox11.Location = new Point(42, 236);
+        checkBox11.Location = new Point(33, 236);
         checkBox11.Name = "checkBox11";
         checkBox11.Size = new Size(54, 21);
         checkBox11.TabIndex = 9;
@@ -753,7 +754,7 @@ partial class Users_De
         checkBox9.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "main_butt3_m3", true));
         checkBox9.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
         checkBox9.ForeColor = Color.Maroon;
-        checkBox9.Location = new Point(42, 186);
+        checkBox9.Location = new Point(33, 186);
         checkBox9.Name = "checkBox9";
         checkBox9.Size = new Size(103, 21);
         checkBox9.TabIndex = 8;
@@ -767,7 +768,7 @@ partial class Users_De
         checkBox7.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "main_butt3_m2", true));
         checkBox7.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
         checkBox7.ForeColor = Color.Maroon;
-        checkBox7.Location = new Point(42, 163);
+        checkBox7.Location = new Point(33, 163);
         checkBox7.Name = "checkBox7";
         checkBox7.Size = new Size(99, 21);
         checkBox7.TabIndex = 7;
@@ -781,7 +782,7 @@ partial class Users_De
         checkBox8.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "main_butt3_m1", true));
         checkBox8.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
         checkBox8.ForeColor = Color.Maroon;
-        checkBox8.Location = new Point(42, 140);
+        checkBox8.Location = new Point(33, 140);
         checkBox8.Name = "checkBox8";
         checkBox8.Size = new Size(60, 21);
         checkBox8.TabIndex = 6;
@@ -795,7 +796,7 @@ partial class Users_De
         checkBox6.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "main_butt2_m2", true));
         checkBox6.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
         checkBox6.ForeColor = Color.Maroon;
-        checkBox6.Location = new Point(42, 94);
+        checkBox6.Location = new Point(33, 94);
         checkBox6.Name = "checkBox6";
         checkBox6.Size = new Size(121, 21);
         checkBox6.TabIndex = 5;
@@ -809,7 +810,7 @@ partial class Users_De
         checkBox5.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "main_butt2_m1", true));
         checkBox5.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
         checkBox5.ForeColor = Color.Maroon;
-        checkBox5.Location = new Point(42, 69);
+        checkBox5.Location = new Point(33, 69);
         checkBox5.Name = "checkBox5";
         checkBox5.Size = new Size(123, 21);
         checkBox5.TabIndex = 4;
@@ -822,7 +823,7 @@ partial class Users_De
         checkBox4.Cursor = Cursors.Hand;
         checkBox4.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "main_butt4", true));
         checkBox4.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        checkBox4.Location = new Point(21, 209);
+        checkBox4.Location = new Point(12, 209);
         checkBox4.Name = "checkBox4";
         checkBox4.Size = new Size(54, 21);
         checkBox4.TabIndex = 3;
@@ -835,7 +836,7 @@ partial class Users_De
         checkBox3.Cursor = Cursors.Hand;
         checkBox3.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "main_butt3", true));
         checkBox3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        checkBox3.Location = new Point(21, 114);
+        checkBox3.Location = new Point(12, 114);
         checkBox3.Name = "checkBox3";
         checkBox3.Size = new Size(58, 21);
         checkBox3.TabIndex = 2;
@@ -848,7 +849,7 @@ partial class Users_De
         checkBox2.Cursor = Cursors.Hand;
         checkBox2.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "main_butt2", true));
         checkBox2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        checkBox2.Location = new Point(21, 45);
+        checkBox2.Location = new Point(12, 45);
         checkBox2.Name = "checkBox2";
         checkBox2.Size = new Size(73, 21);
         checkBox2.TabIndex = 1;
@@ -861,7 +862,7 @@ partial class Users_De
         checkBox1.Cursor = Cursors.Hand;
         checkBox1.DataBindings.Add(new Binding("Checked", appusers_bindingSource1, "main_butt1", true));
         checkBox1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        checkBox1.Location = new Point(21, 23);
+        checkBox1.Location = new Point(12, 23);
         checkBox1.Name = "checkBox1";
         checkBox1.Size = new Size(87, 21);
         checkBox1.TabIndex = 0;
@@ -872,7 +873,7 @@ partial class Users_De
         // 
         browse_button1.Cursor = Cursors.Hand;
         browse_button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        browse_button1.Location = new Point(438, 177);
+        browse_button1.Location = new Point(448, 177);
         browse_button1.Name = "browse_button1";
         browse_button1.Size = new Size(107, 32);
         browse_button1.TabIndex = 20;
@@ -884,7 +885,7 @@ partial class Users_De
         // 
         user_pictureBox1.BorderStyle = BorderStyle.FixedSingle;
         user_pictureBox1.DataBindings.Add(new Binding("Image", appusers_bindingSource1, "Photo", true));
-        user_pictureBox1.Location = new Point(438, 35);
+        user_pictureBox1.Location = new Point(448, 35);
         user_pictureBox1.Name = "user_pictureBox1";
         user_pictureBox1.Size = new Size(107, 132);
         user_pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -895,7 +896,7 @@ partial class Users_De
         // 
         comment_TB.DataBindings.Add(new Binding("Text", appusers_bindingSource1, "Comment", true));
         comment_TB.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        comment_TB.Location = new Point(162, 231);
+        comment_TB.Location = new Point(172, 231);
         comment_TB.Name = "comment_TB";
         comment_TB.Size = new Size(383, 25);
         comment_TB.TabIndex = 18;
@@ -904,7 +905,7 @@ partial class Users_De
         // 
         label7.AutoSize = true;
         label7.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        label7.Location = new Point(51, 235);
+        label7.Location = new Point(61, 235);
         label7.Name = "label7";
         label7.Size = new Size(67, 17);
         label7.TabIndex = 17;
@@ -913,7 +914,7 @@ partial class Users_De
         // password_repeat_TB
         // 
         password_repeat_TB.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        password_repeat_TB.Location = new Point(162, 184);
+        password_repeat_TB.Location = new Point(172, 184);
         password_repeat_TB.MaxLength = 10;
         password_repeat_TB.Name = "password_repeat_TB";
         password_repeat_TB.PasswordChar = '*';
@@ -924,7 +925,7 @@ partial class Users_De
         // 
         label3.AutoSize = true;
         label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        label3.Location = new Point(51, 188);
+        label3.Location = new Point(61, 188);
         label3.Name = "label3";
         label3.Size = new Size(112, 17);
         label3.TabIndex = 15;
@@ -934,7 +935,7 @@ partial class Users_De
         // 
         password_TB.DataBindings.Add(new Binding("Text", appusers_bindingSource1, "Password", true));
         password_TB.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        password_TB.Location = new Point(162, 133);
+        password_TB.Location = new Point(172, 133);
         password_TB.MaxLength = 10;
         password_TB.Name = "password_TB";
         password_TB.PasswordChar = '*';
@@ -945,7 +946,7 @@ partial class Users_De
         // 
         user_name_TB.DataBindings.Add(new Binding("Text", appusers_bindingSource1, "User_Name", true));
         user_name_TB.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        user_name_TB.Location = new Point(162, 85);
+        user_name_TB.Location = new Point(172, 85);
         user_name_TB.Name = "user_name_TB";
         user_name_TB.Size = new Size(240, 25);
         user_name_TB.TabIndex = 14;
@@ -955,7 +956,7 @@ partial class Users_De
         sys_id_LBL.BorderStyle = BorderStyle.FixedSingle;
         sys_id_LBL.DataBindings.Add(new Binding("Text", appusers_bindingSource1, "id", true));
         sys_id_LBL.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        sys_id_LBL.Location = new Point(162, 35);
+        sys_id_LBL.Location = new Point(172, 35);
         sys_id_LBL.Name = "sys_id_LBL";
         sys_id_LBL.Size = new Size(240, 25);
         sys_id_LBL.TabIndex = 12;
@@ -966,7 +967,7 @@ partial class Users_De
         // 
         label5.AutoSize = true;
         label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        label5.Location = new Point(51, 137);
+        label5.Location = new Point(61, 137);
         label5.Name = "label5";
         label5.Size = new Size(67, 17);
         label5.TabIndex = 8;
@@ -976,7 +977,7 @@ partial class Users_De
         // 
         label2.AutoSize = true;
         label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        label2.Location = new Point(51, 90);
+        label2.Location = new Point(61, 90);
         label2.Name = "label2";
         label2.Size = new Size(77, 17);
         label2.TabIndex = 10;
@@ -986,7 +987,7 @@ partial class Users_De
         // 
         label1.AutoSize = true;
         label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        label1.Location = new Point(51, 40);
+        label1.Location = new Point(61, 40);
         label1.Name = "label1";
         label1.Size = new Size(54, 17);
         label1.TabIndex = 11;
@@ -1010,7 +1011,7 @@ partial class Users_De
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.Lavender;
-        ClientSize = new Size(656, 701);
+        ClientSize = new Size(703, 727);
         Controls.Add(id_label2);
         Controls.Add(main_gbox);
         Controls.Add(panel1);
