@@ -26,4 +26,10 @@ public class ComClass
         }
         
     }
+
+    public bool get_permission_by_col_name(string column_name)
+    {
+        bool r = (bool)user_perm_dt.Rows[0][column_name];
+        return r;
+    }
 }

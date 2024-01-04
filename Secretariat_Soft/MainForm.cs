@@ -55,8 +55,8 @@ public partial class MainForm : Form
             //========load permission data======
             Secretariat_Soft.MyClasses.ComClass MyClass = new();
             MyClass.user_perm_loader_from_db();
-
             //==assign permission to controls===
+            MessageBox.Show(MyClass.get_permission_by_col_name("main_butt1").ToString());
             //==================================
         }
         else
