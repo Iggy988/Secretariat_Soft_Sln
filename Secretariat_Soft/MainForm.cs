@@ -56,7 +56,8 @@ public partial class MainForm : Form
             Secretariat_Soft.MyClasses.ComClass MyClass = new();
             MyClass.user_perm_loader_from_db();
             //==assign permission to controls===
-            MessageBox.Show(MyClass.get_permission_by_col_name("main_butt1").ToString());
+            //MessageBox.Show(MyClass.get_permission_by_col_name("main_butt1").ToString());
+            object_perm_loader();
             //==================================
         }
         else
@@ -66,6 +67,31 @@ public partial class MainForm : Form
             Application.Exit();
         }
 
+    }
+
+    void object_perm_loader()
+    {
+        Secretariat_Soft.MyClasses.ComClass MyClass = new();
+        //--------load permissions by col name -------------------
+        data_entry_button.Enabled = MyClass.get_permission_by_col_name("main_butt1"); //data entry
+        //--------------------------------------------------------
+        report_button.Enabled = MyClass.get_permission_by_col_name("main_butt2"); // reports
+        in_toolStripMenuItem2.Enabled = MyClass.get_permission_by_col_name("main_butt2_m1"); // incoming letters
+        out_toolStripMenuItem3.Enabled = MyClass.get_permission_by_col_name("main_butt2_m2"); // outcoming letters
+        //--------------------------------------------------------
+        tools_button.Enabled = MyClass.get_permission_by_col_name("main_butt3"); // tools
+        usersToolStripMenuItem.Enabled = MyClass.get_permission_by_col_name("main_butt3_m1"); // users
+        backupDataToolStripMenuItem.Enabled = MyClass.get_permission_by_col_name("main_butt3_m2"); // backup data
+        restoreDataToolStripMenuItem.Enabled = MyClass.get_permission_by_col_name("main_butt3_m3"); // restore data
+        //--------------------------------------------------------
+        help_button.Enabled = MyClass.get_permission_by_col_name("main_butt4"); // help
+        help_toolStripMenuItem1.Enabled = MyClass.get_permission_by_col_name("main_butt4_m1"); // help
+        about_toolStripMenuItem2.Enabled = MyClass.get_permission_by_col_name("main_butt4_m2"); // about
+        //--------------------------------------------------------
+        if (Properties.Settings.Default.User_Id == Properties.Settings.Default.admin_user_id)
+        {
+            usersToolStripMenuItem.Enabled = true;
+        }
     }
 
     void GetDateCal()

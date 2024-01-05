@@ -29,10 +29,10 @@ partial class MainForm
     private void InitializeComponent()
     {
         components = new System.ComponentModel.Container();
-        TreeNode treeNode1 = new TreeNode("Incoming Letters");
-        TreeNode treeNode2 = new TreeNode("Outgoing Letters");
-        TreeNode treeNode3 = new TreeNode("My Letters", new TreeNode[] { treeNode1, treeNode2 });
-        TreeNode treeNode4 = new TreeNode("All Folders", 2, 2, new TreeNode[] { treeNode3 });
+        TreeNode treeNode5 = new TreeNode("Incoming Letters");
+        TreeNode treeNode6 = new TreeNode("Outgoing Letters");
+        TreeNode treeNode7 = new TreeNode("My Letters", new TreeNode[] { treeNode5, treeNode6 });
+        TreeNode treeNode8 = new TreeNode("All Folders", 2, 2, new TreeNode[] { treeNode7 });
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
         top_panel = new Panel();
         help_button = new Button();
@@ -67,8 +67,8 @@ partial class MainForm
         in_toolStripMenuItem2 = new ToolStripMenuItem();
         out_toolStripMenuItem3 = new ToolStripMenuItem();
         help_cm = new ContextMenuStrip(components);
-        toolStripMenuItem1 = new ToolStripMenuItem();
-        toolStripMenuItem2 = new ToolStripMenuItem();
+        help_toolStripMenuItem1 = new ToolStripMenuItem();
+        about_toolStripMenuItem2 = new ToolStripMenuItem();
         top_panel.SuspendLayout();
         side_panel.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)user_image).BeginInit();
@@ -402,22 +402,22 @@ partial class MainForm
         main_treeView.ItemHeight = 35;
         main_treeView.Location = new Point(3, 6);
         main_treeView.Name = "main_treeView";
-        treeNode1.ImageKey = "review.png";
-        treeNode1.Name = "Incoming_Letters";
-        treeNode1.SelectedImageIndex = 3;
-        treeNode1.Text = "Incoming Letters";
-        treeNode2.ImageKey = "kToolStripButton.png";
-        treeNode2.Name = "Outgoing_Letters";
-        treeNode2.SelectedImageIndex = 1;
-        treeNode2.Text = "Outgoing Letters";
-        treeNode3.Name = "My_Letters";
-        treeNode3.SelectedImageIndex = 0;
-        treeNode3.Text = "My Letters";
-        treeNode4.ImageIndex = 2;
-        treeNode4.Name = "All_Folders";
-        treeNode4.SelectedImageIndex = 2;
-        treeNode4.Text = "All Folders";
-        main_treeView.Nodes.AddRange(new TreeNode[] { treeNode4 });
+        treeNode5.ImageKey = "review.png";
+        treeNode5.Name = "Incoming_Letters";
+        treeNode5.SelectedImageIndex = 3;
+        treeNode5.Text = "Incoming Letters";
+        treeNode6.ImageKey = "kToolStripButton.png";
+        treeNode6.Name = "Outgoing_Letters";
+        treeNode6.SelectedImageIndex = 1;
+        treeNode6.Text = "Outgoing Letters";
+        treeNode7.Name = "My_Letters";
+        treeNode7.SelectedImageIndex = 0;
+        treeNode7.Text = "My Letters";
+        treeNode8.ImageIndex = 2;
+        treeNode8.Name = "All_Folders";
+        treeNode8.SelectedImageIndex = 2;
+        treeNode8.Text = "All Folders";
+        main_treeView.Nodes.AddRange(new TreeNode[] { treeNode8 });
         main_treeView.SelectedImageIndex = 0;
         main_treeView.Size = new Size(382, 482);
         main_treeView.TabIndex = 0;
@@ -491,25 +491,25 @@ partial class MainForm
         // help_cm
         // 
         help_cm.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        help_cm.Items.AddRange(new ToolStripItem[] { toolStripMenuItem1, toolStripMenuItem2 });
+        help_cm.Items.AddRange(new ToolStripItem[] { help_toolStripMenuItem1, about_toolStripMenuItem2 });
         help_cm.Name = "toold_cm";
-        help_cm.Size = new Size(120, 64);
+        help_cm.Size = new Size(189, 86);
         // 
-        // toolStripMenuItem1
+        // help_toolStripMenuItem1
         // 
-        toolStripMenuItem1.Image = Properties.Resources.review;
-        toolStripMenuItem1.ImageScaling = ToolStripItemImageScaling.None;
-        toolStripMenuItem1.Name = "toolStripMenuItem1";
-        toolStripMenuItem1.Size = new Size(119, 30);
-        toolStripMenuItem1.Text = "Help";
+        help_toolStripMenuItem1.Image = Properties.Resources.review;
+        help_toolStripMenuItem1.ImageScaling = ToolStripItemImageScaling.None;
+        help_toolStripMenuItem1.Name = "help_toolStripMenuItem1";
+        help_toolStripMenuItem1.Size = new Size(188, 30);
+        help_toolStripMenuItem1.Text = "Help";
         // 
-        // toolStripMenuItem2
+        // about_toolStripMenuItem2
         // 
-        toolStripMenuItem2.Image = Properties.Resources.radMenuItem2;
-        toolStripMenuItem2.ImageScaling = ToolStripItemImageScaling.None;
-        toolStripMenuItem2.Name = "toolStripMenuItem2";
-        toolStripMenuItem2.Size = new Size(119, 30);
-        toolStripMenuItem2.Text = "About";
+        about_toolStripMenuItem2.Image = Properties.Resources.radMenuItem2;
+        about_toolStripMenuItem2.ImageScaling = ToolStripItemImageScaling.None;
+        about_toolStripMenuItem2.Name = "about_toolStripMenuItem2";
+        about_toolStripMenuItem2.Size = new Size(188, 30);
+        about_toolStripMenuItem2.Text = "About";
         // 
         // MainForm
         // 
@@ -578,6 +578,6 @@ partial class MainForm
     private ToolStripMenuItem in_toolStripMenuItem2;
     private ToolStripMenuItem out_toolStripMenuItem3;
     private ContextMenuStrip help_cm;
-    private ToolStripMenuItem toolStripMenuItem1;
-    private ToolStripMenuItem toolStripMenuItem2;
+    private ToolStripMenuItem help_toolStripMenuItem1;
+    private ToolStripMenuItem about_toolStripMenuItem2;
 }
