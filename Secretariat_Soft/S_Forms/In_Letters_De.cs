@@ -20,11 +20,15 @@ public partial class In_Letters_De : Form
 
     private void In_Letters_De_Load(object sender, EventArgs e)
     {
+       
         is_del_clicked = false;
         //-------------------------
         enable_add_edit_del_butt();
         //-------------------------
         //sa_In_LettersTableAdapter1.FillBy_id_desc(letters1.Sa_In_Letters);
+        //-------------------------
+        //da bi permissions funkcionisale moramo staviti metod nakon pozivanja enable_add_edit_del_butt()
+        object_perm_loader();
         //-------------------------
         try
         {
@@ -41,6 +45,22 @@ public partial class In_Letters_De : Form
         }
 
     }
+
+    void object_perm_loader()
+    {
+        Secretariat_Soft.MyClasses.ComClass MyClass = new();
+        //--------load permissions by col name -------------------
+        de_add_butt.Enabled = MyClass.get_permission_by_col_name("In_De_b1"); //add
+        de_edit_butt.Enabled = MyClass.get_permission_by_col_name("In_De_b2"); // edit
+        de_delete_butt.Enabled = MyClass.get_permission_by_col_name("In_De_b3"); // delete
+        de_print_butt.Enabled = MyClass.get_permission_by_col_name("In_De_b4"); // print
+        //--------------------------------------------------------
+        if (Properties.Settings.Default.User_Id == Properties.Settings.Default.admin_user_id)
+        {
+            //usersToolStripMenuItem.Enabled = true;
+        }
+    }
+
     void sysDateTime()
     {
         system_time_lbl.Text = DateTime.Now.ToString("HH:mm:ss");
@@ -61,6 +81,10 @@ public partial class In_Letters_De : Form
         de_add_butt.Enabled = true;
         de_edit_butt.Enabled = true;
         de_delete_butt.Enabled = true;
+        //----------------------------
+        //----------------------------
+        object_perm_loader();
+        //----------------------------
     }
     void disable_add_edit_del_butt()
     {

@@ -20,6 +20,9 @@ public partial class UserList : Form
 
     private void UserList_Load(object sender, EventArgs e)
     {
+        //---------------------------------
+        object_perm_loader();
+        //---------------------------------
         try
         {
             appUsersTableAdapter1.Fill(letters1.AppUsers);
@@ -28,6 +31,19 @@ public partial class UserList : Form
         {
 
             MessageBox.Show("Error! " + ex.Message);
+        }
+    }
+
+    void object_perm_loader()
+    {
+        Secretariat_Soft.MyClasses.ComClass MyClass = new();
+        //--------load permissions by col name -------------------
+        add_butt.Enabled = MyClass.get_permission_by_col_name("User_List_b1"); //add
+        
+        //--------------------------------------------------------
+        if (Properties.Settings.Default.User_Id == Properties.Settings.Default.admin_user_id)
+        {
+            add_butt.Enabled = true;
         }
     }
 

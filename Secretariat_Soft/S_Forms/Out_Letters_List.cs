@@ -19,6 +19,7 @@ public partial class Out_Letters_List : Form
 
     private void Out_Letters_List_Load(object sender, EventArgs e)
     {
+        object_perm_loader();
         try
         {
             sa_Out_LettersTableAdapter1.Fill(letters1.Sa_Out_Letters);
@@ -30,6 +31,21 @@ public partial class Out_Letters_List : Form
             MessageBox.Show("Error! " + ex.Message);
         }
     }
+
+    void object_perm_loader()
+    {
+        Secretariat_Soft.MyClasses.ComClass MyClass = new();
+        //--------load permissions by col name -------------------
+        add_butt.Enabled = MyClass.get_permission_by_col_name("Out_List_b1"); //add
+        search_butt.Enabled = MyClass.get_permission_by_col_name("Out_List_b2"); // search
+        print_butt.Enabled = MyClass.get_permission_by_col_name("Out_List_b3"); // print
+        //--------------------------------------------------------
+        if (Properties.Settings.Default.User_Id == Properties.Settings.Default.admin_user_id)
+        {
+            //usersToolStripMenuItem.Enabled = true;
+        }
+    }
+
     void recordPosition()
     {
         int currentPostion;

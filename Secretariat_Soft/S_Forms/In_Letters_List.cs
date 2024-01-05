@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace Secretariat_Soft.S_Forms;
 public partial class In_Letters_List : Form
@@ -29,6 +30,9 @@ public partial class In_Letters_List : Form
 
     private void In_Letters_Form_Load(object sender, EventArgs e)
     {
+        //---------------------------
+        object_perm_loader();
+        //---------------------------
         try
         {
             sa_In_LettersTableAdapter1.Fill(letters1.Sa_In_Letters);
@@ -38,6 +42,20 @@ public partial class In_Letters_List : Form
         {
 
             MessageBox.Show("Error! " + ex.Message);
+        }
+    }
+
+    void object_perm_loader()
+    {
+        Secretariat_Soft.MyClasses.ComClass MyClass = new();
+        //--------load permissions by col name -------------------
+        add_butt.Enabled = MyClass.get_permission_by_col_name("In_List_b1"); //add
+        search_butt.Enabled = MyClass.get_permission_by_col_name("In_List_b2"); // search
+        print_butt.Enabled = MyClass.get_permission_by_col_name("In_List_b3"); // print
+        //--------------------------------------------------------
+        if (Properties.Settings.Default.User_Id == Properties.Settings.Default.admin_user_id)
+        {
+            //usersToolStripMenuItem.Enabled = true;
         }
     }
 

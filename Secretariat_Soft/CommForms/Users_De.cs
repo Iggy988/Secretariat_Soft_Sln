@@ -37,6 +37,24 @@ public partial class Users_De : Form
 
             MessageBox.Show("Error! " + ex.Message);
         }
+        //---------------------------
+        object_perm_loader();
+    }
+
+    void object_perm_loader()
+    {
+        Secretariat_Soft.MyClasses.ComClass MyClass = new();
+        //--------load permissions by col name -------------------
+        de_add_butt.Enabled = MyClass.get_permission_by_col_name("User_De_b1"); //add
+        de_edit_butt.Enabled = MyClass.get_permission_by_col_name("User_De_b2"); // edit
+        de_delete_butt.Enabled = MyClass.get_permission_by_col_name("User_De_b3"); // delete
+        //--------------------------------------------------------
+        if (Properties.Settings.Default.User_Id == Properties.Settings.Default.admin_user_id)
+        {
+            de_add_butt.Enabled = true;
+            de_edit_butt.Enabled = true;
+            de_delete_butt.Enabled = true;
+        }
     }
 
     void sysDateTime()
@@ -58,6 +76,8 @@ public partial class Users_De : Form
         de_add_butt.Enabled = true;
         de_edit_butt.Enabled = true;
         de_delete_butt.Enabled = true;
+        //---------------------------
+        object_perm_loader();
     }
     void disable_add_edit_del_butt()
     {
