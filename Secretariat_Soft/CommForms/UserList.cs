@@ -57,6 +57,12 @@ public partial class UserList : Form
             frm.ShowDialog();
             //---------------------------------
             appUsersTableAdapter1.Fill(letters1.AppUsers);
+
+            //======Reload permission data======
+            Secretariat_Soft.MyClasses.ComClass MyClass = new();
+            MyClass.user_perm_loader_from_db();
+            //==================================
+
         }
         catch (Exception ex)
         {

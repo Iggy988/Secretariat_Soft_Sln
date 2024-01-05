@@ -55,6 +55,7 @@ public partial class MainForm : Form
             //========load permission data======
             Secretariat_Soft.MyClasses.ComClass MyClass = new();
             MyClass.user_perm_loader_from_db();
+            //==================================
             //==assign permission to controls===
             //MessageBox.Show(MyClass.get_permission_by_col_name("main_butt1").ToString());
             object_perm_loader();
@@ -91,6 +92,7 @@ public partial class MainForm : Form
         if (Properties.Settings.Default.User_Id == Properties.Settings.Default.admin_user_id)
         {
             usersToolStripMenuItem.Enabled = true;
+            tools_button.Enabled = true;
         }
     }
 
@@ -168,8 +170,11 @@ public partial class MainForm : Form
     private void usersToolStripMenuItem_Click(object sender, EventArgs e)
     {
         Secretariat_Soft.CommForms.UserList frm = new();
-        frm.MdiParent = this;
-        frm.Show();
+        //frm.MdiParent = this;
+        frm.ShowDialog();
+        //----------------------
+        object_perm_loader();
+        //----------------------
     }
 
     private void report_button_Click(object sender, EventArgs e)
