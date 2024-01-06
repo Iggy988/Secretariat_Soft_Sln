@@ -32,4 +32,41 @@ public partial class BackupForm : Form
     {
         Close();
     }
+
+    private void backup_button1_Click(object sender, EventArgs e)
+    {
+        if (filename_textBox1.Text == "")
+        {
+            MessageBox.Show("File name is not valid!");
+            return;
+        }
+        //--------------------------
+        string con_string = "Data Source=DESKTOP-8R3MVUS\\SQLEXPRESS01;Initial Catalog=CsApps;Persist Security Info=True;User ID=igo;Password=12345;TrustServerCertificate=True";
+        System.Data.SqlClient.SqlConnection conn = new(con_string);
+        //==========================
+        System.Data.SqlClient.SqlCommand sqlCommand = new();
+        sqlCommand.Connection = conn;
+        //==========================
+        try
+        {
+            sqlCommand.CommandTimeout = 20;
+            conn.Open();
+            //-------------------
+            string fcomment = System.DateTime.Now.ToString("dd-MM-yyyy-HH-mm");
+            //-------------------
+            string backup_query_text = "BACKUP DATABASE [CsApps] " +
+                "TO  DISK = N'" + filename_textBox1.Text +"' " +
+                "WITH NOFORMAT, INIT, " +
+                "NAME = N'My_Backup_"+fcomment+"', SKIP, NOREWIND, NOUNLOAD,  STATS = 10";
+            //-------------------
+            sqlCommand.CommandText = backup_query_text;
+            sqlCommand.ExecuteNonQuery();
+            //-------------------
+            conn.Close();
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show("Error! " + ex.Message);
+        }
+    }
 }

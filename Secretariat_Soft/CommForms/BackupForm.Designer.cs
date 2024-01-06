@@ -56,7 +56,7 @@ partial class BackupForm
         panel1.Dock = DockStyle.Top;
         panel1.Location = new Point(0, 0);
         panel1.Name = "panel1";
-        panel1.Size = new Size(722, 148);
+        panel1.Size = new Size(733, 148);
         panel1.TabIndex = 0;
         // 
         // label4
@@ -64,9 +64,9 @@ partial class BackupForm
         label4.AutoSize = true;
         label4.Location = new Point(12, 107);
         label4.Name = "label4";
-        label4.Size = new Size(717, 17);
+        label4.Size = new Size(713, 17);
         label4.TabIndex = 3;
-        label4.Text = "3. Be sure to backup the data at different times. In any conditions the responibility for the loss of data is at your own resk.";
+        label4.Text = "3. Be sure to backup the data at different times. In any conditions the responibility for the loss of data is at your own risk.";
         // 
         // label3
         // 
@@ -103,7 +103,7 @@ partial class BackupForm
         panel2.Dock = DockStyle.Top;
         panel2.Location = new Point(0, 148);
         panel2.Name = "panel2";
-        panel2.Size = new Size(722, 44);
+        panel2.Size = new Size(733, 44);
         panel2.TabIndex = 1;
         // 
         // label6
@@ -132,7 +132,7 @@ partial class BackupForm
         filename_textBox1.Location = new Point(128, 211);
         filename_textBox1.Name = "filename_textBox1";
         filename_textBox1.ReadOnly = true;
-        filename_textBox1.Size = new Size(545, 25);
+        filename_textBox1.Size = new Size(567, 25);
         filename_textBox1.TabIndex = 3;
         // 
         // backup_button1
@@ -147,6 +147,7 @@ partial class BackupForm
         backup_button1.Text = "Backup";
         backup_button1.TextImageRelation = TextImageRelation.ImageBeforeText;
         backup_button1.UseVisualStyleBackColor = false;
+        backup_button1.Click += backup_button1_Click;
         // 
         // exit_button2
         // 
@@ -167,7 +168,7 @@ partial class BackupForm
         help_button3.BackColor = SystemColors.ButtonFace;
         help_button3.Cursor = Cursors.Hand;
         help_button3.Image = Properties.Resources.bk_help;
-        help_button3.Location = new Point(586, 270);
+        help_button3.Location = new Point(608, 270);
         help_button3.Name = "help_button3";
         help_button3.Size = new Size(87, 40);
         help_button3.TabIndex = 6;
@@ -188,7 +189,7 @@ partial class BackupForm
         AutoScaleDimensions = new SizeF(7F, 17F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = SystemColors.ControlLight;
-        ClientSize = new Size(722, 317);
+        ClientSize = new Size(733, 324);
         ControlBox = false;
         Controls.Add(panel3);
         Controls.Add(help_button3);
