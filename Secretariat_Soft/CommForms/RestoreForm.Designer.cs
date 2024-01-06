@@ -57,10 +57,10 @@ partial class RestoreForm
         // 
         // textBox1
         // 
-        textBox1.Location = new Point(128, 112);
+        textBox1.Location = new Point(114, 112);
         textBox1.Name = "textBox1";
         textBox1.ReadOnly = true;
-        textBox1.Size = new Size(511, 25);
+        textBox1.Size = new Size(525, 25);
         textBox1.TabIndex = 11;
         // 
         // browse_button1
@@ -147,7 +147,7 @@ partial class RestoreForm
         AutoScaleDimensions = new SizeF(7F, 17F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.WhiteSmoke;
-        ClientSize = new Size(664, 220);
+        ClientSize = new Size(660, 216);
         ControlBox = false;
         Controls.Add(groupBox1);
         Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);

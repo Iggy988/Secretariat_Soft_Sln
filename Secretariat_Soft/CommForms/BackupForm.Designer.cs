@@ -36,11 +36,12 @@ partial class BackupForm
         panel2 = new Panel();
         label6 = new Label();
         browse_button1 = new Button();
-        textBox1 = new TextBox();
+        filename_textBox1 = new TextBox();
         backup_button1 = new Button();
         exit_button2 = new Button();
         help_button3 = new Button();
         panel3 = new Panel();
+        folderBrowserDialog1 = new FolderBrowserDialog();
         panel1.SuspendLayout();
         panel2.SuspendLayout();
         SuspendLayout();
@@ -55,7 +56,7 @@ partial class BackupForm
         panel1.Dock = DockStyle.Top;
         panel1.Location = new Point(0, 0);
         panel1.Name = "panel1";
-        panel1.Size = new Size(730, 148);
+        panel1.Size = new Size(722, 148);
         panel1.TabIndex = 0;
         // 
         // label4
@@ -102,7 +103,7 @@ partial class BackupForm
         panel2.Dock = DockStyle.Top;
         panel2.Location = new Point(0, 148);
         panel2.Name = "panel2";
-        panel2.Size = new Size(730, 44);
+        panel2.Size = new Size(722, 44);
         panel2.TabIndex = 1;
         // 
         // label6
@@ -126,13 +127,13 @@ partial class BackupForm
         browse_button1.UseVisualStyleBackColor = false;
         browse_button1.Click += browse_button1_Click;
         // 
-        // textBox1
+        // filename_textBox1
         // 
-        textBox1.Location = new Point(142, 211);
-        textBox1.Name = "textBox1";
-        textBox1.ReadOnly = true;
-        textBox1.Size = new Size(470, 25);
-        textBox1.TabIndex = 3;
+        filename_textBox1.Location = new Point(128, 211);
+        filename_textBox1.Name = "filename_textBox1";
+        filename_textBox1.ReadOnly = true;
+        filename_textBox1.Size = new Size(545, 25);
+        filename_textBox1.TabIndex = 3;
         // 
         // backup_button1
         // 
@@ -166,7 +167,7 @@ partial class BackupForm
         help_button3.BackColor = SystemColors.ButtonFace;
         help_button3.Cursor = Cursors.Hand;
         help_button3.Image = Properties.Resources.bk_help;
-        help_button3.Location = new Point(610, 270);
+        help_button3.Location = new Point(586, 270);
         help_button3.Name = "help_button3";
         help_button3.Size = new Size(87, 40);
         help_button3.TabIndex = 6;
@@ -187,13 +188,13 @@ partial class BackupForm
         AutoScaleDimensions = new SizeF(7F, 17F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = SystemColors.ControlLight;
-        ClientSize = new Size(730, 325);
+        ClientSize = new Size(722, 317);
         ControlBox = false;
         Controls.Add(panel3);
         Controls.Add(help_button3);
         Controls.Add(exit_button2);
         Controls.Add(backup_button1);
-        Controls.Add(textBox1);
+        Controls.Add(filename_textBox1);
         Controls.Add(browse_button1);
         Controls.Add(panel2);
         Controls.Add(panel1);
@@ -218,7 +219,7 @@ partial class BackupForm
     private Panel panel1;
     private Panel panel2;
     private Button browse_button1;
-    private TextBox textBox1;
+    private TextBox filename_textBox1;
     private Button backup_button1;
     private Label label4;
     private Label label3;
@@ -228,4 +229,5 @@ partial class BackupForm
     private Button help_button3;
     private Label label6;
     private Panel panel3;
+    private FolderBrowserDialog folderBrowserDialog1;
 }
