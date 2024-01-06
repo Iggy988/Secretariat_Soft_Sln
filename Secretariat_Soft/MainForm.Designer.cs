@@ -29,10 +29,10 @@ partial class MainForm
     private void InitializeComponent()
     {
         components = new System.ComponentModel.Container();
-        TreeNode treeNode5 = new TreeNode("Incoming Letters");
-        TreeNode treeNode6 = new TreeNode("Outgoing Letters");
-        TreeNode treeNode7 = new TreeNode("My Letters", new TreeNode[] { treeNode5, treeNode6 });
-        TreeNode treeNode8 = new TreeNode("All Folders", 2, 2, new TreeNode[] { treeNode7 });
+        TreeNode treeNode1 = new TreeNode("Incoming Letters");
+        TreeNode treeNode2 = new TreeNode("Outgoing Letters");
+        TreeNode treeNode3 = new TreeNode("My Letters", new TreeNode[] { treeNode1, treeNode2 });
+        TreeNode treeNode4 = new TreeNode("All Folders", 2, 2, new TreeNode[] { treeNode3 });
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
         top_panel = new Panel();
         help_button = new Button();
@@ -402,22 +402,22 @@ partial class MainForm
         main_treeView.ItemHeight = 35;
         main_treeView.Location = new Point(3, 6);
         main_treeView.Name = "main_treeView";
-        treeNode5.ImageKey = "review.png";
-        treeNode5.Name = "Incoming_Letters";
-        treeNode5.SelectedImageIndex = 3;
-        treeNode5.Text = "Incoming Letters";
-        treeNode6.ImageKey = "kToolStripButton.png";
-        treeNode6.Name = "Outgoing_Letters";
-        treeNode6.SelectedImageIndex = 1;
-        treeNode6.Text = "Outgoing Letters";
-        treeNode7.Name = "My_Letters";
-        treeNode7.SelectedImageIndex = 0;
-        treeNode7.Text = "My Letters";
-        treeNode8.ImageIndex = 2;
-        treeNode8.Name = "All_Folders";
-        treeNode8.SelectedImageIndex = 2;
-        treeNode8.Text = "All Folders";
-        main_treeView.Nodes.AddRange(new TreeNode[] { treeNode8 });
+        treeNode1.ImageKey = "review.png";
+        treeNode1.Name = "Incoming_Letters";
+        treeNode1.SelectedImageIndex = 3;
+        treeNode1.Text = "Incoming Letters";
+        treeNode2.ImageKey = "kToolStripButton.png";
+        treeNode2.Name = "Outgoing_Letters";
+        treeNode2.SelectedImageIndex = 1;
+        treeNode2.Text = "Outgoing Letters";
+        treeNode3.Name = "My_Letters";
+        treeNode3.SelectedImageIndex = 0;
+        treeNode3.Text = "My Letters";
+        treeNode4.ImageIndex = 2;
+        treeNode4.Name = "All_Folders";
+        treeNode4.SelectedImageIndex = 2;
+        treeNode4.Text = "All Folders";
+        main_treeView.Nodes.AddRange(new TreeNode[] { treeNode4 });
         main_treeView.SelectedImageIndex = 0;
         main_treeView.Size = new Size(382, 482);
         main_treeView.TabIndex = 0;
@@ -438,14 +438,14 @@ partial class MainForm
         toold_cm.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
         toold_cm.Items.AddRange(new ToolStripItem[] { usersToolStripMenuItem, backupDataToolStripMenuItem, restoreDataToolStripMenuItem });
         toold_cm.Name = "toold_cm";
-        toold_cm.Size = new Size(161, 94);
+        toold_cm.Size = new Size(189, 116);
         // 
         // usersToolStripMenuItem
         // 
         usersToolStripMenuItem.Image = Properties.Resources.user_cms;
         usersToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
         usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-        usersToolStripMenuItem.Size = new Size(160, 30);
+        usersToolStripMenuItem.Size = new Size(188, 30);
         usersToolStripMenuItem.Text = "Users";
         usersToolStripMenuItem.Click += usersToolStripMenuItem_Click;
         // 
@@ -454,16 +454,18 @@ partial class MainForm
         backupDataToolStripMenuItem.Image = Properties.Resources.backup_cms;
         backupDataToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
         backupDataToolStripMenuItem.Name = "backupDataToolStripMenuItem";
-        backupDataToolStripMenuItem.Size = new Size(160, 30);
+        backupDataToolStripMenuItem.Size = new Size(188, 30);
         backupDataToolStripMenuItem.Text = "Backup Data";
+        backupDataToolStripMenuItem.Click += backupDataToolStripMenuItem_Click;
         // 
         // restoreDataToolStripMenuItem
         // 
         restoreDataToolStripMenuItem.Image = Properties.Resources.restore_cms;
         restoreDataToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
         restoreDataToolStripMenuItem.Name = "restoreDataToolStripMenuItem";
-        restoreDataToolStripMenuItem.Size = new Size(160, 30);
+        restoreDataToolStripMenuItem.Size = new Size(188, 30);
         restoreDataToolStripMenuItem.Text = "Restore Data";
+        restoreDataToolStripMenuItem.Click += restoreDataToolStripMenuItem_Click;
         // 
         // reports_cm
         // 
@@ -493,14 +495,14 @@ partial class MainForm
         help_cm.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
         help_cm.Items.AddRange(new ToolStripItem[] { help_toolStripMenuItem1, about_toolStripMenuItem2 });
         help_cm.Name = "toold_cm";
-        help_cm.Size = new Size(189, 86);
+        help_cm.Size = new Size(120, 64);
         // 
         // help_toolStripMenuItem1
         // 
         help_toolStripMenuItem1.Image = Properties.Resources.review;
         help_toolStripMenuItem1.ImageScaling = ToolStripItemImageScaling.None;
         help_toolStripMenuItem1.Name = "help_toolStripMenuItem1";
-        help_toolStripMenuItem1.Size = new Size(188, 30);
+        help_toolStripMenuItem1.Size = new Size(119, 30);
         help_toolStripMenuItem1.Text = "Help";
         // 
         // about_toolStripMenuItem2
@@ -508,7 +510,7 @@ partial class MainForm
         about_toolStripMenuItem2.Image = Properties.Resources.radMenuItem2;
         about_toolStripMenuItem2.ImageScaling = ToolStripItemImageScaling.None;
         about_toolStripMenuItem2.Name = "about_toolStripMenuItem2";
-        about_toolStripMenuItem2.Size = new Size(188, 30);
+        about_toolStripMenuItem2.Size = new Size(119, 30);
         about_toolStripMenuItem2.Text = "About";
         // 
         // MainForm

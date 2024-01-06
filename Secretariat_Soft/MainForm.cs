@@ -194,4 +194,18 @@ public partial class MainForm : Form
         //-------------------------
         help_cm.Show(new Point(x, y));
     }
+
+    private void backupDataToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Secretariat_Soft.CommForms.BackupForm frm = new();
+        frm.ShowDialog();
+        //----------------------
+    }
+
+    private void restoreDataToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Secretariat_Soft.CommForms.RestoreForm frm = new();
+        frm.ShowDialog();
+        //----------------------
+    }
 }
