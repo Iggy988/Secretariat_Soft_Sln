@@ -42,8 +42,12 @@ partial class BackupForm
         help_button3 = new Button();
         panel3 = new Panel();
         folderBrowserDialog1 = new FolderBrowserDialog();
+        prog_panel4 = new Panel();
+        label7 = new Label();
+        label5 = new Label();
         panel1.SuspendLayout();
         panel2.SuspendLayout();
+        prog_panel4.SuspendLayout();
         SuspendLayout();
         // 
         // panel1
@@ -56,7 +60,7 @@ partial class BackupForm
         panel1.Dock = DockStyle.Top;
         panel1.Location = new Point(0, 0);
         panel1.Name = "panel1";
-        panel1.Size = new Size(733, 148);
+        panel1.Size = new Size(721, 148);
         panel1.TabIndex = 0;
         // 
         // label4
@@ -103,7 +107,7 @@ partial class BackupForm
         panel2.Dock = DockStyle.Top;
         panel2.Location = new Point(0, 148);
         panel2.Name = "panel2";
-        panel2.Size = new Size(733, 44);
+        panel2.Size = new Size(721, 44);
         panel2.TabIndex = 1;
         // 
         // label6
@@ -184,13 +188,46 @@ partial class BackupForm
         panel3.Size = new Size(738, 1);
         panel3.TabIndex = 7;
         // 
+        // prog_panel4
+        // 
+        prog_panel4.BackColor = Color.PapayaWhip;
+        prog_panel4.BorderStyle = BorderStyle.FixedSingle;
+        prog_panel4.Controls.Add(label7);
+        prog_panel4.Controls.Add(label5);
+        prog_panel4.Location = new Point(241, 102);
+        prog_panel4.Name = "prog_panel4";
+        prog_panel4.Size = new Size(218, 127);
+        prog_panel4.TabIndex = 8;
+        prog_panel4.Visible = false;
+        // 
+        // label7
+        // 
+        label7.AutoSize = true;
+        label7.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+        label7.Location = new Point(24, 72);
+        label7.Name = "label7";
+        label7.Size = new Size(166, 21);
+        label7.TabIndex = 2;
+        label7.Text = "Backing up the data...";
+        // 
+        // label5
+        // 
+        label5.AutoSize = true;
+        label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+        label5.Location = new Point(49, 24);
+        label5.Name = "label5";
+        label5.Size = new Size(110, 21);
+        label5.TabIndex = 1;
+        label5.Text = "Please Wait...";
+        // 
         // BackupForm
         // 
         AutoScaleDimensions = new SizeF(7F, 17F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = SystemColors.ControlLight;
-        ClientSize = new Size(733, 324);
+        ClientSize = new Size(721, 327);
         ControlBox = false;
+        Controls.Add(prog_panel4);
         Controls.Add(panel3);
         Controls.Add(help_button3);
         Controls.Add(exit_button2);
@@ -211,6 +248,8 @@ partial class BackupForm
         panel1.PerformLayout();
         panel2.ResumeLayout(false);
         panel2.PerformLayout();
+        prog_panel4.ResumeLayout(false);
+        prog_panel4.PerformLayout();
         ResumeLayout(false);
         PerformLayout();
     }
@@ -231,4 +270,7 @@ partial class BackupForm
     private Label label6;
     private Panel panel3;
     private FolderBrowserDialog folderBrowserDialog1;
+    private Panel prog_panel4;
+    private Label label7;
+    private Label label5;
 }

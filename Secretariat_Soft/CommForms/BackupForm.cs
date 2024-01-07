@@ -41,6 +41,12 @@ public partial class BackupForm : Form
             return;
         }
         //--------------------------
+        prog_panel4.Show();
+        prog_panel4.Refresh();
+        //--------------------------
+        backup_button1.Enabled = false;
+        backup_button1.Refresh();
+        //--------------------------
         string con_string = "Data Source=DESKTOP-8R3MVUS\\SQLEXPRESS01;Initial Catalog=CsApps;Persist Security Info=True;User ID=igo;Password=12345;TrustServerCertificate=True";
         System.Data.SqlClient.SqlConnection conn = new(con_string);
         //==========================
@@ -68,5 +74,39 @@ public partial class BackupForm : Form
         {
             MessageBox.Show("Error! " + ex.Message);
         }
+        //-----------file size checker--------------
+        long fs, fs_kb;
+        string err_msg = "";
+        try
+        {
+            System.IO.FileInfo fi = new(filename_textBox1.Text);
+            fs = fi.Length;
+            
+        }
+        catch (Exception ex)
+        {
+            fs = -1;
+            err_msg = ex.Message;
+        }
+        //-------------------------------------------
+        //--------------------------
+        prog_panel4.Hide();
+        prog_panel4.Refresh();
+        //--------------------------
+        backup_button1.Enabled = true;
+        backup_button1.Refresh();
+        //--------------------------
+
+        if (fs <= 0) //Backup failed
+        {
+            MessageBox.Show("Error! Backup failed! " + err_msg);
+        }
+        else //Backup is done
+        {
+            fs_kb = fs / 1024;
+            MessageBox.Show("Backup is done! File size: " + fs_kb.ToString()+ " KB.");
+            Close();
+        }
+        //-------------------------------------------
     }
 }
