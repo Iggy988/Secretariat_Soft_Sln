@@ -29,57 +29,95 @@ partial class RestoreForm
     private void InitializeComponent()
     {
         groupBox1 = new GroupBox();
-        textBox1 = new TextBox();
+        prog_panel4 = new Panel();
+        label7 = new Label();
+        label5 = new Label();
+        restore_textBox1 = new TextBox();
         browse_button1 = new Button();
         help_button3 = new Button();
         exit_button2 = new Button();
-        backup_button1 = new Button();
+        restore_button1 = new Button();
         panel1 = new Panel();
         label3 = new Label();
         label2 = new Label();
         groupBox1.SuspendLayout();
+        prog_panel4.SuspendLayout();
         panel1.SuspendLayout();
         SuspendLayout();
         // 
         // groupBox1
         // 
-        groupBox1.Controls.Add(textBox1);
+        groupBox1.Controls.Add(prog_panel4);
+        groupBox1.Controls.Add(restore_textBox1);
         groupBox1.Controls.Add(browse_button1);
         groupBox1.Controls.Add(help_button3);
         groupBox1.Controls.Add(exit_button2);
-        groupBox1.Controls.Add(backup_button1);
+        groupBox1.Controls.Add(restore_button1);
         groupBox1.Controls.Add(panel1);
         groupBox1.Location = new Point(-3, -11);
         groupBox1.Name = "groupBox1";
-        groupBox1.Size = new Size(677, 236);
+        groupBox1.Size = new Size(677, 239);
         groupBox1.TabIndex = 0;
         groupBox1.TabStop = false;
         // 
-        // textBox1
+        // prog_panel4
         // 
-        textBox1.Location = new Point(114, 112);
-        textBox1.Name = "textBox1";
-        textBox1.ReadOnly = true;
-        textBox1.Size = new Size(525, 25);
-        textBox1.TabIndex = 11;
+        prog_panel4.BackColor = Color.PapayaWhip;
+        prog_panel4.BorderStyle = BorderStyle.FixedSingle;
+        prog_panel4.Controls.Add(label7);
+        prog_panel4.Controls.Add(label5);
+        prog_panel4.Location = new Point(204, 42);
+        prog_panel4.Name = "prog_panel4";
+        prog_panel4.Size = new Size(218, 127);
+        prog_panel4.TabIndex = 12;
+        prog_panel4.Visible = false;
+        // 
+        // label7
+        // 
+        label7.AutoSize = true;
+        label7.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+        label7.Location = new Point(29, 73);
+        label7.Name = "label7";
+        label7.Size = new Size(161, 21);
+        label7.TabIndex = 2;
+        label7.Text = "Restoring the  data...";
+        // 
+        // label5
+        // 
+        label5.AutoSize = true;
+        label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+        label5.Location = new Point(49, 24);
+        label5.Name = "label5";
+        label5.Size = new Size(110, 21);
+        label5.TabIndex = 1;
+        label5.Text = "Please Wait...";
+        // 
+        // restore_textBox1
+        // 
+        restore_textBox1.Location = new Point(120, 112);
+        restore_textBox1.Name = "restore_textBox1";
+        restore_textBox1.ReadOnly = true;
+        restore_textBox1.Size = new Size(516, 25);
+        restore_textBox1.TabIndex = 11;
         // 
         // browse_button1
         // 
         browse_button1.BackColor = SystemColors.ButtonFace;
         browse_button1.Cursor = Cursors.Hand;
-        browse_button1.Location = new Point(24, 112);
+        browse_button1.Location = new Point(30, 112);
         browse_button1.Name = "browse_button1";
         browse_button1.Size = new Size(84, 25);
         browse_button1.TabIndex = 10;
         browse_button1.Text = "Browse";
         browse_button1.UseVisualStyleBackColor = false;
+        browse_button1.Click += browse_button1_Click;
         // 
         // help_button3
         // 
         help_button3.BackColor = SystemColors.ButtonFace;
         help_button3.Cursor = Cursors.Hand;
         help_button3.Image = Properties.Resources.bk_help;
-        help_button3.Location = new Point(552, 167);
+        help_button3.Location = new Point(549, 167);
         help_button3.Name = "help_button3";
         help_button3.Size = new Size(87, 40);
         help_button3.TabIndex = 9;
@@ -92,7 +130,7 @@ partial class RestoreForm
         exit_button2.BackColor = SystemColors.ButtonFace;
         exit_button2.Cursor = Cursors.Hand;
         exit_button2.Image = Properties.Resources.bk_exit;
-        exit_button2.Location = new Point(163, 167);
+        exit_button2.Location = new Point(169, 167);
         exit_button2.Name = "exit_button2";
         exit_button2.Size = new Size(82, 40);
         exit_button2.TabIndex = 8;
@@ -101,18 +139,19 @@ partial class RestoreForm
         exit_button2.UseVisualStyleBackColor = false;
         exit_button2.Click += exit_button2_Click;
         // 
-        // backup_button1
+        // restore_button1
         // 
-        backup_button1.BackColor = SystemColors.ButtonFace;
-        backup_button1.Cursor = Cursors.Hand;
-        backup_button1.Image = Properties.Resources.bk_database;
-        backup_button1.Location = new Point(24, 167);
-        backup_button1.Name = "backup_button1";
-        backup_button1.Size = new Size(133, 40);
-        backup_button1.TabIndex = 7;
-        backup_button1.Text = "Start Restore";
-        backup_button1.TextImageRelation = TextImageRelation.ImageBeforeText;
-        backup_button1.UseVisualStyleBackColor = false;
+        restore_button1.BackColor = SystemColors.ButtonFace;
+        restore_button1.Cursor = Cursors.Hand;
+        restore_button1.Image = Properties.Resources.bk_database;
+        restore_button1.Location = new Point(30, 167);
+        restore_button1.Name = "restore_button1";
+        restore_button1.Size = new Size(133, 40);
+        restore_button1.TabIndex = 7;
+        restore_button1.Text = "Start Restore";
+        restore_button1.TextImageRelation = TextImageRelation.ImageBeforeText;
+        restore_button1.UseVisualStyleBackColor = false;
+        restore_button1.Click += restore_button1_Click;
         // 
         // panel1
         // 
@@ -147,7 +186,7 @@ partial class RestoreForm
         AutoScaleDimensions = new SizeF(7F, 17F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.WhiteSmoke;
-        ClientSize = new Size(660, 216);
+        ClientSize = new Size(650, 208);
         ControlBox = false;
         Controls.Add(groupBox1);
         Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
@@ -160,6 +199,8 @@ partial class RestoreForm
         Text = "Restore Data";
         groupBox1.ResumeLayout(false);
         groupBox1.PerformLayout();
+        prog_panel4.ResumeLayout(false);
+        prog_panel4.PerformLayout();
         panel1.ResumeLayout(false);
         panel1.PerformLayout();
         ResumeLayout(false);
@@ -173,7 +214,10 @@ partial class RestoreForm
     private Label label2;
     private Button help_button3;
     private Button exit_button2;
-    private Button backup_button1;
-    private TextBox textBox1;
+    private Button restore_button1;
+    private TextBox restore_textBox1;
     private Button browse_button1;
+    private Panel prog_panel4;
+    private Label label7;
+    private Label label5;
 }
