@@ -54,9 +54,9 @@ partial class RestoreForm
         groupBox1.Controls.Add(exit_button2);
         groupBox1.Controls.Add(restore_button1);
         groupBox1.Controls.Add(panel1);
-        groupBox1.Location = new Point(-3, -11);
+        groupBox1.Location = new Point(-3, -17);
         groupBox1.Name = "groupBox1";
-        groupBox1.Size = new Size(677, 239);
+        groupBox1.Size = new Size(667, 239);
         groupBox1.TabIndex = 0;
         groupBox1.TabStop = false;
         // 
@@ -186,7 +186,7 @@ partial class RestoreForm
         AutoScaleDimensions = new SizeF(7F, 17F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.WhiteSmoke;
-        ClientSize = new Size(650, 208);
+        ClientSize = new Size(662, 204);
         ControlBox = false;
         Controls.Add(groupBox1);
         Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);

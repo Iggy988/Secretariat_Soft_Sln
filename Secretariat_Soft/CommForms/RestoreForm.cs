@@ -47,6 +47,45 @@ public partial class RestoreForm : Form
             MessageBox.Show("File name is not valid!");
             return;
         }
+        //==========================================
+        //-----------file size checker--------------
+        long fs;
+        string err_msg = "";
+        try
+        {
+            System.IO.FileInfo fi = new(restore_textBox1.Text);
+            fs = fi.Length;
+
+        }
+        catch (Exception ex)
+        {
+            fs = -1;
+            err_msg = ex.Message;
+        }
+        //-------------------------------------------
+        
+
+        if (fs <= 0) // ivalid Backup file
+        {
+            MessageBox.Show("Error! Invalid Backup File! " + err_msg);
+            return;
+        }
+
+        //-------------------------------------------
+        //==========db exist checker================
+        Secretariat_Soft.DataSet.LettersTableAdapters.AppUsersTableAdapter ta = new();
+        Secretariat_Soft.DataSet.Letters ds = new();
+        //-----------------
+        try
+        {
+            ta.FillBy_db_exists_checker(ds.AppUsers);
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show("Error! " +  ex.Message);
+            return;
+        }
+        //==========================================
         //--------------------------
         prog_panel4.Show();
         prog_panel4.Refresh();

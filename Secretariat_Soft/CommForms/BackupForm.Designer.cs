@@ -45,6 +45,7 @@ partial class BackupForm
         prog_panel4 = new Panel();
         label7 = new Label();
         label5 = new Label();
+        label8 = new Label();
         panel1.SuspendLayout();
         panel2.SuspendLayout();
         prog_panel4.SuspendLayout();
@@ -60,7 +61,7 @@ partial class BackupForm
         panel1.Dock = DockStyle.Top;
         panel1.Location = new Point(0, 0);
         panel1.Name = "panel1";
-        panel1.Size = new Size(721, 148);
+        panel1.Size = new Size(747, 148);
         panel1.TabIndex = 0;
         // 
         // label4
@@ -103,21 +104,23 @@ partial class BackupForm
         // panel2
         // 
         panel2.BackColor = Color.FromArgb(255, 255, 192);
+        panel2.Controls.Add(label8);
         panel2.Controls.Add(label6);
         panel2.Dock = DockStyle.Top;
         panel2.Location = new Point(0, 148);
         panel2.Name = "panel2";
-        panel2.Size = new Size(721, 44);
+        panel2.Size = new Size(747, 44);
         panel2.TabIndex = 1;
         // 
         // label6
         // 
         label6.AutoSize = true;
+        label6.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
         label6.Location = new Point(12, 12);
         label6.Name = "label6";
-        label6.Size = new Size(707, 17);
+        label6.Size = new Size(62, 17);
         label6.TabIndex = 0;
-        label6.Text = "Warning: Before you change Windows and remove the program, be sure to copy the installation folder and keep it safe.";
+        label6.Text = "Warning:";
         // 
         // browse_button1
         // 
@@ -220,12 +223,21 @@ partial class BackupForm
         label5.TabIndex = 1;
         label5.Text = "Please Wait...";
         // 
+        // label8
+        // 
+        label8.AutoSize = true;
+        label8.Location = new Point(69, 13);
+        label8.Name = "label8";
+        label8.Size = new Size(652, 17);
+        label8.TabIndex = 9;
+        label8.Text = "Before you change Windows and remove the program, be sure to copy the installation folder and keep it safe.";
+        // 
         // BackupForm
         // 
         AutoScaleDimensions = new SizeF(7F, 17F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = SystemColors.ControlLight;
-        ClientSize = new Size(721, 327);
+        ClientSize = new Size(747, 323);
         ControlBox = false;
         Controls.Add(prog_panel4);
         Controls.Add(panel3);
@@ -273,4 +285,5 @@ partial class BackupForm
     private Panel prog_panel4;
     private Label label7;
     private Label label5;
+    private Label label8;
 }

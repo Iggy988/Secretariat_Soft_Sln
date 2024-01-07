@@ -8,7 +8,7 @@
   <Shapes>
     <Shape ID="DesignTable:Sa_In_Letters" ZOrder="3" X="62" Y="206" Height="381" Width="233" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="254" />
     <Shape ID="DesignTable:Sa_Out_Letters" ZOrder="2" X="312" Y="208" Height="362" Width="250" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="254" />
-    <Shape ID="DesignTable:AppUsers" ZOrder="1" X="619" Y="211" Height="343" Width="243" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="254" />
+    <Shape ID="DesignTable:AppUsers" ZOrder="1" X="619" Y="211" Height="362" Width="243" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="254" />
   </Shapes>
   <Connectors />
 </DiagramLayout>

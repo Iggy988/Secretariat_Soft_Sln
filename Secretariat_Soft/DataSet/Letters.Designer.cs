@@ -7096,7 +7096,7 @@ WHERE        (Subject LIKE @Subject)";
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[3];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[4];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = @"SELECT        id, User_Name, Password, Comment, Photo, Sys_User, Sys_UserId, SysDate, SysTime, main_butt1, main_butt2, main_butt2_m1, main_butt2_m2, main_butt2_m3, main_butt2_m4, main_butt2_m5, main_butt3, main_butt3_m1, 
@@ -7107,18 +7107,22 @@ ORDER BY id";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = @"SELECT Comment, In_De_b1, In_De_b2, In_De_b3, In_De_b4, In_List_b1, In_List_b2, In_List_b3, Out_De_b1, Out_De_b2, Out_De_b3, Out_De_b4, Out_List_b1, Out_List_b2, Out_List_b3, Password, Photo, SysDate, SysTime, Sys_User, Sys_UserId, User_De_b1, User_De_b2, User_De_b3, User_List_b1, User_Name, id, main_butt1, main_butt2, main_butt2_m1, main_butt2_m2, main_butt2_m3, main_butt2_m4, main_butt2_m5, main_butt3, main_butt3_m1, main_butt3_m2, main_butt3_m3, main_butt3_m4, main_butt3_m5, main_butt4, main_butt4_m1, main_butt4_m2, main_butt4_m3 FROM AppUsers WHERE (id = @Search_ID)";
+            this._commandCollection[1].CommandText = "SELECT        id, User_Name\r\nFROM            AppUsers\r\nORDER BY id";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Search_ID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = @"SELECT        Comment, In_De_b1, In_De_b2, In_De_b3, In_De_b4, In_List_b1, In_List_b2, In_List_b3, Out_De_b1, Out_De_b2, Out_De_b3, Out_De_b4, Out_List_b1, Out_List_b2, Out_List_b3, Password, SysDate, SysTime, Sys_User, 
+            this._commandCollection[2].CommandText = @"SELECT Comment, In_De_b1, In_De_b2, In_De_b3, In_De_b4, In_List_b1, In_List_b2, In_List_b3, Out_De_b1, Out_De_b2, Out_De_b3, Out_De_b4, Out_List_b1, Out_List_b2, Out_List_b3, Password, Photo, SysDate, SysTime, Sys_User, Sys_UserId, User_De_b1, User_De_b2, User_De_b3, User_List_b1, User_Name, id, main_butt1, main_butt2, main_butt2_m1, main_butt2_m2, main_butt2_m3, main_butt2_m4, main_butt2_m5, main_butt3, main_butt3_m1, main_butt3_m2, main_butt3_m3, main_butt3_m4, main_butt3_m5, main_butt4, main_butt4_m1, main_butt4_m2, main_butt4_m3 FROM AppUsers WHERE (id = @Search_ID)";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Search_ID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = @"SELECT        Comment, In_De_b1, In_De_b2, In_De_b3, In_De_b4, In_List_b1, In_List_b2, In_List_b3, Out_De_b1, Out_De_b2, Out_De_b3, Out_De_b4, Out_List_b1, Out_List_b2, Out_List_b3, Password, SysDate, SysTime, Sys_User, 
                          Sys_UserId, User_De_b1, User_De_b2, User_De_b3, User_List_b1, User_Name, id, main_butt1, main_butt2, main_butt2_m1, main_butt2_m2, main_butt2_m3, main_butt2_m4, main_butt2_m5, main_butt3, main_butt3_m1, 
                          main_butt3_m2, main_butt3_m3, main_butt3_m4, main_butt3_m5, main_butt4, main_butt4_m1, main_butt4_m2, main_butt4_m3
 FROM            AppUsers
 WHERE        (id = @Login_User_ID)";
-            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Login_User_ID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Login_User_ID", global::System.Data.SqlDbType.BigInt, 8, global::System.Data.ParameterDirection.Input, 0, 0, "id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7138,8 +7142,21 @@ WHERE        (id = @Login_User_ID)";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillBy_id(Letters.AppUsersDataTable dataTable, long Search_ID) {
+        public virtual int FillBy_db_exists_checker(Letters.AppUsersDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[1];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy_id(Letters.AppUsersDataTable dataTable, long Search_ID) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
             this.Adapter.SelectCommand.Parameters[0].Value = ((long)(Search_ID));
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -7153,7 +7170,7 @@ WHERE        (id = @Login_User_ID)";
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
         public virtual int FillBy_login_user_id(Letters.AppUsersDataTable dataTable, long Login_User_ID) {
-            this.Adapter.SelectCommand = this.CommandCollection[2];
+            this.Adapter.SelectCommand = this.CommandCollection[3];
             this.Adapter.SelectCommand.Parameters[0].Value = ((long)(Login_User_ID));
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
