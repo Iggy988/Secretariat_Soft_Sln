@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -212,5 +213,37 @@ public partial class MainForm : Form
     private void background_button_Click(object sender, EventArgs e)
     {
         bg_selector_panel2.Visible = !bg_selector_panel2.Visible;
+        try
+        {
+            string thumb_fn = Application.StartupPath + "Data\\Pics\\Bg\\0_thumb.jpg";
+            string fn = Application.StartupPath + "Data\\Pics\\Bg\\0.jpg";
+            //------------------------
+            if (System.IO.File.Exists(thumb_fn) == false)
+            {
+                //creating img from a FileStream if there is no existing thumbnail
+                FileStream fs = new(fn, FileMode.Open);
+                //-----------------------
+                Image img = Image.FromStream(fs);
+                fs.Close();
+                fs.Dispose();
+                //-----------------------
+                //creating thumbnail
+                img.GetThumbnailImage(100, 65, null, nint.Zero).Save(thumb_fn, ImageFormat.Jpeg);
+            }
+            //-----------------------
+            //loading thumbnail
+            FileStream fn_thumb = new FileStream(thumb_fn, FileMode.Open);
+            bg3_radioButton4.BackgroundImage = Image.FromStream(fn_thumb);
+            //-----------------------
+            fn_thumb.Close();
+            fn_thumb.Dispose();
+            //-----------------------
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show("Error! " + ex.Message);
+        }
     }
+
+  
 }
