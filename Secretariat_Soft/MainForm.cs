@@ -208,4 +208,9 @@ public partial class MainForm : Form
         frm.ShowDialog();
         //----------------------
     }
+
+    private void background_button_Click(object sender, EventArgs e)
+    {
+        bg_selector_panel2.Visible = !bg_selector_panel2.Visible;
+    }
 }

@@ -69,6 +69,16 @@ partial class MainForm
         help_cm = new ContextMenuStrip(components);
         help_toolStripMenuItem1 = new ToolStripMenuItem();
         about_toolStripMenuItem2 = new ToolStripMenuItem();
+        bg_selector_panel2 = new Panel();
+        bg6_radioButton5 = new RadioButton();
+        bg5_radioButton6 = new RadioButton();
+        bg4_radioButton7 = new RadioButton();
+        bg3_radioButton4 = new RadioButton();
+        bg2_radioButton3 = new RadioButton();
+        bg1_radioButton3 = new RadioButton();
+        groupBox1 = new GroupBox();
+        browsw_radioButton2 = new RadioButton();
+        select_radioButton1 = new RadioButton();
         top_panel.SuspendLayout();
         side_panel.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)user_image).BeginInit();
@@ -78,6 +88,8 @@ partial class MainForm
         toold_cm.SuspendLayout();
         reports_cm.SuspendLayout();
         help_cm.SuspendLayout();
+        bg_selector_panel2.SuspendLayout();
+        groupBox1.SuspendLayout();
         SuspendLayout();
         // 
         // top_panel
@@ -92,7 +104,7 @@ partial class MainForm
         top_panel.Location = new Point(233, 0);
         top_panel.MinimumSize = new Size(791, 85);
         top_panel.Name = "top_panel";
-        top_panel.Size = new Size(929, 91);
+        top_panel.Size = new Size(903, 91);
         top_panel.TabIndex = 1;
         // 
         // help_button
@@ -165,7 +177,7 @@ partial class MainForm
         min_button.BackgroundImage = Properties.Resources.min_button;
         min_button.BackgroundImageLayout = ImageLayout.Center;
         min_button.Cursor = Cursors.Hand;
-        min_button.Location = new Point(860, 3);
+        min_button.Location = new Point(834, 3);
         min_button.Name = "min_button";
         min_button.Size = new Size(30, 34);
         min_button.TabIndex = 1;
@@ -178,7 +190,7 @@ partial class MainForm
         close_button.BackgroundImage = Properties.Resources.close_button;
         close_button.BackgroundImageLayout = ImageLayout.Center;
         close_button.Cursor = Cursors.Hand;
-        close_button.Location = new Point(896, 3);
+        close_button.Location = new Point(870, 3);
         close_button.Name = "close_button";
         close_button.Size = new Size(30, 34);
         close_button.TabIndex = 0;
@@ -324,7 +336,7 @@ partial class MainForm
         bottom_panel.Location = new Point(233, 813);
         bottom_panel.MinimumSize = new Size(844, 45);
         bottom_panel.Name = "bottom_panel";
-        bottom_panel.Size = new Size(929, 57);
+        bottom_panel.Size = new Size(903, 57);
         bottom_panel.TabIndex = 0;
         // 
         // calculator_button
@@ -333,7 +345,7 @@ partial class MainForm
         calculator_button.BackgroundImage = Properties.Resources.calculator;
         calculator_button.BackgroundImageLayout = ImageLayout.Zoom;
         calculator_button.Cursor = Cursors.Hand;
-        calculator_button.Location = new Point(711, 5);
+        calculator_button.Location = new Point(685, 5);
         calculator_button.Name = "calculator_button";
         calculator_button.Size = new Size(60, 50);
         calculator_button.TabIndex = 1;
@@ -345,12 +357,13 @@ partial class MainForm
         background_button.Cursor = Cursors.Hand;
         background_button.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
         background_button.Image = Properties.Resources.background;
-        background_button.Location = new Point(777, 5);
+        background_button.Location = new Point(751, 5);
         background_button.Name = "background_button";
         background_button.Size = new Size(140, 50);
         background_button.TabIndex = 0;
         background_button.Text = "Background";
         background_button.UseVisualStyleBackColor = true;
+        background_button.Click += background_button_Click;
         // 
         // timer1
         // 
@@ -438,14 +451,14 @@ partial class MainForm
         toold_cm.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
         toold_cm.Items.AddRange(new ToolStripItem[] { usersToolStripMenuItem, backupDataToolStripMenuItem, restoreDataToolStripMenuItem });
         toold_cm.Name = "toold_cm";
-        toold_cm.Size = new Size(189, 116);
+        toold_cm.Size = new Size(161, 94);
         // 
         // usersToolStripMenuItem
         // 
         usersToolStripMenuItem.Image = Properties.Resources.user_cms;
         usersToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
         usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-        usersToolStripMenuItem.Size = new Size(188, 30);
+        usersToolStripMenuItem.Size = new Size(160, 30);
         usersToolStripMenuItem.Text = "Users";
         usersToolStripMenuItem.Click += usersToolStripMenuItem_Click;
         // 
@@ -454,7 +467,7 @@ partial class MainForm
         backupDataToolStripMenuItem.Image = Properties.Resources.backup_cms;
         backupDataToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
         backupDataToolStripMenuItem.Name = "backupDataToolStripMenuItem";
-        backupDataToolStripMenuItem.Size = new Size(188, 30);
+        backupDataToolStripMenuItem.Size = new Size(160, 30);
         backupDataToolStripMenuItem.Text = "Backup Data";
         backupDataToolStripMenuItem.Click += backupDataToolStripMenuItem_Click;
         // 
@@ -463,7 +476,7 @@ partial class MainForm
         restoreDataToolStripMenuItem.Image = Properties.Resources.restore_cms;
         restoreDataToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
         restoreDataToolStripMenuItem.Name = "restoreDataToolStripMenuItem";
-        restoreDataToolStripMenuItem.Size = new Size(188, 30);
+        restoreDataToolStripMenuItem.Size = new Size(160, 30);
         restoreDataToolStripMenuItem.Text = "Restore Data";
         restoreDataToolStripMenuItem.Click += restoreDataToolStripMenuItem_Click;
         // 
@@ -513,11 +526,155 @@ partial class MainForm
         about_toolStripMenuItem2.Size = new Size(119, 30);
         about_toolStripMenuItem2.Text = "About";
         // 
+        // bg_selector_panel2
+        // 
+        bg_selector_panel2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+        bg_selector_panel2.BorderStyle = BorderStyle.FixedSingle;
+        bg_selector_panel2.Controls.Add(bg6_radioButton5);
+        bg_selector_panel2.Controls.Add(bg5_radioButton6);
+        bg_selector_panel2.Controls.Add(bg4_radioButton7);
+        bg_selector_panel2.Controls.Add(bg3_radioButton4);
+        bg_selector_panel2.Controls.Add(bg2_radioButton3);
+        bg_selector_panel2.Controls.Add(bg1_radioButton3);
+        bg_selector_panel2.Controls.Add(groupBox1);
+        bg_selector_panel2.Location = new Point(681, 436);
+        bg_selector_panel2.Name = "bg_selector_panel2";
+        bg_selector_panel2.Size = new Size(452, 371);
+        bg_selector_panel2.TabIndex = 5;
+        bg_selector_panel2.Visible = false;
+        // 
+        // bg6_radioButton5
+        // 
+        bg6_radioButton5.Appearance = Appearance.Button;
+        bg6_radioButton5.BackgroundImageLayout = ImageLayout.Zoom;
+        bg6_radioButton5.Cursor = Cursors.Hand;
+        bg6_radioButton5.FlatAppearance.CheckedBackColor = Color.Gray;
+        bg6_radioButton5.FlatAppearance.MouseOverBackColor = Color.LightGray;
+        bg6_radioButton5.FlatStyle = FlatStyle.Flat;
+        bg6_radioButton5.Location = new Point(9, 218);
+        bg6_radioButton5.Name = "bg6_radioButton5";
+        bg6_radioButton5.Size = new Size(134, 133);
+        bg6_radioButton5.TabIndex = 6;
+        bg6_radioButton5.TabStop = true;
+        bg6_radioButton5.UseVisualStyleBackColor = false;
+        // 
+        // bg5_radioButton6
+        // 
+        bg5_radioButton6.Appearance = Appearance.Button;
+        bg5_radioButton6.BackgroundImageLayout = ImageLayout.Zoom;
+        bg5_radioButton6.Cursor = Cursors.Hand;
+        bg5_radioButton6.FlatAppearance.CheckedBackColor = Color.Gray;
+        bg5_radioButton6.FlatAppearance.MouseOverBackColor = Color.LightGray;
+        bg5_radioButton6.FlatStyle = FlatStyle.Flat;
+        bg5_radioButton6.Location = new Point(158, 218);
+        bg5_radioButton6.Name = "bg5_radioButton6";
+        bg5_radioButton6.Size = new Size(134, 133);
+        bg5_radioButton6.TabIndex = 5;
+        bg5_radioButton6.TabStop = true;
+        bg5_radioButton6.UseVisualStyleBackColor = false;
+        // 
+        // bg4_radioButton7
+        // 
+        bg4_radioButton7.Appearance = Appearance.Button;
+        bg4_radioButton7.BackgroundImageLayout = ImageLayout.Zoom;
+        bg4_radioButton7.Cursor = Cursors.Hand;
+        bg4_radioButton7.FlatAppearance.CheckedBackColor = Color.Gray;
+        bg4_radioButton7.FlatAppearance.MouseOverBackColor = Color.LightGray;
+        bg4_radioButton7.FlatStyle = FlatStyle.Flat;
+        bg4_radioButton7.Location = new Point(308, 218);
+        bg4_radioButton7.Name = "bg4_radioButton7";
+        bg4_radioButton7.Size = new Size(134, 133);
+        bg4_radioButton7.TabIndex = 4;
+        bg4_radioButton7.TabStop = true;
+        bg4_radioButton7.UseVisualStyleBackColor = false;
+        // 
+        // bg3_radioButton4
+        // 
+        bg3_radioButton4.Appearance = Appearance.Button;
+        bg3_radioButton4.BackgroundImageLayout = ImageLayout.Zoom;
+        bg3_radioButton4.Checked = true;
+        bg3_radioButton4.Cursor = Cursors.Hand;
+        bg3_radioButton4.FlatAppearance.CheckedBackColor = Color.Gray;
+        bg3_radioButton4.FlatAppearance.MouseOverBackColor = Color.LightGray;
+        bg3_radioButton4.FlatStyle = FlatStyle.Flat;
+        bg3_radioButton4.Location = new Point(9, 73);
+        bg3_radioButton4.Name = "bg3_radioButton4";
+        bg3_radioButton4.Size = new Size(134, 133);
+        bg3_radioButton4.TabIndex = 3;
+        bg3_radioButton4.TabStop = true;
+        bg3_radioButton4.UseVisualStyleBackColor = false;
+        // 
+        // bg2_radioButton3
+        // 
+        bg2_radioButton3.Appearance = Appearance.Button;
+        bg2_radioButton3.BackgroundImageLayout = ImageLayout.Zoom;
+        bg2_radioButton3.Cursor = Cursors.Hand;
+        bg2_radioButton3.FlatAppearance.CheckedBackColor = Color.Gray;
+        bg2_radioButton3.FlatAppearance.MouseOverBackColor = Color.LightGray;
+        bg2_radioButton3.FlatStyle = FlatStyle.Flat;
+        bg2_radioButton3.Location = new Point(158, 73);
+        bg2_radioButton3.Name = "bg2_radioButton3";
+        bg2_radioButton3.Size = new Size(134, 133);
+        bg2_radioButton3.TabIndex = 2;
+        bg2_radioButton3.TabStop = true;
+        bg2_radioButton3.UseVisualStyleBackColor = false;
+        // 
+        // bg1_radioButton3
+        // 
+        bg1_radioButton3.Appearance = Appearance.Button;
+        bg1_radioButton3.BackgroundImageLayout = ImageLayout.Zoom;
+        bg1_radioButton3.Cursor = Cursors.Hand;
+        bg1_radioButton3.FlatAppearance.CheckedBackColor = Color.Gray;
+        bg1_radioButton3.FlatAppearance.MouseOverBackColor = Color.LightGray;
+        bg1_radioButton3.FlatStyle = FlatStyle.Flat;
+        bg1_radioButton3.Location = new Point(308, 73);
+        bg1_radioButton3.Name = "bg1_radioButton3";
+        bg1_radioButton3.Size = new Size(134, 133);
+        bg1_radioButton3.TabIndex = 1;
+        bg1_radioButton3.TabStop = true;
+        bg1_radioButton3.UseVisualStyleBackColor = false;
+        // 
+        // groupBox1
+        // 
+        groupBox1.Controls.Add(browsw_radioButton2);
+        groupBox1.Controls.Add(select_radioButton1);
+        groupBox1.Location = new Point(9, 3);
+        groupBox1.Name = "groupBox1";
+        groupBox1.Size = new Size(433, 59);
+        groupBox1.TabIndex = 0;
+        groupBox1.TabStop = false;
+        // 
+        // browsw_radioButton2
+        // 
+        browsw_radioButton2.AutoSize = true;
+        browsw_radioButton2.Cursor = Cursors.Hand;
+        browsw_radioButton2.Location = new Point(293, 22);
+        browsw_radioButton2.Name = "browsw_radioButton2";
+        browsw_radioButton2.Size = new Size(107, 21);
+        browsw_radioButton2.TabIndex = 1;
+        browsw_radioButton2.TabStop = true;
+        browsw_radioButton2.Text = "Browse Mode";
+        browsw_radioButton2.UseVisualStyleBackColor = true;
+        // 
+        // select_radioButton1
+        // 
+        select_radioButton1.AutoSize = true;
+        select_radioButton1.Checked = true;
+        select_radioButton1.Cursor = Cursors.Hand;
+        select_radioButton1.Location = new Point(35, 22);
+        select_radioButton1.Name = "select_radioButton1";
+        select_radioButton1.Size = new Size(99, 21);
+        select_radioButton1.TabIndex = 0;
+        select_radioButton1.TabStop = true;
+        select_radioButton1.Text = "Select Mode";
+        select_radioButton1.UseVisualStyleBackColor = true;
+        // 
         // MainForm
         // 
         AutoScaleDimensions = new SizeF(7F, 17F);
         AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(1162, 870);
+        ClientSize = new Size(1136, 870);
+        Controls.Add(bg_selector_panel2);
         Controls.Add(tree_panel);
         Controls.Add(bottom_panel);
         Controls.Add(top_panel);
@@ -542,6 +699,9 @@ partial class MainForm
         toold_cm.ResumeLayout(false);
         reports_cm.ResumeLayout(false);
         help_cm.ResumeLayout(false);
+        bg_selector_panel2.ResumeLayout(false);
+        groupBox1.ResumeLayout(false);
+        groupBox1.PerformLayout();
         ResumeLayout(false);
     }
 
@@ -582,4 +742,14 @@ partial class MainForm
     private ContextMenuStrip help_cm;
     private ToolStripMenuItem help_toolStripMenuItem1;
     private ToolStripMenuItem about_toolStripMenuItem2;
+    private Panel bg_selector_panel2;
+    private RadioButton bg1_radioButton3;
+    private GroupBox groupBox1;
+    private RadioButton browsw_radioButton2;
+    private RadioButton select_radioButton1;
+    private RadioButton bg6_radioButton5;
+    private RadioButton bg5_radioButton6;
+    private RadioButton bg4_radioButton7;
+    private RadioButton bg3_radioButton4;
+    private RadioButton bg2_radioButton3;
 }

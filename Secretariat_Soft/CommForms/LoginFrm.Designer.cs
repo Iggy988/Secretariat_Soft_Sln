@@ -57,7 +57,7 @@ partial class LoginFrm
         ok_button1.Name = "ok_button1";
         ok_button1.Size = new Size(92, 30);
         ok_button1.TabIndex = 0;
-        ok_button1.Text = "Ok";
+        ok_button1.Text = "Ok (Enter)";
         ok_button1.UseVisualStyleBackColor = true;
         ok_button1.Click += ok_button1_Click;
         // 
@@ -117,6 +117,7 @@ partial class LoginFrm
         password_TB.PasswordChar = '*';
         password_TB.Size = new Size(161, 25);
         password_TB.TabIndex = 23;
+        password_TB.Text = "123";
         // 
         // label5
         // 
@@ -194,10 +195,12 @@ partial class LoginFrm
         // 
         // LoginFrm
         // 
+        AcceptButton = ok_button1;
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = SystemColors.MenuBar;
-        ClientSize = new Size(365, 386);
+        CancelButton = cancel_button2;
+        ClientSize = new Size(361, 395);
         ControlBox = false;
         Controls.Add(correct_pass_textBox1);
         Controls.Add(label3);
