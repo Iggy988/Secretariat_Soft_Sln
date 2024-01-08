@@ -70,15 +70,15 @@ partial class MainForm
         help_toolStripMenuItem1 = new ToolStripMenuItem();
         about_toolStripMenuItem2 = new ToolStripMenuItem();
         bg_selector_panel2 = new Panel();
-        bg6_radioButton5 = new RadioButton();
-        bg5_radioButton6 = new RadioButton();
-        bg4_radioButton7 = new RadioButton();
-        bg3_radioButton4 = new RadioButton();
-        bg2_radioButton3 = new RadioButton();
-        bg1_radioButton3 = new RadioButton();
+        bg4_radioButton = new RadioButton();
+        bg5_radioButton = new RadioButton();
+        bg6_radioButton = new RadioButton();
+        bg1_radioButton = new RadioButton();
+        bg2_radioButton = new RadioButton();
+        bg3_radioButton = new RadioButton();
         groupBox1 = new GroupBox();
-        browsw_radioButton2 = new RadioButton();
         select_radioButton1 = new RadioButton();
+        browsw_radioButton2 = new RadioButton();
         top_panel.SuspendLayout();
         side_panel.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)user_image).BeginInit();
@@ -529,13 +529,14 @@ partial class MainForm
         // bg_selector_panel2
         // 
         bg_selector_panel2.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+        bg_selector_panel2.BackgroundImageLayout = ImageLayout.Stretch;
         bg_selector_panel2.BorderStyle = BorderStyle.FixedSingle;
-        bg_selector_panel2.Controls.Add(bg6_radioButton5);
-        bg_selector_panel2.Controls.Add(bg5_radioButton6);
-        bg_selector_panel2.Controls.Add(bg4_radioButton7);
-        bg_selector_panel2.Controls.Add(bg3_radioButton4);
-        bg_selector_panel2.Controls.Add(bg2_radioButton3);
-        bg_selector_panel2.Controls.Add(bg1_radioButton3);
+        bg_selector_panel2.Controls.Add(bg4_radioButton);
+        bg_selector_panel2.Controls.Add(bg5_radioButton);
+        bg_selector_panel2.Controls.Add(bg6_radioButton);
+        bg_selector_panel2.Controls.Add(bg1_radioButton);
+        bg_selector_panel2.Controls.Add(bg2_radioButton);
+        bg_selector_panel2.Controls.Add(bg3_radioButton);
         bg_selector_panel2.Controls.Add(groupBox1);
         bg_selector_panel2.Location = new Point(681, 436);
         bg_selector_panel2.Name = "bg_selector_panel2";
@@ -543,118 +544,112 @@ partial class MainForm
         bg_selector_panel2.TabIndex = 5;
         bg_selector_panel2.Visible = false;
         // 
-        // bg6_radioButton5
+        // bg4_radioButton
         // 
-        bg6_radioButton5.Appearance = Appearance.Button;
-        bg6_radioButton5.BackgroundImageLayout = ImageLayout.Zoom;
-        bg6_radioButton5.Cursor = Cursors.Hand;
-        bg6_radioButton5.FlatAppearance.CheckedBackColor = Color.Gray;
-        bg6_radioButton5.FlatAppearance.MouseOverBackColor = Color.LightGray;
-        bg6_radioButton5.FlatStyle = FlatStyle.Flat;
-        bg6_radioButton5.Location = new Point(9, 218);
-        bg6_radioButton5.Name = "bg6_radioButton5";
-        bg6_radioButton5.Size = new Size(134, 133);
-        bg6_radioButton5.TabIndex = 6;
-        bg6_radioButton5.TabStop = true;
-        bg6_radioButton5.UseVisualStyleBackColor = false;
+        bg4_radioButton.Appearance = Appearance.Button;
+        bg4_radioButton.BackgroundImageLayout = ImageLayout.Zoom;
+        bg4_radioButton.Cursor = Cursors.Hand;
+        bg4_radioButton.FlatAppearance.CheckedBackColor = SystemColors.ActiveCaption;
+        bg4_radioButton.FlatAppearance.MouseOverBackColor = Color.LightGray;
+        bg4_radioButton.FlatStyle = FlatStyle.Flat;
+        bg4_radioButton.Location = new Point(9, 218);
+        bg4_radioButton.Name = "bg4_radioButton";
+        bg4_radioButton.Size = new Size(134, 133);
+        bg4_radioButton.TabIndex = 6;
+        bg4_radioButton.TabStop = true;
+        bg4_radioButton.UseVisualStyleBackColor = false;
+        bg4_radioButton.Click += bg4_radioButton_Click;
         // 
-        // bg5_radioButton6
+        // bg5_radioButton
         // 
-        bg5_radioButton6.Appearance = Appearance.Button;
-        bg5_radioButton6.BackgroundImageLayout = ImageLayout.Zoom;
-        bg5_radioButton6.Cursor = Cursors.Hand;
-        bg5_radioButton6.FlatAppearance.CheckedBackColor = Color.Gray;
-        bg5_radioButton6.FlatAppearance.MouseOverBackColor = Color.LightGray;
-        bg5_radioButton6.FlatStyle = FlatStyle.Flat;
-        bg5_radioButton6.Location = new Point(158, 218);
-        bg5_radioButton6.Name = "bg5_radioButton6";
-        bg5_radioButton6.Size = new Size(134, 133);
-        bg5_radioButton6.TabIndex = 5;
-        bg5_radioButton6.TabStop = true;
-        bg5_radioButton6.UseVisualStyleBackColor = false;
+        bg5_radioButton.Appearance = Appearance.Button;
+        bg5_radioButton.BackgroundImageLayout = ImageLayout.Zoom;
+        bg5_radioButton.Cursor = Cursors.Hand;
+        bg5_radioButton.FlatAppearance.CheckedBackColor = SystemColors.ActiveCaption;
+        bg5_radioButton.FlatAppearance.MouseOverBackColor = Color.LightGray;
+        bg5_radioButton.FlatStyle = FlatStyle.Flat;
+        bg5_radioButton.Location = new Point(158, 218);
+        bg5_radioButton.Name = "bg5_radioButton";
+        bg5_radioButton.Size = new Size(134, 133);
+        bg5_radioButton.TabIndex = 5;
+        bg5_radioButton.TabStop = true;
+        bg5_radioButton.UseVisualStyleBackColor = false;
+        bg5_radioButton.Click += bg5_radioButton_Click;
         // 
-        // bg4_radioButton7
+        // bg6_radioButton
         // 
-        bg4_radioButton7.Appearance = Appearance.Button;
-        bg4_radioButton7.BackgroundImageLayout = ImageLayout.Zoom;
-        bg4_radioButton7.Cursor = Cursors.Hand;
-        bg4_radioButton7.FlatAppearance.CheckedBackColor = Color.Gray;
-        bg4_radioButton7.FlatAppearance.MouseOverBackColor = Color.LightGray;
-        bg4_radioButton7.FlatStyle = FlatStyle.Flat;
-        bg4_radioButton7.Location = new Point(308, 218);
-        bg4_radioButton7.Name = "bg4_radioButton7";
-        bg4_radioButton7.Size = new Size(134, 133);
-        bg4_radioButton7.TabIndex = 4;
-        bg4_radioButton7.TabStop = true;
-        bg4_radioButton7.UseVisualStyleBackColor = false;
+        bg6_radioButton.Appearance = Appearance.Button;
+        bg6_radioButton.BackgroundImageLayout = ImageLayout.Zoom;
+        bg6_radioButton.Cursor = Cursors.Hand;
+        bg6_radioButton.FlatAppearance.CheckedBackColor = SystemColors.ActiveCaption;
+        bg6_radioButton.FlatAppearance.MouseOverBackColor = Color.LightGray;
+        bg6_radioButton.FlatStyle = FlatStyle.Flat;
+        bg6_radioButton.Location = new Point(308, 218);
+        bg6_radioButton.Name = "bg6_radioButton";
+        bg6_radioButton.Size = new Size(134, 133);
+        bg6_radioButton.TabIndex = 4;
+        bg6_radioButton.TabStop = true;
+        bg6_radioButton.UseVisualStyleBackColor = false;
+        bg6_radioButton.Click += bg6_radioButton_Click;
         // 
-        // bg3_radioButton4
+        // bg1_radioButton
         // 
-        bg3_radioButton4.Appearance = Appearance.Button;
-        bg3_radioButton4.BackgroundImageLayout = ImageLayout.Zoom;
-        bg3_radioButton4.Checked = true;
-        bg3_radioButton4.Cursor = Cursors.Hand;
-        bg3_radioButton4.FlatAppearance.CheckedBackColor = Color.Gray;
-        bg3_radioButton4.FlatAppearance.MouseOverBackColor = Color.LightGray;
-        bg3_radioButton4.FlatStyle = FlatStyle.Flat;
-        bg3_radioButton4.Location = new Point(9, 73);
-        bg3_radioButton4.Name = "bg3_radioButton4";
-        bg3_radioButton4.Size = new Size(134, 133);
-        bg3_radioButton4.TabIndex = 3;
-        bg3_radioButton4.TabStop = true;
-        bg3_radioButton4.UseVisualStyleBackColor = false;
+        bg1_radioButton.Appearance = Appearance.Button;
+        bg1_radioButton.BackgroundImageLayout = ImageLayout.Zoom;
+        bg1_radioButton.Checked = true;
+        bg1_radioButton.Cursor = Cursors.Hand;
+        bg1_radioButton.FlatAppearance.CheckedBackColor = SystemColors.ActiveCaption;
+        bg1_radioButton.FlatAppearance.MouseOverBackColor = Color.LightGray;
+        bg1_radioButton.FlatStyle = FlatStyle.Flat;
+        bg1_radioButton.Location = new Point(9, 73);
+        bg1_radioButton.Name = "bg1_radioButton";
+        bg1_radioButton.Size = new Size(134, 133);
+        bg1_radioButton.TabIndex = 3;
+        bg1_radioButton.TabStop = true;
+        bg1_radioButton.UseVisualStyleBackColor = false;
+        bg1_radioButton.Click += bg1_radioButton_Click;
         // 
-        // bg2_radioButton3
+        // bg2_radioButton
         // 
-        bg2_radioButton3.Appearance = Appearance.Button;
-        bg2_radioButton3.BackgroundImageLayout = ImageLayout.Zoom;
-        bg2_radioButton3.Cursor = Cursors.Hand;
-        bg2_radioButton3.FlatAppearance.CheckedBackColor = Color.Gray;
-        bg2_radioButton3.FlatAppearance.MouseOverBackColor = Color.LightGray;
-        bg2_radioButton3.FlatStyle = FlatStyle.Flat;
-        bg2_radioButton3.Location = new Point(158, 73);
-        bg2_radioButton3.Name = "bg2_radioButton3";
-        bg2_radioButton3.Size = new Size(134, 133);
-        bg2_radioButton3.TabIndex = 2;
-        bg2_radioButton3.TabStop = true;
-        bg2_radioButton3.UseVisualStyleBackColor = false;
+        bg2_radioButton.Appearance = Appearance.Button;
+        bg2_radioButton.BackgroundImageLayout = ImageLayout.Zoom;
+        bg2_radioButton.Cursor = Cursors.Hand;
+        bg2_radioButton.FlatAppearance.CheckedBackColor = SystemColors.ActiveCaption;
+        bg2_radioButton.FlatAppearance.MouseOverBackColor = Color.LightGray;
+        bg2_radioButton.FlatStyle = FlatStyle.Flat;
+        bg2_radioButton.Location = new Point(158, 73);
+        bg2_radioButton.Name = "bg2_radioButton";
+        bg2_radioButton.Size = new Size(134, 133);
+        bg2_radioButton.TabIndex = 2;
+        bg2_radioButton.TabStop = true;
+        bg2_radioButton.UseVisualStyleBackColor = false;
+        bg2_radioButton.Click += bg2_radioButton_Click;
         // 
-        // bg1_radioButton3
+        // bg3_radioButton
         // 
-        bg1_radioButton3.Appearance = Appearance.Button;
-        bg1_radioButton3.BackgroundImageLayout = ImageLayout.Zoom;
-        bg1_radioButton3.Cursor = Cursors.Hand;
-        bg1_radioButton3.FlatAppearance.CheckedBackColor = Color.Gray;
-        bg1_radioButton3.FlatAppearance.MouseOverBackColor = Color.LightGray;
-        bg1_radioButton3.FlatStyle = FlatStyle.Flat;
-        bg1_radioButton3.Location = new Point(308, 73);
-        bg1_radioButton3.Name = "bg1_radioButton3";
-        bg1_radioButton3.Size = new Size(134, 133);
-        bg1_radioButton3.TabIndex = 1;
-        bg1_radioButton3.TabStop = true;
-        bg1_radioButton3.UseVisualStyleBackColor = false;
+        bg3_radioButton.Appearance = Appearance.Button;
+        bg3_radioButton.BackgroundImageLayout = ImageLayout.Zoom;
+        bg3_radioButton.Cursor = Cursors.Hand;
+        bg3_radioButton.FlatAppearance.CheckedBackColor = SystemColors.ActiveCaption;
+        bg3_radioButton.FlatAppearance.MouseOverBackColor = Color.LightGray;
+        bg3_radioButton.FlatStyle = FlatStyle.Flat;
+        bg3_radioButton.Location = new Point(308, 73);
+        bg3_radioButton.Name = "bg3_radioButton";
+        bg3_radioButton.Size = new Size(134, 133);
+        bg3_radioButton.TabIndex = 1;
+        bg3_radioButton.TabStop = true;
+        bg3_radioButton.UseVisualStyleBackColor = false;
+        bg3_radioButton.Click += bg3_radioButton_Click;
         // 
         // groupBox1
         // 
-        groupBox1.Controls.Add(browsw_radioButton2);
         groupBox1.Controls.Add(select_radioButton1);
+        groupBox1.Controls.Add(browsw_radioButton2);
         groupBox1.Location = new Point(9, 3);
         groupBox1.Name = "groupBox1";
         groupBox1.Size = new Size(433, 59);
         groupBox1.TabIndex = 0;
         groupBox1.TabStop = false;
-        // 
-        // browsw_radioButton2
-        // 
-        browsw_radioButton2.AutoSize = true;
-        browsw_radioButton2.Cursor = Cursors.Hand;
-        browsw_radioButton2.Location = new Point(293, 22);
-        browsw_radioButton2.Name = "browsw_radioButton2";
-        browsw_radioButton2.Size = new Size(107, 21);
-        browsw_radioButton2.TabIndex = 1;
-        browsw_radioButton2.TabStop = true;
-        browsw_radioButton2.Text = "Browse Mode";
-        browsw_radioButton2.UseVisualStyleBackColor = true;
         // 
         // select_radioButton1
         // 
@@ -669,10 +664,23 @@ partial class MainForm
         select_radioButton1.Text = "Select Mode";
         select_radioButton1.UseVisualStyleBackColor = true;
         // 
+        // browsw_radioButton2
+        // 
+        browsw_radioButton2.AutoSize = true;
+        browsw_radioButton2.Cursor = Cursors.Hand;
+        browsw_radioButton2.Location = new Point(293, 22);
+        browsw_radioButton2.Name = "browsw_radioButton2";
+        browsw_radioButton2.Size = new Size(107, 21);
+        browsw_radioButton2.TabIndex = 1;
+        browsw_radioButton2.TabStop = true;
+        browsw_radioButton2.Text = "Browse Mode";
+        browsw_radioButton2.UseVisualStyleBackColor = true;
+        // 
         // MainForm
         // 
         AutoScaleDimensions = new SizeF(7F, 17F);
         AutoScaleMode = AutoScaleMode.Font;
+        BackgroundImageLayout = ImageLayout.Stretch;
         ClientSize = new Size(1136, 870);
         Controls.Add(bg_selector_panel2);
         Controls.Add(tree_panel);
@@ -743,13 +751,13 @@ partial class MainForm
     private ToolStripMenuItem help_toolStripMenuItem1;
     private ToolStripMenuItem about_toolStripMenuItem2;
     private Panel bg_selector_panel2;
-    private RadioButton bg1_radioButton3;
+    private RadioButton bg3_radioButton;
     private GroupBox groupBox1;
     private RadioButton browsw_radioButton2;
     private RadioButton select_radioButton1;
-    private RadioButton bg6_radioButton5;
-    private RadioButton bg5_radioButton6;
-    private RadioButton bg4_radioButton7;
-    private RadioButton bg3_radioButton4;
-    private RadioButton bg2_radioButton3;
+    private RadioButton bg4_radioButton;
+    private RadioButton bg5_radioButton;
+    private RadioButton bg6_radioButton;
+    private RadioButton bg1_radioButton;
+    private RadioButton bg2_radioButton;
 }

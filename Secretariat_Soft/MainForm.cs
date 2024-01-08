@@ -212,28 +212,44 @@ public partial class MainForm : Form
 
     private void background_button_Click(object sender, EventArgs e)
     {
+        //----------------------------
+        if (bg_selector_panel2.Visible == false)
+        {
+            thumb_image_loader("0.jpg", "0_thumb.jpg", bg1_radioButton);
+            thumb_image_loader("1.jpg", "1_thumb.jpg", bg2_radioButton);
+            thumb_image_loader("2.jpg", "2_thumb.jpg", bg3_radioButton);
+            thumb_image_loader("3.jpg", "3_thumb.jpg", bg4_radioButton);
+            thumb_image_loader("4.jpg", "4_thumb.jpg", bg5_radioButton);
+            thumb_image_loader("5.jpg", "5_thumb.jpg", bg6_radioButton);
+        }
+        //----------------------------
         bg_selector_panel2.Visible = !bg_selector_panel2.Visible;
+    }
+
+    void thumb_image_loader(string org_file_name, string thumb_file_name, System.Windows.Forms.RadioButton image_rb_name)
+    {
         try
         {
-            string thumb_fn = Application.StartupPath + "Data\\Pics\\Bg\\0_thumb.jpg";
-            string fn = Application.StartupPath + "Data\\Pics\\Bg\\0.jpg";
+            string thumb_fn = Application.StartupPath + "Data\\Pics\\Bg\\" + thumb_file_name;
+            string fn = Application.StartupPath + "Data\\Pics\\Bg\\" + org_file_name;
             //------------------------
+            // check if thumbnail file exists
             if (System.IO.File.Exists(thumb_fn) == false)
             {
-                //creating img from a FileStream if there is no existing thumbnail
+                //loading original image in filestream
                 FileStream fs = new(fn, FileMode.Open);
                 //-----------------------
                 Image img = Image.FromStream(fs);
                 fs.Close();
                 fs.Dispose();
                 //-----------------------
-                //creating thumbnail
+                //creating thumbnail and save it
                 img.GetThumbnailImage(100, 65, null, nint.Zero).Save(thumb_fn, ImageFormat.Jpeg);
             }
             //-----------------------
             //loading thumbnail
             FileStream fn_thumb = new FileStream(thumb_fn, FileMode.Open);
-            bg3_radioButton4.BackgroundImage = Image.FromStream(fn_thumb);
+            image_rb_name.BackgroundImage = Image.FromStream(fn_thumb);
             //-----------------------
             fn_thumb.Close();
             fn_thumb.Dispose();
@@ -245,5 +261,101 @@ public partial class MainForm : Form
         }
     }
 
-  
+    void bg_image_loader(string org_file_name)
+    {
+        try
+        {
+            string fn = Application.StartupPath + "Data\\Pics\\Bg\\" + org_file_name;
+            string fn_resized = Application.StartupPath + "Data\\Pics\\Bg\\r_full_img.jpg";
+            //------------------------
+            // check if image file exists
+            if (System.IO.File.Exists(fn) == true)
+            {
+                //loading image in filestream
+                Image img = image_loader_from_file(fn);
+                //Resize img to screen size
+                Bitmap r_img = new(img, new Size(Width, Height));
+                r_img.Save(fn_resized, System.Drawing.Imaging.ImageFormat.Jpeg);
+                
+                
+                
+                
+                
+                //FileStream fs = new(fn, FileMode.Open);
+                ////-----------------------
+                //Image img = Image.FromStream(fs);
+                //fs.Close();
+                //fs.Dispose();
+                //-----------------------
+                //BackgroundImage = img;
+                //-----------------------
+
+            }
+
+            //-----------------------
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show("Error! " + ex.Message);
+        }
+    }
+
+    Image image_loader_from_file(string image_file_name)
+    {
+        FileStream fs = new(image_file_name, FileMode.Open);
+        Image img = Image.FromStream(fs);
+        //----------------
+        fs.Close();
+        fs.Dispose();
+        //----------------
+        return img;
+    }
+
+    private void bg1_radioButton_Click(object sender, EventArgs e)
+    {
+        if (select_radioButton1.Checked == true)
+        {
+            bg_image_loader("0.jpg");
+        }
+    }
+
+    private void bg2_radioButton_Click(object sender, EventArgs e)
+    {
+        if (select_radioButton1.Checked == true)
+        {
+            bg_image_loader("1.jpg");
+        }
+    }
+
+    private void bg3_radioButton_Click(object sender, EventArgs e)
+    {
+        if (select_radioButton1.Checked == true)
+        {
+            bg_image_loader("2.jpg");
+        }
+    }
+
+    private void bg4_radioButton_Click(object sender, EventArgs e)
+    {
+        if (select_radioButton1.Checked == true)
+        {
+            bg_image_loader("3.jpg");
+        }
+    }
+
+    private void bg5_radioButton_Click(object sender, EventArgs e)
+    {
+        if (select_radioButton1.Checked == true)
+        {
+            bg_image_loader("4.jpg");
+        }
+    }
+
+    private void bg6_radioButton_Click(object sender, EventArgs e)
+    {
+        if (select_radioButton1.Checked == true)
+        {
+            bg_image_loader("5.jpg");
+        }
+    }
 }
