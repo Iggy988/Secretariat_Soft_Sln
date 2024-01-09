@@ -58,5 +58,17 @@ namespace Secretariat_Soft.Properties {
                 this["admin_user_id"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0.jpg")]
+        public string selected_bg_name {
+            get {
+                return ((string)(this["selected_bg_name"]));
+            }
+            set {
+                this["selected_bg_name"] = value;
+            }
+        }
     }
 }

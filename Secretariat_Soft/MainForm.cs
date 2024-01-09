@@ -31,6 +31,7 @@ public partial class MainForm : Form
 
     private void MainForm_Load(object sender, EventArgs e)
     {
+        transparent_panel();
         background_image_changer_all();
             //---------------------------
         Secretariat_Soft.CommForms.LoginFrm frm = new();
@@ -215,6 +216,8 @@ public partial class MainForm : Form
     private void background_button_Click(object sender, EventArgs e)
     {
         //----------------------------
+        selected_radiobutton_loaded();  
+        //----------------------------
         if (bg_selector_panel2.Visible == false)
         {
             thumb_image_loader("0.jpg", "0_thumb.jpg", bg1_radioButton);
@@ -226,6 +229,44 @@ public partial class MainForm : Form
         }
         //----------------------------
         bg_selector_panel2.Visible = !bg_selector_panel2.Visible;
+    }
+
+    void selected_radiobutton_loaded()
+    {
+        //----------------------------
+        string sel_bg;
+        sel_bg = Properties.Settings.Default.selected_bg_name;
+        //----------------------------
+        if (sel_bg == "0.jpg") // first radio button
+        {
+            bg1_radioButton.Checked = true;
+        }
+        //----------------------------
+        if (sel_bg == "1.jpg") // second radio button
+        {
+            bg2_radioButton.Checked = true;
+        }
+        //----------------------------
+        if (sel_bg == "2.jpg") // third radio button
+        {
+            bg3_radioButton.Checked = true;
+        }
+        //----------------------------
+        if (sel_bg == "3.jpg") // forth radio button
+        {
+            bg4_radioButton.Checked = true;
+        }
+        //----------------------------
+        if (sel_bg == "4.jpg") // fifth radio button
+        {
+            bg5_radioButton.Checked = true;
+        }
+        //----------------------------
+        if (sel_bg == "5.jpg") // sixth radio button
+        {
+            bg6_radioButton.Checked = true;
+        }
+        //----------------------------
     }
 
     void thumb_image_loader(string org_file_name, string thumb_file_name, System.Windows.Forms.RadioButton image_rb_name)
@@ -329,11 +370,32 @@ public partial class MainForm : Form
                 //=============================================
             }
             //-----------------------
+            Secretariat_Soft.Properties.Settings.Default.selected_bg_name = org_file_name;
+            Secretariat_Soft.Properties.Settings.Default.Save();
+            //-----------------------
         }
         catch (Exception ex)
         {
             MessageBox.Show("Error! " + ex.Message);
         }
+    }
+
+    void transparent_panel()
+    {
+        overlay_side_panel2.BackColor = Color.FromArgb(40, Color.Black);
+        overlay_top_panel2.BackColor = Color.FromArgb(40, Color.Black);
+        overlay_bott_panel2.BackColor = Color.FromArgb(40, Color.Black);
+        //-----------
+        side_panel.BackColor = Color.FromArgb(40, Color.Black);
+        analogClock1.BackColor = Color.FromArgb(40, Color.Black);
+        panel1.BackColor = Color.FromArgb(40, Color.Black);
+        //-----------
+        data_entry_button.BackColor = Color.FromArgb(150, Color.WhiteSmoke);
+        report_button.BackColor = Color.FromArgb(150, Color.WhiteSmoke);
+        tools_button.BackColor = Color.FromArgb(150, Color.WhiteSmoke);
+        help_button.BackColor = Color.FromArgb(150, Color.WhiteSmoke);
+        //------------
+        user_name_lbl.BackColor = Color.FromArgb(150, Color.WhiteSmoke);
     }
 
     void background_image_changer_all()

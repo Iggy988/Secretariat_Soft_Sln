@@ -41,6 +41,7 @@ partial class MainForm
         data_entry_button = new Button();
         min_button = new Button();
         close_button = new Button();
+        overlay_top_panel2 = new Panel();
         side_panel = new Panel();
         user_name_lbl = new Label();
         user_image = new PictureBox();
@@ -50,9 +51,11 @@ partial class MainForm
         day_month_lbl = new Label();
         month_name_lbl = new Label();
         year_num_lbl = new Label();
+        overlay_side_panel2 = new Panel();
         bottom_panel = new Panel();
         calculator_button = new Button();
         background_button = new Button();
+        overlay_bott_panel2 = new Panel();
         timer1 = new System.Windows.Forms.Timer(components);
         tree_panel = new Panel();
         collapse_btn = new Button();
@@ -101,6 +104,7 @@ partial class MainForm
         top_panel.Controls.Add(data_entry_button);
         top_panel.Controls.Add(min_button);
         top_panel.Controls.Add(close_button);
+        top_panel.Controls.Add(overlay_top_panel2);
         top_panel.Dock = DockStyle.Top;
         top_panel.Location = new Point(233, 0);
         top_panel.MinimumSize = new Size(791, 85);
@@ -110,7 +114,9 @@ partial class MainForm
         // 
         // help_button
         // 
+        help_button.BackColor = Color.WhiteSmoke;
         help_button.Cursor = Cursors.Hand;
+        help_button.FlatStyle = FlatStyle.Flat;
         help_button.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
         help_button.Image = Properties.Resources.top_help_button;
         help_button.ImageAlign = ContentAlignment.TopCenter;
@@ -121,12 +127,14 @@ partial class MainForm
         help_button.Text = "Help F5";
         help_button.TextAlign = ContentAlignment.BottomCenter;
         help_button.TextImageRelation = TextImageRelation.ImageAboveText;
-        help_button.UseVisualStyleBackColor = true;
+        help_button.UseVisualStyleBackColor = false;
         help_button.Click += help_button_Click;
         // 
         // tools_button
         // 
+        tools_button.BackColor = Color.WhiteSmoke;
         tools_button.Cursor = Cursors.Hand;
+        tools_button.FlatStyle = FlatStyle.Flat;
         tools_button.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
         tools_button.Image = Properties.Resources.top_tools_button;
         tools_button.ImageAlign = ContentAlignment.TopCenter;
@@ -137,12 +145,14 @@ partial class MainForm
         tools_button.Text = "Tools F4";
         tools_button.TextAlign = ContentAlignment.BottomCenter;
         tools_button.TextImageRelation = TextImageRelation.ImageAboveText;
-        tools_button.UseVisualStyleBackColor = true;
+        tools_button.UseVisualStyleBackColor = false;
         tools_button.Click += tools_button_Click;
         // 
         // report_button
         // 
+        report_button.BackColor = Color.WhiteSmoke;
         report_button.Cursor = Cursors.Hand;
+        report_button.FlatStyle = FlatStyle.Flat;
         report_button.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
         report_button.Image = Properties.Resources.top_report_button;
         report_button.ImageAlign = ContentAlignment.TopCenter;
@@ -153,12 +163,14 @@ partial class MainForm
         report_button.Text = "Reports F3";
         report_button.TextAlign = ContentAlignment.BottomCenter;
         report_button.TextImageRelation = TextImageRelation.ImageAboveText;
-        report_button.UseVisualStyleBackColor = true;
+        report_button.UseVisualStyleBackColor = false;
         report_button.Click += report_button_Click;
         // 
         // data_entry_button
         // 
+        data_entry_button.BackColor = Color.WhiteSmoke;
         data_entry_button.Cursor = Cursors.Hand;
+        data_entry_button.FlatStyle = FlatStyle.Flat;
         data_entry_button.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
         data_entry_button.Image = Properties.Resources.top_input_button;
         data_entry_button.ImageAlign = ContentAlignment.TopCenter;
@@ -169,7 +181,7 @@ partial class MainForm
         data_entry_button.Text = "Data Entry F2";
         data_entry_button.TextAlign = ContentAlignment.BottomCenter;
         data_entry_button.TextImageRelation = TextImageRelation.ImageAboveText;
-        data_entry_button.UseVisualStyleBackColor = true;
+        data_entry_button.UseVisualStyleBackColor = false;
         data_entry_button.Click += data_entry_button_Click;
         // 
         // min_button
@@ -198,6 +210,14 @@ partial class MainForm
         close_button.UseVisualStyleBackColor = true;
         close_button.Click += close_button_Click;
         // 
+        // overlay_top_panel2
+        // 
+        overlay_top_panel2.Dock = DockStyle.Fill;
+        overlay_top_panel2.Location = new Point(0, 0);
+        overlay_top_panel2.Name = "overlay_top_panel2";
+        overlay_top_panel2.Size = new Size(903, 91);
+        overlay_top_panel2.TabIndex = 6;
+        // 
         // side_panel
         // 
         side_panel.BackColor = Color.Gainsboro;
@@ -206,6 +226,7 @@ partial class MainForm
         side_panel.Controls.Add(user_image);
         side_panel.Controls.Add(analogClock1);
         side_panel.Controls.Add(panel1);
+        side_panel.Controls.Add(overlay_side_panel2);
         side_panel.Dock = DockStyle.Left;
         side_panel.Location = new Point(0, 0);
         side_panel.MinimumSize = new Size(180, 825);
@@ -238,7 +259,7 @@ partial class MainForm
         // 
         // analogClock1
         // 
-        analogClock1.BackColor = Color.Transparent;
+        analogClock1.BackColor = Color.Gainsboro;
         analogClock1.DrawHourHand = true;
         analogClock1.DrawHourHandShadow = true;
         analogClock1.DrawMinuteHand = true;
@@ -332,11 +353,20 @@ partial class MainForm
         year_num_lbl.TabIndex = 0;
         year_num_lbl.Text = "2023";
         // 
+        // overlay_side_panel2
+        // 
+        overlay_side_panel2.Dock = DockStyle.Fill;
+        overlay_side_panel2.Location = new Point(0, 0);
+        overlay_side_panel2.Name = "overlay_side_panel2";
+        overlay_side_panel2.Size = new Size(233, 870);
+        overlay_side_panel2.TabIndex = 4;
+        // 
         // bottom_panel
         // 
         bottom_panel.BackgroundImageLayout = ImageLayout.Stretch;
         bottom_panel.Controls.Add(calculator_button);
         bottom_panel.Controls.Add(background_button);
+        bottom_panel.Controls.Add(overlay_bott_panel2);
         bottom_panel.Dock = DockStyle.Bottom;
         bottom_panel.Location = new Point(233, 813);
         bottom_panel.MinimumSize = new Size(844, 45);
@@ -369,6 +399,14 @@ partial class MainForm
         background_button.Text = "Background";
         background_button.UseVisualStyleBackColor = true;
         background_button.Click += background_button_Click;
+        // 
+        // overlay_bott_panel2
+        // 
+        overlay_bott_panel2.Dock = DockStyle.Fill;
+        overlay_bott_panel2.Location = new Point(0, 0);
+        overlay_bott_panel2.Name = "overlay_bott_panel2";
+        overlay_bott_panel2.Size = new Size(903, 57);
+        overlay_bott_panel2.TabIndex = 2;
         // 
         // timer1
         // 
@@ -765,4 +803,7 @@ partial class MainForm
     private RadioButton bg6_radioButton;
     private RadioButton bg1_radioButton;
     private RadioButton bg2_radioButton;
+    private Panel overlay_top_panel2;
+    private Panel overlay_bott_panel2;
+    private Panel overlay_side_panel2;
 }
