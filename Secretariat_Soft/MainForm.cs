@@ -33,7 +33,7 @@ public partial class MainForm : Form
     {
         transparent_panel();
         background_image_changer_all();
-            //---------------------------
+        //---------------------------
         Secretariat_Soft.CommForms.LoginFrm frm = new();
         DialogResult dr = frm.ShowDialog();
         if (dr == DialogResult.OK)
@@ -216,7 +216,7 @@ public partial class MainForm : Form
     private void background_button_Click(object sender, EventArgs e)
     {
         //----------------------------
-        selected_radiobutton_loaded();  
+        selected_radiobutton_loaded();
         //----------------------------
         if (bg_selector_panel2.Visible == false)
         {
@@ -453,7 +453,7 @@ public partial class MainForm : Form
         Bitmap destBmp = new(cropSize.Width, cropSize.Height, System.Drawing.Imaging.PixelFormat.Format32bppRgb);
         Graphics g = Graphics.FromImage(destBmp);
         Rectangle srcRect = new(startPoint, cropSize);
-        Rectangle destRect = new (new Point(0,0), cropSize);
+        Rectangle destRect = new(new Point(0, 0), cropSize);
         g.DrawImage(srcBmp, destRect, srcRect, GraphicsUnit.Pixel);
         return destBmp;
     }
@@ -464,6 +464,10 @@ public partial class MainForm : Form
         {
             bg_image_loader("0.jpg");
         }
+        else
+        {
+            custom_image_chooser("0.jpg", "0_thumb.jpg", bg1_radioButton);
+        }
     }
 
     private void bg2_radioButton_Click(object sender, EventArgs e)
@@ -471,6 +475,10 @@ public partial class MainForm : Form
         if (select_radioButton1.Checked == true)
         {
             bg_image_loader("1.jpg");
+        }
+        else
+        {
+            custom_image_chooser("1.jpg", "1_thumb.jpg", bg2_radioButton);
         }
     }
 
@@ -480,6 +488,10 @@ public partial class MainForm : Form
         {
             bg_image_loader("2.jpg");
         }
+        else
+        {
+            custom_image_chooser("2.jpg", "3_thumb.jpg", bg3_radioButton);
+        }
     }
 
     private void bg4_radioButton_Click(object sender, EventArgs e)
@@ -487,6 +499,10 @@ public partial class MainForm : Form
         if (select_radioButton1.Checked == true)
         {
             bg_image_loader("3.jpg");
+        }
+        else
+        {
+            custom_image_chooser("3.jpg", "3_thumb.jpg", bg4_radioButton);
         }
     }
 
@@ -496,6 +512,10 @@ public partial class MainForm : Form
         {
             bg_image_loader("4.jpg");
         }
+        else
+        {
+            custom_image_chooser("4.jpg", "5_thumb.jpg", bg5_radioButton);
+        }
     }
 
     private void bg6_radioButton_Click(object sender, EventArgs e)
@@ -504,5 +524,33 @@ public partial class MainForm : Form
         {
             bg_image_loader("5.jpg");
         }
+        else
+        {
+            custom_image_chooser("5.jpg", "6_thumb.jpg", bg6_radioButton);
+        }
     }
+
+    void custom_image_chooser(string org_img_file_name, string thumb_img_file_name, RadioButton r_button) 
+    {
+        OpenFileDialog dlg = new OpenFileDialog();
+        DialogResult dr;
+        dlg.Filter = "Jpg Files|*.jpg";
+        dr = dlg.ShowDialog();
+        if (dr == DialogResult.OK)
+        {
+            string sfn, dfn, thumb_name;
+            sfn = dlg.FileName;
+            //--------Copy custom imnage to app folder---------------
+            dfn = Application.StartupPath + "Data\\Pics\\Bg\\"+ org_img_file_name;
+            File.Copy(sfn, dfn, true);
+            //-----------------
+            bg_image_loader(org_img_file_name);
+            //--------load thumbnail----------
+            thumb_name = "Data\\Pics\\Bg\\" + thumb_img_file_name;
+            File.Delete(thumb_name);
+            //-----------------
+            thumb_image_loader(org_img_file_name, thumb_img_file_name, r_button);
+        }
+    }
+
 }

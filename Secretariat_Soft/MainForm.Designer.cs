@@ -29,10 +29,10 @@ partial class MainForm
     private void InitializeComponent()
     {
         components = new System.ComponentModel.Container();
-        TreeNode treeNode1 = new TreeNode("Incoming Letters");
-        TreeNode treeNode2 = new TreeNode("Outgoing Letters");
-        TreeNode treeNode3 = new TreeNode("My Letters", new TreeNode[] { treeNode1, treeNode2 });
-        TreeNode treeNode4 = new TreeNode("All Folders", 2, 2, new TreeNode[] { treeNode3 });
+        TreeNode treeNode5 = new TreeNode("Incoming Letters");
+        TreeNode treeNode6 = new TreeNode("Outgoing Letters");
+        TreeNode treeNode7 = new TreeNode("My Letters", new TreeNode[] { treeNode5, treeNode6 });
+        TreeNode treeNode8 = new TreeNode("All Folders", 2, 2, new TreeNode[] { treeNode7 });
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
         top_panel = new Panel();
         help_button = new Button();
@@ -81,7 +81,7 @@ partial class MainForm
         bg3_radioButton = new RadioButton();
         groupBox1 = new GroupBox();
         select_radioButton1 = new RadioButton();
-        browsw_radioButton2 = new RadioButton();
+        browse_radioButton2 = new RadioButton();
         top_panel.SuspendLayout();
         side_panel.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)user_image).BeginInit();
@@ -458,22 +458,22 @@ partial class MainForm
         main_treeView.ItemHeight = 35;
         main_treeView.Location = new Point(3, 6);
         main_treeView.Name = "main_treeView";
-        treeNode1.ImageKey = "review.png";
-        treeNode1.Name = "Incoming_Letters";
-        treeNode1.SelectedImageIndex = 3;
-        treeNode1.Text = "Incoming Letters";
-        treeNode2.ImageKey = "kToolStripButton.png";
-        treeNode2.Name = "Outgoing_Letters";
-        treeNode2.SelectedImageIndex = 1;
-        treeNode2.Text = "Outgoing Letters";
-        treeNode3.Name = "My_Letters";
-        treeNode3.SelectedImageIndex = 0;
-        treeNode3.Text = "My Letters";
-        treeNode4.ImageIndex = 2;
-        treeNode4.Name = "All_Folders";
-        treeNode4.SelectedImageIndex = 2;
-        treeNode4.Text = "All Folders";
-        main_treeView.Nodes.AddRange(new TreeNode[] { treeNode4 });
+        treeNode5.ImageKey = "review.png";
+        treeNode5.Name = "Incoming_Letters";
+        treeNode5.SelectedImageIndex = 3;
+        treeNode5.Text = "Incoming Letters";
+        treeNode6.ImageKey = "kToolStripButton.png";
+        treeNode6.Name = "Outgoing_Letters";
+        treeNode6.SelectedImageIndex = 1;
+        treeNode6.Text = "Outgoing Letters";
+        treeNode7.Name = "My_Letters";
+        treeNode7.SelectedImageIndex = 0;
+        treeNode7.Text = "My Letters";
+        treeNode8.ImageIndex = 2;
+        treeNode8.Name = "All_Folders";
+        treeNode8.SelectedImageIndex = 2;
+        treeNode8.Text = "All Folders";
+        main_treeView.Nodes.AddRange(new TreeNode[] { treeNode8 });
         main_treeView.SelectedImageIndex = 0;
         main_treeView.Size = new Size(382, 482);
         main_treeView.TabIndex = 0;
@@ -687,7 +687,7 @@ partial class MainForm
         // groupBox1
         // 
         groupBox1.Controls.Add(select_radioButton1);
-        groupBox1.Controls.Add(browsw_radioButton2);
+        groupBox1.Controls.Add(browse_radioButton2);
         groupBox1.Location = new Point(9, 3);
         groupBox1.Name = "groupBox1";
         groupBox1.Size = new Size(433, 59);
@@ -707,17 +707,17 @@ partial class MainForm
         select_radioButton1.Text = "Select Mode";
         select_radioButton1.UseVisualStyleBackColor = true;
         // 
-        // browsw_radioButton2
+        // browse_radioButton2
         // 
-        browsw_radioButton2.AutoSize = true;
-        browsw_radioButton2.Cursor = Cursors.Hand;
-        browsw_radioButton2.Location = new Point(293, 22);
-        browsw_radioButton2.Name = "browsw_radioButton2";
-        browsw_radioButton2.Size = new Size(107, 21);
-        browsw_radioButton2.TabIndex = 1;
-        browsw_radioButton2.TabStop = true;
-        browsw_radioButton2.Text = "Browse Mode";
-        browsw_radioButton2.UseVisualStyleBackColor = true;
+        browse_radioButton2.AutoSize = true;
+        browse_radioButton2.Cursor = Cursors.Hand;
+        browse_radioButton2.Location = new Point(293, 22);
+        browse_radioButton2.Name = "browse_radioButton2";
+        browse_radioButton2.Size = new Size(107, 21);
+        browse_radioButton2.TabIndex = 1;
+        browse_radioButton2.TabStop = true;
+        browse_radioButton2.Text = "Browse Mode";
+        browse_radioButton2.UseVisualStyleBackColor = true;
         // 
         // MainForm
         // 
@@ -796,7 +796,7 @@ partial class MainForm
     private Panel bg_selector_panel2;
     private RadioButton bg3_radioButton;
     private GroupBox groupBox1;
-    private RadioButton browsw_radioButton2;
+    private RadioButton browse_radioButton2;
     private RadioButton select_radioButton1;
     private RadioButton bg4_radioButton;
     private RadioButton bg5_radioButton;
