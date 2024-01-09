@@ -311,6 +311,16 @@ public partial class MainForm : Form
         return img;
     }
 
+    public Image CropImage(Image srcBmp, Point startPoint, Size cropSize)
+    {
+        Bitmap destBmp = new(cropSize.Width, cropSize.Height, System.Drawing.Imaging.PixelFormat.Format32bppRgb);
+        Graphics g = Graphics.FromImage(destBmp);
+        Rectangle srcRect = new(startPoint, cropSize);
+        Rectangle destRect = new (new Point(0,0), cropSize);
+        g.DrawImage(srcBmp, destRect, srcRect, GraphicsUnit.Pixel);
+        return destBmp;
+    }
+
     private void bg1_radioButton_Click(object sender, EventArgs e)
     {
         if (select_radioButton1.Checked == true)
