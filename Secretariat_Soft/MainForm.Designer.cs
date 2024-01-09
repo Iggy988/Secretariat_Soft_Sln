@@ -238,6 +238,7 @@ partial class MainForm
         // 
         // analogClock1
         // 
+        analogClock1.BackColor = Color.Transparent;
         analogClock1.DrawHourHand = true;
         analogClock1.DrawHourHandShadow = true;
         analogClock1.DrawMinuteHand = true;
@@ -271,6 +272,7 @@ partial class MainForm
         // 
         // panel1
         // 
+        panel1.BackColor = Color.Transparent;
         panel1.BackgroundImage = Properties.Resources.calendar;
         panel1.BackgroundImageLayout = ImageLayout.Zoom;
         panel1.Controls.Add(day_in_week_lbl);

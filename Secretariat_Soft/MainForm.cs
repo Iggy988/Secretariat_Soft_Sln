@@ -31,6 +31,8 @@ public partial class MainForm : Form
 
     private void MainForm_Load(object sender, EventArgs e)
     {
+        background_image_changer_all();
+            //---------------------------
         Secretariat_Soft.CommForms.LoginFrm frm = new();
         DialogResult dr = frm.ShowDialog();
         if (dr == DialogResult.OK)
@@ -266,7 +268,7 @@ public partial class MainForm : Form
         try
         {
             string fn = Application.StartupPath + "Data\\Pics\\Bg\\" + org_file_name;
-            string fn_resized = Application.StartupPath + "Data\\Pics\\Bg\\r_full_img.jpg";
+            string fn_resized = Application.StartupPath + "Data\\Pics\\Bg\\tmp\\r_full_img.jpg";
             //------------------------
             // check if image file exists
             if (System.IO.File.Exists(fn) == true)
@@ -290,7 +292,7 @@ public partial class MainForm : Form
                 Image im;
                 //------------crop side panel img
                 im = CropImage(r_img, side_panel.Location, side_panel.Size);
-                fn = Application.StartupPath + "Data\\Pics\\Bg\\r_side.jpg";
+                fn = Application.StartupPath + "Data\\Pics\\Bg\\tmp\\r_side.jpg";
                 //-------
                 im.Save(fn, ImageFormat.Jpeg);
                 //-------
@@ -299,7 +301,7 @@ public partial class MainForm : Form
 
                 //------------crop top panel img
                 im = CropImage(r_img, top_panel.Location, top_panel.Size);
-                fn = Application.StartupPath + "Data\\Pics\\Bg\\r_top.jpg";
+                fn = Application.StartupPath + "Data\\Pics\\Bg\\tmp\\r_top.jpg";
                 //-------
                 im.Save(fn, ImageFormat.Jpeg);
                 //-------
@@ -307,7 +309,7 @@ public partial class MainForm : Form
 
                 //------------crop bottom panel img
                 im = CropImage(r_img, bottom_panel.Location, bottom_panel.Size);
-                fn = Application.StartupPath + "Data\\Pics\\Bg\\r_bott.jpg";
+                fn = Application.StartupPath + "Data\\Pics\\Bg\\tmp\\r_bott.jpg";
                 //-------
                 im.Save(fn, ImageFormat.Jpeg);
                 //-------
@@ -317,7 +319,7 @@ public partial class MainForm : Form
                 Point main_point = new(top_panel.Location.X, top_panel.Location.Y + top_panel.Height);
                 Size main_size = new(top_panel.Width, this.Height - top_panel.Height - bottom_panel.Height);
                 im = CropImage(r_img, main_point, main_size);
-                fn = Application.StartupPath + "Data\\Pics\\Bg\\r_center.jpg";
+                fn = Application.StartupPath + "Data\\Pics\\Bg\\tmp\\r_center.jpg";
                 //-------
                 im.Save(fn, ImageFormat.Jpeg);
                 //-------
@@ -325,11 +327,7 @@ public partial class MainForm : Form
 
 
                 //=============================================
-
-
-
             }
-
             //-----------------------
         }
         catch (Exception ex)
@@ -337,6 +335,45 @@ public partial class MainForm : Form
             MessageBox.Show("Error! " + ex.Message);
         }
     }
+
+    void background_image_changer_all()
+    {
+        string fn;
+        Image img;
+        //--------------
+        //---sidebar bg loader
+        fn = Application.StartupPath + "Data\\Pics\\Bg\\tmp\\r_side.jpg";
+        if (File.Exists(fn) == true)
+        {
+            img = image_loader_from_file(fn);
+            side_panel.BackgroundImage = img;
+        }
+        //--------------
+        //---top panel bg loader
+        fn = Application.StartupPath + "Data\\Pics\\Bg\\tmp\\r_top.jpg";
+        if (File.Exists(fn) == true)
+        {
+            img = image_loader_from_file(fn);
+            top_panel.BackgroundImage = img;
+        }
+        //--------------
+        //---bottom panel bg loader
+        fn = Application.StartupPath + "Data\\Pics\\Bg\\tmp\\r_bott.jpg";
+        if (File.Exists(fn) == true)
+        {
+            img = image_loader_from_file(fn);
+            bottom_panel.BackgroundImage = img;
+        }
+        //--------------
+        //---center panel bg loader
+        fn = Application.StartupPath + "Data\\Pics\\Bg\\tmp\\r_center.jpg";
+        if (File.Exists(fn) == true)
+        {
+            img = image_loader_from_file(fn);
+            this.BackgroundImage = img;
+        }
+    }
+
 
     Image image_loader_from_file(string image_file_name)
     {
