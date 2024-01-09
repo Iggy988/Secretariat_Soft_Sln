@@ -186,7 +186,7 @@ partial class RestoreForm
         AutoScaleDimensions = new SizeF(7F, 17F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.WhiteSmoke;
-        ClientSize = new Size(662, 204);
+        ClientSize = new Size(658, 200);
         ControlBox = false;
         Controls.Add(groupBox1);
         Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
@@ -197,6 +197,7 @@ partial class RestoreForm
         ShowIcon = false;
         StartPosition = FormStartPosition.CenterScreen;
         Text = "Restore Data";
+        Load += RestoreForm_Load;
         groupBox1.ResumeLayout(false);
         groupBox1.PerformLayout();
         prog_panel4.ResumeLayout(false);

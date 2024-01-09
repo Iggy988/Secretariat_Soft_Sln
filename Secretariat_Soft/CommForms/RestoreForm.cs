@@ -63,7 +63,7 @@ public partial class RestoreForm : Form
             err_msg = ex.Message;
         }
         //-------------------------------------------
-        
+
 
         if (fs <= 0) // ivalid Backup file
         {
@@ -82,7 +82,7 @@ public partial class RestoreForm : Form
         }
         catch (Exception ex)
         {
-            MessageBox.Show("Error! " +  ex.Message);
+            MessageBox.Show("Error! " + ex.Message);
             return;
         }
         //==========================================
@@ -107,7 +107,7 @@ public partial class RestoreForm : Form
             string restore_query_text = "USE [master] " +
                 " ALTER DATABASE [CsApps] SET SINGLE_USER WITH ROLLBACK IMMEDIATE " +
                 " RESTORE DATABASE [CsApps] " +
-                " FROM  DISK = N'"+restore_textBox1.Text+"' " +
+                " FROM  DISK = N'" + restore_textBox1.Text + "' " +
                 " WITH  FILE = 1,  NOUNLOAD,  REPLACE,  STATS = 5 " +
                 " ALTER DATABASE [CsApps] SET MULTI_USER";
             //-------------------
@@ -129,7 +129,12 @@ public partial class RestoreForm : Form
         restore_button1.Refresh();
         //--------------------------
         //File Restored Successfully!
-        MessageBox.Show("File Restored Successfully!" );
+        MessageBox.Show("File Restored Successfully!");
+
+    }
+
+    private void RestoreForm_Load(object sender, EventArgs e)
+    {
 
     }
 }

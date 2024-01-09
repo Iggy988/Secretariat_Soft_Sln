@@ -94,6 +94,7 @@ partial class MainForm
         // 
         // top_panel
         // 
+        top_panel.BackgroundImageLayout = ImageLayout.Stretch;
         top_panel.Controls.Add(help_button);
         top_panel.Controls.Add(tools_button);
         top_panel.Controls.Add(report_button);
@@ -200,6 +201,7 @@ partial class MainForm
         // side_panel
         // 
         side_panel.BackColor = Color.Gainsboro;
+        side_panel.BackgroundImageLayout = ImageLayout.Stretch;
         side_panel.Controls.Add(user_name_lbl);
         side_panel.Controls.Add(user_image);
         side_panel.Controls.Add(analogClock1);
@@ -330,6 +332,7 @@ partial class MainForm
         // 
         // bottom_panel
         // 
+        bottom_panel.BackgroundImageLayout = ImageLayout.Stretch;
         bottom_panel.Controls.Add(calculator_button);
         bottom_panel.Controls.Add(background_button);
         bottom_panel.Dock = DockStyle.Bottom;

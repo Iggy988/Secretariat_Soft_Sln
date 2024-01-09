@@ -276,11 +276,7 @@ public partial class MainForm : Form
                 //Resize img to screen size
                 Bitmap r_img = new(img, new Size(Width, Height));
                 r_img.Save(fn_resized, System.Drawing.Imaging.ImageFormat.Jpeg);
-                
-                
-                
-                
-                
+                //=============================================
                 //FileStream fs = new(fn, FileMode.Open);
                 ////-----------------------
                 //Image img = Image.FromStream(fs);
@@ -289,6 +285,48 @@ public partial class MainForm : Form
                 //-----------------------
                 //BackgroundImage = img;
                 //-----------------------
+
+                //=============================================
+                Image im;
+                //------------crop side panel img
+                im = CropImage(r_img, side_panel.Location, side_panel.Size);
+                fn = Application.StartupPath + "Data\\Pics\\Bg\\r_side.jpg";
+                //-------
+                im.Save(fn, ImageFormat.Jpeg);
+                //-------
+                side_panel.BackgroundImage = im;
+
+
+                //------------crop top panel img
+                im = CropImage(r_img, top_panel.Location, top_panel.Size);
+                fn = Application.StartupPath + "Data\\Pics\\Bg\\r_top.jpg";
+                //-------
+                im.Save(fn, ImageFormat.Jpeg);
+                //-------
+                top_panel.BackgroundImage = im;
+
+                //------------crop bottom panel img
+                im = CropImage(r_img, bottom_panel.Location, bottom_panel.Size);
+                fn = Application.StartupPath + "Data\\Pics\\Bg\\r_bott.jpg";
+                //-------
+                im.Save(fn, ImageFormat.Jpeg);
+                //-------
+                bottom_panel.BackgroundImage = im;
+
+                //------------crop center panel img
+                Point main_point = new(top_panel.Location.X, top_panel.Location.Y + top_panel.Height);
+                Size main_size = new(top_panel.Width, this.Height - top_panel.Height - bottom_panel.Height);
+                im = CropImage(r_img, main_point, main_size);
+                fn = Application.StartupPath + "Data\\Pics\\Bg\\r_center.jpg";
+                //-------
+                im.Save(fn, ImageFormat.Jpeg);
+                //-------
+                BackgroundImage = im;
+
+
+                //=============================================
+
+
 
             }
 
