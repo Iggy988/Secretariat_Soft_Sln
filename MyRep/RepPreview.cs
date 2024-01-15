@@ -16,5 +16,19 @@ namespace MyRep
         {
             InitializeComponent();
         }
+
+        private void RepPreview_Load(object sender, EventArgs e)
+        {
+            string rep_fn;
+            MyRep.DataSet.Letters letters_ds = new MyRep.DataSet.Letters();
+            rep_fn = Application.StartupPath + "\\Data\\Reps\\InputList.rpt";
+            //-----------------------------
+            reportDocument1.Load(rep_fn);
+            //reportDocument1.SetDataSource(letters_ds);
+            //-----------------------------
+            crystalReportViewer1.ReportSource = reportDocument1;
+            crystalReportViewer1.RefreshReport();
+            //-----------------------------
+        }
     }
 }
