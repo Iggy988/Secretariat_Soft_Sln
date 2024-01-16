@@ -139,6 +139,7 @@ partial class In_Letters_List
         print_butt.Size = new Size(100, 67);
         print_butt.Text = "Print F4";
         print_butt.TextImageRelation = TextImageRelation.ImageAboveText;
+        print_butt.Click += print_butt_Click;
         // 
         // toolStripSeparator1
         // 

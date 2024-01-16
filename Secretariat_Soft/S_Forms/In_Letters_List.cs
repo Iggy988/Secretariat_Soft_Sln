@@ -31,7 +31,7 @@ public partial class In_Letters_List : Form
     private void In_Letters_Form_Load(object sender, EventArgs e)
     {
         //---------------------------
-        object_perm_loader();
+        //object_perm_loader();
         //---------------------------
         try
         {
@@ -124,7 +124,7 @@ public partial class In_Letters_List : Form
         }
     }
 
-   
+
 
     private void search_date_butt_Click(object sender, EventArgs e)
     {
@@ -144,7 +144,7 @@ public partial class In_Letters_List : Form
     }
     private void add_butt_Click(object sender, EventArgs e)
     {
-        
+
         try
         {
             Secretariat_Soft.S_Forms.In_Letters_De frm = new In_Letters_De();
@@ -159,5 +159,12 @@ public partial class In_Letters_List : Form
 
             MessageBox.Show("Error! " + ex.Message);
         }
+    }
+
+    private void print_butt_Click(object sender, EventArgs e)
+    {
+        string fn;
+        fn = Application.StartupPath + "MyRep.exe";
+        System.Diagnostics.Process.Start(fn, "InputList.rpt");
     }
 }

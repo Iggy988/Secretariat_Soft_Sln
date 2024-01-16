@@ -19,9 +19,11 @@ namespace MyRep
 
         private void RepPreview_Load(object sender, EventArgs e)
         {
-            string rep_fn;
+            string rep_fn, rpt_name;
             MyRep.DataSet.Letters letters_ds = new MyRep.DataSet.Letters();
-            rep_fn = Application.StartupPath + "\\Data\\Reps\\InputList.rpt";
+            //----------------------------
+            rpt_name = Environment.GetCommandLineArgs()[1]; // 0 -> file name, 1 -> first param
+            rep_fn = Application.StartupPath + "\\Data\\Reps\\" + rpt_name;
             //-----------------------------
             reportDocument1.Load(rep_fn);
             //reportDocument1.SetDataSource(letters_ds);
