@@ -163,7 +163,11 @@ public partial class In_Letters_List : Form
 
     private void print_butt_Click(object sender, EventArgs e)
     {
-        string fn;
+        string fn, xml_fn;
+        //--------------------
+        xml_fn = Application.StartupPath + "Data\\Reps\\help.mp3";
+        letters1.WriteXml(xml_fn);
+        //--------------------
         fn = Application.StartupPath + "MyRep.exe";
         System.Diagnostics.Process.Start(fn, "InputList.rpt");
     }
