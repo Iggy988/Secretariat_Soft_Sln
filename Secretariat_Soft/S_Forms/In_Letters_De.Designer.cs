@@ -225,6 +225,7 @@ partial class In_Letters_De
         de_print_butt.TextAlign = ContentAlignment.BottomCenter;
         de_print_butt.TextImageRelation = TextImageRelation.ImageAboveText;
         de_print_butt.ToolTipText = "Print F9";
+        de_print_butt.Click += de_print_butt_Click;
         // 
         // toolStripSeparator6
         // 

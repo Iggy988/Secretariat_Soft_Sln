@@ -31,6 +31,7 @@ public partial class In_Letters_List : Form
     private void In_Letters_Form_Load(object sender, EventArgs e)
     {
         //---------------------------
+        //TODO: Uncoment before publishing
         //object_perm_loader();
         //---------------------------
         try
@@ -163,6 +164,11 @@ public partial class In_Letters_List : Form
 
     private void print_butt_Click(object sender, EventArgs e)
     {
+
+    }
+
+    private void incomingLettersListToolStripMenuItem_Click(object sender, EventArgs e)
+    {
         string fn, xml_fn;
         //--------------------
         xml_fn = Application.StartupPath + "Data\\Reps\\help.mp3";
@@ -170,5 +176,16 @@ public partial class In_Letters_List : Form
         //--------------------
         fn = Application.StartupPath + "MyRep.exe";
         System.Diagnostics.Process.Start(fn, "InputList.rpt");
+    }
+
+    private void incomingLetterDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        string fn, xml_fn;
+        //--------------------
+        xml_fn = Application.StartupPath + "Data\\Reps\\help.mp3";
+        letters1.WriteXml(xml_fn);
+        //--------------------
+        fn = Application.StartupPath + "MyRep.exe";
+        System.Diagnostics.Process.Start(fn, "InputSingle.rpt");
     }
 }

@@ -20,7 +20,7 @@ public partial class In_Letters_De : Form
 
     private void In_Letters_De_Load(object sender, EventArgs e)
     {
-       
+
         is_del_clicked = false;
         //-------------------------
         enable_add_edit_del_butt();
@@ -28,7 +28,8 @@ public partial class In_Letters_De : Form
         //sa_In_LettersTableAdapter1.FillBy_id_desc(letters1.Sa_In_Letters);
         //-------------------------
         //da bi permissions funkcionisale moramo staviti metod nakon pozivanja enable_add_edit_del_butt()
-        object_perm_loader();
+        //TODO: Uncoment before publishing
+        //object_perm_loader();
         //-------------------------
         try
         {
@@ -36,7 +37,7 @@ public partial class In_Letters_De : Form
             long.TryParse(id_label2.Text, out id);
 
             sa_In_LettersTableAdapter1.FillBy_ID(letters1.Sa_In_Letters, id);
-          
+
         }
         catch (Exception ex)
         {
@@ -83,7 +84,8 @@ public partial class In_Letters_De : Form
         de_delete_butt.Enabled = true;
         //----------------------------
         //----------------------------
-        object_perm_loader();
+        //TODO: Uncoment before publishing
+        //object_perm_loader();
         //----------------------------
     }
     void disable_add_edit_del_butt()
@@ -138,7 +140,7 @@ public partial class In_Letters_De : Form
         is_del_clicked = false;
     }
 
-    
+
     private void de_delete_butt_Click(object sender, EventArgs e)
     {
         disable_del_butt();
@@ -158,7 +160,7 @@ public partial class In_Letters_De : Form
         //--------------------------
     }
 
-    
+
 
     private void de_save_butt_Click(object sender, EventArgs e)
     {
@@ -199,7 +201,7 @@ public partial class In_Letters_De : Form
                 }
                 //==================================================
             }
-            
+
             //-------------------
             //-------------------
             in_letters_bindingSource1.EndEdit();
@@ -245,5 +247,14 @@ public partial class In_Letters_De : Form
         deadline_masked_TB.Text = DateTime.Now.ToShortDateString();
     }
 
-    
+    private void de_print_butt_Click(object sender, EventArgs e)
+    {
+        string fn, xml_fn;
+        //--------------------
+        xml_fn = Application.StartupPath + "Data\\Reps\\help.mp3";
+        letters1.WriteXml(xml_fn);
+        //--------------------
+        fn = Application.StartupPath + "MyRep.exe";
+        System.Diagnostics.Process.Start(fn, "InputSingle.rpt");
+    }
 }

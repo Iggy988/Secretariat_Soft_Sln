@@ -57,6 +57,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Letters.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Data\Reps\InputSingle.cs">
+      <DependentUpon>InputSingle.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Data\Reps\InputList.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -72,6 +79,11 @@
     <Compile Include="RepPreview.Designer.cs">
       <DependentUpon>RepPreview.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Data\Reps\InputSingle.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>InputSingle.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Data\Reps\InputList.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>InputList.cs</LastGenOutput>

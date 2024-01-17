@@ -33,7 +33,8 @@ partial class In_Letters_List
         Top_Toolstrip = new ToolStrip();
         add_butt = new ToolStripButton();
         toolStripSeparator3 = new ToolStripSeparator();
-        print_butt = new ToolStripButton();
+        print_butt = new ToolStripDropDownButton();
+        incomingLettersListToolStripMenuItem = new ToolStripMenuItem();
         toolStripSeparator1 = new ToolStripSeparator();
         search_butt = new ToolStripButton();
         toolStripSeparator2 = new ToolStripSeparator();
@@ -83,6 +84,7 @@ partial class In_Letters_List
         search_id_lbl = new Label();
         search_pannel1 = new Panel();
         id_label = new Label();
+        incomingLetterDetailsToolStripMenuItem = new ToolStripMenuItem();
         Top_Toolstrip.SuspendLayout();
         Bottom_ToolStrip.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -129,8 +131,7 @@ partial class In_Letters_List
         print_butt.AutoSize = false;
         print_butt.BackColor = Color.WhiteSmoke;
         print_butt.BackgroundImageLayout = ImageLayout.Stretch;
-        print_butt.Checked = true;
-        print_butt.CheckState = CheckState.Indeterminate;
+        print_butt.DropDownItems.AddRange(new ToolStripItem[] { incomingLettersListToolStripMenuItem, incomingLetterDetailsToolStripMenuItem });
         print_butt.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
         print_butt.Image = Properties.Resources.butt_print;
         print_butt.ImageScaling = ToolStripItemImageScaling.None;
@@ -140,6 +141,13 @@ partial class In_Letters_List
         print_butt.Text = "Print F4";
         print_butt.TextImageRelation = TextImageRelation.ImageAboveText;
         print_butt.Click += print_butt_Click;
+        // 
+        // incomingLettersListToolStripMenuItem
+        // 
+        incomingLettersListToolStripMenuItem.Name = "incomingLettersListToolStripMenuItem";
+        incomingLettersListToolStripMenuItem.Size = new Size(216, 22);
+        incomingLettersListToolStripMenuItem.Text = "Incoming Letters List";
+        incomingLettersListToolStripMenuItem.Click += incomingLettersListToolStripMenuItem_Click;
         // 
         // toolStripSeparator1
         // 
@@ -581,6 +589,13 @@ partial class In_Letters_List
         id_label.TabIndex = 5;
         id_label.Text = "label3";
         // 
+        // incomingLetterDetailsToolStripMenuItem
+        // 
+        incomingLetterDetailsToolStripMenuItem.Name = "incomingLetterDetailsToolStripMenuItem";
+        incomingLetterDetailsToolStripMenuItem.Size = new Size(216, 22);
+        incomingLetterDetailsToolStripMenuItem.Text = "Incoming Letter Details";
+        incomingLetterDetailsToolStripMenuItem.Click += incomingLetterDetailsToolStripMenuItem_Click;
+        // 
         // In_Letters_List
         // 
         AutoScaleDimensions = new SizeF(7F, 17F);
@@ -648,7 +663,6 @@ partial class In_Letters_List
     private ToolStripButton FourthButt;
     private ToolStripTextBox position_tbox;
     private ToolStripLabel total_records_lbl;
-    private ToolStripButton print_butt;
     private ToolStripButton add_butt;
     private ToolStripSeparator toolStripSeparator2;
     private ToolStripSeparator toolStripSeparator1;
@@ -669,4 +683,7 @@ partial class In_Letters_List
     private DateTimePicker dateTimePicker2;
     private Button search_date_butt;
     private Label id_label;
+    private ToolStripDropDownButton print_butt;
+    private ToolStripMenuItem incomingLettersListToolStripMenuItem;
+    private ToolStripMenuItem incomingLetterDetailsToolStripMenuItem;
 }
