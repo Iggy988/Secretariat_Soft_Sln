@@ -28,7 +28,12 @@ namespace MyRep
             //-----------------------------
           
             xml_fn = Application.StartupPath + "\\Data\\Reps\\help.mp3";
-            letters_ds.ReadXml(xml_fn);
+            //-----------------------------
+            if (System.IO.File.Exists(xml_fn))
+            {
+                letters_ds.ReadXml(xml_fn);
+            }
+            
            // dataGridView1.DataSource = letters_ds;
             //dataGridView1.DataMember = "Sa_In_Letters";
             //--------------------
