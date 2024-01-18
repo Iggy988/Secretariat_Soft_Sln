@@ -25,7 +25,8 @@ public partial class Out_Letters_De : Form
         //-------------------------
         //sa_In_LettersTableAdapter1.FillBy_id_desc(letters1.Sa_In_Letters);
         //-------------------------
-        object_perm_loader();
+        //TODO: Uncomment before publish
+        //object_perm_loader();
         //-------------------------
         try
         {
@@ -79,7 +80,8 @@ public partial class Out_Letters_De : Form
         de_edit_butt.Enabled = true;
         de_delete_butt.Enabled = true;
         //----------------------------
-        object_perm_loader();
+        //TODO: Uncomment before publish
+        //object_perm_loader();
         //----------------------------
     }
     void disable_add_edit_del_butt()
@@ -222,5 +224,16 @@ public partial class Out_Letters_De : Form
     private void today_resDate_btn_Click(object sender, EventArgs e)
     {
         sent_date_masked_TB.Text = DateTime.Now.ToShortDateString();
+    }
+
+    private void de_print_butt_Click(object sender, EventArgs e)
+    {
+        string fn, xml_fn;
+        //--------------------
+        xml_fn = Application.StartupPath + "Data\\Reps\\help.mp3";
+        letters1.WriteXml(xml_fn);
+        //--------------------
+        fn = Application.StartupPath + "MyRep.exe";
+        System.Diagnostics.Process.Start(fn, "OutSingle.rpt");
     }
 }

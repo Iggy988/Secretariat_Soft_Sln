@@ -19,7 +19,8 @@ public partial class Out_Letters_List : Form
 
     private void Out_Letters_List_Load(object sender, EventArgs e)
     {
-        object_perm_loader();
+        //TODO: Uncomment before publishing
+        //object_perm_loader();
         try
         {
             sa_Out_LettersTableAdapter1.Fill(letters1.Sa_Out_Letters);
@@ -151,5 +152,27 @@ public partial class Out_Letters_List : Form
 
             MessageBox.Show("Error! " + ex.Message);
         }
+    }
+
+    private void outgoingLetersListToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        string fn, xml_fn;
+        //--------------------
+        xml_fn = Application.StartupPath + "Data\\Reps\\help.mp3";
+        letters1.WriteXml(xml_fn);
+        //--------------------
+        fn = Application.StartupPath + "MyRep.exe";
+        System.Diagnostics.Process.Start(fn, "OutList.rpt");
+    }
+
+    private void outgoingLettersDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        string fn, xml_fn;
+        //--------------------
+        xml_fn = Application.StartupPath + "Data\\Reps\\help.mp3";
+        letters1.WriteXml(xml_fn);
+        //--------------------
+        fn = Application.StartupPath + "MyRep.exe";
+        System.Diagnostics.Process.Start(fn, "OutSingle.rpt");
     }
 }

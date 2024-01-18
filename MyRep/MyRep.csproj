@@ -57,6 +57,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Letters.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Data\Reps\OutSingle.cs">
+      <DependentUpon>OutSingle.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Data\Reps\OutList.cs">
+      <DependentUpon>OutList.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Data\Reps\InputSingle.cs">
       <DependentUpon>InputSingle.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -79,6 +93,16 @@
     <Compile Include="RepPreview.Designer.cs">
       <DependentUpon>RepPreview.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Data\Reps\OutSingle.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OutSingle.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\Reps\OutList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>OutList.cs</LastGenOutput>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Data\Reps\InputSingle.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>InputSingle.cs</LastGenOutput>

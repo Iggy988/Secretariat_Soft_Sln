@@ -40,7 +40,9 @@ partial class Out_Letters_List
         Top_Toolstrip = new ToolStrip();
         add_butt = new ToolStripButton();
         toolStripSeparator3 = new ToolStripSeparator();
-        print_butt = new ToolStripButton();
+        print_butt = new ToolStripDropDownButton();
+        outgoingLetersListToolStripMenuItem = new ToolStripMenuItem();
+        outgoingLettersDetailsToolStripMenuItem = new ToolStripMenuItem();
         toolStripSeparator1 = new ToolStripSeparator();
         search_butt = new ToolStripButton();
         toolStripSeparator2 = new ToolStripSeparator();
@@ -197,8 +199,7 @@ partial class Out_Letters_List
         print_butt.AutoSize = false;
         print_butt.BackColor = Color.WhiteSmoke;
         print_butt.BackgroundImageLayout = ImageLayout.Stretch;
-        print_butt.Checked = true;
-        print_butt.CheckState = CheckState.Indeterminate;
+        print_butt.DropDownItems.AddRange(new ToolStripItem[] { outgoingLetersListToolStripMenuItem, outgoingLettersDetailsToolStripMenuItem });
         print_butt.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
         print_butt.Image = Properties.Resources.butt_print;
         print_butt.ImageScaling = ToolStripItemImageScaling.None;
@@ -207,6 +208,20 @@ partial class Out_Letters_List
         print_butt.Size = new Size(100, 67);
         print_butt.Text = "Print F4";
         print_butt.TextImageRelation = TextImageRelation.ImageAboveText;
+        // 
+        // outgoingLetersListToolStripMenuItem
+        // 
+        outgoingLetersListToolStripMenuItem.Name = "outgoingLetersListToolStripMenuItem";
+        outgoingLetersListToolStripMenuItem.Size = new Size(223, 22);
+        outgoingLetersListToolStripMenuItem.Text = "Outgoing Leters List";
+        outgoingLetersListToolStripMenuItem.Click += outgoingLetersListToolStripMenuItem_Click;
+        // 
+        // outgoingLettersDetailsToolStripMenuItem
+        // 
+        outgoingLettersDetailsToolStripMenuItem.Name = "outgoingLettersDetailsToolStripMenuItem";
+        outgoingLettersDetailsToolStripMenuItem.Size = new Size(223, 22);
+        outgoingLettersDetailsToolStripMenuItem.Text = "Outgoing Letters Details";
+        outgoingLettersDetailsToolStripMenuItem.Click += outgoingLettersDetailsToolStripMenuItem_Click;
         // 
         // toolStripSeparator1
         // 
@@ -615,7 +630,6 @@ partial class Out_Letters_List
     private ToolStrip Top_Toolstrip;
     private ToolStripButton add_butt;
     private ToolStripSeparator toolStripSeparator3;
-    private ToolStripButton print_butt;
     private ToolStripSeparator toolStripSeparator1;
     private ToolStripButton search_butt;
     private ToolStripSeparator toolStripSeparator2;
@@ -661,4 +675,7 @@ partial class Out_Letters_List
     private DataGridViewTextBoxColumn sysDateDataGridViewTextBoxColumn;
     private DataGridViewTextBoxColumn sysTimeDataGridViewTextBoxColumn;
     private DataSet.LettersTableAdapters.Sa_Out_LettersTableAdapter sa_Out_LettersTableAdapter1;
+    private ToolStripDropDownButton print_butt;
+    private ToolStripMenuItem outgoingLetersListToolStripMenuItem;
+    private ToolStripMenuItem outgoingLettersDetailsToolStripMenuItem;
 }
