@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AnalogClock;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace Secretariat_Soft.CommForms;
 public partial class LoginFrm : Form
@@ -20,6 +22,8 @@ public partial class LoginFrm : Form
     {
         try
         {
+            transparent_panel();
+            //-------------------------
             appUsersTableAdapter1.Fill(letters1.AppUsers);
         }
         catch (Exception ex)
@@ -28,6 +32,13 @@ public partial class LoginFrm : Form
             MessageBox.Show("Error! " + ex.Message);
         }
     }
+
+    void transparent_panel()
+    {
+        panel2.BackColor = Color.FromArgb(70, Color.Black);
+       
+    }
+
 
     private void ok_button1_Click(object sender, EventArgs e)
     {
