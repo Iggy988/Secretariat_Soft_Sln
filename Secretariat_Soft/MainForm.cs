@@ -530,7 +530,7 @@ public partial class MainForm : Form
         }
     }
 
-    void custom_image_chooser(string org_img_file_name, string thumb_img_file_name, RadioButton r_button) 
+    void custom_image_chooser(string org_img_file_name, string thumb_img_file_name, RadioButton r_button)
     {
         OpenFileDialog dlg = new OpenFileDialog();
         DialogResult dr;
@@ -541,7 +541,7 @@ public partial class MainForm : Form
             string sfn, dfn, thumb_name;
             sfn = dlg.FileName;
             //--------Copy custom imnage to app folder---------------
-            dfn = Application.StartupPath + "Data\\Pics\\Bg\\"+ org_img_file_name;
+            dfn = Application.StartupPath + "Data\\Pics\\Bg\\" + org_img_file_name;
             File.Copy(sfn, dfn, true);
             //-----------------
             bg_image_loader(org_img_file_name);
@@ -553,4 +553,23 @@ public partial class MainForm : Form
         }
     }
 
+    private void in_toolStripMenuItem2_Click(object sender, EventArgs e)
+    {
+        Secretariat_Soft.S_Forms.In_Letters_List frm = new();
+        frm.MdiParent = this;
+        //-------------------
+        frm.add_butt.Visible = false;
+        //-------------------
+        frm.Show();
+    }
+
+    private void out_toolStripMenuItem3_Click(object sender, EventArgs e)
+    {
+        Secretariat_Soft.S_Forms.Out_Letters_List frm = new();
+        frm.MdiParent = this;
+        //-------------------
+        frm.add_butt.Visible = false;
+        //-------------------
+        frm.Show();
+    }
 }

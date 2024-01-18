@@ -628,7 +628,6 @@ partial class Out_Letters_List
     private ToolStripButton ThirdButt;
     private ToolStripButton FourthButt;
     private ToolStrip Top_Toolstrip;
-    private ToolStripButton add_butt;
     private ToolStripSeparator toolStripSeparator3;
     private ToolStripSeparator toolStripSeparator1;
     private ToolStripButton search_butt;
@@ -678,4 +677,5 @@ partial class Out_Letters_List
     private ToolStripDropDownButton print_butt;
     private ToolStripMenuItem outgoingLetersListToolStripMenuItem;
     private ToolStripMenuItem outgoingLettersDetailsToolStripMenuItem;
+    public ToolStripButton add_butt;
 }

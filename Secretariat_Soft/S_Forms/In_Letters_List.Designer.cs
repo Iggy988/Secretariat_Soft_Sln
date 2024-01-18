@@ -35,6 +35,7 @@ partial class In_Letters_List
         toolStripSeparator3 = new ToolStripSeparator();
         print_butt = new ToolStripDropDownButton();
         incomingLettersListToolStripMenuItem = new ToolStripMenuItem();
+        incomingLetterDetailsToolStripMenuItem = new ToolStripMenuItem();
         toolStripSeparator1 = new ToolStripSeparator();
         search_butt = new ToolStripButton();
         toolStripSeparator2 = new ToolStripSeparator();
@@ -84,7 +85,6 @@ partial class In_Letters_List
         search_id_lbl = new Label();
         search_pannel1 = new Panel();
         id_label = new Label();
-        incomingLetterDetailsToolStripMenuItem = new ToolStripMenuItem();
         Top_Toolstrip.SuspendLayout();
         Bottom_ToolStrip.SuspendLayout();
         ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -148,6 +148,13 @@ partial class In_Letters_List
         incomingLettersListToolStripMenuItem.Size = new Size(216, 22);
         incomingLettersListToolStripMenuItem.Text = "Incoming Letters List";
         incomingLettersListToolStripMenuItem.Click += incomingLettersListToolStripMenuItem_Click;
+        // 
+        // incomingLetterDetailsToolStripMenuItem
+        // 
+        incomingLetterDetailsToolStripMenuItem.Name = "incomingLetterDetailsToolStripMenuItem";
+        incomingLetterDetailsToolStripMenuItem.Size = new Size(216, 22);
+        incomingLetterDetailsToolStripMenuItem.Text = "Incoming Letter Details";
+        incomingLetterDetailsToolStripMenuItem.Click += incomingLetterDetailsToolStripMenuItem_Click;
         // 
         // toolStripSeparator1
         // 
@@ -589,13 +596,6 @@ partial class In_Letters_List
         id_label.TabIndex = 5;
         id_label.Text = "label3";
         // 
-        // incomingLetterDetailsToolStripMenuItem
-        // 
-        incomingLetterDetailsToolStripMenuItem.Name = "incomingLetterDetailsToolStripMenuItem";
-        incomingLetterDetailsToolStripMenuItem.Size = new Size(216, 22);
-        incomingLetterDetailsToolStripMenuItem.Text = "Incoming Letter Details";
-        incomingLetterDetailsToolStripMenuItem.Click += incomingLetterDetailsToolStripMenuItem_Click;
-        // 
         // In_Letters_List
         // 
         AutoScaleDimensions = new SizeF(7F, 17F);
@@ -663,7 +663,6 @@ partial class In_Letters_List
     private ToolStripButton FourthButt;
     private ToolStripTextBox position_tbox;
     private ToolStripLabel total_records_lbl;
-    private ToolStripButton add_butt;
     private ToolStripSeparator toolStripSeparator2;
     private ToolStripSeparator toolStripSeparator1;
     private ToolStripButton search_butt;
@@ -686,4 +685,5 @@ partial class In_Letters_List
     private ToolStripDropDownButton print_butt;
     private ToolStripMenuItem incomingLettersListToolStripMenuItem;
     private ToolStripMenuItem incomingLetterDetailsToolStripMenuItem;
+    public ToolStripButton add_butt;
 }

@@ -29,10 +29,10 @@ partial class MainForm
     private void InitializeComponent()
     {
         components = new System.ComponentModel.Container();
-        TreeNode treeNode5 = new TreeNode("Incoming Letters");
-        TreeNode treeNode6 = new TreeNode("Outgoing Letters");
-        TreeNode treeNode7 = new TreeNode("My Letters", new TreeNode[] { treeNode5, treeNode6 });
-        TreeNode treeNode8 = new TreeNode("All Folders", 2, 2, new TreeNode[] { treeNode7 });
+        TreeNode treeNode1 = new TreeNode("Incoming Letters");
+        TreeNode treeNode2 = new TreeNode("Outgoing Letters");
+        TreeNode treeNode3 = new TreeNode("My Letters", new TreeNode[] { treeNode1, treeNode2 });
+        TreeNode treeNode4 = new TreeNode("All Folders", 2, 2, new TreeNode[] { treeNode3 });
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
         top_panel = new Panel();
         help_button = new Button();
@@ -458,22 +458,22 @@ partial class MainForm
         main_treeView.ItemHeight = 35;
         main_treeView.Location = new Point(3, 6);
         main_treeView.Name = "main_treeView";
-        treeNode5.ImageKey = "review.png";
-        treeNode5.Name = "Incoming_Letters";
-        treeNode5.SelectedImageIndex = 3;
-        treeNode5.Text = "Incoming Letters";
-        treeNode6.ImageKey = "kToolStripButton.png";
-        treeNode6.Name = "Outgoing_Letters";
-        treeNode6.SelectedImageIndex = 1;
-        treeNode6.Text = "Outgoing Letters";
-        treeNode7.Name = "My_Letters";
-        treeNode7.SelectedImageIndex = 0;
-        treeNode7.Text = "My Letters";
-        treeNode8.ImageIndex = 2;
-        treeNode8.Name = "All_Folders";
-        treeNode8.SelectedImageIndex = 2;
-        treeNode8.Text = "All Folders";
-        main_treeView.Nodes.AddRange(new TreeNode[] { treeNode8 });
+        treeNode1.ImageKey = "review.png";
+        treeNode1.Name = "Incoming_Letters";
+        treeNode1.SelectedImageIndex = 3;
+        treeNode1.Text = "Incoming Letters";
+        treeNode2.ImageKey = "kToolStripButton.png";
+        treeNode2.Name = "Outgoing_Letters";
+        treeNode2.SelectedImageIndex = 1;
+        treeNode2.Text = "Outgoing Letters";
+        treeNode3.Name = "My_Letters";
+        treeNode3.SelectedImageIndex = 0;
+        treeNode3.Text = "My Letters";
+        treeNode4.ImageIndex = 2;
+        treeNode4.Name = "All_Folders";
+        treeNode4.SelectedImageIndex = 2;
+        treeNode4.Text = "All Folders";
+        main_treeView.Nodes.AddRange(new TreeNode[] { treeNode4 });
         main_treeView.SelectedImageIndex = 0;
         main_treeView.Size = new Size(382, 482);
         main_treeView.TabIndex = 0;
@@ -528,23 +528,25 @@ partial class MainForm
         reports_cm.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
         reports_cm.Items.AddRange(new ToolStripItem[] { in_toolStripMenuItem2, out_toolStripMenuItem3 });
         reports_cm.Name = "toold_cm";
-        reports_cm.Size = new Size(183, 64);
+        reports_cm.Size = new Size(189, 86);
         // 
         // in_toolStripMenuItem2
         // 
         in_toolStripMenuItem2.Image = Properties.Resources.dep_1;
         in_toolStripMenuItem2.ImageScaling = ToolStripItemImageScaling.None;
         in_toolStripMenuItem2.Name = "in_toolStripMenuItem2";
-        in_toolStripMenuItem2.Size = new Size(182, 30);
+        in_toolStripMenuItem2.Size = new Size(188, 30);
         in_toolStripMenuItem2.Text = "Incoming Letters";
+        in_toolStripMenuItem2.Click += in_toolStripMenuItem2_Click;
         // 
         // out_toolStripMenuItem3
         // 
         out_toolStripMenuItem3.Image = Properties.Resources.kToolStripButton;
         out_toolStripMenuItem3.ImageScaling = ToolStripItemImageScaling.None;
         out_toolStripMenuItem3.Name = "out_toolStripMenuItem3";
-        out_toolStripMenuItem3.Size = new Size(182, 30);
+        out_toolStripMenuItem3.Size = new Size(188, 30);
         out_toolStripMenuItem3.Text = "Outgoing Letters";
+        out_toolStripMenuItem3.Click += out_toolStripMenuItem3_Click;
         // 
         // help_cm
         // 
