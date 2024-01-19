@@ -236,4 +236,52 @@ public partial class Out_Letters_De : Form
         fn = Application.StartupPath + "MyRep.exe";
         System.Diagnostics.Process.Start(fn, "OutSingle.rpt");
     }
+
+    private void Out_Letters_De_KeyDown(object sender, KeyEventArgs e)
+    {
+        switch (e.KeyCode)
+        {
+            case Keys.F2:
+                if (de_add_butt.Enabled == true)
+                {
+                    de_add_butt_Click(sender, e);
+                }
+                //---------------
+                break;
+            case Keys.F3:
+                if (de_edit_butt.Enabled == true)
+                {
+                    de_edit_butt_Click(sender, e);
+                }
+                break;
+            case Keys.F4:
+                if (de_delete_butt.Enabled == true)
+                {
+                    de_delete_butt_Click(sender, e);
+                }
+                break;
+            case Keys.F5:
+                if (de_save_butt.Enabled == true)
+                {
+                    de_save_butt_Click(sender, e);
+                }
+                break;
+            case Keys.F6:
+                if (de_cancel_butt.Enabled == true)
+                {
+                    de_cancel_butt_Click(sender, e);
+                }
+                break;
+            case Keys.F9:
+                if (de_print_butt.Enabled == true)
+                {
+                    de_print_butt_Click(sender, e);
+                }
+                break;
+            default:
+                break;
+
+
+        }
+    }
 }

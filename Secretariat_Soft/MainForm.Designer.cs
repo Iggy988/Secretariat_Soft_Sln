@@ -528,14 +528,14 @@ partial class MainForm
         reports_cm.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
         reports_cm.Items.AddRange(new ToolStripItem[] { in_toolStripMenuItem2, out_toolStripMenuItem3 });
         reports_cm.Name = "toold_cm";
-        reports_cm.Size = new Size(189, 86);
+        reports_cm.Size = new Size(183, 64);
         // 
         // in_toolStripMenuItem2
         // 
         in_toolStripMenuItem2.Image = Properties.Resources.dep_1;
         in_toolStripMenuItem2.ImageScaling = ToolStripItemImageScaling.None;
         in_toolStripMenuItem2.Name = "in_toolStripMenuItem2";
-        in_toolStripMenuItem2.Size = new Size(188, 30);
+        in_toolStripMenuItem2.Size = new Size(182, 30);
         in_toolStripMenuItem2.Text = "Incoming Letters";
         in_toolStripMenuItem2.Click += in_toolStripMenuItem2_Click;
         // 
@@ -544,7 +544,7 @@ partial class MainForm
         out_toolStripMenuItem3.Image = Properties.Resources.kToolStripButton;
         out_toolStripMenuItem3.ImageScaling = ToolStripItemImageScaling.None;
         out_toolStripMenuItem3.Name = "out_toolStripMenuItem3";
-        out_toolStripMenuItem3.Size = new Size(188, 30);
+        out_toolStripMenuItem3.Size = new Size(182, 30);
         out_toolStripMenuItem3.Text = "Outgoing Letters";
         out_toolStripMenuItem3.Click += out_toolStripMenuItem3_Click;
         // 
@@ -735,6 +735,7 @@ partial class MainForm
         Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
         FormBorderStyle = FormBorderStyle.None;
         IsMdiContainer = true;
+        KeyPreview = true;
         MinimizeBox = false;
         MinimumSize = new Size(1024, 870);
         Name = "MainForm";
@@ -742,6 +743,7 @@ partial class MainForm
         Text = "Main Form";
         WindowState = FormWindowState.Maximized;
         Load += MainForm_Load;
+        KeyDown += MainForm_KeyDown;
         top_panel.ResumeLayout(false);
         side_panel.ResumeLayout(false);
         ((System.ComponentModel.ISupportInitialize)user_image).EndInit();

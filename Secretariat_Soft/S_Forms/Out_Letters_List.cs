@@ -175,4 +175,35 @@ public partial class Out_Letters_List : Form
         fn = Application.StartupPath + "MyRep.exe";
         System.Diagnostics.Process.Start(fn, "OutSingle.rpt");
     }
+
+    private void Out_Letters_List_KeyDown(object sender, KeyEventArgs e)
+    {
+        switch (e.KeyCode)
+        {
+            case Keys.F2:
+                if (add_butt.Enabled == true)
+                {
+                    add_butt_Click(sender, e);
+                }
+                //---------------
+                break;
+            case Keys.F3:
+                if (search_butt.Enabled == true)
+                {
+                    search_butt_Click(sender, e);
+                }
+                //---------------
+                break;
+            case Keys.F4:
+                if (print_butt.Enabled == true)
+                {
+                    print_butt.ShowDropDown();
+                }
+                //---------------
+                break;
+
+            default:
+                break;
+        }
+    }
 }

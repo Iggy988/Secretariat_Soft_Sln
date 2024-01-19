@@ -752,6 +752,7 @@ partial class In_Letters_De
         Controls.Add(Top_Toolstrip);
         Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
         FormBorderStyle = FormBorderStyle.FixedSingle;
+        KeyPreview = true;
         MaximizeBox = false;
         MinimizeBox = false;
         Name = "In_Letters_De";
@@ -759,6 +760,7 @@ partial class In_Letters_De
         StartPosition = FormStartPosition.CenterScreen;
         Text = "Data Entry: Incoming Letters";
         Load += In_Letters_De_Load;
+        KeyDown += In_Letters_De_KeyDown;
         Top_Toolstrip.ResumeLayout(false);
         Top_Toolstrip.PerformLayout();
         panel1.ResumeLayout(false);

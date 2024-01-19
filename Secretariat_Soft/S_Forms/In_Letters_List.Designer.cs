@@ -610,12 +610,14 @@ partial class In_Letters_List
         Controls.Add(Top_Toolstrip);
         Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
         FormBorderStyle = FormBorderStyle.FixedSingle;
+        KeyPreview = true;
         MaximizeBox = false;
         Name = "In_Letters_List";
         ShowIcon = false;
         StartPosition = FormStartPosition.CenterScreen;
         Text = "Incoming Letters List";
         Load += In_Letters_Form_Load;
+        KeyDown += In_Letters_List_KeyDown;
         Top_Toolstrip.ResumeLayout(false);
         Top_Toolstrip.PerformLayout();
         Bottom_ToolStrip.ResumeLayout(false);

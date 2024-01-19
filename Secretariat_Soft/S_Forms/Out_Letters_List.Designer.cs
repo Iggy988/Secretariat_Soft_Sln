@@ -599,12 +599,14 @@ partial class Out_Letters_List
         Controls.Add(search_pannel2);
         Controls.Add(dataGridView1);
         FormBorderStyle = FormBorderStyle.FixedSingle;
+        KeyPreview = true;
         MaximizeBox = false;
         Name = "Out_Letters_List";
         ShowIcon = false;
         StartPosition = FormStartPosition.CenterScreen;
         Text = "Outgoing Letters List";
         Load += Out_Letters_List_Load;
+        KeyDown += Out_Letters_List_KeyDown;
         Bottom_ToolStrip.ResumeLayout(false);
         Bottom_ToolStrip.PerformLayout();
         Top_Toolstrip.ResumeLayout(false);

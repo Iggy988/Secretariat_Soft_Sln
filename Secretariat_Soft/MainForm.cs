@@ -141,9 +141,9 @@ public partial class MainForm : Form
             {
                 Secretariat_Soft.S_Forms.In_Letters_List frm = new S_Forms.In_Letters_List();
                 //MdiParent form je MainForm za In_Letters_List
-                frm.MdiParent = this; //this == MainForm
+                //frm.MdiParent = this; //this == MainForm
                 //-------------------------------
-                frm.Show();
+                frm.ShowDialog();
                 //-------------------------------
                 tree_panel.Visible = false;
             }
@@ -152,9 +152,9 @@ public partial class MainForm : Form
             {
                 Secretariat_Soft.S_Forms.Out_Letters_List frm = new();
                 //MdiParent form je MainForm za In_Letters_List
-                frm.MdiParent = this; //this == MainForm
+                //frm.MdiParent = this; //this == MainForm
                 //-------------------------------
-                frm.Show();
+                frm.ShowDialog();
                 //-------------------------------
                 tree_panel.Visible = false;
             }
@@ -556,20 +556,64 @@ public partial class MainForm : Form
     private void in_toolStripMenuItem2_Click(object sender, EventArgs e)
     {
         Secretariat_Soft.S_Forms.In_Letters_List frm = new();
-        frm.MdiParent = this;
+        //frm.MdiParent = this;
         //-------------------
         frm.add_butt.Visible = false;
         //-------------------
-        frm.Show();
+        frm.ShowDialog();
     }
 
     private void out_toolStripMenuItem3_Click(object sender, EventArgs e)
     {
         Secretariat_Soft.S_Forms.Out_Letters_List frm = new();
-        frm.MdiParent = this;
+        //frm.MdiParent = this;
         //-------------------
         frm.add_butt.Visible = false;
         //-------------------
-        frm.Show();
+        frm.ShowDialog();
+    }
+
+    private void MainForm_KeyDown(object sender, KeyEventArgs e)
+    {
+
+        //-----------------------
+        //if (this.ActivateMdiChild != null)
+        //{
+            
+        //    return;
+        //}
+        //-----------------------
+        switch (e.KeyCode)
+        {
+            case Keys.F2:
+                if (data_entry_button.Enabled == true)
+                {
+                    data_entry_button_Click(sender, e);
+                }
+                //---------------
+                break;
+            case Keys.F3:
+                if (report_button.Enabled == true)
+                {
+                    report_button_Click(sender, e);
+                }
+                break;
+            case Keys.F4:
+                if (tools_button.Enabled == true)
+                {
+                    tools_button_Click(sender, e);
+                }
+                break;
+            case Keys.F5:
+                if (help_button.Enabled == true)
+                {
+                    help_button_Click(sender, e);
+                }
+                break;
+            default:
+                break;
+
+
+        }
     }
 }

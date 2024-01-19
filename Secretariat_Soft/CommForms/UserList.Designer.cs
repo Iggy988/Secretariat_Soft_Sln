@@ -203,12 +203,14 @@ partial class UserList
         Controls.Add(dataGridView1);
         Controls.Add(Top_Toolstrip);
         FormBorderStyle = FormBorderStyle.FixedSingle;
+        KeyPreview = true;
         MaximizeBox = false;
         Name = "UserList";
         ShowIcon = false;
         StartPosition = FormStartPosition.CenterScreen;
         Text = "User List";
         Load += UserList_Load;
+        KeyDown += UserList_KeyDown;
         Top_Toolstrip.ResumeLayout(false);
         Top_Toolstrip.PerformLayout();
         ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

@@ -218,7 +218,48 @@ public partial class Users_De : Form
             string fn = dlg.FileName;
             //-----------------
             user_pictureBox1.LoadAsync(fn);
-            
+
+        }
+    }
+
+    private void Users_De_KeyDown(object sender, KeyEventArgs e)
+    {
+        switch (e.KeyCode) 
+        { 
+            case Keys.F2:
+                if (de_add_butt.Enabled == true)
+                {
+                    de_add_butt_Click(sender, e);
+                }
+                //---------------
+                break;
+            case Keys.F3:
+                if (de_edit_butt.Enabled == true)
+                {
+                    de_edit_butt_Click(sender, e);
+                }
+                break;
+            case Keys.F4:
+                if (de_delete_butt.Enabled == true)
+                {
+                    de_delete_butt_Click(sender, e);
+                }
+                break;
+            case Keys.F5:
+                if (de_save_butt.Enabled == true)
+                {
+                    de_save_butt_Click(sender, e);
+                }
+                break;
+            case Keys.F6:
+                if (de_cancel_butt.Enabled == true)
+                {
+                    de_cancel_butt_Click(sender, e);
+                }
+                break;
+       
+            default:
+                break;
         }
     }
 }

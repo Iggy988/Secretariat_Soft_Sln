@@ -722,6 +722,7 @@ partial class Out_Letters_De
         Controls.Add(panel1);
         Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
         FormBorderStyle = FormBorderStyle.FixedSingle;
+        KeyPreview = true;
         MaximizeBox = false;
         MinimizeBox = false;
         Name = "Out_Letters_De";
@@ -729,6 +730,7 @@ partial class Out_Letters_De
         StartPosition = FormStartPosition.CenterScreen;
         Text = "Outgoing Letters Data Entry";
         Load += Out_Letters_De_Load;
+        KeyDown += Out_Letters_De_KeyDown;
         main_gbox.ResumeLayout(false);
         main_gbox.PerformLayout();
         ((System.ComponentModel.ISupportInitialize)out_letters_bindingSource1).EndInit();

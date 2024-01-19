@@ -1017,12 +1017,14 @@ partial class Users_De
         Controls.Add(panel1);
         Controls.Add(Top_Toolstrip);
         FormBorderStyle = FormBorderStyle.FixedSingle;
+        KeyPreview = true;
         MaximizeBox = false;
         MinimizeBox = false;
         Name = "Users_De";
         StartPosition = FormStartPosition.CenterScreen;
         Text = "Users Data Entry";
         Load += Users_De_Load;
+        KeyDown += Users_De_KeyDown;
         Top_Toolstrip.ResumeLayout(false);
         Top_Toolstrip.PerformLayout();
         panel1.ResumeLayout(false);

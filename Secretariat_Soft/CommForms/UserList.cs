@@ -39,7 +39,7 @@ public partial class UserList : Form
         Secretariat_Soft.MyClasses.ComClass MyClass = new();
         //--------load permissions by col name -------------------
         add_butt.Enabled = MyClass.get_permission_by_col_name("User_List_b1"); //add
-        
+
         //--------------------------------------------------------
         if (Properties.Settings.Default.User_Id == Properties.Settings.Default.admin_user_id)
         {
@@ -52,7 +52,7 @@ public partial class UserList : Form
 
         try
         {
-            Secretariat_Soft.CommForms.Users_De frm = new ();
+            Secretariat_Soft.CommForms.Users_De frm = new();
             frm.id_label2.Text = id_label.Text;
             frm.ShowDialog();
             //---------------------------------
@@ -68,6 +68,24 @@ public partial class UserList : Form
         {
 
             MessageBox.Show("Error! " + ex.Message);
+        }
+    }
+
+    private void UserList_KeyDown(object sender, KeyEventArgs e)
+    {
+        switch (e.KeyCode)
+        {
+            case Keys.F2:
+                if (add_butt.Enabled == true)
+                {
+                    add_butt_Click(sender, e);
+                }
+                //---------------
+                break;
+           
+
+            default:
+                break;
         }
     }
 }
