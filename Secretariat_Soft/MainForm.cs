@@ -579,7 +579,7 @@ public partial class MainForm : Form
         //-----------------------
         //if (this.ActivateMdiChild != null)
         //{
-            
+
         //    return;
         //}
         //-----------------------
@@ -615,5 +615,12 @@ public partial class MainForm : Form
 
 
         }
+    }
+
+    private void about_toolStripMenuItem2_Click(object sender, EventArgs e)
+    {
+        Secretariat_Soft.CommForms.About_Us frm = new();
+        //-------------------
+        frm.ShowDialog();
     }
 }

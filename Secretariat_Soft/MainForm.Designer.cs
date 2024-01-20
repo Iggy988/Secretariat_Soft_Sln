@@ -553,14 +553,14 @@ partial class MainForm
         help_cm.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
         help_cm.Items.AddRange(new ToolStripItem[] { help_toolStripMenuItem1, about_toolStripMenuItem2 });
         help_cm.Name = "toold_cm";
-        help_cm.Size = new Size(120, 64);
+        help_cm.Size = new Size(189, 86);
         // 
         // help_toolStripMenuItem1
         // 
         help_toolStripMenuItem1.Image = Properties.Resources.review;
         help_toolStripMenuItem1.ImageScaling = ToolStripItemImageScaling.None;
         help_toolStripMenuItem1.Name = "help_toolStripMenuItem1";
-        help_toolStripMenuItem1.Size = new Size(119, 30);
+        help_toolStripMenuItem1.Size = new Size(188, 30);
         help_toolStripMenuItem1.Text = "Help";
         // 
         // about_toolStripMenuItem2
@@ -568,8 +568,9 @@ partial class MainForm
         about_toolStripMenuItem2.Image = Properties.Resources.radMenuItem2;
         about_toolStripMenuItem2.ImageScaling = ToolStripItemImageScaling.None;
         about_toolStripMenuItem2.Name = "about_toolStripMenuItem2";
-        about_toolStripMenuItem2.Size = new Size(119, 30);
+        about_toolStripMenuItem2.Size = new Size(188, 30);
         about_toolStripMenuItem2.Text = "About";
+        about_toolStripMenuItem2.Click += about_toolStripMenuItem2_Click;
         // 
         // bg_selector_panel2
         // 
