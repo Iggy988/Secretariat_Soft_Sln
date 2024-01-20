@@ -19,8 +19,8 @@ public partial class Out_Letters_List : Form
 
     private void Out_Letters_List_Load(object sender, EventArgs e)
     {
-        //TODO: Uncomment before publishing
-        //object_perm_loader();
+        //TO DO: Uncomment before publishing
+        object_perm_loader();
         try
         {
             sa_Out_LettersTableAdapter1.Fill(letters1.Sa_Out_Letters);

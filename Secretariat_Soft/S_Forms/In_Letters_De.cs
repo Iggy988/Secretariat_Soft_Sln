@@ -29,8 +29,8 @@ public partial class In_Letters_De : Form
         //sa_In_LettersTableAdapter1.FillBy_id_desc(letters1.Sa_In_Letters);
         //-------------------------
         //da bi permissions funkcionisale moramo staviti metod nakon pozivanja enable_add_edit_del_butt()
-        //TODO: Uncoment before publishing
-        //object_perm_loader();
+        //TO DO: Uncoment before publishing
+        object_perm_loader();
         //-------------------------
         try
         {
@@ -85,8 +85,8 @@ public partial class In_Letters_De : Form
         de_delete_butt.Enabled = true;
         //----------------------------
         //----------------------------
-        //TODO: Uncoment before publishing
-        //object_perm_loader();
+        // TO DO: Uncoment before publishing
+        object_perm_loader();
         //----------------------------
     }
     void disable_add_edit_del_butt()

@@ -31,8 +31,8 @@ public partial class In_Letters_List : Form
     private void In_Letters_Form_Load(object sender, EventArgs e)
     {
         //---------------------------
-        //TODO: Uncoment before publishing
-        //object_perm_loader();
+        //TO DO: Uncoment before publishing
+        object_perm_loader();
         //---------------------------
         try
         {

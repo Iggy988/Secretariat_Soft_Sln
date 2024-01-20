@@ -25,8 +25,8 @@ public partial class Out_Letters_De : Form
         //-------------------------
         //sa_In_LettersTableAdapter1.FillBy_id_desc(letters1.Sa_In_Letters);
         //-------------------------
-        //TODO: Uncomment before publish
-        //object_perm_loader();
+        //TO DO: Uncomment before publish
+        object_perm_loader();
         //-------------------------
         try
         {
@@ -80,8 +80,8 @@ public partial class Out_Letters_De : Form
         de_edit_butt.Enabled = true;
         de_delete_butt.Enabled = true;
         //----------------------------
-        //TODO: Uncomment before publish
-        //object_perm_loader();
+        //TO DO: Uncomment before publish
+        object_perm_loader();
         //----------------------------
     }
     void disable_add_edit_del_butt()
