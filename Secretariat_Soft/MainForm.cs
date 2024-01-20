@@ -623,4 +623,18 @@ public partial class MainForm : Form
         //-------------------
         frm.ShowDialog();
     }
+
+    private void calculator_button_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            string fn =Environment.GetFolderPath(Environment.SpecialFolder.System);
+            System.Diagnostics.Process.Start(fn + "\\calc.exe");
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show("Error! " + ex.Message);
+        }
+    }
 }
+
