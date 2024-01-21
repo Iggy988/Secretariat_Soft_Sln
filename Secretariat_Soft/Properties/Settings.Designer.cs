@@ -94,5 +94,17 @@ namespace Secretariat_Soft.Properties {
                 this["main_con_text"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool is_sql_auth {
+            get {
+                return ((bool)(this["is_sql_auth"]));
+            }
+            set {
+                this["is_sql_auth"] = value;
+            }
+        }
     }
 }
