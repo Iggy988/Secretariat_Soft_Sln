@@ -23,14 +23,25 @@ public partial class SQL_Settings : Form
 
     private void save_button1_Click(object sender, EventArgs e)
     {
+
+        //-----------save in app settings--------
+        Secretariat_Soft.Properties.Settings.Default.main_con_text = con_generator();
+        Secretariat_Soft.Properties.Settings.Default.is_sql_auth = sql_server_auth_radioButton1.Checked;
+        Secretariat_Soft.Properties.Settings.Default.Save();
+        //---------------------------------------
+        DialogResult = DialogResult.OK;
+    }
+
+    string con_generator()
+    {
         //Data Source=DESKTOP-8R3MVUS\SQLEXPRESS01;Initial Catalog=CsApps;Integrated Security=True;TrustServerCertificate=True
         //Data Source=DESKTOP-8R3MVUS\SQLEXPRESS01;Initial Catalog=CsApps;Persist Security Info=True;User ID=igo;Password=12345;TrustServerCertificate=True
         string MyCon = "";
         //Win authentication
         if (win_authentication_radioButton1.Checked == true)
         {
-            MyCon = "Data Source=" + server_name_textBox1.Text + 
-                ";Initial Catalog=" + database_textBox1.Text+
+            MyCon = "Data Source=" + server_name_textBox1.Text +
+                ";Initial Catalog=" + database_textBox1.Text +
                 ";Integrated Security=True;TrustServerCertificate=True";
         }
         //SQL authentication
@@ -40,15 +51,12 @@ public partial class SQL_Settings : Form
                ";Initial Catalog=" + database_textBox1.Text +
                ";Persist Security Info=True;User ID=" +
                username_textBox1.Text +
-               ";Password="+password_textBox1.Text +
+               ";Password=" + password_textBox1.Text +
                ";TrustServerCertificate=True";
         }
-        //-----------save in app settings--------
-        Secretariat_Soft.Properties.Settings.Default.main_con_text =MyCon;
-        Secretariat_Soft.Properties.Settings.Default.is_sql_auth = sql_server_auth_radioButton1.Checked;
-        Secretariat_Soft.Properties.Settings.Default.Save();
-        //---------------------------------------
-        DialogResult = DialogResult.OK;
+        //---------
+        return MyCon;
+
     }
 
     private void SQL_Settings_Load(object sender, EventArgs e)
@@ -69,8 +77,8 @@ public partial class SQL_Settings : Form
         con_parts = MyCon.Split(";");
         //--------server name separator-------
         MyData = con_parts[0]; //Data Source=DESKTOP-8R3MVUS\SQLEXPRESS01
-        //------------------------------------
-        
+                               //------------------------------------
+
         final_parts = MyData.Split("=");
         server_name_textBox1.Text = final_parts[1];
         //------------------------------------
@@ -102,5 +110,36 @@ public partial class SQL_Settings : Form
     private void sql_server_auth_radioButton1_CheckedChanged(object sender, EventArgs e)
     {
         authentication_panel1.Visible = sql_server_auth_radioButton1.Checked;
+    }
+
+    private void test_connection_button1_Click(object sender, EventArgs e)
+    {
+        string MyCon = con_generator();
+        //------------------
+        //==========db exist checker================
+        Secretariat_Soft.DataSet.LettersTableAdapters.AppUsersTableAdapter ta = new();
+        Secretariat_Soft.DataSet.Letters ds = new();
+        //-----------------
+        prog_panel4.Visible = true;
+        prog_panel4.Refresh();
+        try
+        {
+            ta.Connection.ConnectionString = MyCon;
+            ta.FillBy_db_exists_checker(ds.AppUsers);
+            //---------------
+            prog_panel4.Visible = false;
+            prog_panel4.Refresh();
+            
+            MessageBox.Show("Test connection successfull.");
+            //---------------
+        }
+        catch (Exception ex)
+        {
+            prog_panel4.Visible = false;
+            prog_panel4.Refresh();
+            MessageBox.Show("Error! Can't get access to your SQL database: " + ex.Message);
+            return;
+        }
+        //==========================================
     }
 }

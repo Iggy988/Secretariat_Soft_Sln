@@ -41,7 +41,13 @@ partial class SQL_Settings
         authentication_panel1 = new Panel();
         exit_button = new Button();
         save_button1 = new Button();
+        test_connection_button1 = new Button();
+        prog_panel4 = new Panel();
+        label7 = new Label();
+        label5 = new Label();
+        panel1 = new Panel();
         authentication_panel1.SuspendLayout();
+        prog_panel4.SuspendLayout();
         SuspendLayout();
         // 
         // server_name_label1
@@ -151,7 +157,7 @@ partial class SQL_Settings
         exit_button.BackColor = SystemColors.ButtonFace;
         exit_button.Cursor = Cursors.Hand;
         exit_button.Image = Properties.Resources.bk_exit;
-        exit_button.Location = new Point(305, 356);
+        exit_button.Location = new Point(333, 356);
         exit_button.Name = "exit_button";
         exit_button.Size = new Size(115, 40);
         exit_button.TabIndex = 12;
@@ -165,7 +171,7 @@ partial class SQL_Settings
         save_button1.BackColor = SystemColors.ButtonFace;
         save_button1.Cursor = Cursors.Hand;
         save_button1.Image = Properties.Resources.de_save_butt;
-        save_button1.Location = new Point(39, 356);
+        save_button1.Location = new Point(12, 356);
         save_button1.Name = "save_button1";
         save_button1.Size = new Size(126, 40);
         save_button1.TabIndex = 11;
@@ -174,12 +180,70 @@ partial class SQL_Settings
         save_button1.UseVisualStyleBackColor = false;
         save_button1.Click += save_button1_Click;
         // 
+        // test_connection_button1
+        // 
+        test_connection_button1.BackColor = SystemColors.ButtonFace;
+        test_connection_button1.Cursor = Cursors.Hand;
+        test_connection_button1.Image = Properties.Resources.globe7;
+        test_connection_button1.Location = new Point(167, 356);
+        test_connection_button1.Name = "test_connection_button1";
+        test_connection_button1.Size = new Size(135, 40);
+        test_connection_button1.TabIndex = 13;
+        test_connection_button1.Text = "Test Connection";
+        test_connection_button1.TextImageRelation = TextImageRelation.ImageBeforeText;
+        test_connection_button1.UseVisualStyleBackColor = false;
+        test_connection_button1.Click += test_connection_button1_Click;
+        // 
+        // prog_panel4
+        // 
+        prog_panel4.BackColor = Color.PapayaWhip;
+        prog_panel4.BorderStyle = BorderStyle.FixedSingle;
+        prog_panel4.Controls.Add(label7);
+        prog_panel4.Controls.Add(label5);
+        prog_panel4.Location = new Point(121, 157);
+        prog_panel4.Name = "prog_panel4";
+        prog_panel4.Size = new Size(218, 127);
+        prog_panel4.TabIndex = 14;
+        prog_panel4.Visible = false;
+        // 
+        // label7
+        // 
+        label7.AutoSize = true;
+        label7.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+        label7.Location = new Point(16, 73);
+        label7.Name = "label7";
+        label7.Size = new Size(188, 21);
+        label7.TabIndex = 2;
+        label7.Text = "Testing the connection...";
+        // 
+        // label5
+        // 
+        label5.AutoSize = true;
+        label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+        label5.Location = new Point(49, 24);
+        label5.Name = "label5";
+        label5.Size = new Size(110, 21);
+        label5.TabIndex = 1;
+        label5.Text = "Please Wait...";
+        // 
+        // panel1
+        // 
+        panel1.BackgroundImageLayout = ImageLayout.Stretch;
+        panel1.BorderStyle = BorderStyle.FixedSingle;
+        panel1.Location = new Point(15, 336);
+        panel1.Name = "panel1";
+        panel1.Size = new Size(433, 1);
+        panel1.TabIndex = 15;
+        // 
         // SQL_Settings
         // 
         AutoScaleDimensions = new SizeF(7F, 17F);
         AutoScaleMode = AutoScaleMode.Font;
         BackColor = Color.WhiteSmoke;
         ClientSize = new Size(460, 441);
+        Controls.Add(panel1);
+        Controls.Add(prog_panel4);
+        Controls.Add(test_connection_button1);
         Controls.Add(exit_button);
         Controls.Add(save_button1);
         Controls.Add(authentication_panel1);
@@ -200,6 +264,8 @@ partial class SQL_Settings
         Load += SQL_Settings_Load;
         authentication_panel1.ResumeLayout(false);
         authentication_panel1.PerformLayout();
+        prog_panel4.ResumeLayout(false);
+        prog_panel4.PerformLayout();
         ResumeLayout(false);
         PerformLayout();
     }
@@ -219,4 +285,9 @@ partial class SQL_Settings
     private Panel authentication_panel1;
     private Button exit_button;
     private Button save_button1;
+    private Button test_connection_button1;
+    private Panel prog_panel4;
+    private Label label7;
+    private Label label5;
+    private Panel panel1;
 }
