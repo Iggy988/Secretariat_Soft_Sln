@@ -36,7 +36,7 @@ public partial class LoginFrm : Form
     void transparent_panel()
     {
         panel2.BackColor = Color.FromArgb(70, Color.Black);
-       
+
     }
 
 
@@ -61,5 +61,11 @@ public partial class LoginFrm : Form
     private void cancel_button2_Click(object sender, EventArgs e)
     {
         DialogResult = DialogResult.Cancel;
+    }
+
+    private void settings_button1_Click(object sender, EventArgs e)
+    {
+        Secretariat_Soft.CommForms.SQL_Settings frm = new();
+        frm.ShowDialog();
     }
 }

@@ -29,6 +29,7 @@ partial class LoginFrm
     private void InitializeComponent()
     {
         components = new System.ComponentModel.Container();
+        System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginFrm));
         ok_button1 = new Button();
         cancel_button2 = new Button();
         user_pictureBox1 = new PictureBox();
@@ -45,6 +46,7 @@ partial class LoginFrm
         correct_pass_textBox1 = new TextBox();
         label3 = new Label();
         panel2 = new Panel();
+        settings_button1 = new Button();
         ((System.ComponentModel.ISupportInitialize)user_pictureBox1).BeginInit();
         ((System.ComponentModel.ISupportInitialize)appusers_bindingSource1).BeginInit();
         ((System.ComponentModel.ISupportInitialize)letters1).BeginInit();
@@ -55,7 +57,7 @@ partial class LoginFrm
         // 
         ok_button1.Cursor = Cursors.Hand;
         ok_button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        ok_button1.Location = new Point(120, 124);
+        ok_button1.Location = new Point(351, 358);
         ok_button1.Name = "ok_button1";
         ok_button1.Size = new Size(161, 35);
         ok_button1.TabIndex = 0;
@@ -70,7 +72,7 @@ partial class LoginFrm
         cancel_button2.BackgroundImageLayout = ImageLayout.Stretch;
         cancel_button2.Cursor = Cursors.Hand;
         cancel_button2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-        cancel_button2.Location = new Point(671, 472);
+        cancel_button2.Location = new Point(667, 454);
         cancel_button2.Name = "cancel_button2";
         cancel_button2.Size = new Size(55, 48);
         cancel_button2.TabIndex = 1;
@@ -207,11 +209,24 @@ partial class LoginFrm
         panel2.Controls.Add(password_TB);
         panel2.Controls.Add(label5);
         panel2.Controls.Add(username_CB);
-        panel2.Controls.Add(ok_button1);
         panel2.Location = new Point(231, 246);
         panel2.Name = "panel2";
         panel2.Size = new Size(304, 181);
         panel2.TabIndex = 30;
+        // 
+        // settings_button1
+        // 
+        settings_button1.BackColor = Color.Transparent;
+        settings_button1.BackgroundImageLayout = ImageLayout.Stretch;
+        settings_button1.Cursor = Cursors.Hand;
+        settings_button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+        settings_button1.Image = (Image)resources.GetObject("settings_button1.Image");
+        settings_button1.Location = new Point(12, 12);
+        settings_button1.Name = "settings_button1";
+        settings_button1.Size = new Size(47, 43);
+        settings_button1.TabIndex = 31;
+        settings_button1.UseVisualStyleBackColor = false;
+        settings_button1.Click += settings_button1_Click;
         // 
         // LoginFrm
         // 
@@ -222,16 +237,18 @@ partial class LoginFrm
         BackgroundImage = Properties.Resources.login;
         BackgroundImageLayout = ImageLayout.Stretch;
         CancelButton = cancel_button2;
-        ClientSize = new Size(754, 534);
+        ClientSize = new Size(726, 506);
         ControlBox = false;
-        Controls.Add(panel2);
+        Controls.Add(settings_button1);
         Controls.Add(correct_pass_textBox1);
         Controls.Add(label3);
+        Controls.Add(ok_button1);
         Controls.Add(sys_id_LBL);
         Controls.Add(user_pictureBox1);
         Controls.Add(label2);
         Controls.Add(panel1);
         Controls.Add(cancel_button2);
+        Controls.Add(panel2);
         FormBorderStyle = FormBorderStyle.FixedSingle;
         MaximizeBox = false;
         MinimizeBox = false;
@@ -267,4 +284,5 @@ partial class LoginFrm
     public ComboBox username_CB;
     public Label sys_id_LBL;
     private Panel panel2;
+    private Button settings_button1;
 }
