@@ -70,5 +70,29 @@ namespace Secretariat_Soft.Properties {
                 this["selected_bg_name"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-8R3MVUS\\SQLEXPRESS01;Initial Catalog=CsApps;Persist Security " +
+            "Info=True;User ID=igo;Password=12345;TrustServerCertificate=True")]
+        public string main_con_string {
+            get {
+                return ((string)(this["main_con_string"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-8R3MVUS\\SQLEXPRESS01;Initial Catalog=CsApps;Persist Security " +
+            "Info=True;User ID=igo;Password=12345;TrustServerCertificate=True")]
+        public string main_con_text {
+            get {
+                return ((string)(this["main_con_text"]));
+            }
+            set {
+                this["main_con_text"] = value;
+            }
+        }
     }
 }
