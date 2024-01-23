@@ -1,4 +1,5 @@
 ﻿using AnalogClock;
+using Secretariat_Soft.DataSet.LettersTableAdapters;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,6 +25,8 @@ public partial class LoginFrm : Form
         {
             transparent_panel();
             //-------------------------
+            //-------------------------
+            appUsersTableAdapter1.Connection.ConnectionString = Secretariat_Soft.MyClasses.ComClass.MyConn_String;
             appUsersTableAdapter1.Fill(letters1.AppUsers);
         }
         catch (Exception ex)

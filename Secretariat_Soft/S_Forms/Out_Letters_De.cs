@@ -32,7 +32,9 @@ public partial class Out_Letters_De : Form
         {
             long id;
             long.TryParse(id_label7.Text, out id);
-
+            //------------------------
+            sa_Out_LettersTableAdapter1.Connection.ConnectionString = MyClasses.ComClass.MyConn_String;
+            //------------------------
             sa_Out_LettersTableAdapter1.FillBy_ID(letters1.Sa_Out_Letters, id);
 
         }
@@ -191,6 +193,9 @@ public partial class Out_Letters_De : Form
             out_letters_bindingSource1.EndEdit();
             //-------------------
             int r; //Update je int
+            //------------------------
+            sa_Out_LettersTableAdapter1.Connection.ConnectionString = MyClasses.ComClass.MyConn_String;
+            //------------------------
             r = sa_Out_LettersTableAdapter1.Update(letters1.Sa_Out_Letters);
             //-------------------
             if (r > 0)

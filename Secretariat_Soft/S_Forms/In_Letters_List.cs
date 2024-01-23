@@ -36,6 +36,9 @@ public partial class In_Letters_List : Form
         //---------------------------
         try
         {
+            //------------------------
+            sa_In_LettersTableAdapter1.Connection.ConnectionString = MyClasses.ComClass.MyConn_String;
+            //------------------------
             sa_In_LettersTableAdapter1.Fill(letters1.Sa_In_Letters);
             recordPosition();
         }
@@ -98,7 +101,9 @@ public partial class In_Letters_List : Form
         {
             long id;
             long.TryParse(search_textbox.Text, out id);
-
+            //------------------------
+            sa_In_LettersTableAdapter1.Connection.ConnectionString = MyClasses.ComClass.MyConn_String;
+            //------------------------
             sa_In_LettersTableAdapter1.FillBy_ID(letters1.Sa_In_Letters, id);
             recordPosition();
         }
@@ -115,6 +120,9 @@ public partial class In_Letters_List : Form
         try
         {
             var searchString = "%" + search_subject_textbox.Text + "%";
+            //------------------------
+            sa_In_LettersTableAdapter1.Connection.ConnectionString = MyClasses.ComClass.MyConn_String;
+            //------------------------
             sa_In_LettersTableAdapter1.FillBy_subject_like(letters1.Sa_In_Letters, searchString);
             recordPosition();
         }
@@ -134,6 +142,9 @@ public partial class In_Letters_List : Form
             string d1, d2;
             d1 = dateTimePicker1.Value.ToString();
             d2 = dateTimePicker2.Value.ToString();
+            //------------------------
+            sa_In_LettersTableAdapter1.Connection.ConnectionString = MyClasses.ComClass.MyConn_String;
+            //------------------------
             sa_In_LettersTableAdapter1.FillBy_regdate(letters1.Sa_In_Letters, d1, d2);
             recordPosition();
         }
@@ -152,6 +163,9 @@ public partial class In_Letters_List : Form
             frm.id_label2.Text = id_label.Text;
             frm.ShowDialog();
             //---------------------------------
+            //------------------------
+            sa_In_LettersTableAdapter1.Connection.ConnectionString = MyClasses.ComClass.MyConn_String;
+            //------------------------
             sa_In_LettersTableAdapter1.Fill(letters1.Sa_In_Letters);
             //recordPosition();
         }

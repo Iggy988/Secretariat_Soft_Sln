@@ -28,6 +28,9 @@ public partial class Users_De : Form
         {
             long id;
             long.TryParse(id_label2.Text, out id);
+            //---------------------
+            appUsersTableAdapter1.Connection.ConnectionString = MyClasses.ComClass.MyConn_String;
+            //---------------------
 
             appUsersTableAdapter1.FillBy_id(letters1.AppUsers, id);
 
@@ -169,6 +172,9 @@ public partial class Users_De : Form
             appusers_bindingSource1.EndEdit();
             //-------------------
             int r; //Update je int
+            //---------------------
+            appUsersTableAdapter1.Connection.ConnectionString = MyClasses.ComClass.MyConn_String;
+            //---------------------
             r = appUsersTableAdapter1.Update(letters1.AppUsers);
             //-------------------
             if (r > 0)

@@ -1,4 +1,6 @@
-﻿using Secretariat_Soft.DataSet;
+﻿using MyRep.DataSet.LettersTableAdapters;
+using Secretariat_Soft.DataSet;
+using Secretariat_Soft.DataSet.LettersTableAdapters;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,7 +38,9 @@ public partial class In_Letters_De : Form
         {
             long id;
             long.TryParse(id_label2.Text, out id);
-
+            //---------------------
+            sa_In_LettersTableAdapter1.Connection.ConnectionString = MyClasses.ComClass.MyConn_String;
+            //---------------------
             sa_In_LettersTableAdapter1.FillBy_ID(letters1.Sa_In_Letters, id);
 
         }
@@ -208,6 +212,9 @@ public partial class In_Letters_De : Form
             in_letters_bindingSource1.EndEdit();
             //-------------------
             int r; //Update je int
+            //------------------------
+            sa_In_LettersTableAdapter1.Connection.ConnectionString = MyClasses.ComClass.MyConn_String;
+            //------------------------
             r = sa_In_LettersTableAdapter1.Update(letters1.Sa_In_Letters);
             //-------------------
             if (r > 0)

@@ -1,4 +1,5 @@
-﻿using Secretariat_Soft.DataSet.LettersTableAdapters;
+﻿using MyRep.DataSet.LettersTableAdapters;
+using Secretariat_Soft.DataSet.LettersTableAdapters;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,6 +24,9 @@ public partial class Out_Letters_List : Form
         object_perm_loader();
         try
         {
+            //------------------------
+            sa_Out_LettersTableAdapter1.Connection.ConnectionString = MyClasses.ComClass.MyConn_String;
+            //------------------------
             sa_Out_LettersTableAdapter1.Fill(letters1.Sa_Out_Letters);
             recordPosition();
         }
@@ -93,7 +97,9 @@ public partial class Out_Letters_List : Form
         {
             long id;
             long.TryParse(search_textbox.Text, out id);
-
+            //------------------------
+            sa_Out_LettersTableAdapter1.Connection.ConnectionString = MyClasses.ComClass.MyConn_String;
+            //------------------------
             sa_Out_LettersTableAdapter1.FillBy_ID(letters1.Sa_Out_Letters, id);
             recordPosition();
         }
@@ -109,6 +115,9 @@ public partial class Out_Letters_List : Form
         try
         {
             var searchString = "%" + search_subject_textbox.Text + "%";
+            //------------------------
+            sa_Out_LettersTableAdapter1.Connection.ConnectionString = MyClasses.ComClass.MyConn_String;
+            //------------------------
             sa_Out_LettersTableAdapter1.FillBy_subject_like(letters1.Sa_Out_Letters, searchString);
             recordPosition();
         }
@@ -126,6 +135,9 @@ public partial class Out_Letters_List : Form
             string d1, d2;
             d1 = dateTimePicker1.Value.ToString();
             d2 = dateTimePicker2.Value.ToString();
+            //------------------------
+            sa_Out_LettersTableAdapter1.Connection.ConnectionString = MyClasses.ComClass.MyConn_String;
+            //------------------------
             sa_Out_LettersTableAdapter1.FillBy_regdate(letters1.Sa_Out_Letters, d1, d2);
             recordPosition();
         }
@@ -144,6 +156,9 @@ public partial class Out_Letters_List : Form
             frm.id_label7.Text = id_label6.Text;
             frm.ShowDialog();
             //---------------------------------
+            //------------------------
+            sa_Out_LettersTableAdapter1.Connection.ConnectionString = MyClasses.ComClass.MyConn_String;
+            //------------------------
             sa_Out_LettersTableAdapter1.Fill(letters1.Sa_Out_Letters);
             //recordPosition();
         }

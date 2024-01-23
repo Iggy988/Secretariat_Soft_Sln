@@ -15,7 +15,7 @@ public partial class SQL_Settings : Form
     {
         InitializeComponent();
     }
-    string df = "qwertyuiop1234567890!@#$%^&*()12";
+    
 
     private void exit_button_Click(object sender, EventArgs e)
     {
@@ -29,7 +29,7 @@ public partial class SQL_Settings : Form
         string cs, cs_enct;
         cs = con_generator();
         //----------------------
-        cs_enct =NETCore.Encrypt.EncryptProvider.AESEncrypt(cs, df);
+        cs_enct =NETCore.Encrypt.EncryptProvider.AESEncrypt(cs, MyClasses.ComClass.dfftrf);
         //----------------------
         Secretariat_Soft.Properties.Settings.Default.main_con_text = cs_enct;
         Secretariat_Soft.Properties.Settings.Default.is_sql_auth = sql_server_auth_radioButton1.Checked;
@@ -77,7 +77,7 @@ public partial class SQL_Settings : Form
         //------load connection string -------
         string MyCon = Secretariat_Soft.Properties.Settings.Default.main_con_text;
         //-------------------
-        MyCon = NETCore.Encrypt.EncryptProvider.AESDecrypt(MyCon, df);
+        MyCon = NETCore.Encrypt.EncryptProvider.AESDecrypt(MyCon, MyClasses.ComClass.dfftrf);
         //-------------------
         string[] con_parts;
         string[] final_parts;

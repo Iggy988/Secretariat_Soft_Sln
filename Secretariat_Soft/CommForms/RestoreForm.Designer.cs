@@ -197,7 +197,6 @@ partial class RestoreForm
         ShowIcon = false;
         StartPosition = FormStartPosition.CenterScreen;
         Text = "Restore Data";
-        Load += RestoreForm_Load;
         groupBox1.ResumeLayout(false);
         groupBox1.PerformLayout();
         prog_panel4.ResumeLayout(false);

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Secretariat_Soft.DataSet.LettersTableAdapters;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,8 @@ namespace Secretariat_Soft.MyClasses;
 public class ComClass
 {
     static Secretariat_Soft.DataSet.Letters.AppUsersDataTable user_perm_dt = new();
+    public static string dfftrf = "qwertyuiop1234567890!@#$%^&*()12";
+    public static string MyConn_String = "";
 
     public void user_perm_loader_from_db()
     {
@@ -17,6 +20,9 @@ public class ComClass
             Secretariat_Soft.DataSet.LettersTableAdapters.AppUsersTableAdapter ta = new();
             //---------------------------------------
             long uid = Secretariat_Soft.Properties.Settings.Default.User_Id;
+            //-------------------------------
+            ta.Connection.ConnectionString = MyConn_String;
+            //-------------------------------
             ta.FillBy_login_user_id(user_perm_dt, uid);
             //---------------------------------------
         }

@@ -47,7 +47,7 @@ public partial class BackupForm : Form
         backup_button1.Enabled = false;
         backup_button1.Refresh();
         //--------------------------
-        string con_string = "Data Source=DESKTOP-8R3MVUS\\SQLEXPRESS01;Initial Catalog=CsApps;Persist Security Info=True;User ID=igo;Password=12345;TrustServerCertificate=True";
+        string con_string = Secretariat_Soft.MyClasses.ComClass.MyConn_String;//"Data Source=DESKTOP-8R3MVUS\\SQLEXPRESS01;Initial Catalog=CsApps;Persist Security Info=True;User ID=igo;Password=12345;TrustServerCertificate=True";
         System.Data.SqlClient.SqlConnection conn = new(con_string);
         //==========================
         System.Data.SqlClient.SqlCommand sqlCommand = new();

@@ -17,7 +17,15 @@ public partial class MainForm : Form
         InitializeComponent();
     }
 
-
+    void con_string_loader()
+    {
+        //------load connection string -------
+        string MyCon = Secretariat_Soft.Properties.Settings.Default.main_con_text;
+        //-------------------
+        MyCon = NETCore.Encrypt.EncryptProvider.AESDecrypt(MyCon, MyClasses.ComClass.dfftrf);
+        //-------------------
+        Secretariat_Soft.MyClasses.ComClass.MyConn_String = MyCon;
+    }
 
     private void close_button_Click(object sender, EventArgs e)
     {
@@ -30,7 +38,10 @@ public partial class MainForm : Form
     }
 
     private void MainForm_Load(object sender, EventArgs e)
-    {
+    { 
+        //-----Load and decrypt the con string-------------
+        con_string_loader();
+        //---------------------------
         transparent_panel();
         background_image_changer_all();
         //---------------------------

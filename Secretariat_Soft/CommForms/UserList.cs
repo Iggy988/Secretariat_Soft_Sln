@@ -25,6 +25,9 @@ public partial class UserList : Form
         //---------------------------------
         try
         {
+            //---------------------
+            appUsersTableAdapter1.Connection.ConnectionString = MyClasses.ComClass.MyConn_String;
+            //---------------------
             appUsersTableAdapter1.Fill(letters1.AppUsers);
         }
         catch (Exception ex)
@@ -56,6 +59,9 @@ public partial class UserList : Form
             frm.id_label2.Text = id_label.Text;
             frm.ShowDialog();
             //---------------------------------
+            //---------------------
+            appUsersTableAdapter1.Connection.ConnectionString = MyClasses.ComClass.MyConn_String;
+            //---------------------
             appUsersTableAdapter1.Fill(letters1.AppUsers);
 
             //======Reload permission data======
